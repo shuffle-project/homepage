@@ -1,0 +1,29 @@
+html, body {
+    font-family: var(--font-sans-serif);
+    font-size: 16px;
+
+    margin: 0;
+}
+
+.shuffle-logo-text {
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--color-black);
+}
+
+a {
+    &:focus {
+        outline: 2px solid var(--color-black);
+        outline-offset: 2px;
+    }
+
+    &:hover {
+        outline: none;
+        //TODO try to achieve result without important
+        text-decoration: underline !important;
+    }
+}
+
+
+

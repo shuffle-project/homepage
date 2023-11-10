@@ -1,0 +1,25 @@
+@import '@fontsource/nunito-sans/400.css';
+@import '@fontsource/nunito-sans/700.css';
+@import '@fontsource/nunito-sans/800.css';
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #191D27;
+    --color-black-rgb: 25, 29, 39;
+
+    --color-green: #1E7F5E;
+    --color-blue: #324B8C;
+    --color-red: #E21437;
+    --color-yellow: #FEC705;
+
+    --color-dark-grey: #5E6168;
+
+    --color-blue-line: #C7D7E9;
+    --color-blue-gradient: linear-gradient(90deg, #F1F5F9 0%, #E0E7EF 100%);
+
+    --color-body: var(--color-white);
+
+    --font-sans-serif: 'Nunito Sans', sans-serif;
+
+    --outer-spacing: 1.25rem;
+}
