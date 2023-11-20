@@ -1,64 +1,132 @@
-<header>
-	<a href="/" class="logo">
-		<img src="/icons/shuffle-logo.svg" alt="" aria-hidden="true" />
-		<span class="shuffle-logo-text">SHUFFLE</span>
-	</a>
+<script lang="ts">
+	import { onMount } from 'svelte';
 
-    <ul>
-        <li>
-            <a href="/">Team</a>
-        </li>
-        <li>
-            <a href="/">Aktuelles</a>
-        </li>
-        <li>
-            <a href="/">Kontakt</a>
-        </li>
-        <li>
-            <a href="/">Alle Publikationen</a>
-        </li>
-    </ul>
-</header>
+	let scrolling = false;
+	let throttle = false;
+
+	onMount(() => {
+		scrolling = window.scrollY > 0;
+
+		window.addEventListener('scroll', () => {
+			if (throttle) return;
+			throttle = true;
+			setTimeout(() => {
+				if (window.scrollY > 10 && !scrolling) {
+					scrolling = true;
+				}
+
+				if (window.scrollY < 10 && scrolling) {
+					scrolling = false;
+				}
+
+				throttle = false;
+			}, 300);
+		});
+	});
+</script>
+
+<div class="header-wrapper" class:scrolling>
+	<header>
+		<a href="/" class="logo">
+			<img src="/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+			<span class="shuffle-logo-text">SHUFFLE</span>
+		</a>
+
+		<ul>
+			<li>
+				<a href="/">Team</a>
+			</li>
+			<li>
+				<a href="/">Aktuelles</a>
+			</li>
+			<li>
+				<a href="/">Kontakt</a>
+			</li>
+			<li>
+				<a href="/">Alle Publikationen</a>
+			</li>
+		</ul>
+	</header>
+	<hr aria-hidden="true" />
+</div>
 
 <style lang="scss">
-    header {
-        margin: var(--outer-spacing);
+	.header-wrapper {
+		position: fixed;
+		z-index: 10;
+		inset: 0 0 auto 0;
+		background-color: transparent;
+		transition: background-color 0.6s ease-in-out;
 
-        display: flex;
-        justify-content: space-between;
+		hr {
+			opacity: 0%;
+			transition: opacity 0.6s ease-in-out;
+		}
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.3125rem;
+		&.scrolling {
+			background-color: var(--color-white);
 
-            text-decoration: none;
-    
-            &:hover {
-                span {
-                    text-decoration: underline;
-                }
-            }
+			hr {
+				opacity: 100%;
+			}
+		}
+	}
 
-            img {
-                width: 2.5rem;
-                height: 2.5rem;
-            }
-        }
+	header {
+		margin: 0.625rem var(--outer-spacing);
+		height: 3.5rem;
 
-        ul {
-            display: flex;
-            align-items: center;
-            gap: 1.25rem;
+		display: flex;
+		justify-content: space-between;
 
-            list-style: none;
-            padding: 0;
+		.logo {
+			display: flex;
+			align-items: center;
+			gap: 0.3125rem;
 
-            a {
-                font-weight: bold;
-                color: var(--color-black);
-                text-decoration: none;
-            }
-        }
-    }
+			text-decoration: none;
+
+			&:hover {
+				span {
+					text-decoration: underline;
+				}
+			}
+
+			img {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+
+		ul {
+			display: flex;
+			align-items: center;
+			gap: 1.25rem;
+
+			list-style: none;
+			padding: 0;
+
+			a {
+				font-weight: bold;
+				color: var(--color-black);
+				text-decoration: none;
+			}
+		}
+	}
+
+	hr {
+		width: 100%;
+		background-color: var(--color-blue-line);
+		height: 1px;
+		border: none;
+		margin: 0;
+	}
+
+	@media (max-width: 40.625rem) {
+		header {
+			ul {
+				display: none;
+			}
+		}
+	}
 </style>
