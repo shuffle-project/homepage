@@ -1,5 +1,5 @@
 <script>
-	import Icon from '../Icon.svelte';
+	import LinkNewTab from '../LinkNewTab.svelte';
 </script>
 
 <div class="project-partners-section">
@@ -77,13 +77,12 @@
 				Organisation und Verwaltung werden von Bund und Ländern zur Verfügung gestellt.
 			</p>
 			<div class="link-wrapper">
-				<a href="https://stiftung-hochschullehre.de/">
-					<span aria-hidden="true">Zur Webseite der Stiftung</span>
-					<span class="sr-only"
-						>Zur Webseite der Stiftung Innovation in der Hochschullehre (öffnent neues Fenster)</span
-					>
-					<Icon svg="open-in-new-tab" size="20" color="blue" />
-				</a>
+				<LinkNewTab
+					link="https://stiftung-hochschullehre.de/"
+					details="Innovation in der Hochschullehre"
+				>
+					Zur Webseite der Stiftung
+				</LinkNewTab>
 			</div>
 		</div>
 	</div>
@@ -119,13 +118,6 @@
 
 				.link-wrapper {
 					display: inline-block;
-
-					a {
-						color: var(--color-blue);
-						display: flex;
-						align-items: center;
-						gap: 0.125rem;
-					}
 				}
 			}
 		}

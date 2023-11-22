@@ -3,6 +3,7 @@
 	import type { Project, TargetGroup } from '$lib/interfaces/project.interface';
 	import ResultCard from '../ResultCard.svelte';
 
+	let selectedIndex: number = 0;
 	let selectedTab: 'Alle' | TargetGroup = 'Alle';
 	const tabOptions: ('Alle' | TargetGroup)[] = ['Alle', 'Für Lehrende', 'Für die Hochschulleitung'];
 
@@ -14,6 +15,20 @@
 			if (selectedTab === 'Alle') return true;
 			if (pl.targetGroup === selectedTab) return true;
 		});
+	}
+
+	function onKeypressed(event: KeyboardEvent) {
+		if (event.code === 'ArrowLeft') {
+			event.preventDefault();
+			let element = document.getElementById(`results-tab-${selectedIndex - 1}`);
+			element?.focus();
+			element?.click();
+		} else if (event.code === 'ArrowRight') {
+			event.preventDefault();
+			let element = document.getElementById(`results-tab-${selectedIndex + 1}`);
+			element?.focus();
+			element?.click();
+		}
 	}
 </script>
 
@@ -31,7 +46,8 @@
 				role="tab"
 				aria-selected={selectedTab === tabOption}
 				tabindex={selectedTab === tabOption ? 0 : -1}
-				on:click={() => (selectedTab = tabOption)}
+				on:click={() => ((selectedTab = tabOption), (selectedIndex = i))}
+				on:keydown={onKeypressed}
 			>
 				{tabOption}
 			</button>

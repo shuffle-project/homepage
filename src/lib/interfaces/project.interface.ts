@@ -14,6 +14,22 @@ type ObjectValues<T> = T[keyof T];
 export type TargetGroup = ObjectValues<typeof TARGET_GROUP>;
 export type ProjectPartners = ObjectValues<typeof PROJECT_PARTNERS>;
 
+export interface JoinEvaluation {
+	introduction: string;
+	contactName: string;
+	contactEmail: string;
+}
+
+export interface Publication {
+	title: string;
+	titleLang: 'de' | 'en';
+	contributors: string[];
+	placeOfPublication: string;
+	placeOfPublicationLang: 'de' | 'en';
+	linkText: string;
+	link: string;
+}
+
 export interface Project {
 	id: string;
 	title: string;
@@ -23,4 +39,6 @@ export interface Project {
 	linkToProject: string;
 	summary: string;
 	partners: ProjectPartners[];
+	joinEvaluation?: JoinEvaluation;
+	publications?: Publication[];
 }

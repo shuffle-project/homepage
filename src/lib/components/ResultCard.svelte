@@ -21,7 +21,7 @@
 		<p>{project.cardText}</p>
 	</div>
 	<div class="links">
-		<a href="/{project.id}">
+		<a href="/{project.id}" class="link-more-info">
 			<span aria-hidden="true">Mehr Informationen</span>
 			<span class="sr-only">Mehr Informationen über {project.title}</span>
 		</a>
@@ -88,8 +88,9 @@
 			align-items: center;
 			justify-content: space-between;
 
-			a {
+			.link-more-info {
 				color: var(--color-blue);
+				text-decoration: none;
 			}
 
 			.link-to-project {
