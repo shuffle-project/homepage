@@ -1,12 +1,8 @@
 <script lang="ts">
 	import type { JoinEvaluation } from '$lib/interfaces/project.interface';
-	import Icon from '../Icon.svelte';
+	import CopyEmail from '../CopyEmail.svelte';
 
 	export let join: JoinEvaluation;
-
-	function saveToClipboard() {
-		navigator.clipboard.writeText(join.contactEmail);
-	}
 </script>
 
 <div class="wrapper">
@@ -19,12 +15,7 @@
 		<h3>Interessiert?</h3>
 		<p>Bitte melden Sie sich bei {join.contactName} unter:</p>
 		<a class="contact-email" href="mailto:{join.contactEmail}">{join.contactEmail}</a>
-		<button on:click={() => saveToClipboard()} class="copy-link">
-			<div class="icon-wrapper">
-				<Icon svg="copy" size="parent" color="dark-grey" />
-			</div>
-			Adresse kopieren
-		</button>
+		<CopyEmail email={join.contactEmail} />
 	</div>
 </div>
 
@@ -47,7 +38,7 @@
 		}
 
 		.call-to-action {
-			min-width: 12.5rem;
+			min-width: 13rem;
 
 			p {
 				margin-bottom: 0;
@@ -57,34 +48,10 @@
 				color: var(--color-blue);
 				text-decoration: none;
 			}
-
-			.copy-link {
-				display: flex;
-				align-items: center;
-				gap: 0.25rem;
-				border: none;
-				background-color: transparent;
-				color: var(--color-grey);
-
-				cursor: pointer;
-
-				margin-top: 0.625rem;
-				padding: 0.25rem 0.125rem;
-
-				&:focus,
-				&:hover {
-					outline: 2px solid var(--color-black);
-				}
-
-				.icon-wrapper {
-					width: 0.9375rem;
-					height: 1.25rem;
-				}
-			}
 		}
 	}
 
-	@media (max-width: 37.4375rem) {
+	@media (max-width: 40.5625rem) {
 		.wrapper {
 			flex-direction: column;
 

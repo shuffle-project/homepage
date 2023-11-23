@@ -91,11 +91,6 @@
 
 				.link-wrapper {
 					align-self: flex-end;
-
-					a {
-						color: var(--color-blue);
-						text-decoration: none;
-					}
 				}
 			}
 
@@ -118,7 +113,7 @@
 		}
 	}
 
-	@media (max-width: 37.4375rem) {
+	@media (max-width: 40.5625rem) {
 		.wrapper {
 			h2,
 			li {

@@ -17,9 +17,18 @@
 <style lang="scss">
 	a {
 		color: var(--color-blue);
+		text-decoration: none;
+
 		display: flex;
 		align-items: center;
 		gap: 0.125rem;
-		text-decoration: none;
+
+		white-space: nowrap;
+	}
+
+	@media (max-width: 37.4375rem) {
+		a {
+			white-space: initial;
+		}
 	}
 </style>

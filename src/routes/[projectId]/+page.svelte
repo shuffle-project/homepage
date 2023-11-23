@@ -8,6 +8,10 @@
 	const { project } = data;
 </script>
 
+<svelte:head>
+	<title>{project.title} - SHUFFLE</title>
+</svelte:head>
+
 <div class="wrapper">
 	<div class="back-link-wrapper">
 		<BackLink />

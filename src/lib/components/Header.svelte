@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import MenuButton from './sidebarMenu/MenuButton.svelte';
 
 	let scrolling = false;
 	let throttle = false;
@@ -46,6 +47,10 @@
 				<a href="/">Alle Publikationen</a>
 			</li>
 		</ul>
+
+		<div class="menu-button-wrapper">
+			<MenuButton />
+		</div>
 	</header>
 	<hr aria-hidden="true" />
 </div>
@@ -74,7 +79,7 @@
 
 	header {
 		margin: 0.625rem var(--outer-spacing);
-		height: 3.5rem;
+		height: var(--header-height);
 
 		display: flex;
 		justify-content: space-between;
@@ -112,6 +117,11 @@
 				text-decoration: none;
 			}
 		}
+
+		.menu-button-wrapper {
+			display: flex;
+			align-items: center;
+		}
 	}
 
 	hr {
@@ -122,9 +132,17 @@
 		margin: 0;
 	}
 
-	@media (max-width: 40.625rem) {
+	@media (max-width: 40.5625rem) {
 		header {
 			ul {
+				display: none;
+			}
+		}
+	}
+
+	@media (min-width: 40.625rem) {
+		header {
+			.menu-button-wrapper {
 				display: none;
 			}
 		}

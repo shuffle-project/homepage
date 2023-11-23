@@ -2,6 +2,10 @@
 @import '@fontsource/nunito-sans/700.css';
 @import '@fontsource/nunito-sans/300.css';
 
+::backdrop {
+	--color-backdrop: rgba(25, 29, 39, 0.7);
+}
+
 :root {
 	--color-white: #ffffff;
 	--color-black: #191d27;
@@ -25,4 +29,5 @@
 	--outer-spacing: 1.25rem;
 	--max-text-width: 34rem;
 	--section-vertical-spacing: 7.5rem;
+	--header-height: 3.5rem;
 }
