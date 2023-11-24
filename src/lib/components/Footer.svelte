@@ -3,10 +3,10 @@
 	<img src="./logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 	<ul>
 		<li>
-			<a href="/">Impressum</a>
+			<a href="/imprint">Impressum</a>
 		</li>
 		<li>
-			<a href="/">Datenschutz</a>
+			<a href="/privacy">Datenschutz</a>
 		</li>
 		<li>
 			<a href="/">Erklärung zur Barrierefreiheit</a>

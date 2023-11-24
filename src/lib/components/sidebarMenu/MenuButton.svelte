@@ -18,10 +18,8 @@
 <style lang="scss">
 	button {
 		background-color: transparent;
-		border: none;
 		width: 1.875rem;
 		aspect-ratio: 1;
 		padding: 0;
-		cursor: pointer;
 	}
 </style>

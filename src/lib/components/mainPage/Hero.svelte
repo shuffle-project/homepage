@@ -1,4 +1,13 @@
-<div class="hero-section">
+<script lang="ts">
+	import { onMount } from 'svelte';
+	let mobileUserAgent = false;
+
+	onMount(() => {
+		mobileUserAgent = navigator.userAgent.includes('Mobile');
+	});
+</script>
+
+<div class="hero-section" class:mobileUserAgent>
 	<img src="/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 	<h1>SHUFFLE</h1>
 	<p>Hochschulinitiative digitale Barrierefreiheit für Alle</p>
@@ -8,7 +17,6 @@
 	.hero-section {
 		background: var(--color-blue-gradient);
 		height: max(30rem, 100vh);
-		transition: height 1s ease-in-out;
 
 		display: flex;
 		flex-direction: column;
@@ -32,6 +40,10 @@
 			margin: 0;
 			text-align: center;
 			margin-inline: var(--outer-spacing);
+		}
+
+		&.mobileUserAgent {
+			height: max(42rem);
 		}
 	}
 </style>

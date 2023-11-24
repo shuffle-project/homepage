@@ -5,8 +5,10 @@
 	let copySuccessInfoVisible = false;
 
 	function saveToClipboard() {
-		navigator.clipboard.writeText(email);
-		copySuccessInfoVisible = true;
+		setTimeout(async () => {
+			await navigator.clipboard.writeText(email);
+			copySuccessInfoVisible = true;
+		});
 	}
 
 	function handleFocusOut() {
@@ -25,7 +27,6 @@
 		on:keyup={(e) => handleKeyPress(e)}
 		on:click={() => saveToClipboard()}
 		on:focusout={() => handleFocusOut()}
-		class="copy-link"
 	>
 		<div class="icon-wrapper">
 			<Icon svg="copy" size="parent" color="dark-grey" />
@@ -45,22 +46,13 @@
 		gap: 0.125rem;
 	}
 
-	.copy-link {
+	button {
 		display: flex;
 		align-items: center;
 		gap: 0.25rem;
-		border: none;
-		background-color: transparent;
 		color: var(--color-grey);
 
-		cursor: pointer;
-
 		padding: 0.25rem 0.25rem 0.25rem 0.125rem;
-
-		&:focus,
-		&:hover {
-			outline: 2px solid var(--color-black);
-		}
 
 		.icon-wrapper {
 			width: 0.9375rem;
@@ -71,7 +63,6 @@
 	.copy-success-info {
 		background-color: var(--color-black);
 		color: var(--color-white);
-		outline: 2px solid var(--color-black);
 
 		padding: 0.25rem 0.625rem;
 		font-size: 0.875rem;

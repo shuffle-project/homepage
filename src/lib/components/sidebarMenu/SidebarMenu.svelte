@@ -15,6 +15,18 @@
 		}
 	}
 
+	function handleBackdropClick(e: MouseEvent) {
+		const dialogDimensions = menu?.getBoundingClientRect();
+		if (
+			e.clientX < dialogDimensions.left ||
+			e.clientX > dialogDimensions.right ||
+			e.clientY < dialogDimensions.top ||
+			e.clientY > dialogDimensions.bottom
+		) {
+			toggleDisplay();
+		}
+	}
+
 	onMount(() => {
 		const menuAttrObserver = new MutationObserver((mutations, observer) => {
 			mutations.forEach((mutation) => {
@@ -43,14 +55,20 @@
 	});
 </script>
 
-<dialog inert bind:this={menu} aria-label="Hauptmenü">
+<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<dialog
+	inert
+	bind:this={menu}
+	aria-label="Hauptmenü"
+	on:click|stopPropagation={(e) => handleBackdropClick(e)}
+>
 	<div class="menu-header">
 		<button
 			autofocus
 			type="button"
 			on:click|stopPropagation={() => toggleDisplay()}
 			aria-label="Hauptmenü schließen"
-			class="close-button"
 		>
 			<Icon svg="close" size="parent" />
 		</button>
@@ -121,10 +139,7 @@
 		justify-content: space-between;
 		align-items: center;
 
-		.close-button {
-			background-color: transparent;
-			border: none;
-			cursor: pointer;
+		button {
 			padding: 0;
 			width: 1.875rem;
 			aspect-ratio: 1;
@@ -164,7 +179,7 @@
 				}
 			}
 
-			animation: animation-slide-out-right 0.3s ease-out;
+			animation: animation-slide-out-right 0.4s ease-out;
 		}
 
 		dialog[open] {
@@ -177,7 +192,7 @@
 				}
 			}
 
-			animation: animation-slide-in-right 0.3s ease-out;
+			animation: animation-slide-in-right 0.4s ease-out;
 		}
 	}
 </style>

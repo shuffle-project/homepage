@@ -61,6 +61,7 @@
 				position: relative;
 
 				h3 {
+					padding: 0;
 					line-height: 120%;
 					font-size: 1.375rem;
 				}
