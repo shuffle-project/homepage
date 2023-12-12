@@ -3,9 +3,10 @@
 	import Icon from './Icon.svelte';
 
 	export let project: Project;
+	export let horizontalCenter = false;
 </script>
 
-<div class="result-card">
+<div class="result-card" class:horizontal-center={horizontalCenter}>
 	<div class="decorative-icon">
 		<Icon svg={project.id} color="white" size="parent" />
 	</div>
@@ -25,7 +26,7 @@
 			<span aria-hidden="true">Mehr Informationen</span>
 			<span class="sr-only">Mehr Informationen über {project.title}</span>
 		</a>
-		<a href="/" aria-label="Zu {project.title} (Öffnet neues Fenster)" class="link-to-project"
+		<a href="/" aria-label="{project.linkText} (Öffnet neues Fenster)" class="link-to-project"
 			><Icon svg="open-in-new-tab" color="white" /></a
 		>
 	</div>
@@ -41,6 +42,10 @@
 		box-shadow: 0px 6px 10px 6px rgba(var(--color-black-rgb), 0.05);
 
 		position: relative;
+
+		&.horizontal-center {
+			margin-inline: auto;
+		}
 
 		.decorative-icon {
 			background-color: var(--color-dark-grey);

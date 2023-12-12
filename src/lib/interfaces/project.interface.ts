@@ -37,6 +37,7 @@ export interface Project {
 	cardText: string;
 	targetGroup: TargetGroup;
 	linkToProject: string;
+	linkText: string;
 	summary: string;
 	partners: ProjectPartners[];
 	joinEvaluation?: JoinEvaluation;

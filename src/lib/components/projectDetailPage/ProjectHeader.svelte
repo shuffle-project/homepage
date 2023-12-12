@@ -30,8 +30,8 @@
 		</ul>
 
 		<a href={project.linkToProject} class="link-to-project">
-			<span aria-hidden="true">Zu {project.title}</span>
-			<span class="sr-only">Zu {project.title} (öffnet neues Fenster)</span>
+			<span aria-hidden="true">{project.linkText}</span>
+			<span class="sr-only">{project.linkText} (öffnet neues Fenster)</span>
 			<Icon svg="open-in-new-tab" color="white" />
 		</a>
 	</div>

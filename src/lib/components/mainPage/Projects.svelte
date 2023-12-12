@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { PLACEHOLDERS } from '$lib/constants/placeholders';
 	import type { Project, TargetGroup } from '$lib/interfaces/project.interface';
-	import ResultCard from '../ResultCard.svelte';
+
+	import ResultCard from '../ProjectCard.svelte';
+	import ProjectsMobile from './ProjectsMobile.svelte';
 
 	let selectedIndex: number = 0;
 	let selectedTab: 'Alle' | TargetGroup = 'Alle';
@@ -54,13 +56,20 @@
 		{/each}
 	</div>
 
-	<div class="resultslist">
+	<div class="results-list desktop">
 		{#key selectedProjects}
-			{#each selectedProjects as project, i}
+			{#each selectedProjects as project, i (project.id)}
 				<div id="result-card-{i + 1}">
 					<ResultCard {project} />
 				</div>
 			{/each}
+		{/key}
+	</div>
+
+	<!-- exlude to new component where the whole embla code get reinitialized  -->
+	<div class="mobile">
+		{#key selectedProjects}
+			<ProjectsMobile {selectedProjects} />
 		{/key}
 	</div>
 </div>
@@ -114,13 +123,35 @@
 			}
 		}
 
-		.resultslist {
+		.results-list {
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
 			gap: 3.125rem;
 
 			margin-top: 2.5rem;
+		}
+
+		.mobile {
+			position: relative;
+			max-width: 100vw; // results in jitter when page resice // TODO fix
+			min-width: 100%;
+		}
+	}
+
+	@media (max-width: 40.5625rem) {
+		.results-section {
+			.desktop {
+				display: none;
+			}
+		}
+	}
+
+	@media (min-width: 40.625rem) {
+		.results-section {
+			.mobile {
+				display: none;
+			}
 		}
 	}
 </style>
