@@ -86,7 +86,7 @@
 				<a href="/">Kontakt</a>
 			</li>
 			<li>
-				<a href="/">Alle Publikationen</a>
+				<a href="/publications">Publikationen</a>
 			</li>
 		</ul>
 	</div>

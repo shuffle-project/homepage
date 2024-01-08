@@ -83,7 +83,7 @@
 	<p>
 		Gegebenenfalls erhobene personenbezogene Daten können dem sog. Forschungsprivileg unterliegen
 		(vgl. hierzu z.B. <a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/9.html"
-			>Artt. 9 Abs. 2 lit. j</a
+			>Art. 9 Abs. 2 lit. j</a
 		>,
 		<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/89.html">89 Abs. 1 DSGVO</a>
 		i.V.m.

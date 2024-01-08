@@ -26,6 +26,7 @@ export interface Publication {
 	contributors: string[];
 	placeOfPublication: string;
 	placeOfPublicationLang: 'de' | 'en';
+	releaseDate: string;
 	linkText: string;
 	link: string;
 }

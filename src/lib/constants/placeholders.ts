@@ -35,6 +35,7 @@ export const PLACEHOLDERS: Project[] = [
 				],
 				placeOfPublication: 'ICCHP-AAATE 2022',
 				placeOfPublicationLang: 'en',
+				releaseDate: '2022-03',
 				linkText: 'Zum Paper',
 				link: '/'
 			},
@@ -52,6 +53,7 @@ export const PLACEHOLDERS: Project[] = [
 				],
 				placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
 				placeOfPublicationLang: 'en',
+				releaseDate: '2023-01',
 				linkText: 'Paper anzeigen (PDF)',
 				link: '/'
 			}
@@ -86,6 +88,28 @@ export const PLACEHOLDERS: Project[] = [
 			'Pädagogische Hochschule Freiburg',
 			'Pädagogische Hochschule Heidelberg',
 			'Universität Bielefeld'
+		],
+		publications: [
+			{
+				title: 'Lorem Ipsum Veröffentlichung',
+				titleLang: 'en',
+				contributors: ['K. Heitmeier', 'V. Kersken'],
+				placeOfPublication: 'Blub 2023 Blub',
+				placeOfPublicationLang: 'en',
+				releaseDate: '2023-01',
+				linkText: 'Paper anzeigen (PDF)',
+				link: '/'
+			},
+			{
+				title: 'Testie test test Veröffentlichung',
+				titleLang: 'en',
+				contributors: ['K. Heitmeier', 'V. Kersken'],
+				placeOfPublication: 'Noch ein Test 2022',
+				placeOfPublicationLang: 'en',
+				releaseDate: '2022-08',
+				linkText: 'Zur Veröffentlichung',
+				link: '/'
+			}
 		]
 	},
 	{
@@ -99,6 +123,18 @@ export const PLACEHOLDERS: Project[] = [
 		linkText: 'Zu den Checklisten',
 		summary:
 			'Lorem ipsum dolor sit amet consectetur. A pellentesque amet mattis nec molestie. Lectus dictum ac urna fermentum aliquam commodo elementum cursus. Leo et rutrum dignissim aliquam sed orci ut est viverra. Tincidunt nunc tortor sit ultricies dui orci mauris sed diam. Tristique nunc mauris ut diam ac sem ultrices ut. Egestas pretium arcu quis nam velit.',
-		partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Freiburg']
+		partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Freiburg'],
+		publications: [
+			{
+				title: 'Not another placeholder publication',
+				titleLang: 'en',
+				contributors: ['G. Zimmermann'],
+				placeOfPublication: 'HIer und da und jetzt',
+				placeOfPublicationLang: 'en',
+				releaseDate: '2022-01',
+				linkText: 'Zum Paper',
+				link: '/'
+			}
+		]
 	}
 ];

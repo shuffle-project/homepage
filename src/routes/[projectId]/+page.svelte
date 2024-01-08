@@ -23,7 +23,7 @@
 	{/if}
 
 	{#if project.publications}
-		<Publications publications={project.publications} />
+		<Publications publications={project.publications} heading="Publikationen" />
 	{/if}
 </div>
 

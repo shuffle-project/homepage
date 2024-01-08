@@ -35,16 +35,16 @@
 
 		<ul>
 			<li>
-				<a href="/">Team</a>
+				<a href="/team">Team</a>
 			</li>
 			<li>
-				<a href="/">Aktuelles</a>
+				<a href="/news">Aktuelles</a>
 			</li>
 			<li>
-				<a href="/">Kontakt</a>
+				<a href="/contact">Kontakt</a>
 			</li>
 			<li>
-				<a href="/">Alle Publikationen</a>
+				<a href="/publications">Publikationen</a>
 			</li>
 		</ul>
 

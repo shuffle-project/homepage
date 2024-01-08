@@ -83,15 +83,13 @@ p {
 }
 
 a {
-	&:focus {
-		outline: 2px solid var(--color-black);
-		outline-offset: 2px;
+	&:hover {
+		text-decoration: underline !important;
 	}
 
-	&:hover {
-		outline: none;
-		//TODO try to achieve result without important
-		text-decoration: underline !important;
+	&:focus-visible {
+		outline: 2px solid var(--color-black);
+		outline-offset: 2px;
 	}
 }
 

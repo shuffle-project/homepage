@@ -136,6 +136,7 @@
 			position: relative;
 			max-width: 100vw; // results in jitter when page resice // TODO fix
 			min-width: 100%;
+			margin-inline: -1.25rem;
 		}
 	}
 

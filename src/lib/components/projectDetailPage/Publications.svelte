@@ -4,6 +4,9 @@
 	import LinkNewTab from '../LinkNewTab.svelte';
 
 	export let publications: Publication[];
+	export let heading: string = '';
+	export let month: string = '';
+	export let year: number = -1;
 
 	function getContributorsString(contributors: string[]) {
 		let allNames = '';
@@ -19,8 +22,10 @@
 </script>
 
 <div class="wrapper">
-	<h2>Publikationen</h2>
-	<ul>
+	{#if heading !== ''}
+		<h2>{heading}</h2>
+	{/if}
+	<ul aria-label={month !== '' ? `Veröffentlichungen vom ${month} ${year}` : ''}>
 		{#each publications as publication, i}
 			<li class:even-entry={(i + 1) % 2 === 0}>
 				<p class="title" lang={publication.titleLang}>{publication.title}</p>
@@ -57,7 +62,6 @@
 	.wrapper {
 		width: 100%;
 		max-width: 60rem;
-		margin-top: 5rem;
 		box-sizing: border-box;
 
 		ul {
@@ -110,6 +114,10 @@
 			height: 1px;
 			border: none;
 			background-color: var(--color-blue-line);
+		}
+
+		h2 {
+			margin-top: 5rem;
 		}
 	}
 
