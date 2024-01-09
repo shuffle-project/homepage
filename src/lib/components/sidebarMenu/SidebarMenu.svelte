@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import Icon from '../Icon.svelte';
 
@@ -53,6 +54,11 @@
 			if (document?.body.hasAttribute('style')) document.body.removeAttribute('style');
 		});
 	});
+
+	function goToSite(site: string) {
+		menu.close();
+		goto(site);
+	}
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
@@ -77,16 +83,18 @@
 	<div class="content-wrapper">
 		<ul>
 			<li>
-				<a href="/">Team</a>
+				<a on:click|preventDefault={() => goToSite('/team')} href="/team">Team</a>
 			</li>
 			<li>
-				<a href="/">Aktuelles</a>
+				<a on:click|preventDefault={() => goToSite('/news')} href="/news">Aktuelles</a>
 			</li>
 			<li>
-				<a href="/">Kontakt</a>
+				<a on:click|preventDefault={() => goToSite('/contact')} href="/contact">Kontakt</a>
 			</li>
 			<li>
-				<a href="/publications">Publikationen</a>
+				<a on:click|preventDefault={() => goToSite('/publications')} href="/publications"
+					>Publikationen</a
+				>
 			</li>
 		</ul>
 	</div>

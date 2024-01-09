@@ -9,3 +9,5 @@
 <TitleSection>
 	<svelte:fragment slot="title">Aktuelles</svelte:fragment>
 </TitleSection>
+
+<a href="/news/shuffle-projekttreffen-in-heidelberg">SHUFFLE-Projekttreffen in Heidelberg</a>

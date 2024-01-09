@@ -10,7 +10,7 @@
 		width: 100%;
 		background: var(--color-blue-gradient);
 		padding-block: 4rem;
-		height: 12rem;
+		height: 14rem;
 		display: flex;
 		align-items: flex-end;
 	}
