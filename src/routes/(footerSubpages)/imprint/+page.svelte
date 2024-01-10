@@ -152,8 +152,8 @@
 	.page-content {
 		max-width: var(--max-text-width);
 		padding-inline: var(--outer-spacing);
-		box-sizing: border-box;
 		width: 100%;
+		box-sizing: border-box;
 
 		margin: 1.875rem auto 0 auto;
 	}

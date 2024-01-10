@@ -1,6 +1,4 @@
-import type { TeamMember } from '$lib/interfaces/teamMember.interface';
-
-export const TEAM_LEADERSHIP: TeamMember[] = [
+export const TEAM_LEADERSHIP = [
 	{
 		title: 'Konsortialführung',
 		name: 'Prof. Dr. Gottfried Zimmermann',
@@ -14,9 +12,9 @@ export const TEAM_LEADERSHIP: TeamMember[] = [
 		email: 'kersken@hdm-stuttgart.de',
 		img: 'verena-kersken.jpg'
 	}
-];
+] as const;
 
-export const TEAM_MEMBERS: TeamMember[] = [
+export const TEAM_MEMBERS = [
 	{
 		name: 'Dr. Anja Gutjahr',
 		projectPartner: 'Pädagogische Hochschule Heidelberg',
@@ -139,4 +137,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
 		name: 'Susanne Kuhnert',
 		projectPartner: 'Hochschule der Medien Stuttgart'
 	}
-];
+] as const;
+
+export const WHOLE_TEAM = [...TEAM_LEADERSHIP, ...TEAM_MEMBERS];
+export type TeamMemberName = (typeof WHOLE_TEAM)[number]['name'];

@@ -2,7 +2,7 @@
 	export let svg: string;
 	export let alt = '';
 	export let color: 'white' | 'black' | 'blue' | 'dark-grey' = 'black';
-	export let size: '20' | '24' | '30' | 'parent' = '24';
+	export let size: '20' | '24' | '30' | '16' | 'parent' = '24';
 
 	const svgSize = 'size-' + size;
 	if (!svg.endsWith('.svg')) svg = svg + '.svg';
@@ -13,6 +13,10 @@
 
 <style lang="scss">
 	img {
+		&.size-16 {
+			width: 1rem;
+			height: 1rem;
+		}
 		&.size-20 {
 			width: 1.25rem;
 			height: 1.25rem;
