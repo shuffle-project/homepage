@@ -23,7 +23,7 @@
 	<p class="member-project-partner">{member.projectPartner}</p>
 
 	{#if member.email}
-		<a href="mailto:{member.email}" class="member-email focus-indicator">{member.email}</a>
+		<a href="mailto:{member.email}" class="member-email">{member.email}</a>
 	{/if}
 </li>
 

@@ -1,3 +1,5 @@
+import type { TeamMember } from '$lib/interfaces/teamMember.interface';
+
 export const TEAM_LEADERSHIP = [
 	{
 		title: 'Konsortialführung',
@@ -12,7 +14,7 @@ export const TEAM_LEADERSHIP = [
 		email: 'kersken@hdm-stuttgart.de',
 		img: 'verena-kersken.jpg'
 	}
-] as const;
+] as const satisfies TeamMember[];
 
 export const TEAM_MEMBERS = [
 	{
@@ -139,5 +141,16 @@ export const TEAM_MEMBERS = [
 	}
 ] as const;
 
-export const WHOLE_TEAM = [...TEAM_LEADERSHIP, ...TEAM_MEMBERS];
+export const OLD_MEMBERS = [
+	{
+		name: 'Jule Günter',
+		projectPartner: 'Universität Bielefeld'
+	},
+	{
+		name: 'Christin Stormer',
+		projectPartner: 'Universität Bielefeld'
+	}
+] as const satisfies TeamMember[];
+
+export const WHOLE_TEAM = [...TEAM_LEADERSHIP, ...TEAM_MEMBERS, ...OLD_MEMBERS];
 export type TeamMemberName = (typeof WHOLE_TEAM)[number]['name'];

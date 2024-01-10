@@ -28,6 +28,6 @@
 		box-sizing: border-box;
 		width: 100%;
 
-		margin: 0 auto;
+		margin: 0 auto 1.875rem auto;
 	}
 </style>

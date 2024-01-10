@@ -14,47 +14,37 @@
 	<h2>Inhaltsübersicht</h2>
 	<ol class="table-of-contents" style="list-style-type: none;">
 		<li>
-			<a class="focus-indicator" href="#vorbemerkung-nutzungskonzept"
-				>1. Vorbemerkung (Nutzungskonzept)</a
-			>
+			<a href="#vorbemerkung-nutzungskonzept">1. Vorbemerkung (Nutzungskonzept)</a>
 		</li>
 		<li>
-			<a class="focus-indicator" href="#angaben-zum-datenverantwortlichen"
-				>2. Angaben zum Datenverantwortlichen</a
-			>
+			<a href="#angaben-zum-datenverantwortlichen">2. Angaben zum Datenverantwortlichen</a>
 		</li>
 		<li>
-			<a class="focus-indicator" href="#informationen-zur-datenverarbeitung"
-				>3. Informationen zur Datenverarbeitung</a
-			>
+			<a href="#informationen-zur-datenverarbeitung">3. Informationen zur Datenverarbeitung</a>
 			<ol style="list-style-type: none;">
 				<li>
-					<a class="focus-indicator" href="#datenarten-zwecke-und-rechtsgrundlagen"
+					<a href="#datenarten-zwecke-und-rechtsgrundlagen"
 						>3.1 Datenarten, Zwecke und Rechtsgrundlagen</a
 					>
 					<ol style="list-style-type: none;">
 						<li>
-							<a class="focus-indicator" href="#allgemeine-informationen"
-								>3.1.2 Allgemeine Informationen</a
-							>
+							<a href="#allgemeine-informationen">3.1.2 Allgemeine Informationen</a>
 						</li>
 						<li>
-							<a class="focus-indicator" href="#einzelne-verarbeitungsvorgange"
-								>3.1.3 Einzelne Verarbeitungsvorgänge</a
-							>
+							<a href="#einzelne-verarbeitungsvorgange">3.1.3 Einzelne Verarbeitungsvorgänge</a>
 						</li>
 					</ol>
 				</li>
 				<li>
-					<a class="focus-indicator" href="#ubermittelung-an-dritte">3.2 Übermittlung an Dritte</a>
+					<a href="#ubermittelung-an-dritte">3.2 Übermittlung an Dritte</a>
 				</li>
 				<li>
-					<a class="focus-indicator" href="#dauer-der-speicherung">3.3 Dauer der Speicherung</a>
+					<a href="#dauer-der-speicherung">3.3 Dauer der Speicherung</a>
 				</li>
 			</ol>
 		</li>
 		<li>
-			<a class="focus-indicator" href="#rechte-von-betroffenen">4. Rechte von Betroffenen</a>
+			<a href="#rechte-von-betroffenen">4. Rechte von Betroffenen</a>
 		</li>
 	</ol>
 	<h2 id="vorbemerkung-nutzungskonzept">1. Vorbemerkung (Nutzungskonzept)</h2>
@@ -82,35 +72,26 @@
 	</p>
 	<p>
 		Gegebenenfalls erhobene personenbezogene Daten können dem sog. Forschungsprivileg unterliegen
-		(vgl. hierzu z.B. <a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/9.html"
-			>Art. 9 Abs. 2 lit. j</a
-		>,
-		<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/89.html">89 Abs. 1 DSGVO</a>
+		(vgl. hierzu z.B. <a href="https://dejure.org/gesetze/DSGVO/9.html">Art. 9 Abs. 2 lit. j</a>,
+		<a href="https://dejure.org/gesetze/DSGVO/89.html">89 Abs. 1 DSGVO</a>
 		i.V.m.
-		<a class="focus-indicator" href="https://dejure.org/gesetze/BDSG/27.html">§ 27 Abs. 1 BDSG</a>
+		<a href="https://dejure.org/gesetze/BDSG/27.html">§ 27 Abs. 1 BDSG</a>
 		bzw.
-		<a class="focus-indicator" href="https://dejure.org/gesetze/LDSG/13.html">§ 13 Abs. 1 LDSG BW</a
-		>). Aus diesem Grund können auch Betroffenenrechte (Auskunfts-, Berichtigungs-, Beschränkungs-
-		und Widerspruchsrechte, s.u. Ziff. 4) begrenzt (vgl. hierzu § 27 Abs. 2 BDSG bzw. § 13 Abs. 4
-		LDSG BW), weitere Rechte nach
-		<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/14.html"
-			>Art. 14 Abs. 5 lit. b</a
-		>,
-		<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/17.html"
-			>Art. 17 Abs. 3 lit. d</a
-		>,
-		<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/21.html"
-			>Art. 21 Abs. 6 DSGVO</a
-		> eingeschränkt sein.
+		<a href="https://dejure.org/gesetze/LDSG/13.html">§ 13 Abs. 1 LDSG BW</a>). Aus diesem Grund
+		können auch Betroffenenrechte (Auskunfts-, Berichtigungs-, Beschränkungs- und
+		Widerspruchsrechte, s.u. Ziff. 4) begrenzt (vgl. hierzu § 27 Abs. 2 BDSG bzw. § 13 Abs. 4 LDSG
+		BW), weitere Rechte nach
+		<a href="https://dejure.org/gesetze/DSGVO/14.html">Art. 14 Abs. 5 lit. b</a>,
+		<a href="https://dejure.org/gesetze/DSGVO/17.html">Art. 17 Abs. 3 lit. d</a>,
+		<a href="https://dejure.org/gesetze/DSGVO/21.html">Art. 21 Abs. 6 DSGVO</a> eingeschränkt sein.
 	</p>
 	<h2 id="angaben-zum-datenverantwortlichen">2. Angaben zum Datenverantwortlichen</h2>
 	<p>
 		Hochschule der Medien (HdM), Nobelstraße 10, 70569 Stuttgart <br />Vertreten durch den Rektor:
 		Prof. Dr. Alexander Roos <br />Datenschutzbeauftragte: Lisa Lingner, E-Mail:
-		<a class="focus-indicator" href="mailto:lingner@hdm-stuttgart.de">lingner@hdm-stuttgart.de</a>
+		<a href="mailto:lingner@hdm-stuttgart.de">lingner@hdm-stuttgart.de</a>
 		Projektleitung: Prof. Dr. Gottfried Zimmermann, Tel.
-		<a class="focus-indicator" href="tel:004971189232751">+49 (0)711 / 8923-2751</a>, E-Mail:<a
-			class="focus-indicator"
+		<a href="tel:004971189232751">+49 (0)711 / 8923-2751</a>, E-Mail:<a
 			href="mailto:zimmermanng@hdm-stuttgart.de">zimmermanng@hdm-stuttgart.de</a
 		>
 	</p>
@@ -135,13 +116,11 @@
 		Daten kann sich jedoch daraus ergeben, dass sog. Logfiles und damit verbunden eine Erhebung auch
 		von IP-Adresse(n) der Nutzenden durch das System erfolgt (zu der Frage, ob ein sog. berechtigtes
 		Interesse an der Erhebung (dynamischer) IP-Adressen besteht siehe auch: <a
-			class="focus-indicator"
 			href="https://curia.europa.eu/jcms/upload/docs/application/pdf/2016-10/cp160112de.pdf"
 			>EUGH-Urteil C-582/14</a
 		>
 		bzw.
 		<a
-			class="focus-indicator"
 			href="https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Gericht=bgh&amp;Art=en&amp;Datum=Aktuell&amp;nr=78289&amp;linked=pm"
 			>BGH-Urteil v. 16. Mai 2017 - VI ZR 135/13</a
 		>). Derartige Logfiles (IP-Adresse, User Agent, Zielseite, Zeitpunkt, Browserdaten etc.) werden
@@ -150,20 +129,16 @@
 	</p>
 	<p>
 		Technisch sichert eine dem Stand der Technik entsprechende Transportverschlüsselung (<a
-			class="focus-indicator"
 			href="https://de.wikipedia.org/wiki/Transport_Layer_Security">SSL</a
 		>) die Daten (vgl.
-		<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/32.html"
-			>Art. 32 Abs. 1 lit. a DSGVO</a
-		>) mit einem entsprechenden Zertifikat (incl.
-		<a class="focus-indicator" href="https://de.wikipedia.org/wiki/HTTP_Strict_Transport_Security"
-			>HSTS</a
-		>). Bezüglich individueller Server- und Datenbankzugänge bestehen interne Zugangskonzepte. Im
-		Übrigen werden keine Cookies gesetzt bzw. gespeichert.
+		<a href="https://dejure.org/gesetze/DSGVO/32.html">Art. 32 Abs. 1 lit. a DSGVO</a>) mit einem
+		entsprechenden Zertifikat (incl.
+		<a href="https://de.wikipedia.org/wiki/HTTP_Strict_Transport_Security">HSTS</a>). Bezüglich
+		individueller Server- und Datenbankzugänge bestehen interne Zugangskonzepte. Im Übrigen werden
+		keine Cookies gesetzt bzw. gespeichert.
 	</p>
 	<p>
 		Die Rechtsgrundlage für diese Datenverarbeitungen ist daher ein berechtigtes Interesse gemäß <a
-			class="focus-indicator"
 			href="https://dejure.org/gesetze/DSGVO/32.html"
 			>Artikel 6 Abs. 1 lit. e bzw. Artikel 6 Abs. 1 lit. f DSGVO</a
 		>. Zudem kann sich ein öffentliches bzw. überwiegendes Interesse zur Datenverarbeitung ergeben,
@@ -178,9 +153,8 @@
 	<p>
 		Auf der Website sind auch Videos in Form einer Verlinkung zum Videoportal YouTube eingebunden.
 		Nach Aufruf findet eine entsprechende Datenverarbeitung durch YouTube statt. Insofern gilt die
-		Datenschutzerklärung des Mutterkonzerns Google: <a
-			class="focus-indicator"
-			href="https://policies.google.com/privacy">https://policies.google.com/privacy</a
+		Datenschutzerklärung des Mutterkonzerns Google: <a href="https://policies.google.com/privacy"
+			>https://policies.google.com/privacy</a
 		>.
 	</p>
 	<p>
@@ -201,7 +175,6 @@
 	<p>
 		Zur Erbringung dieser Dienste werden externe Dienstleister eingebunden, die über einen
 		Auftragsverarbeitungsvertrag an eine DSGVO-konforme Datenverarbeitung gebunden sind (<a
-			class="focus-indicator"
 			href="https://dejure.org/gesetze/DSGVO/28.html">Art. 28 Abs. 3 DSGVO</a
 		>).
 	</p>
@@ -232,9 +205,7 @@
 		wurden, z.B. nach dem Ausfüllen und Absenden des Kontaktformulars (gem. Grundsätzen des <em
 			lang="en">privacy by design</em
 		>,
-		<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/25.html"
-			>Art. 25 Abs. 1 DSGVO</a
-		>)
+		<a href="https://dejure.org/gesetze/DSGVO/25.html">Art. 25 Abs. 1 DSGVO</a>)
 	</p>
 	<h2 id="rechte-von-betroffenen">4. Rechte von Betroffenen</h2>
 	<p>Die Nutzenden dieser Website haben grundsätzlich ein Recht auf</p>
@@ -242,24 +213,19 @@
 		<li>
 			<strong>Auskunft</strong> über die verarbeiteten Daten, Informationen über die
 			Datenverarbeitung sowie auf Kopien von Daten (<a
-				class="focus-indicator"
 				href="https://dejure.org/gesetze/DSGVO/15.html">Art. 15 DSGVO</a
 			>), sofern nicht mit erheblichem Aufwand verbunden,
 		</li>
 		<li>
 			<strong>Berichtigung</strong> bzw. <strong>Vervollständigung</strong> falscher oder
-			unvollständiger Daten (<a
-				class="focus-indicator"
-				href="https://dejure.org/gesetze/DSGVO/16.html">Art. 16 DSGVO</a
-			>),
+			unvollständiger Daten (<a href="https://dejure.org/gesetze/DSGVO/16.html">Art. 16 DSGVO</a>),
 		</li>
 		<li>
 			Verlangen der <strong>Löschung</strong> betreffender Daten unter den Bedingungen des
-			<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/17.html">Artikel 17 DSGVO</a
-			>, oder – wenn z.B. die Verarbeitung nach Artikel 17 Abs. 3 lit. d DSGVO ( Forschungszwecke)
-			erforderlich ist - auf Einschränkung der Verarbeitung (<a
-				class="focus-indicator"
-				href="https://dejure.org/gesetze/DSGVO/18.html">Art. 18 DSGVO</a
+			<a href="https://dejure.org/gesetze/DSGVO/17.html">Artikel 17 DSGVO</a>, oder – wenn z.B. die
+			Verarbeitung nach Artikel 17 Abs. 3 lit. d DSGVO ( Forschungszwecke) erforderlich ist - auf
+			Einschränkung der Verarbeitung (<a href="https://dejure.org/gesetze/DSGVO/18.html"
+				>Art. 18 DSGVO</a
 			>).
 		</li>
 	</ul>
@@ -268,40 +234,32 @@
 		bestimmten im öffentlichen Interesse liegenden Aufgabe erforderlich ist und zwingende
 		schutzwürdige Gründe, die die Interessen der betroffenen Person überwiegen, nicht
 		entgegenstehen, besteht ein Recht auf Widerspruch nach <a
-			class="focus-indicator"
 			href="https://dejure.org/gesetze/DSGVO/21.html">Artikel 21 Abs. 1 bzw. Abs. 6 DSGVO</a
 		>. Für eine erteilte Einwilligung gilt das Recht auf Widerruf (<a
-			class="focus-indicator"
 			href="https://dejure.org/gesetze/DSGVO/7.html">Art. 7 Abs. 3 DSGVO</a
 		>). Sämtliche Betroffenenrechte können durch einfache E-Mail an die Projektleitung oder die
 		Datenschutzbeauftragte (s. Ziffer 2) geltend gemacht werden.
 	</p>
 	<p>
 		Einzelne Betroffenenrechte können durch das Forschungsprivileg (insofern <a
-			class="focus-indicator"
 			href="https://dejure.org/gesetze/LDSG/13.html">§ 13 Abs. 4 LDSG BW</a
 		>
 		bzw.
-		<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/89.html"
-			>Art. 89 Abs. 1 DSGVO</a
-		>
+		<a href="https://dejure.org/gesetze/DSGVO/89.html">Art. 89 Abs. 1 DSGVO</a>
 		i.V.m.
-		<a class="focus-indicator" href="https://dejure.org/gesetze/BDSG/27.html">§ 27 Abs. 2 BDSG</a>)
-		beschränkt sein, sofern durch deren Ausübung oder Erfüllung die Verwirklichung der
-		Forschungszwecke unmöglich gemacht oder ernsthaft beeinträchtigt werden kann und die
-		Beschränkung zur Erfüllung des Forschungs- oder Statistikzwecks notwendig ist.
+		<a href="https://dejure.org/gesetze/BDSG/27.html">§ 27 Abs. 2 BDSG</a>) beschränkt sein, sofern
+		durch deren Ausübung oder Erfüllung die Verwirklichung der Forschungszwecke unmöglich gemacht
+		oder ernsthaft beeinträchtigt werden kann und die Beschränkung zur Erfüllung des Forschungs-
+		oder Statistikzwecks notwendig ist.
 	</p>
 	<p>
 		Zudem besteht ein Recht auf Beschwerde gegenüber einer Aufsichtsbehörde i.S.v. <a
-			class="focus-indicator"
 			href="https://dejure.org/gesetze/DSGVO/51.html">Artikel 51 DSGVO</a
 		>, falls personenbezogene Daten unter Verstoß gegen datenschutzrechtliche Bestimmungen
-		verarbeitet werden (<a class="focus-indicator" href="https://dejure.org/gesetze/DSGVO/77.html"
-			>Art. 77 DSGVO</a
-		>). Diese Beschwerde kann z.B. beim Landesbeauftragten für den Datenschutz Baden-Württemberg
+		verarbeitet werden (<a href="https://dejure.org/gesetze/DSGVO/77.html">Art. 77 DSGVO</a>). Diese
+		Beschwerde kann z.B. beim Landesbeauftragten für den Datenschutz Baden-Württemberg
 		(Lautenschlagerstraße 20, 70173 Stuttgart,
-		<a class="focus-indicator" href="mailto:poststelle@lfdi.bwl.de">poststelle@lfdi.bwl.de</a>)
-		eingelegt werden.
+		<a href="mailto:poststelle@lfdi.bwl.de">poststelle@lfdi.bwl.de</a>) eingelegt werden.
 	</p>
 </div>
 

@@ -15,27 +15,21 @@
 
 	<p>
 		Das SHUFFLE-Projekt wird gefördert durch die
-		<a class="focus-indicator" href="https://stiftung-hochschullehre.de/"
-			>Stiftung Innovation in der Hochschullehre</a
-		>
+		<a href="https://stiftung-hochschullehre.de/">Stiftung Innovation in der Hochschullehre</a>
 		Unter der Leitung der
-		<a class="focus-indicator" href="https://www.hdm-stuttgart.de/">Hochschule der Medien</a>
+		<a href="https://www.hdm-stuttgart.de/">Hochschule der Medien</a>
 		sind drei weitere Hochschulen am Projekt beteiligt:
 	</p>
 
 	<ul>
 		<li>
-			<a class="focus-indicator" href="https://www.ph-freiburg.de/"
-				>Pädagogische Hochschule Freiburg</a
-			>
+			<a href="https://www.ph-freiburg.de/">Pädagogische Hochschule Freiburg</a>
 		</li>
 		<li>
-			<a class="focus-indicator" href="https://www.ph-heidelberg.de/"
-				>Pädagogische Hochschule Heidelberg</a
-			>
+			<a href="https://www.ph-heidelberg.de/">Pädagogische Hochschule Heidelberg</a>
 		</li>
 		<li>
-			<a class="focus-indicator" href="https://uni-bielefeld.de/">Universität Bielefeld</a>
+			<a href="https://uni-bielefeld.de/">Universität Bielefeld</a>
 		</li>
 	</ul>
 
@@ -59,12 +53,10 @@
 
 	<ul>
 		<li>
-			<a class="focus-indicator" href="mailto:zimmermanng@hdm-stuttgart.de"
-				>zimmermanng@hdm-stuttgart.de</a
-			>
+			<a href="mailto:zimmermanng@hdm-stuttgart.de">zimmermanng@hdm-stuttgart.de</a>
 		</li>
 		<li>
-			<a class="focus-indicator" href="tel:004971189232751">+49 711 8923-2751</a>
+			<a href="tel:004971189232751">+49 711 8923-2751</a>
 		</li>
 	</ul>
 
@@ -143,8 +135,8 @@
 	</p>
 
 	<p>
-		Quelle: <a class="focus-indicator" href="https://www.juraforum.de/">www.Juraforum.de</a> - Rechtportal
-		mit Anwaltssuche Stand: August 2017
+		Quelle: <a href="https://www.juraforum.de/">www.Juraforum.de</a> - Rechtportal mit Anwaltssuche Stand:
+		August 2017
 	</p>
 </div>
 

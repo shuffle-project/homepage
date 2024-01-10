@@ -93,6 +93,14 @@ a {
 	}
 }
 
+.blue {
+	color: var(--color-blue);
+}
+
+.max-width-100 {
+	max-width: 100%;
+}
+
 button {
 	cursor: pointer;
 	border: none;
