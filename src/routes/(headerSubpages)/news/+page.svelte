@@ -107,68 +107,195 @@
 		Brünn. Diese zentrale Einrichtung dient […]
 	</ArticlePreview>
 
-	<a href="/news/shuffle-beim-bi-teach-tag-der-lehre">SHUFFLE beim Bi.teach – Tag der Lehre</a>
-	<a href="/news/shuffle-mitglieder-haben-pruefungen-erfolgreich-bestanden"
-		>SHUFFLE-Mitglieder haben Prüfungen erfolgreich bestanden</a
+	<ArticlePreview
+		title="SHUFFLE beim Bi.teach – Tag der Lehre"
+		time="24.11.2022"
+		link="shuffle-beim-bi-teach-tag-der-lehre"
 	>
-	<a href="/news/shuffle-auf-der-icchp-aaate">SHUFFLE auf der ICCHP-AAATE</a>
-	<a href="/news/preisverleihung-zum-studierendenwettbewerb-acceess"
-		>Preisverleihung zum Studierendenwettbewerb ACCEESS</a
-	>
-	<a href="/news/posterpraesentation-vor-medienpaedagogischem-fachpublikum"
-		>Posterpräsentation vor medienpädagogischem Fachpublikum</a
-	>
-	<a
-		href="/news/shuffle-bei-der-tagung-digitale-barrierefreiheit-weiter-denken-am-freitag-16-09-2022"
-		>SHUFFLE bei der Tagung “Digitale Barrierefreiheit weiter denken” am Freitag 16.09.2022</a
-	>
-	<a href="/news/danke-an-die-expertinnen-aus-beratung-und-strategieentwicklung"
-		>Danke an die Expert*innen aus Beratung und Strategieentwicklung!</a
-	>
-	<a href="/news/ein-jahr-shuffle-gemeinsames-treffen-in-praesenz-am-08-09-09-22"
-		>Ein Jahr SHUFFLE: Gemeinsames Treffen in Präsenz am 08.-09.09.22</a
-	>
+		Seit sechs Jahren findet jährlich der Bi.teach – Tag der Lehre an der Universität Bielefeld
+		statt. An diesem Tag wird über die Fakultäten hinweg Lehre genauer in den Blick genommen und
+		dabei Möglichkeiten und Grenzen eines bestimmten Themas diskutiert. n diesem Jahr lautete der
+		Schwerpunkt des Tages „Nachhaltig(-keiten) lehren und lernen […]
+	</ArticlePreview>
 
-	<!-- Fertig machen -->
-	<a
-		href="/news/ich-brauche-unterstuetzung-was-sich-lehrende-fuer-eine-barrierearme-lehre-wuenschen"
-		>“Ich brauche Unterstützung!” – Was sich Lehrende für eine barrierearme Lehre wünschen</a
+	<ArticlePreview
+		title="SHUFFLE-Mitglieder haben Prüfungen erfolgreich bestanden"
+		time="20.10.2022"
+		link="shuffle-mitglieder-haben-pruefungen-erfolgreich-bestanden"
 	>
-	<!-- Fertig machen -->
+		Zwischen Oktober 2021 und Oktober 2022 haben acht Mitglieder des SHUFFLE-Teams Prüfungen zur
+		digitalen Barrierefreiheit geschrieben und bestanden, die von der <span lang="en"
+			>International Association of Accessibility Professionals
+		</span>
+		(IAAP) abgenommen wurden. Sieben Teammitglieder erwarben das CPACC-Zertifikat
+		<span lang="en"> (Certified Professional in Accessibility Core Competencies)</span>, eine
+		grundlegende […]
+	</ArticlePreview>
 
-	<a href="/news/here-it-comes-ilias-schulungsraum-mit-kleinem-hands-on"
-		>Here it Comes: ILIAS Schulungsraum mit kleiner Preview</a
+	<ArticlePreview
+		title="SHUFFLE auf der ICCHP-AAATE"
+		time="17.10.2022"
+		link="shuffle-auf-der-icchp-aaate"
 	>
-	<a href="/news/shuffle-beim-5-workshop-barrierefreie-dokumente"
-		>SHUFFLE beim 5. Workshop barrierefreie Dokumente</a
-	>
+		Vom 13. bis zum 15. Juli 2022 fand die gemeinschaftliche ICCHP-AAATE Konferenz in Lecco, Italien
+		statt. Digitale Barrierefreiheit und assistive Technologien standen dabei im Mittelpunkt für
+		Forschende und Fachkräfte, die ihre Arbeiten präsentieren und sich untereinander austauschen und
+		vernetzen konnten. Auch SHUFFLE war vor Ort dabei und gestaltete […]
+	</ArticlePreview>
 
-	<!-- Fertig machen -->
-	<a href="/news/erklaervideo-zu-universal-design-for-learning-udl"
-		>Erklärvideo zu Universal Design for Learning (UDL)</a
+	<ArticlePreview
+		title="Preisverleihung zum Studierendenwettbewerb ACCEESS"
+		time="29.09.2022"
+		link="preisverleihung-zum-studierendenwettbewerb-acceess"
 	>
-	<!-- Fertig machen -->
+		Am 28. September 2022 fanden hybrid die Abschlusspräsentation und Preisverleihung zum
+		Studierendenprojekt ACCESS statt. Aus zehn Teilnehmerteams wurden von der Jury drei
+		Gewinnerteams ausgewählt und ihre Entwicklungstools prämiert. Die Informatikstudierenden hatten
+		im Sommersemester 2022 jeweils Prototypen einer Prüfplattform entwickelt, mit der […]
+	</ArticlePreview>
 
-	<a href="/news/start-des-studierendenprojekts-zur-digitalen-barrierefreiheit">
-		Start des Studierendenprojekts zur digitalen Barrierefreiheit</a
+	<ArticlePreview
+		title="Posterpräsentation vor medienpädagogischem Fachpublikum"
+		time="26.09.2022"
+		link="posterpraesentation-vor-medienpaedagogischem-fachpublikum"
 	>
-	<a href="/news/design-thinking-workshop-mit-accessibility-expertinnen">
-		Design Thinking Workshop mit Accessibility Expert*Innen</a
+		SHUFFLE ist präsent! Dieses Mal in Form einer Posterpräsentation auf der Herbsttagung der
+		Sektion Medienpädagogik der Deutschen Gesellschaft für Erziehungswissenschaft (DGfE), die im
+		September 2022 an der Universität Bielefeld stattfand. Im Fokus unseres Posters standen die
+		Ergebnisse der Lehrendenbefragung unserer empirischen Daten […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="SHUFFLE bei der Tagung “Digitale Barrierefreiheit weiter denken” am Freitag 16.09.2022"
+		time="19.09.2022"
+		link="shuffle-bei-der-tagung-digitale-barrierefreiheit-weiter-denken-am-freitag-16-09-2022"
 	>
-	<a
-		href="/news/interview-zur-zukunft-der-digitalen-barrierefreien-lehre-an-der-universitaet-bielefeld"
+		Das Netzwerk digitale Hochschullehre Hessen hat am Freitag, dem 16.09.22 eingeladen, innovative
+		Projekte, spannende Konzepte zur barrierefreien, digitalen Lehre und alle anderen Aktivitäten
+		rund um die Barrierefreiheit in der digitalen (Hochschul-) Bildung vorzustellen und zu
+		diskutieren. Das SHUFFLE Team […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="Danke an die Expert*innen aus Beratung und Strategieentwicklung!"
+		time="12.09.2022"
+		link="danke-an-die-expertinnen-aus-beratung-und-strategieentwicklung"
 	>
-		Interview zur Zukunft der digitalen (barrierefreien) Lehre an der Universität Bielefeld</a
+		Letzte Woche haben wir im Arbeitspaket 02 spannende Gespräche mit verschiedenen Expert*innen aus
+		ganz Deutschland geführt. Im ersten Gespräch haben wir vielfältige Einblicke in die Tätigkeiten
+		unserer Expertinnen aus der Beratung von Studierenden v.a. mit chronischer Krankheit und
+		Behinderung erhalten. Es ging sowohl um das Angebot […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="Ein Jahr SHUFFLE: Gemeinsames Treffen in Präsenz am 08.-09.09.22"
+		time="10.09.2022"
+		link="ein-jahr-shuffle-gemeinsames-treffen-in-praesenz-am-08-09-09-22"
 	>
-	<a href="/news/neues-aus-dem-ap01-umfrage-zu-digitaler-barrierefreiheit-in-der-hochschullehre">
-		Beginn der Umfrage!</a
+		Nach einer längeren Präsenzpause aufgrund der Corona-Situation haben wir es am 08. und 09.
+		September geschafft, uns zu unserem einjährigen Jubiläum wieder in Präsenz in Stuttgart zu
+		treffen. Wir haben die zwei Tage gemeinsam intensiv genutzt, um inhaltlich Themen zu besprechen
+		und das letzte Jahr rekapitulieren zu lassen. Zudem konnten wir […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="“Ich brauche Unterstützung!” – Was sich Lehrende für eine barrierearme Lehre wünschen"
+		time="13.06.2022"
+		link="ich-brauche-unterstuetzung-was-sich-lehrende-fuer-eine-barrierearme-lehre-wuenschen"
 	>
-	<a href="/news/jetzt-geht-es-los"> Jetzt geht es los!</a>
+		Die Auswertung der erhobenen Daten ist nun endlich abgeschlossen. Eine zentrale Frage war u.a.
+		„Wie können wir Lehrende bei der Gestaltung ihrer digitalen Lehre für alle unterstützen?“. Wir
+		wollten herausfinden, was sich Lehrende wünschen, was sie stört und welchen Anteile
+		Unterstützungsmaßnahmen […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="Here it Comes: ILIAS Schulungsraum mit kleiner Preview"
+		time="19.05.2022"
+		link="here-it-comes-ilias-schulungsraum-mit-kleinem-hands-on"
+	>
+		Um Lehrende bei der Erstellung von barrierearmen Lernmaterialien und der Gestaltung von einer
+		barrierearmen Lernumgebung zu unterstützen, wird an der PH Freiburg gerade ein ILIAS
+		Schulungsraum entwickelt. Dort können Lehrende verschiedene Lernmodule durchlaufen, die das
+		Erstellen von barrierearmen Dokumenten […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="SHUFFLE beim 5. Workshop barrierefreie Dokumente"
+		time="03.05.2022"
+		link="shuffle-beim-5-workshop-barrierefreie-dokumente"
+	>
+		Vom 29.04. bis 30.04.22 fand der 5. Workshop barrierefreie Dokumente an der Universität Hamburg
+		statt. An zwei Tagen wurden Gesprächsrunden und Praxisworkshops rund um das Thema digitale
+		Barrierefreiheit mit dem Fokus barrierefreie Dokumente durchgeführt. Auch SHUFFLE war vertreten
+		und präsentierte […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="Erklärvideo zu Universal Design for Learning (UDL)"
+		time="29.04.2022"
+		link="erklaervideo-zu-universal-design-for-learning-udl"
+	>
+		In diesem Video stellen wir Ihnen die grundlegenden Prinzipien und Annahmen des <span lang="en"
+			>Universal Design for Learning (UDL)</span
+		>
+		vor. Für eine vollständige Vorstellung ist das Modell jedoch zu komplex. Das
+		<span lang="en">Universal Design for Learning</span> basiert auf dem Modell
+		<span lang="en">Universal Design</span>. Auf Deutsch heißt das Design für Alle. […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="Start des Studierendenprojekts zur digitalen Barrierefreiheit"
+		time="30.03.2022"
+		link="start-des-studierendenprojekts-zur-digitalen-barrierefreiheit"
+	>
+		Im Rahmen vom SHUFFLE entwickeln Studierende im Software-Gruppen-Projekt der Uni Bielefeld ein
+		Prüftool zur Testung von Lernräumen in Lernmanagementsystemen auf Barrierefreiheit. Dabei treten
+		10 Teams bestehend aus 8-12 Studierende gegeneinander an. Das beste Prüftool […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="Design Thinking Workshop mit Accessibility Expert*Innen"
+		time="08.03.2022"
+		link="design-thinking-workshop-mit-accessibility-expertinnen"
+	>
+		Als Teil von Arbeitspaket 6 möchten wir Personas gestalten, die Barrieren im Studium sichtbar
+		machen und Strategien der Studierenden aufzeigen. Natürlich können wir das nicht alleine –
+		deshalb haben wir am Freitag, den 25.02.2022 zu einem Design Thinking Workshop eingeladen, um
+		die Grundlagen […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="Interview zur Zukunft der digitalen (barrierefreien) Lehre an der Universität Bielefeld"
+		time="10.02.2022"
+		link="interview-zur-zukunft-der-digitalen-barrierefreien-lehre-an-der-universitaet-bielefeld"
+	>
+		Digitale Lehre nachhaltig zu gestalten ist nicht erst seit der Coronapandemie ein zentrales
+		Anliegen der Universität Bielefeld. Bereits 2018 stößt die Universität einen umfangreichen
+		Strategieprozess an, in dem Lehrende und […]
+	</ArticlePreview>
+
+	<ArticlePreview
+		title="Beginn der Umfrage!"
+		time="12.01.2022"
+		link="neues-aus-dem-ap01-umfrage-zu-digitaler-barrierefreiheit-in-der-hochschullehre"
+	>
+		Heute dürfen wir den offiziellen Start der quantitativen Bedarfserhebung aus dem Arbeitspaket 1
+		verkünden! Unsere Umfrage richtet sich an Studierende und Lehrende: Die Studierendenbefragung
+		verfolgt das Ziel, Barrieren in digitalen Lehr-Lernkontexten zu erkennen […]
+	</ArticlePreview>
+
+	<ArticlePreview title="Jetzt geht es los!" time="09.12.2021" link="jetzt-geht-es-los">
+		Nun geht es wirklich los. Bereits im August haben wir unsere Arbeit aufgenommen und sind
+		fleißig. Der Fokus liegt dabei auf dem ersten Arbeitspaket: Zusammen mit allen Projektpartnern
+		stellen wir bald Umfragen für Studierende und Lehrende unserer Hochschulen fertig. Ziel ist es,
+		herauszufinden, welche digitalen Barrieren es […]
+	</ArticlePreview>
 </div>
 
 <style lang="scss">
 	.articles {
-		margin-top: 2.5rem;
+		margin: 2.5rem var(--outer-spacing);
 
 		display: flex;
 		flex-direction: column;
