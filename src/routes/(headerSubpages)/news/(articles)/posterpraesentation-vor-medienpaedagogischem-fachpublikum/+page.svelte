@@ -33,7 +33,6 @@
 
 	<a
 		href="/articles/posterpraesentation-vor-medienpaedagogischem-fachpublikum/Digitale-Hochschullehre-fuer-Alle-gestalten.-Posterpraesentation-SHUFFLE.pdf"
-		class="blue"
 	>
 		Digitale Hochschullehre für Alle gestalten. Eine Lehrendenbefragung an vier Hochschulen (PDF)
 	</a>

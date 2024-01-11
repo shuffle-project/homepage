@@ -25,12 +25,10 @@
 <p>
 	Für ganz Neugierige folgen hier nun erste Eindrücke in unsere Ergebnisse. Weitere Ergebnisse mit
 	Bezug zum
-	<a
-		href="https://shuffle-projekt.de/news/erklaervideo-zu-universal-design-for-learning-udl"
-		class="blue">UDL</a
+	<a href="https://shuffle-projekt.de/news/erklaervideo-zu-universal-design-for-learning-udl">UDL</a
 	>
 	stellen wir auf der
-	<a href="https://www.uni-bielefeld.de/fakultaeten/erziehungswissenschaft/mpaed2022/" class="blue">
+	<a href="https://www.uni-bielefeld.de/fakultaeten/erziehungswissenschaft/mpaed2022/">
 		Herbsttagung der DGfE
 	</a>
 	im September vor.

@@ -61,10 +61,7 @@
 <p>
 	Weitere Informationen zu den Vorträgen und Workshops der Tagung finden Sie auf der
 
-	<a
-		href="https://www.hessenhub.de/tagung-am-freitag-den-16-09-2022-an-der-thm-in-friedberg/"
-		class="blue"
-	>
+	<a href="https://www.hessenhub.de/tagung-am-freitag-den-16-09-2022-an-der-thm-in-friedberg/">
 		Homepage von HessenHub.
 	</a>
 </p>

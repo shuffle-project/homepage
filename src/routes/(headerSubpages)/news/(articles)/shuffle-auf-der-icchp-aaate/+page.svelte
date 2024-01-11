@@ -18,16 +18,24 @@
 
 <ul>
 	<li>
-		Paper: Evaluating Collaborative Editing of AI-Generated Live Subtitles by Non-Professionals in
-		German University Lectures (AP04)
-	</li>
-	<li>Poster: MELVIN: Multi-user editor for creating and editing live captions (AP04)</li>
-	<li>
-		Poster: Using Design Thinking Methods in Developing a Digital Accessibility Resource Website
-		(AP06)
+		Paper: <span lang="en"
+			>Evaluating Collaborative Editing of AI-Generated Live Subtitles by Non-Professionals in
+			German University Lectures</span
+		> (AP04)
 	</li>
 	<li>
-		Poster: An Analysis of the Accessibility Issues of the Learning Management System ILIAS (AP09)
+		Poster: <span lang="en">MELVIN: Multi-user editor for creating and editing live captions </span>
+		(AP04)
+	</li>
+	<li>
+		Poster: <span lang="en"
+			>Using Design Thinking Methods in Developing a Digital Accessibility Resource Website
+		</span> (AP06)
+	</li>
+	<li>
+		Poster: <span lang="en">
+			An Analysis of the Accessibility Issues of the Learning Management System ILIAS
+		</span> (AP09)
 	</li>
 </ul>
 

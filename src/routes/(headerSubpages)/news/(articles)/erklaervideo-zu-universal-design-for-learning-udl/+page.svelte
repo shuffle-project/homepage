@@ -21,21 +21,21 @@
 
 <p>
 	Sie finden das
-	<a href="https://www.youtube.com/watch?v=Sh8lBDLj4hs" class="blue"> Erklärvideo auf YouTube </a>
+	<a href="https://www.youtube.com/watch?v=Sh8lBDLj4hs"> Erklärvideo auf YouTube </a>
 	. Falls Sie lieber Text in Form eines Transkripts bevorzugen, finden Sie dies weiter unten.
 </p>
 
 <p>
 	Wenn Sie noch mehr über das UDL wissen möchten, besuchen Sie die Website der
 
-	<a href="https://udlguidelines.cast.org/" class="blue"> UDL Guidelines </a>
+	<a href="https://udlguidelines.cast.org/"> UDL Guidelines </a>
 	.
 </p>
 
 <p>
 	Idee und Konzeption: Jule Günter, Insa Menke, Muriel Pundsack (Universität Bielefeld) im Rahmen
 	des Projekts SHUFFLE. Dieser Inhalt steht unter
-	<a href="https://creativecommons.org/licenses/by/4.0/deed.de" class="blue"> CC BY 4.0 Lizenz </a>
+	<a href="https://creativecommons.org/licenses/by/4.0/deed.de"> CC BY 4.0 Lizenz </a>
 	.
 </p>
 
@@ -201,8 +201,7 @@
 
 <p>
 	Wenn du noch mehr über das "UDL" wissen möchtest, besuche die Website der UDL Guidelines: <a
-		href="https://udlguidelines.cast.org"
-		class="blue">https://udlguidelines.cast.org</a
+		href="https://udlguidelines.cast.org">https://udlguidelines.cast.org</a
 	>.
 </p>
 

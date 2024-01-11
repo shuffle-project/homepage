@@ -35,20 +35,19 @@
 
 <ul>
 	<li>
-		Studierende (deutsch): <a
-			href="https://survey.shuffleprojekt.de/start/studenten.php"
-			class="blue">https://survey.shuffleprojekt.de/start/studenten.php</a
+		Studierende (deutsch): <a href="https://survey.shuffleprojekt.de/start/studenten.php"
+			>https://survey.shuffleprojekt.de/start/studenten.php</a
 		>
 	</li>
 	<li>
 		Studierende (englisch):
-		<a href="https://survey.shuffleprojekt.de/start/students.php" class="blue">
+		<a href="https://survey.shuffleprojekt.de/start/students.php">
 			https://survey.shuffleprojekt.de/start/students.php
 		</a>
 	</li>
 	<li>
 		Lehrende (nur auf Deutsch verfügbar):
-		<a href=" https://survey.shuffleprojekt.de/start/lehrende.php" class="blue">
+		<a href=" https://survey.shuffleprojekt.de/start/lehrende.php">
 			https://survey.shuffleprojekt.de/start/lehrende.php
 		</a>
 	</li>

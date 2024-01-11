@@ -13,7 +13,7 @@
 <p>
 	Die Reise führte uns zuerst an das
 
-	<a href="https://www.teiresias.muni.cz/?lang=en-GB" class="blue"
+	<a href="https://www.teiresias.muni.cz/?lang=en-GB"
 		>Teiresias Centre der Masaryk Universität in Brünn</a
 	>
 
@@ -23,7 +23,6 @@
 	Bibliothek, den Anspruch an die Umsetzung eines
 
 	<a
-		class="blue"
 		href="https://wordpress.shuffle-projekt.de/2022/04/29/erklaervideo-zu-universal-design-for-learning-udl/"
 	>
 		Universal Designs
@@ -35,7 +34,7 @@
 <p>
 	Nach zwei Tagen ging es dann weiter zum
 
-	<a class="blue" href="https://pyramida.osu.eu/"> Pyramida Centre der Universität von Ostrava </a>
+	<a href="https://pyramida.osu.eu/"> Pyramida Centre der Universität von Ostrava </a>
 
 	. Die hier an das Beratungszentrum angegliederte Einrichtung stellte uns ebenfalls verschiedene
 	Angebote zur Unterstützung von Studierenden mit Beeinträchtigung vor. Über die unterschiedlichen

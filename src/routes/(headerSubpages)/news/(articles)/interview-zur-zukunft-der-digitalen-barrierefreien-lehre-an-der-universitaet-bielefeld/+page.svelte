@@ -22,7 +22,5 @@
 	Professorin Dr. Birgit Lütje-Klose, Prorektorin für Studium und Lehre, im Interview mit Campus TV
 	der Universität Bielefeld. Hier weist sie ab Minute 05:20 auch auf das SHUFFLE-Projekt hin.
 
-	<a href="https://www.youtube.com/watch?v=y_aTb4L1tDI" class="blue">
-		Das Interview finden Sie auf Youtube.
-	</a>
+	<a href="https://www.youtube.com/watch?v=y_aTb4L1tDI"> Das Interview finden Sie auf Youtube. </a>
 </p>

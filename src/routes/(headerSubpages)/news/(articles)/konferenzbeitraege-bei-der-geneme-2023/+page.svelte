@@ -12,7 +12,7 @@
 	Am 14. und 15. September hatten wir die Möglichkeit, unseren aktuellen Stand des Reifegradmodells
 	aus AP01 auf der GeNeMe 2023 in Dresden vorzustellen. Die GeNeMe “
 
-	<a class="blue" href="https://tu-dresden.de/codip/ergebnisse-transfer/veranstaltungen/geneme/">
+	<a href="https://tu-dresden.de/codip/ergebnisse-transfer/veranstaltungen/geneme/">
 		Gemeinschaft in Neuen Medien
 	</a>
 
@@ -31,7 +31,6 @@
 	nachgelesen werden, sobald diese online zur Verfügung stehen (unter
 
 	<a
-		class="blue"
 		href="https://tu-dresden.de/codip/ergebnisse-transfer/veranstaltungen/geneme/tagungsbaende-der-geneme"
 	>
 		Tagungsbände der GeNeMe

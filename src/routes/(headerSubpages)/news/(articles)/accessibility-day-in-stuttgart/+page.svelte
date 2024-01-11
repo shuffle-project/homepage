@@ -9,15 +9,15 @@
 />
 
 <p>
-	Am Freitag, 28.04.2023, fand der sechste Accessibility Day des
+	Am Freitag, 28.04.2023, fand der sechste <span lang="en">Accessibility Day</span> des
 
-	<a href="https://digitalisierung.hdm-stuttgart.de/barrierefreiheit/" class="blue"
+	<a href="https://digitalisierung.hdm-stuttgart.de/barrierefreiheit/"
 		>Kompetenzzentrums für Digitale Barrierefreiheit</a
 	>
 
 	an der Hochschule der Medien in Stuttgart statt. Expertinnen und Experten hielten Vorträge über
-	digitale Barrierefreiheit mit Fokus auf Smart Homes und selbstbestimmtes Leben. Die Veranstaltung
-	bot Interessierten einen Einblick in den aktuellen Stand und die Möglichkeiten der
+	digitale Barrierefreiheit mit Fokus auf <span lang="en">Smart Homes</span> und selbstbestimmtes Leben.
+	Die Veranstaltung bot Interessierten einen Einblick in den aktuellen Stand und die Möglichkeiten der
 	Barrierefreiheit.
 </p>
 
@@ -34,22 +34,23 @@
 	der Pflege. André Peters vom Diakonischen Werk der Evangelischen Landeskirche in Baden e.V. sprach
 	über die Chancen für Menschen mit Behinderungen und Pflegekräfte durch Künstliche Intelligenz, das
 	Metaversum und das Internet der Dinge. Maurice Bremer, der selbst im Rollstuhl sitzt, berichtete
-	über Barrieren im Gaming-Bereich und zeigte auf, wie Accessibility-Funktionen Gamern und
-	Gamerinnen helfen können.
+	über Barrieren im Gaming-Bereich und zeigte auf, wie <span lang="en">Accessibility</span
+	>-Funktionen Gamern und Gamerinnen helfen können.
 </p>
 
 <p>
-	In der Pause konnten sich die Teilnehmenden des Accessibility Days an verschiedenen Ständen im
-	Foyer zu Projekten im Bereich Barrierefreiheit, Smart Home und Pflege erkundigen. Die
-	Veranstaltung endete mit einer Podiumsdiskussion der Referenten und Referentinnen, bei der die
-	Bedeutung der Barrierefreiheit erörtert wurde.
+	In der Pause konnten sich die Teilnehmenden des <span lang="en">Accessibility Days</span> an verschiedenen
+	Ständen im Foyer zu Projekten im Bereich Barrierefreiheit, Smart Home und Pflege erkundigen. Die Veranstaltung
+	endete mit einer Podiumsdiskussion der Referenten und Referentinnen, bei der die Bedeutung der Barrierefreiheit
+	erörtert wurde.
 </p>
 
 <p>
-	„Wir sind froh, nach einer mehrjährigen Corona-Pause wieder den Accessibility Day veranstalten zu
-	können”, sagte Prof. Dr. Gottfried Zimmermann, Leiter des Kompetenzzentrums. „Das Thema ist zwar
-	nicht so populär wie zum Beispiel Künstliche Intelligenz, ist aber mindestens genauso relevant für
-	die inklusive Gesellschaft von Morgen, die wir gemeinsam gestalten.”
+	„Wir sind froh, nach einer mehrjährigen Corona-Pause wieder den <span lang="en"
+		>Accessibility Day</span
+	> veranstalten zu können”, sagte Prof. Dr. Gottfried Zimmermann, Leiter des Kompetenzzentrums. „Das
+	Thema ist zwar nicht so populär wie zum Beispiel Künstliche Intelligenz, ist aber mindestens genauso
+	relevant für die inklusive Gesellschaft von Morgen, die wir gemeinsam gestalten.”
 </p>
 
 <p>
@@ -57,7 +58,6 @@
 
 	<a
 		href="https://digitalisierung.hdm-stuttgart.de/barrierefreiheit/2023/02/22/accessiblity-day-der-hochschule-der-medien-am-28-04-2023/"
-		class="blue"
 		>Event-Seite des Kompetenzzentrums
 	</a>
 

@@ -24,5 +24,6 @@
 	Barrierefreiheit gibt, jedoch kaum welche speziell für Lernraumsysteme. Zudem sind diese Tools
 	lernsystemabhängig und zur vollumfänglichen Nutzung kostenpflichtig. Damit Dozierende für Ihre
 	Studierende einen möglichst barrierefrei gestalteten Lernraum anbieten können, soll das
-	entstehende Prüftool unter einer Open-Source-Lizenz zur Nutzung zur Verfügung gestellt werden.
+	entstehende Prüftool unter einer <span lang="en">Open-Source</span>-Lizenz zur Nutzung zur
+	Verfügung gestellt werden.
 </p>

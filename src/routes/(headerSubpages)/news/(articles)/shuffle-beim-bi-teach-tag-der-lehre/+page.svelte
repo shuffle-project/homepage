@@ -9,9 +9,9 @@
 />
 
 <p>
-	Seit sechs Jahren findet jährlich der Bi.teach – Tag der Lehre an der Universität Bielefeld statt.
-	An diesem Tag wird über die Fakultäten hinweg Lehre genauer in den Blick genommen und dabei
-	Möglichkeiten und Grenzen eines bestimmten Themas diskutiert.
+	Seit sechs Jahren findet jährlich der <span lang="en">Bi.teach</span> – Tag der Lehre an der Universität
+	Bielefeld statt. An diesem Tag wird über die Fakultäten hinweg Lehre genauer in den Blick genommen
+	und dabei Möglichkeiten und Grenzen eines bestimmten Themas diskutiert.
 </p>
 
 <img
@@ -34,9 +34,7 @@
 <p>
 	Eine Zusammenfassung des Bi.teach Tages finden sie auf der
 
-	<a
-		class="blue"
-		href="https://blogs.uni-bielefeld.de/blog/innoteach/entry/lehren_lernen_und_das_nachhaltig"
+	<a href="https://blogs.uni-bielefeld.de/blog/innoteach/entry/lehren_lernen_und_das_nachhaltig"
 		>Homepage der Universität Bielefeld.</a
 	>
 </p>
