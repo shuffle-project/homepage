@@ -8,7 +8,7 @@
 	date="07.08.2023"
 />
 
-<p>SHUFFLE und Gabriel in Marburg</p>
+<p>SHUFFLE und Gabriel in Marburg.</p>
 <img
 	class="max-width-100"
 	src="/articles/kennst-du-eigentlich-gabriel/shuffle-marburg23.png"

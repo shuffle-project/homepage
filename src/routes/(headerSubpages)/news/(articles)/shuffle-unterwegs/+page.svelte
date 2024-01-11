@@ -14,7 +14,7 @@
 	Die Reise führte uns zuerst an das
 
 	<a href="https://www.teiresias.muni.cz/?lang=en-GB"
-		>Teiresias Centre der Masaryk Universität in Brünn</a
+		>Teiresias Centre der Masaryk Universität in Brünn.</a
 	>
 
 	Diese zentrale Einrichtung dient der individuellen Unterstützung für Studierende mit
