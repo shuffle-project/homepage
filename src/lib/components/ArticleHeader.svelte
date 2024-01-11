@@ -5,9 +5,7 @@
 	export let title: string;
 	export let authorName: TeamMemberName;
 	export let date: string;
-	console.log(authorName);
 	let author: TeamMember = WHOLE_TEAM.find((teamMember) => teamMember.name === authorName)!;
-	console.log(author.img);
 </script>
 
 <h1>{title}</h1>

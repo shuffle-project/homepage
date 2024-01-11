@@ -40,12 +40,12 @@
 <p>
 	Bei weiteren Fragen oder Interesse an den jeweiligen Einreichungen können Sie sich jederzeit per
 	Mail an
-	<span>
-		<a href="mailto:boehm3@ph-heidelberg.de" class="blue">Ann-Katrin Böhm</a>
-	</span>
+
+	<a href="mailto:boehm3@ph-heidelberg.de" class="blue">Ann-Katrin Böhm</a>
+
 	und
-	<span>
-		<a href="mailto:hakan.cetin@ph-freiburg.de" class="blue">Hakan Ali Cetin</a>
-	</span>
+
+	<a href="mailto:hakan.cetin@ph-freiburg.de" class="blue">Hakan Ali Cetin</a>
+
 	wenden.
 </p>

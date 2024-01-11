@@ -34,11 +34,9 @@
 <p>
 	Eine Zusammenfassung des Bi.teach Tages finden sie auf der
 
-	<span>
-		<a
-			class="blue"
-			href="https://blogs.uni-bielefeld.de/blog/innoteach/entry/lehren_lernen_und_das_nachhaltig"
-			>Homepage der Universität Bielefeld.</a
-		>
-	</span>
+	<a
+		class="blue"
+		href="https://blogs.uni-bielefeld.de/blog/innoteach/entry/lehren_lernen_und_das_nachhaltig"
+		>Homepage der Universität Bielefeld.</a
+	>
 </p>

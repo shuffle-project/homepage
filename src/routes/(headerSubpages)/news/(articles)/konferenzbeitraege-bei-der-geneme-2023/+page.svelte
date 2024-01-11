@@ -11,14 +11,15 @@
 <p>
 	Am 14. und 15. September hatten wir die Möglichkeit, unseren aktuellen Stand des Reifegradmodells
 	aus AP01 auf der GeNeMe 2023 in Dresden vorzustellen. Die GeNeMe “
-	<span>
-		<a class="blue" href="https://tu-dresden.de/codip/ergebnisse-transfer/veranstaltungen/geneme/">
-			Gemeinschaft in Neuen Medien
-		</a>
-	</span>
+
+	<a class="blue" href="https://tu-dresden.de/codip/ergebnisse-transfer/veranstaltungen/geneme/">
+		Gemeinschaft in Neuen Medien
+	</a>
+
 	” ermöglicht einen transdiziplinären Austausch insbesondere zu online Communities. Das diesjährige
-	Motto der Konferenz war “Inklusiv Digital – Gemeinschaft offen gestalten” und ermöglichte damit die
-	Diskussion von Fragen rund um Inklusion und Teilhabe im Rahmen digitaler Formate und Innovationen.
+	Motto der Konferenz war “Inklusiv Digital – Gemeinschaft offen gestalten” und ermöglichte damit
+	die Diskussion von Fragen rund um Inklusion und Teilhabe im Rahmen digitaler Formate und
+	Innovationen.
 </p>
 
 <p>
@@ -29,14 +30,13 @@
 	uns ermittelten Umfang vor. Beide Publikationen können in den Proceedings der Konferenz
 	nachgelesen werden, sobald diese online zur Verfügung stehen (unter
 
-	<span>
-		<a
-			class="blue"
-			href="https://tu-dresden.de/codip/ergebnisse-transfer/veranstaltungen/geneme/tagungsbaende-der-geneme"
-		>
-			Tagungsbände der GeNeMe
-		</a>
-	</span>
+	<a
+		class="blue"
+		href="https://tu-dresden.de/codip/ergebnisse-transfer/veranstaltungen/geneme/tagungsbaende-der-geneme"
+	>
+		Tagungsbände der GeNeMe
+	</a>
+
 	– GeNeMe 2023).
 </p>
 

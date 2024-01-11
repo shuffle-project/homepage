@@ -11,14 +11,14 @@
 <p>
 	Am Freitag, 28.04.2023, fand der sechste Accessibility Day des
 
-	<span>
-		<a href="https://digitalisierung.hdm-stuttgart.de/barrierefreiheit/" class="blue"
-			>Kompetenzzentrums für Digitale Barrierefreiheit</a
-		>
-	</span>
-	an der Hochschule der Medien in Stuttgart statt. Expertinnen und Experten hielten Vorträge über digitale
-	Barrierefreiheit mit Fokus auf Smart Homes und selbstbestimmtes Leben. Die Veranstaltung bot Interessierten
-	einen Einblick in den aktuellen Stand und die Möglichkeiten der Barrierefreiheit.
+	<a href="https://digitalisierung.hdm-stuttgart.de/barrierefreiheit/" class="blue"
+		>Kompetenzzentrums für Digitale Barrierefreiheit</a
+	>
+
+	an der Hochschule der Medien in Stuttgart statt. Expertinnen und Experten hielten Vorträge über
+	digitale Barrierefreiheit mit Fokus auf Smart Homes und selbstbestimmtes Leben. Die Veranstaltung
+	bot Interessierten einen Einblick in den aktuellen Stand und die Möglichkeiten der
+	Barrierefreiheit.
 </p>
 
 <p>
@@ -54,12 +54,12 @@
 
 <p>
 	Die Folien, Aufzeichnungen und weitere Informationen sind auf der
-	<span>
-		<a
-			href="https://digitalisierung.hdm-stuttgart.de/barrierefreiheit/2023/02/22/accessiblity-day-der-hochschule-der-medien-am-28-04-2023/"
-			class="blue"
-			>Event-Seite des Kompetenzzentrums
-		</a>
-	</span>
+
+	<a
+		href="https://digitalisierung.hdm-stuttgart.de/barrierefreiheit/2023/02/22/accessiblity-day-der-hochschule-der-medien-am-28-04-2023/"
+		class="blue"
+		>Event-Seite des Kompetenzzentrums
+	</a>
+
 	öffentlich verfügbar.
 </p>
