@@ -7,7 +7,7 @@
 
 <div class="wrapper">
 	<div class="info">
-		<h2>Projektpartner werden</h2>
+		<h2>Projektpartner*in werden</h2>
 		<p>{join.introduction}</p>
 	</div>
 	<hr aria-hidden="true" />

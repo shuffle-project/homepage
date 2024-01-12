@@ -25,21 +25,37 @@
 		if ('publications' in project) unsortedAllPublications.push(...project.publications!);
 	});
 
-	let sortedAllPublications = new Map<number, Publication[]>();
+	let sortedAllPublications = new Map<number, Map<number, Publication[]>>();
 
 	unsortedAllPublications.forEach((publication: Publication) => {
 		const publicationYear = new Date(publication.releaseDate).getFullYear();
+		const publicationMonth = new Date(publication.releaseDate).getMonth();
+
 		const yearEntry = sortedAllPublications.get(publicationYear);
 
 		if (!yearEntry) {
-			sortedAllPublications.set(publicationYear, [publication]);
-		} else {
-			let publications = [...sortedAllPublications.get(publicationYear)!, publication];
-			publications.sort((a, b) => {
-				return new Date(a.releaseDate).getMonth() - new Date(b.releaseDate).getMonth();
-			});
+			const newEntry = new Map<number, Publication[]>();
+			newEntry.set(publicationMonth, [publication]);
 
-			sortedAllPublications.set(publicationYear, publications);
+			sortedAllPublications.set(publicationYear, newEntry);
+		} else {
+			const monthEntry = yearEntry.get(publicationMonth);
+
+			if (!monthEntry) {
+				yearEntry.set(publicationMonth, [publication]);
+				sortedAllPublications.set(publicationYear, yearEntry);
+			} else {
+				yearEntry.set(publicationMonth, [...monthEntry.values(), publication]);
+				sortedAllPublications.set(publicationYear, yearEntry);
+			}
+
+			const filler = new Map(
+				[...sortedAllPublications.get(publicationYear)!.entries()].sort((a, b) => {
+					return a[0] - b[0];
+				})
+			);
+
+			sortedAllPublications.set(publicationYear, filler);
 		}
 	});
 
@@ -66,7 +82,20 @@
 				{yearEntry[0]}
 			</h2>
 
-			<Publications year={yearEntry[0]} publications={yearEntry[1]} />
+			{#each yearEntry[1] as monthEntry}
+				<h3>
+					<span>{months[monthEntry[0]]}</span>
+					<span class="year">{yearEntry[0]}</span>
+				</h3>
+				<!-- <hr class="month-hr" /> -->
+				<div class="month-publications-wrapper">
+					<Publications
+						year={yearEntry[0]}
+						month={months[monthEntry[0]]}
+						publications={monthEntry[1]}
+					/>
+				</div>
+			{/each}
 		{/each}
 	</div>
 {/if}

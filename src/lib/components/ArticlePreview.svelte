@@ -30,10 +30,15 @@
 
 		h2 {
 			font-size: clamp(1.25rem, 1vw + 1rem, 1.375rem);
+			margin: 0.125rem 0 0.625rem;
 		}
 
 		a {
 			text-decoration: none;
+		}
+
+		p {
+			margin-top: 0;
 		}
 	}
 </style>

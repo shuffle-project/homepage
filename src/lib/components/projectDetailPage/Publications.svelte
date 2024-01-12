@@ -5,7 +5,6 @@
 
 	export let publications: Publication[];
 	export let heading: string = '';
-	export let month: string = '';
 	export let year: number = -1;
 
 	function getContributorsString(contributors: string[]) {
@@ -25,7 +24,7 @@
 	{#if heading !== ''}
 		<h2>{heading}</h2>
 	{/if}
-	<ul aria-label={month !== '' ? `Veröffentlichungen vom ${month} ${year}` : ''}>
+	<ul aria-label={year !== -1 ? `Veröffentlichungen von ${year}` : ''}>
 		{#each publications as publication, i}
 			<li class:even-entry={(i + 1) % 2 === 0}>
 				<p class="title" lang={publication.titleLang}>{publication.title}</p>

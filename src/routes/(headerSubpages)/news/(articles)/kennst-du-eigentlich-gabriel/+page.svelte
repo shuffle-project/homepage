@@ -44,4 +44,4 @@
 </p>
 
 <p>Kennst Du eigentlich schon Gabriel? Nein? Dann schau hier vorbei:</p>
-<a href="www.barrierefreies-blinddate.de">www.barrierefreies-blinddate.de</a>
+<a href="https://www.barrierefreies-blinddate.de/">www.barrierefreies-blinddate.de</a>
