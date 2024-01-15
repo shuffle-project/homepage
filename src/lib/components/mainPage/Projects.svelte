@@ -108,17 +108,20 @@
 				padding: 0.25rem 0.5rem;
 				cursor: pointer;
 
+				position: relative;
+
 				&[aria-selected='true'] {
 					color: var(--color-white);
 					background-color: var(--color-black);
 				}
 
-				&:hover,
-				&:focus {
-					outline: 1px solid var(--color-black);
-					outline-offset: 2px;
+				&:hover {
+					outline: none;
+				}
 
-					transition: all 0.1s ease-in;
+				&:focus-visible {
+					outline: 2px solid var(--color-black);
+					outline-offset: 2px;
 				}
 			}
 		}

@@ -18,7 +18,7 @@
 			<a href="/">Leichte Sprache</a>
 		</li>
 		<li>
-			<a href="/">Sitemap</a>
+			<a href="/sitemap">Sitemap</a>
 		</li>
 	</ul>
 	<p class="shuffle-logo-text">© SHUFFLE</p>

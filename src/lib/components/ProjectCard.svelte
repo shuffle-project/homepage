@@ -26,9 +26,11 @@
 			<span aria-hidden="true">Mehr Informationen</span>
 			<span class="sr-only">Mehr Informationen über {project.title}</span>
 		</a>
-		<a href="/" aria-label="{project.linkText} (Öffnet neues Fenster)" class="link-to-project"
-			><Icon svg="open-in-new-tab" color="white" /></a
-		>
+		<div class="link-to-project">
+			<a href="/" aria-label="{project.linkText} (Öffnet neues Fenster)"
+				><Icon svg="open-in-new-tab" color="white" /></a
+			>
+		</div>
 	</div>
 </div>
 
@@ -109,6 +111,25 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+
+				transition: transform 0.2s ease-in-out;
+
+				&:hover {
+					transform: scale(110%);
+					transition: transform 0.2s ease-in-out;
+				}
+
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 0.375rem;
+					z-index: 2;
+
+					&:focus-visible {
+						outline: 2px solid var(--color-black);
+					}
+				}
 
 				&:before {
 					content: '';
