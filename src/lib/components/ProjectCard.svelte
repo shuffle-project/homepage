@@ -11,7 +11,7 @@
 		<Icon svg={project.id} color="white" size="parent" />
 	</div>
 	<div class="content">
-		<p class="subtitle">{project.cardSubtitle}</p>
+		<p class="subtitle">{project.category}</p>
 
 		<div class="title">
 			<div class="color-square in-result-card" />
@@ -19,7 +19,7 @@
 		</div>
 
 		<hr aria-hidden="true" />
-		<p>{project.cardText}</p>
+		<p>{@html project.shortSummary}</p>
 	</div>
 	<div class="links">
 		<a href="/{project.id}" class="link-more-info">
@@ -27,9 +27,9 @@
 			<span class="sr-only">Mehr Informationen über {project.title}</span>
 		</a>
 		<div class="link-to-project">
-			<a href="/" aria-label="{project.linkText} (Öffnet neues Fenster)"
-				><Icon svg="open-in-new-tab" color="white" /></a
-			>
+			<a href={project.linkToProject} aria-label="{project.linkText} (Öffnet neues Fenster)"
+				><Icon svg="open-in-new-tab" color="white" />
+			</a>
 		</div>
 	</div>
 </div>
@@ -71,6 +71,8 @@
 					padding: 0;
 					line-height: 120%;
 					font-size: 1.375rem;
+
+					hyphens: auto;
 				}
 			}
 

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { ALL_PROJECTS } from '$lib/constants/allProjects.constant.js';
 	import { PLACEHOLDERS } from '$lib/constants/placeholders';
 	import type { Project, TargetGroup } from '$lib/interfaces/project.interface';
 
@@ -9,13 +10,14 @@
 	let selectedTab: 'Alle' | TargetGroup = 'Alle';
 	const tabOptions: ('Alle' | TargetGroup)[] = ['Alle', 'Für Lehrende', 'Für die Hochschulleitung'];
 
-	const projects = PLACEHOLDERS;
+	const projects = [...PLACEHOLDERS, ...ALL_PROJECTS];
+
 	let selectedProjects: Project[] = [];
 
 	$: {
 		selectedProjects = projects.filter((pl) => {
 			if (selectedTab === 'Alle') return true;
-			if (pl.targetGroup === selectedTab) return true;
+			if (pl.targetGroup.includes(selectedTab)) return true;
 		});
 	}
 

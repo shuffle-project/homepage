@@ -4,10 +4,10 @@ export const PLACEHOLDERS: Project[] = [
 	{
 		id: 'blinddate',
 		title: 'BlindDate',
-		cardSubtitle: 'Website',
-		cardText:
+		category: 'Website',
+		shortSummary:
 			'Volutpat feugiat ultricies lectus elit velit quis. Scelerisque egestas hac tempor nisl ac.',
-		targetGroup: 'Für die Hochschulleitung',
+		targetGroup: ['Für die Hochschulleitung'],
 		linkToProject: 'https://barrierefreies-blinddate.de/',
 		linkText: 'Zu BlindDate',
 		summary:
@@ -60,25 +60,12 @@ export const PLACEHOLDERS: Project[] = [
 		]
 	},
 	{
-		id: 'moodle-course',
-		title: 'Barrierefreier Moodle-Kurs',
-		cardSubtitle: 'Leitfaden',
-		cardText:
-			'Lorem ipsum dolor sit amet consectetur. Volutpat feugiat ultricies lectus elit velit quis. Scelerisque egestas hac tempor nisl falle mir solano.',
-		targetGroup: 'Für Lehrende',
-		linkToProject: 'https://barrierefreies-blinddate.de/',
-		linkText: 'Zum barrierefreien Moodle-Kurs',
-		summary:
-			'Lorem ipsum dolor sit amet consectetur. A pellentesque amet mattis nec molestie. Lectus dictum ac urna fermentum aliquam commodo elementum cursus. Leo et rutrum dignissim aliquam sed orci ut est viverra. Tincidunt nunc tortor sit ultricies dui orci mauris sed diam. Tristique nunc mauris ut diam ac sem ultrices ut. Egestas pretium arcu quis nam velit.',
-		partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Freiburg']
-	},
-	{
 		id: 'maturity-model',
 		title: 'Reifegradmodell',
-		cardSubtitle: 'Lectus',
-		cardText:
+		category: 'Lectus',
+		shortSummary:
 			'Lorem ipsum dolor sit amet consectetur. Volutpat feugiat ultricies lectus elit velit quis. Scelerisque egestas hac tempor nisl ac malesuada.',
-		targetGroup: 'Für Lehrende',
+		targetGroup: ['Für Lehrende'],
 		linkToProject: 'https://barrierefreies-blinddate.de/',
 		linkText: 'Zum Reifegradmodell',
 		summary:
@@ -115,10 +102,10 @@ export const PLACEHOLDERS: Project[] = [
 	{
 		id: 'checklist',
 		title: 'Checklisten',
-		cardSubtitle: 'Volutpat',
-		cardText:
+		category: 'Volutpat',
+		shortSummary:
 			'Egestas mauris urna dictumst feugiat tristique. Quam tempus sit a consequat elit.  Et risus risus netus elit rhoncus.',
-		targetGroup: 'Für Lehrende',
+		targetGroup: ['Für Lehrende'],
 		linkToProject: 'https://barrierefreies-blinddate.de/',
 		linkText: 'Zu den Checklisten',
 		summary:

@@ -6,35 +6,36 @@
 </script>
 
 <div class="project-header">
-	<div class="decorative-icon">
-		<Icon svg={project.id} color="white" size="parent" />
-	</div>
-	<div class="project-details">
-		<div class="title">
-			<div class="color-square" />
-			<h1>{project.title}</h1>
+	<div class="upper-part">
+		<div class="decorative-icon">
+			<Icon svg={project.id} color="white" size="parent" />
 		</div>
-		<p>{project.summary}</p>
+		<div class="project-details">
+			<div class="title">
+				<div class="color-square" />
+				<h1>{@html project.title}</h1>
+			</div>
+			<p>{project.summary}</p>
 
-		<ul class="project-partners" aria-label="Projektpartner">
-			{#each project.partners as partner}
-				<li class="partner">
-					<Icon
-						svg={'icon-' + partner.toLowerCase().split(' ').at(-1)}
-						alt={partner}
-						size="parent"
-						color="dark-grey"
-					/>
-				</li>
-			{/each}
-		</ul>
-
-		<a href={project.linkToProject} class="link-to-project">
-			<span aria-hidden="true">{project.linkText}</span>
-			<span class="sr-only">{project.linkText} (öffnet neues Fenster)</span>
-			<Icon svg="open-in-new-tab" color="white" />
-		</a>
+			<ul class="project-partners" aria-label="Projektpartner">
+				{#each project.partners as partner}
+					<li class="partner">
+						<Icon
+							svg={'icon-' + partner.toLowerCase().split(' ').at(-1)}
+							alt={partner}
+							size="parent"
+							color="dark-grey"
+						/>
+					</li>
+				{/each}
+			</ul>
+		</div>
 	</div>
+	<a href={project.linkToProject} class="link-to-project">
+		<span aria-hidden="true">{project.linkText}</span>
+		<span class="sr-only">{project.linkText} (öffnet neues Fenster)</span>
+		<Icon svg="open-in-new-tab" color="white" />
+	</a>
 </div>
 
 <style lang="scss">
@@ -45,71 +46,75 @@
 		border: 1px solid var(--color-blue-line);
 		padding: 1.875rem;
 
-		display: flex;
-		gap: 1.875rem;
-
 		box-sizing: border-box;
 
-		.decorative-icon {
-			min-width: clamp(5.9375rem, 25vw + 1rem, 11.875rem);
-			aspect-ratio: 1/1.5;
-			background-color: var(--color-dark-grey);
-			padding-inline: 2.5rem;
-			box-sizing: border-box;
-			box-shadow: 0px 6px 10px 0px rgba(var(--color-black-rgb), 0.15);
-			align-self: center;
-		}
+		position: relative;
 
-		.project-details {
-			position: relative;
-
-			.title {
-				display: flex;
-				align-items: baseline;
+		.upper-part {
+			display: flex;
+			gap: 1.875rem;
+			.decorative-icon {
+				min-width: clamp(5.9375rem, 25vw + 1rem, 11.875rem);
+				aspect-ratio: 1/1.5;
+				background-color: var(--color-dark-grey);
+				padding-inline: 2.5rem;
+				box-sizing: border-box;
+				box-shadow: 0px 6px 10px 0px rgba(var(--color-black-rgb), 0.15);
+				align-self: center;
 			}
 
-			.project-partners {
-				display: flex;
-				gap: 1.25rem;
-				list-style: none;
-				padding: 0;
-				margin-bottom: 3rem;
+			.project-details {
+				.title {
+					display: flex;
+					align-items: baseline;
+					hyphens: auto;
+				}
 
-				.partner {
-					width: 1.875rem;
-					height: 1.875rem;
+				.project-partners {
+					display: flex;
+					gap: 1.25rem;
+					list-style: none;
+					padding: 0;
+					margin-bottom: 3rem;
+
+					.partner {
+						width: 1.875rem;
+						height: 1.875rem;
+					}
 				}
 			}
+		}
 
-			.link-to-project {
-				position: absolute;
-				inset: auto 0 0 auto;
+		.link-to-project {
+			position: absolute;
+			inset: auto 1.875rem 1.875rem auto;
 
-				background-color: var(--color-blue);
-				color: var(--color-white);
-				padding: 0.375rem 0.75rem;
-				text-decoration: none;
-				display: flex;
-				align-items: center;
-				gap: 0.3125rem;
-			}
+			background-color: var(--color-blue);
+			color: var(--color-white);
+			padding: 0.375rem 0.75rem;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+			gap: 0.3125rem;
 		}
 	}
 
 	@media (max-width: 40.5625rem) {
 		.project-header {
-			flex-direction: column;
+			.upper-part {
+				flex-direction: column;
+				margin-bottom: 3rem;
 
-			.decorative-icon {
-				min-width: 100%;
-				max-height: 10rem;
-				padding: 1.25rem 2.5rem;
+				.decorative-icon {
+					min-width: 100%;
+					max-height: 10rem;
+					padding: 1.25rem 2.5rem;
+				}
 			}
 
-			.project-details {
-				.project-partners {
-					margin-bottom: 4rem;
-				}
+			.link-to-project {
+				inset: auto 1.875rem 1.875rem auto;
+				margin-left: 1.875rem;
 			}
 		}
 	}

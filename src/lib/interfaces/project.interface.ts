@@ -34,9 +34,9 @@ export interface Publication {
 export interface Project {
 	id: string;
 	title: string;
-	cardSubtitle: string;
-	cardText: string;
-	targetGroup: TargetGroup;
+	category: string;
+	shortSummary: string;
+	targetGroup: TargetGroup[];
 	linkToProject: string;
 	linkText: string;
 	summary: string;
