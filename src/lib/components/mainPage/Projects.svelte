@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { ALL_PROJECTS } from '$lib/constants/allProjects.constant.js';
-	import { PLACEHOLDERS } from '$lib/constants/placeholders';
 	import type { Project, TargetGroup } from '$lib/interfaces/project.interface';
 
 	import ResultCard from '../ProjectCard.svelte';
@@ -10,7 +9,7 @@
 	let selectedTab: 'Alle' | TargetGroup = 'Alle';
 	const tabOptions: ('Alle' | TargetGroup)[] = ['Alle', 'Für Lehrende', 'Für die Hochschulleitung'];
 
-	const projects = [...PLACEHOLDERS, ...ALL_PROJECTS];
+	const projects = ALL_PROJECTS;
 
 	let selectedProjects: Project[] = [];
 
@@ -109,6 +108,9 @@
 				font-size: 0.875rem;
 				padding: 0.25rem 0.5rem;
 				cursor: pointer;
+
+				// Without it, there is some flickering while switching the tabs
+				transition: all 0s ease-in-out;
 
 				position: relative;
 

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Publications from '$lib/components/projectDetailPage/Publications.svelte';
-	import { PLACEHOLDERS } from '$lib/constants/placeholders';
+	import { ALL_PROJECTS } from '$lib/constants/allProjects.constant';
 	import type { Publication } from '$lib/interfaces/project.interface';
 	import TitleSection from '../../../lib/components/TitleSection.svelte';
 
@@ -21,7 +21,7 @@
 
 	let unsortedAllPublications: Publication[] = [];
 
-	PLACEHOLDERS.forEach((project) => {
+	ALL_PROJECTS.forEach((project) => {
 		if ('publications' in project) unsortedAllPublications.push(...project.publications!);
 	});
 
