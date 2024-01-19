@@ -7,6 +7,6 @@ export const load = ({ params }) => {
 	if (project) {
 		return { project };
 	} else {
-		throw error(404, `Die Seite "${params.projectId}" konnte nicht gefunden werden.`);
+		error(404, `Die Seite "${params.projectId}" konnte nicht gefunden werden.`);
 	}
 };

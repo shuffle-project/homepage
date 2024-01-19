@@ -80,15 +80,7 @@
 		padding-inline: var(--outer-spacing);
 	}
 
-	h3 {
-		margin-top: 1.875rem;
 
-		.year {
-			color: var(--color-dark-grey);
-			font-weight: 400;
-			font-size: 1rem;
-		}
-	}
 
 	h2 {
 		margin-top: 4.375rem;
@@ -97,19 +89,11 @@
 		gap: 0.3125rem;
 	}
 
-	.month-publications-wrapper {
-		border: 1px solid var(--color-blue-line);
-		padding-inline: 0.625rem;
-	}
+	
 
 	@media (min-width: 40.625rem) {
-		h2,
-		h3 {
+		h2 {
 			padding-inline: 1.875rem;
-		}
-
-		.month-publications-wrapper {
-			padding-inline: 0rem;
 		}
 	}
 </style>
