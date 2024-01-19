@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from "$app/paths";
+
 	export let svg: string;
 	export let alt = '';
 	export let color: 'white' | 'black' | 'blue' | 'dark-grey' = 'black';
@@ -9,7 +11,7 @@
 	if (!svg.startsWith('/')) svg = '/icons/' + svg;
 </script>
 
-<img src={svg} {alt} aria-hidden={alt === ''} class="{color} {svgSize}" />
+<img src={base + svg} {alt} aria-hidden={alt === ''} class="{color} {svgSize}" />
 
 <style lang="scss">
 	img {

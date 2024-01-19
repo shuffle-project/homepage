@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { Project } from '$lib/interfaces/project.interface';
 	import Icon from './Icon.svelte';
 
@@ -22,12 +23,12 @@
 		<p>{@html project.shortSummary}</p>
 	</div>
 	<div class="links">
-		<a href="/{project.id}" class="link-more-info">
+		<a href="{base}/{project.id}" class="link-more-info">
 			<span aria-hidden="true">Mehr Informationen</span>
 			<span class="sr-only">Mehr Informationen über {project.title}</span>
 		</a>
 		<div class="link-to-project">
-			<a href={project.linkToProject} aria-label="{project.linkText} (Öffnet neues Fenster)"
+			<a href={base + project.linkToProject} aria-label="{project.linkText} (Öffnet neues Fenster)"
 				><Icon svg="open-in-new-tab" color="white" />
 			</a>
 		</div>

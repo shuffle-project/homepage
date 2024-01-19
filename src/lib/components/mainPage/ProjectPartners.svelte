@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import LinkNewTab from '../LinkNewTab.svelte';
 </script>
 
@@ -8,7 +9,7 @@
 	<div class="partners-wrapper">
 		<div class="partner">
 			<div class="image-wrapper">
-				<img src="./logos/hdm-stuttgart.svg" alt="" aria-hidden="true" />
+				<img src="{base}/logos/hdm-stuttgart.svg" alt="" aria-hidden="true" />
 			</div>
 			<h3>Hochschule der Medien Stuttgart</h3>
 			<p>
@@ -21,7 +22,7 @@
 		</div>
 		<div class="partner">
 			<div class="image-wrapper">
-				<img src="./logos/uni-bielefeld.svg" alt="" aria-hidden="true" />
+				<img src="{base}/logos/uni-bielefeld.svg" alt="" aria-hidden="true" />
 			</div>
 			<h3>Universität Bielefeld</h3>
 			<p>
@@ -33,7 +34,7 @@
 		</div>
 		<div class="partner">
 			<div class="image-wrapper">
-				<img src="./logos/ph-heidelberg.svg" alt="" aria-hidden="true" />
+				<img src="{base}/logos/ph-heidelberg.svg" alt="" aria-hidden="true" />
 			</div>
 			<h3>Pädagogische Hochschule Heidelberg</h3>
 			<p>
@@ -45,7 +46,7 @@
 		</div>
 		<div class="partner">
 			<div class="image-wrapper">
-				<img src="./logos/ph-freiburg.svg" alt="" aria-hidden="true" />
+				<img src="{base}/logos/ph-freiburg.svg" alt="" aria-hidden="true" />
 			</div>
 			<h3>Pädagogische Hochschule Freiburg</h3>
 			<p>
@@ -61,7 +62,7 @@
 		<div class="partner">
 			<div class="image-wrapper">
 				<img
-					src="./logos/stiftung-innovation-in-der-hochschullehre.svg"
+					src="{base}/logos/stiftung-innovation-in-der-hochschullehre.svg"
 					alt=""
 					aria-hidden="true"
 				/>

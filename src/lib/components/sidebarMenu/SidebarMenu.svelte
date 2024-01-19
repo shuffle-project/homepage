@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	import Icon from '../Icon.svelte';
 
@@ -57,7 +58,7 @@
 
 	function goToSite(site: string) {
 		menu.close();
-		goto(site);
+		goto(base + site);
 	}
 </script>
 
@@ -78,7 +79,7 @@
 		>
 			<Icon svg="close" size="parent" />
 		</button>
-		<img src="/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+		<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 	</div>
 	<div class="content-wrapper">
 		<ul>

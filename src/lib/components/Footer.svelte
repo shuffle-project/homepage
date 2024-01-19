@@ -1,24 +1,29 @@
+<script>
+
+	import { base } from "$app/paths";
+
+</script>
 <footer>
 	<hr aria-hidden="true" />
-	<img src="./logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+	<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 	<ul>
 		<li>
-			<a href="/imprint">Impressum</a>
+			<a href="{base}/imprint">Impressum</a>
 		</li>
 		<li>
-			<a href="/privacy">Datenschutz</a>
+			<a href="{base}/privacy">Datenschutz</a>
 		</li>
 		<li>
-			<a href="/">Erklärung zur Barrierefreiheit</a>
+			<a href="{base}/">Erklärung zur Barrierefreiheit</a>
 		</li>
 		<li>
-			<a href="/">Gebärdensprache (DGS)</a>
+			<a href="{base}/">Gebärdensprache (DGS)</a>
 		</li>
 		<li>
-			<a href="/">Leichte Sprache</a>
+			<a href="{base}/">Leichte Sprache</a>
 		</li>
 		<li>
-			<a href="/sitemap">Sitemap</a>
+			<a href="{base}/sitemap">Sitemap</a>
 		</li>
 	</ul>
 	<p class="shuffle-logo-text">© SHUFFLE</p>

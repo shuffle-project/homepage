@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import Icon from './Icon.svelte';
 
 	export let label = 'Zurück zur Startseite';
@@ -7,7 +8,7 @@
 </script>
 
 <div>
-	<a href={linkTo} class:paddingLeft>
+	<a href={base + linkTo} class:paddingLeft>
 		<Icon svg="arrow-back" size="16" color="blue" />
 		<span>{label}</span></a
 	>

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
 
 	export let member: TeamMember;
@@ -11,11 +12,11 @@
 
 	{#if member.img}
 		<div class="img-wrapper">
-			<img class="member-img" src="members/{member.img}" alt="" aria-hidden="true" />
+			<img class="member-img" src="{base}members/{member.img}" alt="" aria-hidden="true" />
 		</div>
 	{:else}
 		<div class="img-placeholder img-wrapper">
-			<img src="/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+			<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 		</div>
 	{/if}
 

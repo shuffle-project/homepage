@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from "$app/paths";
+
 	export let title: string;
 	export let time: string;
 	export let link: string;
@@ -8,7 +10,7 @@
 	<time datetime={time}>{time}</time>
 	<h2>{title}</h2>
 	<p><slot /></p>
-	<a href="/news/{link}">
+	<a href="{base}/news/{link}">
 		<span aria-hidden="true">Mehr erfahren</span>
 		<span class="sr-only">Mehr erfahren über {title}</span>
 	</a>

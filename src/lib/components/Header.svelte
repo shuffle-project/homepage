@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	import MenuButton from './sidebarMenu/MenuButton.svelte';
 
@@ -28,23 +29,23 @@
 
 <div class="header-wrapper" class:scrolling>
 	<header>
-		<a href="/" class="logo">
-			<img src="/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+		<a href="{base}/" class="logo">
+			<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 			<span class="shuffle-logo-text">SHUFFLE</span>
 		</a>
 
 		<ul>
 			<li>
-				<a href="/team">Team</a>
+				<a href="{base}/team">Team</a>
 			</li>
 			<li>
-				<a href="/news">Aktuelles</a>
+				<a href="{base}/news">Aktuelles</a>
 			</li>
 			<li>
-				<a href="/contact">Kontakt</a>
+				<a href="{base}/contact">Kontakt</a>
 			</li>
 			<li>
-				<a href="/publications">Publikationen</a>
+				<a href="{base}/publications">Publikationen</a>
 			</li>
 		</ul>
 

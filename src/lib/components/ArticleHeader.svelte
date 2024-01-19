@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { WHOLE_TEAM, type TeamMemberName } from '$lib/constants/teamMembers.constant';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
 
@@ -14,11 +15,11 @@
 	<div class="author">
 		{#if author.img}
 			<div class="img-wrapper">
-				<img class="member-img" src="/members/{author.img}" alt="" aria-hidden="true" />
+				<img class="member-img" src="{base}/members/{author.img}" alt="" aria-hidden="true" />
 			</div>
 		{:else}
 			<div class="img-placeholder img-wrapper">
-				<img src="/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+				<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 			</div>
 		{/if}
 		<span>{author.name}</span>

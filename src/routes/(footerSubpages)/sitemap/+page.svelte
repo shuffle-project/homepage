@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import TitleSection from '../../../lib/components/TitleSection.svelte';
 </script>
 
@@ -16,31 +17,31 @@
 	<!-- Add project subpages when ready -->
 	<ul>
 		<li>
-			<a href="/news">Aktuelles</a>
+			<a href="{base}/news">Aktuelles</a>
 		</li>
 		<li>
-			<a href="/privacy">Datenschutz</a>
+			<a href="{base}/privacy">Datenschutz</a>
 		</li>
 		<li>
-			<a href="/">Erklärung zur Barrierefreiheit</a>
+			<a href="{base}/">Erklärung zur Barrierefreiheit</a>
 		</li>
 		<li>
-			<a href="/">Gebärdensprache (DGS)</a>
+			<a href="{base}/">Gebärdensprache (DGS)</a>
 		</li>
 		<li>
-			<a href="/imprint">Impressum</a>
+			<a href="{base}/imprint">Impressum</a>
 		</li>
 		<li>
-			<a href="/contact">Kontakt</a>
+			<a href="{base}/contact">Kontakt</a>
 		</li>
 		<li>
-			<a href="/plain-language">Leichte Sprache</a>
+			<a href="{base}/plain-language">Leichte Sprache</a>
 		</li>
 		<li>
-			<a href="/">Startseite</a>
+			<a href="{base}/">Startseite</a>
 		</li>
 		<li>
-			<a href="/team">Team</a>
+			<a href="{base}/team">Team</a>
 		</li>
 	</ul>
 </div>
