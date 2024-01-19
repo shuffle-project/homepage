@@ -29,6 +29,13 @@
 
 <div class="header-wrapper" class:scrolling>
 	<header>
+					<p
+		class="wip-info"
+		style="background-color: #99bef5; text-align: center; padding: 0 1rem; margin: 0"
+	>
+		Diese Seite befindet sich noch in der Entwicklung. Bitte nur für interne Zwecke verwenden.
+	</p>
+		<div class="header">	
 		<a href="{base}/" class="logo">
 			<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 			<span class="shuffle-logo-text">SHUFFLE</span>
@@ -52,6 +59,7 @@
 		<div class="menu-button-wrapper">
 			<MenuButton />
 		</div>
+	</div>
 	</header>
 	<hr aria-hidden="true" />
 </div>
@@ -79,13 +87,14 @@
 	}
 
 	header {
-		margin: 0.625rem var(--outer-spacing);
-		height: var(--header-height);
+		.header {
+			margin: 0.625rem var(--outer-spacing);
+			height: var(--header-height);
 
-		display: flex;
-		justify-content: space-between;
+			display: flex;
+			justify-content: space-between;
 
-		.logo {
+			.logo {
 			display: flex;
 			align-items: center;
 			gap: 0.3125rem;
@@ -123,6 +132,9 @@
 			display: flex;
 			align-items: center;
 		}
+		}
+
+		
 	}
 
 	hr {
@@ -135,17 +147,23 @@
 
 	@media (max-width: 40.5625rem) {
 		header {
-			ul {
-				display: none;
+			.header {
+				ul {
+					display: none;
+				}
 			}
+	
 		}
 	}
 
 	@media (min-width: 40.625rem) {
 		header {
-			.menu-button-wrapper {
-				display: none;
+			.header {
+				.menu-button-wrapper {
+					display: none;
+				}
 			}
+			
 		}
 	}
 </style>

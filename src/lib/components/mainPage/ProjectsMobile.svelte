@@ -1,13 +1,14 @@
 <script lang="ts">
 	import type { Project } from '$lib/interfaces/project.interface';
+	import { type EmblaCarouselType, type EmblaOptionsType } from 'embla-carousel';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import Icon from '../Icon.svelte';
 	import ResultCard from '../ProjectCard.svelte';
 
 	export let selectedProjects: Project[] = [];
 
-	const options = { loop: true, align: 'center' };
-	let emblaAPI: any;
+	const options: EmblaOptionsType = { loop: true, align: 'center' };
+	let emblaAPI: EmblaCarouselType;
 	let emblaSelectedIndex: number = 0;
 
 	let componentHasFocus = false;
