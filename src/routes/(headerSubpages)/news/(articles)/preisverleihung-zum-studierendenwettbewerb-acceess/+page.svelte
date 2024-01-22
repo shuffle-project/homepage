@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
@@ -15,7 +16,7 @@
 </p>
 
 <img
-	src="/articles/preisverleihung-zum-studierendenwettbewerb-acceess/shuffle-acceess22.jpg"
+	src="{base}/articles/preisverleihung-zum-studierendenwettbewerb-acceess/shuffle-acceess22.jpg"
 	alt=""
 	aria-hidden="true"
 	class="max-width-100"

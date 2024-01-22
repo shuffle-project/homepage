@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
@@ -36,7 +37,7 @@
 
 <img
 	class="max-width-100"
-	src="/articles/ich-brauche-unterstuetzung-was-sich-lehrende-fuer-eine-barrierearme-lehre-wuenschen/shuffle-bedarf22.png"
+	src="{base}/articles/ich-brauche-unterstuetzung-was-sich-lehrende-fuer-eine-barrierearme-lehre-wuenschen/shuffle-bedarf22.png"
 	alt="Balkendiagramm. Mehrfachnennung möglich. Es gab 10 Themen. Davon waren die häufigsten 'Barrierefreie Lehr-Lernmaterialien' (69%), 'digitale Barrierefreiheit' (65%), 'didaktische Aspekte der Barrierefreiheit' (57%). "
 />
 
@@ -50,7 +51,7 @@
 
 <img
 	class="max-width-100"
-	src="/articles/ich-brauche-unterstuetzung-was-sich-lehrende-fuer-eine-barrierearme-lehre-wuenschen/shuffle-barrierefreiheits-unterstützung22.png"
+	src="{base}/articles/ich-brauche-unterstuetzung-was-sich-lehrende-fuer-eine-barrierearme-lehre-wuenschen/shuffle-barrierefreiheits-unterstützung22.png"
 	alt="10 kleine Säulendiagramme. Jedes bezieht sich auf einen Vorschlag für Unterstützung. Die Befragten geben an, ob sie diese Unterstützung bereits genutzt haben, bereits davon gehört haben, sie nutzen werden, sich wünschen oder keine Angabe. Die Aspekte sind folgende: A Anwendungsbeispiele, B Methodensammlung, C Checklisten, D Prüftool, E konkrete Ansprechperson, F Begleitung in Veranstaltungen, G Kurzformate, H eintägige Workshops, I Erwerb eines Zertifikats, J mehrtägige Workshops. "
 />
 

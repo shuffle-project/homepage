@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
@@ -11,7 +12,7 @@
 <p>SHUFFLE und Gabriel in Marburg.</p>
 <img
 	class="max-width-100"
-	src="/articles/kennst-du-eigentlich-gabriel/shuffle-marburg23.png"
+	src="{base}/articles/kennst-du-eigentlich-gabriel/shuffle-marburg23.png"
 	alt="Drei Mitglieder des SHUFFLE-Teams posieren vor einem Banner mit der Aufschrift 'Herzlich willkommen zum VBS-Kongress'. Das gemalte Bild der Figur Gabriel ist in realistischer Größe inmitten der Personen eingefügt."
 />
 

@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
@@ -15,7 +16,7 @@
 </p>
 
 <img
-	src="/articles/shuffle-beim-bi-teach-tag-der-lehre/shuffle-bi-teach22.jpg"
+	src="{base}/articles/shuffle-beim-bi-teach-tag-der-lehre/shuffle-bi-teach22.jpg"
 	alt=""
 	class="max-width-100"
 	aria-hidden="true"
