@@ -28,7 +28,7 @@
 			<span class="sr-only">Mehr Informationen über {project.title}</span>
 		</a>
 		<div class="link-to-project">
-			<a href={base + project.linkToProject} aria-label="{project.linkText} (Öffnet neues Fenster)"
+			<a href={project.linkToProject} aria-label="{project.linkText} (Öffnet neues Fenster)"
 				><Icon svg="open-in-new-tab" color="white" />
 			</a>
 		</div>
