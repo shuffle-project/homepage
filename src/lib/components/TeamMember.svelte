@@ -12,7 +12,7 @@
 
 	{#if member.img}
 		<div class="img-wrapper">
-			<img class="member-img" src="{base}members/{member.img}" alt="" aria-hidden="true" />
+			<img class="member-img" src="{base}/members/{member.img}" alt="" aria-hidden="true" />
 		</div>
 	{:else}
 		<div class="img-placeholder img-wrapper">
