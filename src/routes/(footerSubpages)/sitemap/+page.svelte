@@ -44,6 +44,131 @@
 			<a href="{base}/team">Team</a>
 		</li>
 	</ul>
+
+	<h2>Alle News (Neueste zuerst)</h2>
+	<ul>
+		<li>
+			<a href="{base}/news/shuffle-projekttreffen-in-heidelberg"
+				>SHUFFLE-Projekttreffen in Heidelberg</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/konferenzbeitraege-bei-der-geneme-2023"
+				>Konferenzbeiträge bei der GeNeMe 2023</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/zwei-tage-lernen-gruebeln-und-vernetzen-auf-der-summer-school"
+				>Zwei Tage lernen, grübeln und vernetzen auf der Summer School</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/kennst-du-eigentlich-gabriel">Kennst Du eigentlich Gabriel?</a>
+		</li>
+		<li>
+			<a href="{base}/news/chi2023">CHI2023</a>
+		</li>
+		<li>
+			<a href="{base}/news/accessibility-day-in-stuttgart">Accessibility Day in Stuttgart</a>
+		</li>
+		<li>
+			<a href="{base}/news/fruehlingstreffen-in-bielefeld">Frühlingstreffen in Bielefeld</a>
+		</li>
+		<li>
+			<a
+				href="{base}/news/die-zukunft-barrierefrei-shuffle-mit-zwei-beitraegen-beim-university-future-festival-2023"
+				>Die Zukunft barrierefrei! – SHUFFLE mit zwei Beiträgen beim University Future Festival 2023</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/shuffle-unterwegs">SHUFFLE unterwegs</a>
+		</li>
+		<li>
+			<a href="{base}/news/shuffle-beim-bi-teach-tag-der-lehre"
+				>SHUFFLE beim Bi.teach – Tag der Lehre</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/shuffle-mitglieder-haben-pruefungen-erfolgreich-bestanden"
+				>SHUFFLE-Mitglieder haben Prüfungen erfolgreich bestanden</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/shuffle-auf-der-icchp-aaate">SHUFFLE auf der ICCHP-AAATE</a>
+		</li>
+		<li>
+			<a href="{base}/news/preisverleihung-zum-studierendenwettbewerb-acceess"
+				>Preisverleihung zum Studierendenwettbewerb ACCEESS</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/posterpraesentation-vor-medienpaedagogischem-fachpublikum"
+				>Posterpräsentation vor medienpädagogischem Fachpublikum</a
+			>
+		</li>
+		<li>
+			<a
+				href="{base}/news/shuffle-bei-der-tagung-digitale-barrierefreiheit-weiter-denken-am-freitag-16-09-2022"
+				>SHUFFLE bei der Tagung “Digitale Barrierefreiheit weiter denken” am Freitag 16.09.2022</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/danke-an-die-expertinnen-aus-beratung-und-strategieentwicklung"
+				>Danke an die Expert*innen aus Beratung und Strategieentwicklung!</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/ein-jahr-shuffle-gemeinsames-treffen-in-praesenz-am-08-09-09-22"
+				>Ein Jahr SHUFFLE: Gemeinsames Treffen in Präsenz am 08.-09.09.22</a
+			>
+		</li>
+		<li>
+			<a
+				href="{base}/news/ich-brauche-unterstuetzung-was-sich-lehrende-fuer-eine-barrierearme-lehre-wuenschen"
+				>“Ich brauche Unterstützung!” – Was sich Lehrende für eine barrierearme Lehre wünschen</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/here-it-comes-ilias-schulungsraum-mit-kleinem-hands-on"
+				>Here it Comes: ILIAS Schulungsraum mit kleiner Preview</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/shuffle-beim-5-workshop-barrierefreie-dokumente"
+				>SHUFFLE beim 5. Workshop barrierefreie Dokumente</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/erklaervideo-zu-universal-design-for-learning-udl"
+				>Erklärvideo zu Universal Design for Learning (UDL)</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/start-des-studierendenprojekts-zur-digitalen-barrierefreiheit"
+				>Start des Studierendenprojekts zur digitalen Barrierefreiheit</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/design-thinking-workshop-mit-accessibility-expertinnen"
+				>Design Thinking Workshop mit Accessibility Expert*Innen</a
+			>
+		</li>
+		<li>
+			<a
+				href="{base}/news/interview-zur-zukunft-der-digitalen-barrierefreien-lehre-an-der-universitaet-bielefeld"
+				>Interview zur Zukunft der digitalen (barrierefreien) Lehre an der Universität Bielefeld</a
+			>
+		</li>
+		<li>
+			<a
+				href="{base}/news/neues-aus-dem-ap01-umfrage-zu-digitaler-barrierefreiheit-in-der-hochschullehre"
+				>Beginn der Umfrage!</a
+			>
+		</li>
+		<li>
+			<a href="{base}/news/jetzt-geht-es-los">Jetzt geht es los!</a>
+		</li>
+	</ul>
 </div>
 
 <style lang="scss">
