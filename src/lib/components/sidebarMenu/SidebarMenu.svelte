@@ -84,16 +84,16 @@
 	<div class="content-wrapper">
 		<ul>
 			<li>
-				<a on:click|preventDefault={() => goToSite('/team')} href="/team">Team</a>
+				<a on:click|preventDefault={() => goToSite('/team')} href="{base}/team">Team</a>
 			</li>
 			<li>
-				<a on:click|preventDefault={() => goToSite('/news')} href="/news">Aktuelles</a>
+				<a on:click|preventDefault={() => goToSite('/news')} href="{base}/news">Aktuelles</a>
 			</li>
 			<li>
-				<a on:click|preventDefault={() => goToSite('/contact')} href="/contact">Kontakt</a>
+				<a on:click|preventDefault={() => goToSite('/contact')} href="{base}/contact">Kontakt</a>
 			</li>
 			<li>
-				<a on:click|preventDefault={() => goToSite('/publications')} href="/publications"
+				<a on:click|preventDefault={() => goToSite('/publications')} href="{base}/publications"
 					>Publikationen</a
 				>
 			</li>
