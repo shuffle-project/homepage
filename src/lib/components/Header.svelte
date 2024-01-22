@@ -29,37 +29,37 @@
 
 <div class="header-wrapper" class:scrolling>
 	<header>
-					<p
-		class="wip-info"
-		style="background-color: #99bef5; text-align: center; padding: 0 1rem; margin: 0"
-	>
-		Diese Seite befindet sich noch in der Entwicklung. Bitte nur für interne Zwecke verwenden.
-	</p>
-		<div class="header">	
-		<a href="{base}/" class="logo">
-			<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
-			<span class="shuffle-logo-text">SHUFFLE</span>
-		</a>
+		<!-- <p
+			class="wip-info"
+			style="background-color: #99bef5; text-align: center; padding: 0 1rem; margin: 0"
+		>
+			Diese Seite befindet sich noch in der Entwicklung. Bitte nur für interne Zwecke verwenden.
+		</p> -->
+		<div class="header">
+			<a href="{base}/" class="logo">
+				<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+				<span class="shuffle-logo-text">SHUFFLE</span>
+			</a>
 
-		<ul>
-			<li>
-				<a href="{base}/team">Team</a>
-			</li>
-			<li>
-				<a href="{base}/news">Aktuelles</a>
-			</li>
-			<li>
-				<a href="{base}/contact">Kontakt</a>
-			</li>
-			<li>
-				<a href="{base}/publications">Publikationen</a>
-			</li>
-		</ul>
+			<ul>
+				<li>
+					<a href="{base}/team">Team</a>
+				</li>
+				<li>
+					<a href="{base}/news">Aktuelles</a>
+				</li>
+				<li>
+					<a href="{base}/contact">Kontakt</a>
+				</li>
+				<li>
+					<a href="{base}/publications">Publikationen</a>
+				</li>
+			</ul>
 
-		<div class="menu-button-wrapper">
-			<MenuButton />
+			<div class="menu-button-wrapper">
+				<MenuButton />
+			</div>
 		</div>
-	</div>
 	</header>
 	<hr aria-hidden="true" />
 </div>
@@ -95,46 +95,44 @@
 			justify-content: space-between;
 
 			.logo {
-			display: flex;
-			align-items: center;
-			gap: 0.3125rem;
+				display: flex;
+				align-items: center;
+				gap: 0.3125rem;
 
-			text-decoration: none;
+				text-decoration: none;
 
-			&:hover {
-				span {
-					text-decoration: underline;
+				&:hover {
+					span {
+						text-decoration: underline;
+					}
+				}
+
+				img {
+					width: 2.5rem;
+					height: 2.5rem;
 				}
 			}
 
-			img {
-				width: 2.5rem;
-				height: 2.5rem;
+			ul {
+				display: flex;
+				align-items: center;
+				gap: 1.25rem;
+
+				list-style: none;
+				padding: 0;
+
+				a {
+					font-weight: bold;
+					color: var(--color-black);
+					text-decoration: none;
+				}
+			}
+
+			.menu-button-wrapper {
+				display: flex;
+				align-items: center;
 			}
 		}
-
-		ul {
-			display: flex;
-			align-items: center;
-			gap: 1.25rem;
-
-			list-style: none;
-			padding: 0;
-
-			a {
-				font-weight: bold;
-				color: var(--color-black);
-				text-decoration: none;
-			}
-		}
-
-		.menu-button-wrapper {
-			display: flex;
-			align-items: center;
-		}
-		}
-
-		
 	}
 
 	hr {
@@ -152,7 +150,6 @@
 					display: none;
 				}
 			}
-	
 		}
 	}
 
@@ -163,7 +160,6 @@
 					display: none;
 				}
 			}
-			
 		}
 	}
 </style>

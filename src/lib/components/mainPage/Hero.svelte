@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 	let mobileUserAgent = false;
 
@@ -8,7 +9,7 @@
 </script>
 
 <div class="hero-section" class:mobileUserAgent>
-	<img src="/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+	<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 	<h1>SHUFFLE</h1>
 	<p>Hochschulinitiative digitale Barrierefreiheit für Alle</p>
 </div>
