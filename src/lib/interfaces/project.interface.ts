@@ -1,3 +1,5 @@
+import type { TeamMemberName } from '$lib/constants/teamMembers.constant';
+
 const TARGET_GROUP = {
 	LECTURERS: 'Für Lehrende',
 	ADMINISTRATION: 'Für die Hochschulleitung'
@@ -15,6 +17,7 @@ export type TargetGroup = ObjectValues<typeof TARGET_GROUP>;
 export type ProjectPartners = ObjectValues<typeof PROJECT_PARTNERS>;
 
 export interface JoinEvaluation {
+	title: string;
 	introduction: string;
 	contactName: string;
 	contactEmail: string;
@@ -23,7 +26,7 @@ export interface JoinEvaluation {
 export interface Publication {
 	title: string;
 	titleLang: 'de' | 'en';
-	contributors: string[];
+	contributors: (TeamMemberName | (string & {}))[];
 	placeOfPublication: string;
 	placeOfPublicationLang: 'de' | 'en';
 	releaseDate: string;

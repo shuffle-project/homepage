@@ -13,6 +13,7 @@ export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
 	linkToProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=72',
 	partners: ['Universität Bielefeld', 'Hochschule der Medien Stuttgart'],
 	joinEvaluation: {
+		title: 'Projektpartner*in werden',
 		introduction: '',
 		contactName: 'Judith Kuhlmann',
 		contactEmail: 'jkuhlmann3@uni-bielefeld.de'

@@ -13,6 +13,7 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 		'Bei der Planung von Lehrveranstaltungen und Prüfungen ist es zwingend notwendig, die Bedarfe von allen Studierenden von Anfang an zu berücksichtigen. Dieser Moodle-Kurs umfasst wichtige Tipps und konkrete Anweisungen, um Moodle-Kurse und E-Prüfungen möglichst barrierefrei zu gestalten. Er soll als Unterstützungstool für Lehrende dienen und mit Hintergrundinformationen sowie einfach verständlichen Tipps zur Barrierefreiheit in Moodle die Gestaltung von barrierefreier digitaler Lehre in Moodle vereinfachen.',
 	partners: ['Universität Bielefeld'],
 	joinEvaluation: {
+		title: 'Projektpartner*in werden',
 		introduction: '',
 		contactEmail: 'shuffle@uni-bielefeld.de',
 		contactName: 'ZAB Uni Bielefeld'

@@ -7,12 +7,12 @@
 
 <div class="wrapper">
 	<div class="info">
-		<h2>Projektpartner*in werden</h2>
+		<h2>{join.title}</h2>
 		<p>{join.introduction}</p>
 	</div>
 	<hr aria-hidden="true" />
 	<div class="call-to-action">
-		<h3>Interessiert?</h3>
+		<h3>Kontakt</h3>
 		<p>Bitte melden Sie sich bei {join.contactName} unter:</p>
 		<a class="contact-email" href="mailto:{join.contactEmail}">{join.contactEmail}</a>
 		<CopyEmail email={join.contactEmail} />
