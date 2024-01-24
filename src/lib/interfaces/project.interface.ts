@@ -23,6 +23,12 @@ export interface JoinEvaluation {
 	contactEmail: string;
 }
 
+export interface Image {
+	src: string;
+	alt?: string;
+	visibleDescription?: string;
+}
+
 export interface Publication {
 	title: string;
 	titleLang: 'de' | 'en';
@@ -45,5 +51,6 @@ export interface Project {
 	summary: string;
 	partners: ProjectPartners[];
 	joinEvaluation?: JoinEvaluation;
+	gallery?: Image[];
 	publications?: Publication[];
 }

@@ -19,6 +19,12 @@ export const BLINDDATE: Project = {
 		contactName: 'Niklas Egger',
 		contactEmail: 'egger@hdm-stuttgart.de'
 	},
+	gallery: [
+		{
+			src: 'blinddate-gallery-3',
+			alt: 'TODO'
+		}
+	],
 	publications: [
 		{
 			title: 'Using Design Thinking Methods in Developing a Digital Accessibility Resource Website',

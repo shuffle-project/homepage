@@ -22,6 +22,10 @@
 		<JoinEvaluation join={project.joinEvaluation} />
 	{/if}
 
+	<!-- {#if project.gallery}
+		<Gallery gallery={project.gallery} projectId={project.id} />
+	{/if} -->
+
 	{#if project.publications}
 		<Publications publications={project.publications} heading="Publikationen" />
 	{/if}
