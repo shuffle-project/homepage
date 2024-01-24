@@ -91,7 +91,7 @@ export const BLINDDATE: Project = {
 				'Kongress des Verband für Blinden- und Sehbehindertenpädagogik e. V. (VBS) 2023',
 			placeOfPublicationLang: 'de',
 			linkText: 'TODO',
-			link: 'TODO'
+			link: 'https://shuffle-projekt.de/'
 		}
 	]
 };
