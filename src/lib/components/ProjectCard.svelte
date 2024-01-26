@@ -51,7 +51,7 @@
 		}
 
 		.decorative-icon {
-			background-color: var(--color-dark-grey);
+			background-color: var(--color-grey-blue);
 			height: 8.125rem;
 			padding: 1.25rem;
 			box-sizing: border-box;

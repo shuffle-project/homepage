@@ -12,7 +12,7 @@
 		</div>
 		<div class="project-details">
 			<div class="title">
-				<div class="color-square" />
+				<!-- <div class="color-square" /> -->
 				<h1>{@html project.title}</h1>
 			</div>
 			<p>{project.summary}</p>
@@ -56,7 +56,7 @@
 			.decorative-icon {
 				min-width: clamp(5.9375rem, 25vw + 1rem, 11.875rem);
 				aspect-ratio: 1/1.5;
-				background-color: var(--color-dark-grey);
+				background-color: var(--color-grey-blue);
 				padding-inline: 2.5rem;
 				box-sizing: border-box;
 				box-shadow: 0px 6px 10px 0px rgba(var(--color-black-rgb), 0.15);
@@ -68,6 +68,10 @@
 					display: flex;
 					align-items: baseline;
 					hyphens: auto;
+
+					h1 {
+						line-height: 110%;
+					}
 				}
 
 				.project-partners {
