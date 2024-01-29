@@ -153,6 +153,10 @@ export const OLD_MEMBERS = [
 	{
 		name: 'Franziska Neumann',
 		projectPartner: 'Pädagogische Hochschule Freiburg'
+	},
+	{
+		name: 'Samira Kalemba',
+		projectPartner: 'Pädagogische Hochschule Freiburg'
 	}
 ] as const satisfies TeamMember[];
 

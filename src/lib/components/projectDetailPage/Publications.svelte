@@ -26,19 +26,20 @@
 	{/if}
 	<ul aria-label={year !== -1 ? `Veröffentlichungen von ${year}` : ''}>
 		{#each publications as publication, i}
-			<li class:even-entry={(i + 1) % 2 === 0}>
+			<li>
 				<p class="title" lang={publication.titleLang}>{publication.title}</p>
 				<div class="more-info-wrapper">
-					<div class="content-wrapper">
-						<div class="contributors">
-							<Icon svg="person" alt="Beitragende:" color="dark-grey" />
-							<span>{getContributorsString(publication.contributors)}</span>
-						</div>
-						<div class="location">
-							<Icon svg="location" alt="Ort der Veröffentlichung:" color="dark-grey" />
-							<span>{publication.placeOfPublication}</span>
-						</div>
-					</div>
+					<table>
+						<tr>
+							<th><Icon svg="person" alt="Beitragende:" color="dark-grey" /></th>
+							<td>{getContributorsString(publication.contributors)}</td>
+						</tr>
+						<tr>
+							<th><Icon svg="location" alt="Ort der Veröffentlichung:" color="dark-grey" /></th>
+							<td lang={publication.placeOfPublicationLang}>{publication.placeOfPublication}</td>
+						</tr>
+					</table>
+
 					<div class="link-wrapper">
 						<LinkNewTab
 							link={publication.link}
@@ -81,24 +82,20 @@
 				justify-content: space-between;
 				gap: 1.25rem;
 
-				.content-wrapper {
-					.contributors,
-					.location {
+				table {
+					color: var(--color-grey);
+
+					th {
+						min-width: 2rem;
 						display: flex;
+						justify-content: center;
 						align-items: center;
-						gap: 0.625rem;
-						padding: 0.125rem 0 0.125rem 0.625rem;
-						color: var(--color-grey);
 					}
 				}
 
 				.link-wrapper {
 					align-self: flex-end;
 				}
-			}
-
-			&.even-entry {
-				background: var(--color-blue-gradient);
 			}
 		}
 

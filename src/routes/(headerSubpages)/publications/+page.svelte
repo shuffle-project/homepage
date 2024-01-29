@@ -62,7 +62,6 @@
 	<div class="page-content">
 		{#each readyPublications as yearEntry, i}
 			<h2>
-				<div class="color-square" />
 				{yearEntry[0]}
 			</h2>
 
@@ -80,16 +79,12 @@
 		padding-inline: var(--outer-spacing);
 	}
 
-
-
 	h2 {
 		margin-top: 4.375rem;
 		display: flex;
 		align-items: baseline;
 		gap: 0.3125rem;
 	}
-
-	
 
 	@media (min-width: 40.625rem) {
 		h2 {

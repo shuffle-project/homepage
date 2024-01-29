@@ -31,11 +31,13 @@
 			</ul>
 		</div>
 	</div>
-	<a href={project.linkToProject} class="link-to-project">
-		<span aria-hidden="true">{project.linkText}</span>
-		<span class="sr-only">{project.linkText} (öffnet neues Fenster)</span>
-		<Icon svg="open-in-new-tab" color="white" />
-	</a>
+	{#if project.showLinkToProject}
+		<a href={project.linkToProject} class="link-to-project">
+			<span aria-hidden="true">{project.linkText}</span>
+			<span class="sr-only">{project.linkText} (öffnet neues Fenster)</span>
+			<Icon svg="open-in-new-tab" color="white" />
+		</a>
+	{/if}
 </div>
 
 <style lang="scss">

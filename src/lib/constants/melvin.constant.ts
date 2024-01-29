@@ -7,6 +7,7 @@ export const MELVIN: Project = {
 	shortSummary:
 		'Erstelle schnell und einfach Videos mit Untertiteln und teile sie in einem barrierefreien Video-Player.',
 	targetGroup: ['Für Lehrende'],
+	showLinkToProject: true,
 	linkToProject: 'https://melvin.shuffle-projekt.de',
 	linkText: 'Zu Melvin',
 	summary:
@@ -18,5 +19,51 @@ export const MELVIN: Project = {
 			'Melvin befindet sich aktuell noch in der Entwicklung. Falls Sie trotzdem schon mal die aktuelle Version ausprobieren möchten, können Sie sich gerne bei der folgenden Kontaktperson melden.',
 		contactName: 'Korbinian Kuhn',
 		contactEmail: 'kuhnko@hdm-stuttgart.de'
-	}
+	},
+	publications: [
+		{
+			title:
+				'Evaluating Collaborative Editing of AI-Generated Live Subtitles by Non-Professionals in German University Lectures',
+			titleLang: 'en',
+			releaseDate: '2022-07',
+			contributors: [
+				'Patricia Piskorek',
+				'Nadine Sienel',
+				'Korbinian Kuhn',
+				'Verena Kersken',
+				'Gottfried Zimmermann'
+			],
+			placeOfPublication:
+				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE) 2022',
+			placeOfPublicationLang: 'en',
+			link: 'https://aaate.net/wp-content/uploads/sites/12/2023/08/OAC22_V1.0_Part_1.pdf#page=165',
+			linkText: 'Zum Paper (PDF)'
+		},
+		{
+			title: 'Accuracy of AI-generated Captions With Collaborative Manual Corrections in Real-Time',
+			titleLang: 'en',
+			releaseDate: '2023-04',
+			contributors: ['Korbinian Kuhn', 'Verena Kersken', 'Gottfried Zimmermann'],
+			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
+			placeOfPublicationLang: 'en',
+			link: 'https://dl.acm.org/doi/10.1145/3544549.3585724',
+			linkText: 'Zum Paper'
+		},
+		{
+			title: 'Measuring the Accuracy of Automatic Speech Recognition Solutions',
+			titleLang: 'en',
+			releaseDate: '2024-01',
+			contributors: [
+				'Korbinian Kuhn',
+				'Verena Kersken',
+				'Benedikt Reuter',
+				'Niklas Egger',
+				'Gottfried Zimmermann'
+			],
+			placeOfPublication: 'ACM Transactions on Accessible Computing, Volume 16, Issue 4',
+			placeOfPublicationLang: 'en',
+			link: 'https://dl.acm.org/doi/10.1145/3636513',
+			linkText: 'Zum Paper'
+		}
+	]
 };

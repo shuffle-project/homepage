@@ -40,6 +40,7 @@ export interface Project {
 	category: string;
 	shortSummary: string;
 	targetGroup: TargetGroup[];
+	showLinkToProject: boolean;
 	linkToProject: string;
 	linkText: string;
 	summary: string;

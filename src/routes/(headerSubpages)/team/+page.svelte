@@ -1,7 +1,11 @@
 <script>
 	import TeamMember from '../../../lib/components/TeamMember.svelte';
 	import TitleSection from '../../../lib/components/TitleSection.svelte';
-	import { TEAM_LEADERSHIP, TEAM_MEMBERS } from '../../../lib/constants/teamMembers.constant';
+	import {
+		OLD_MEMBERS,
+		TEAM_LEADERSHIP,
+		TEAM_MEMBERS
+	} from '../../../lib/constants/teamMembers.constant';
 </script>
 
 <svelte:head>
@@ -28,11 +32,22 @@
 			<TeamMember {member} />
 		{/each}
 	</ul>
+	<h2 class="old-members-heading">Ehemalige Teammitglieder</h2>
+	<ul class="team-list">
+		{#each OLD_MEMBERS as member}
+			<TeamMember {member} />
+		{/each}
+	</ul>
 </div>
 
 <style lang="scss">
 	.page-content {
 		padding: var(--outer-spacing);
+
+		.old-members-heading {
+			text-align: center;
+			margin: 6.25rem 0 3.125rem;
+		}
 	}
 
 	.leadership-list {
