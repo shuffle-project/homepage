@@ -12,7 +12,7 @@
 	<svelte:fragment slot="intro-text">Diese Sitemap listet alle Seiten auf.</svelte:fragment>
 </TitleSection>
 
-<div class="page-content">
+<div class="page-content headings-with-padding">
 	<h2>Alle Seiten (alphabetisch)</h2>
 	<!-- Add project subpages when ready -->
 	<ul>
@@ -35,7 +35,7 @@
 			<a href="{base}/contact">Kontakt</a>
 		</li>
 		<li>
-			<a href="{base}/plain-language">Leichte Sprache</a>
+			<a href="{base}/leichte-sprache">Leichte Sprache</a>
 		</li>
 		<li>
 			<a href="{base}/">Startseite</a>
