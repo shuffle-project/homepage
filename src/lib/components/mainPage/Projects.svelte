@@ -38,8 +38,9 @@
 <div class="results-section">
 	<h2>Projektergebnisse</h2>
 	<p class="intro-text">
-		Wir haben ... und ... und natürlich auch ... gemacht. Im Folgenden befinden sich alle
-		Projektergebnisse.
+		Während das SHUFFLE-Projekt weiterläuft, stehen bereits jetzt erste Ergebnisse und Projekte zur
+		Verfügung, die Sie erkunden und ausprobieren können. In den kommenden Wochen und Monaten werden
+		zudem weitere hinzukommen.
 	</p>
 
 	<div role="tablist" class="tablist" aria-label="Projektergebnisse filtern">
@@ -99,7 +100,7 @@
 
 			display: flex;
 			flex-wrap: wrap;
-			gap: 1rem;
+			gap: 0.625rem;
 
 			button {
 				background-color: transparent;
