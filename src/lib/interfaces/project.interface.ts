@@ -45,6 +45,7 @@ export interface Project {
 	linkText: string;
 	summary: string;
 	partners: ProjectPartners[];
+	info?: string;
 	joinEvaluation?: JoinEvaluation;
 	publications?: Publication[];
 }
