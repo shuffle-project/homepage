@@ -1,8 +1,7 @@
 <script>
-
-	import { base } from "$app/paths";
-
+	import { base } from '$app/paths';
 </script>
+
 <footer>
 	<hr aria-hidden="true" />
 	<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
@@ -20,7 +19,7 @@
 			<a href="{base}/">Gebärdensprache (DGS)</a>
 		</li>
 		<li>
-			<a href="{base}/">Leichte Sprache</a>
+			<a href="{base}/leichte-sprache">Leichte Sprache</a>
 		</li>
 		<li>
 			<a href="{base}/sitemap">Sitemap</a>

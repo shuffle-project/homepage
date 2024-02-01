@@ -15,7 +15,6 @@
 		<p class="subtitle">{project.category}</p>
 
 		<div class="title">
-			<div class="color-square in-result-card" />
 			<h3>{project.title}</h3>
 		</div>
 
@@ -27,11 +26,13 @@
 			<span aria-hidden="true">Mehr Informationen</span>
 			<span class="sr-only">Mehr Informationen über {project.title}</span>
 		</a>
-		<div class="link-to-project">
-			<a href={project.linkToProject} aria-label="{project.linkText} (Öffnet neues Fenster)"
-				><Icon svg="open-in-new-tab" color="white" />
-			</a>
-		</div>
+		{#if project.showLinkToProject}
+			<div class="link-to-project">
+				<a href={project.linkToProject} aria-label="{project.linkText} (Öffnet neues Fenster)"
+					><Icon svg="open-in-new-tab" color="white" />
+				</a>
+			</div>
+		{/if}
 	</div>
 </div>
 
@@ -51,7 +52,7 @@
 		}
 
 		.decorative-icon {
-			background-color: var(--color-dark-grey);
+			background-color: var(--color-grey-blue);
 			height: 8.125rem;
 			padding: 1.25rem;
 			box-sizing: border-box;

@@ -7,6 +7,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 	shortSummary:
 		'Eine Sammlung von zentralen Informationen und Checklisten für Lehrende, die bei der Gestaltung barrierefreier digitaler Lehre unterstützt.',
 	targetGroup: ['Für Lehrende'],
+	showLinkToProject: true,
 	linkToProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=46',
 	linkText: 'Zum Materialpaket barrierefreie Lehre (Moodle)',
 	summary:

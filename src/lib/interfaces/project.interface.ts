@@ -46,10 +46,12 @@ export interface Project {
 	category: string;
 	shortSummary: string;
 	targetGroup: TargetGroup[];
+	showLinkToProject: boolean;
 	linkToProject: string;
 	linkText: string;
 	summary: string;
 	partners: ProjectPartners[];
+	info?: string;
 	joinEvaluation?: JoinEvaluation;
 	gallery?: Image[];
 	publications?: Publication[];

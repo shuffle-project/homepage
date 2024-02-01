@@ -16,4 +16,8 @@
 
 <style lang="scss" global>
 	@import './../scss/_main.scss';
+
+	main {
+		padding-bottom: 3.125rem;
+	}
 </style>

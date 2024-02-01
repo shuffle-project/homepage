@@ -1,6 +1,11 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { ALL_PROJECTS } from '$lib/constants/allProjects.constant';
 	import TitleSection from '../../../lib/components/TitleSection.svelte';
+
+	const everyProjectSortedByName = ALL_PROJECTS.toSorted((a, b) => {
+		return a.title < b.title ? -1 : 1;
+	});
 </script>
 
 <svelte:head>
@@ -12,7 +17,7 @@
 	<svelte:fragment slot="intro-text">Diese Sitemap listet alle Seiten auf.</svelte:fragment>
 </TitleSection>
 
-<div class="page-content">
+<div class="page-content headings-with-padding">
 	<h2>Alle Seiten (alphabetisch)</h2>
 	<!-- Add project subpages when ready -->
 	<ul>
@@ -35,7 +40,7 @@
 			<a href="{base}/contact">Kontakt</a>
 		</li>
 		<li>
-			<a href="{base}/plain-language">Leichte Sprache</a>
+			<a href="{base}/leichte-sprache">Leichte Sprache</a>
 		</li>
 		<li>
 			<a href="{base}/">Startseite</a>
@@ -43,6 +48,21 @@
 		<li>
 			<a href="{base}/team">Team</a>
 		</li>
+	</ul>
+
+	<h2>Alle Projekte (alphabetisch)</h2>
+	<ul>
+		{#each everyProjectSortedByName as project, i}
+			<li>
+				<a href="{base}/{project.id}">{project.title}</a>
+			</li>
+		{/each}
+		<!-- <li>
+			<a href="{base}/blinddate">BlindDate</a>
+		</li>
+		<li>
+			<a href="{base}/melvin">Melvin</a>
+		</li> -->
 	</ul>
 
 	<h2>Alle News (Neueste zuerst)</h2>

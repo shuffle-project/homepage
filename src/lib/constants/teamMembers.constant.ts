@@ -87,7 +87,8 @@ export const TEAM_MEMBERS = [
 	},
 	{
 		name: 'Kim Althoff',
-		projectPartner: 'Universität Bielefeld'
+		projectPartner: 'Universität Bielefeld',
+		img: 'kim-althoff.jpg'
 	},
 	{
 		name: 'Korbinian Kuhn',
@@ -153,6 +154,14 @@ export const OLD_MEMBERS = [
 	{
 		name: 'Franziska Neumann',
 		projectPartner: 'Pädagogische Hochschule Freiburg'
+	},
+	{
+		name: 'Samira Kalemba',
+		projectPartner: 'Pädagogische Hochschule Freiburg'
+	},
+	{
+		name: 'Anna-Maria Warmuth',
+		projectPartner: 'Pädagogische Hochschule Heidelberg'
 	}
 ] as const satisfies TeamMember[];
 
