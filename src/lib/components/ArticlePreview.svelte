@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
 
 	export let title: string;
 	export let time: string;
@@ -21,7 +21,7 @@
 		border: 1px solid var(--color-blue-line);
 
 		max-width: var(--max-text-width);
-		padding: 1rem;
+		padding: 1.25rem;
 		box-sizing: border-box;
 		width: 100%;
 
