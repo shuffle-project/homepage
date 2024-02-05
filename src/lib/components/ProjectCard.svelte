@@ -27,11 +27,12 @@
 			<span class="sr-only">Mehr Informationen über {project.title}</span>
 		</a>
 		{#if project.showLinkToProject}
-			<div class="link-to-project">
-				<a href={project.linkToProject} aria-label="{project.linkText} (Öffnet neues Fenster)"
-					><Icon svg="open-new-tab-hexagon" color="original" size="parent" />
-				</a>
-			</div>
+			<a
+				class="link-to-project"
+				href={project.linkToProject}
+				aria-label="{project.linkText} (Öffnet neues Fenster)"
+				><Icon svg="open-new-tab-hexagon" color="original" size="parent" />
+			</a>
 		{/if}
 	</div>
 </div>
@@ -107,32 +108,14 @@
 			}
 
 			.link-to-project {
-				width: 2.5rem;
-				aspect-ratio: 1;
-
-				position: relative;
-
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				padding: 0.125rem;
+				z-index: 2;
 
-				transition: transform 0.1s ease-in-out;
-
-				&:hover {
-					transform: scale(112%);
-					transition: transform 0.2s ease-out;
-				}
-
-				a {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					padding: 0.125rem;
-					z-index: 2;
-
-					&:focus-visible {
-						outline: 2px solid var(--color-black);
-					}
+				&:focus-visible {
+					outline: 2px solid var(--color-black);
 				}
 			}
 		}
