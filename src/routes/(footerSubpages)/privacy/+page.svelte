@@ -53,10 +53,10 @@
 			>f</strong
 		>reiheit Für a<strong>l</strong>l<strong>e</strong>) ist ein <strong>Forschungsprojekt</strong>
 		der Hochschule der Medien (HdM) Stuttgart im Verbund mit Projektpartnern (Universität Bielefeld,
-		Pädagogische Hochschule Heidelberg sowie Pädagogische Hochschule Freiburg). Die voraussichtliche
-		Projektdauer beträgt 3 Jahre (01.08.2021 bis 31.07.2024). Das Projekt wird gefördert von der
+		Pädagogische Hochschule Heidelberg sowie Pädagogische Hochschule Freiburg). Das Projekt wird voraussichtlich
+		bis zum 31.12.2025 laufen. Es wird von der
 		<strong>St</strong>iftung Innovation <strong>i</strong>n der Hochschul<strong>l</strong>ehre
-		(STiL)
+		(STiL) gefördert.
 	</p>
 	<p>
 		Digitale Lernmaterialien und -umgebungen (Lernplattformen, Vorlesungsskripte, E-Prüfungen etc.)
@@ -104,9 +104,8 @@
 		personenbezogene Daten werden grundsätzlich nicht erhoben (s. hierzu Ziff. 3.1.2).
 	</p>
 	<p>
-		Eine Ausnahme hierzu bildet die Möglichkeit der Eingabe Ihrer Daten in ein entsprechendes
-		Kontaktformular, wo Nutzende freiwillig personenbezogene Daten (Name, Mailadresse) in das
-		Formular eingeben können.
+		Eine Ausnahme hierzu bildet die Möglichkeit der Kontaktaufnahme per E-Mail, wo Nutzende
+		freiwillig personenbezogene Daten übermitteln können, um beispielsweise eine Barriere zu melden.
 	</p>
 	<h4 id="einzelne-verarbeitungsvorgange">3.1.2 Einzelne Verarbeitungsvorgänge</h4>
 	<h5>(Einfache) Nutzung der Website</h5>
@@ -166,12 +165,14 @@
 	<h5>Zusätzliche Dienste</h5>
 	<p>
 		Auf der Unterseite „Kontakt“ wird eine Kontakt- und Kommunikationsfunktion eingebunden. Durch
-		Ausfüllen und Abschicken des entsprechenden Formulars kommt es zu einer Verarbeitung der dort
-		eingegebenen Daten (Name, E-Mail-Adresse, Nachrichteninhalte) beim Datenverantwortlichen. Diese
-		ist zur Bearbeitung und/oder Beantwortung der Anfrage erforderlich. Eine darüberhinausgehende,
-		d.h. zweckfremde Verarbeitung findet nicht statt.
+		Zusendungen von E-Mails (info@shuffle-projekt.de) durch Nutzende kommt es zu einer Verarbeitung
+		der dort eingegebenen Daten (Name, E-Mail-Adresse, Nachrichteninhalte) beim
+		Datenverantwortlichen. Diese ist zur Bearbeitung und/oder Beantwortung der Anfrage erforderlich.
+		Eine darüberhinausgehende, d.h. zweckfremde Verarbeitung findet nicht statt.
 	</p>
-	<p>Entsprechendes gilt für Zusendungen von E-Mails (info@shuffle-projekt.de) durch Nutzende.</p>
+	<p>
+		Entsprechendes gilt für andere Zusendungen von E-Mails (info@shuffle-projekt.de) durch Nutzende.
+	</p>
 	<p>
 		Zur Erbringung dieser Dienste werden externe Dienstleister eingebunden, die über einen
 		Auftragsverarbeitungsvertrag an eine DSGVO-konforme Datenverarbeitung gebunden sind (<a

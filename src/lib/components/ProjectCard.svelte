@@ -29,7 +29,7 @@
 		{#if project.showLinkToProject}
 			<div class="link-to-project">
 				<a href={project.linkToProject} aria-label="{project.linkText} (Öffnet neues Fenster)"
-					><Icon svg="open-in-new-tab" color="white" />
+					><Icon svg="open-new-tab-hexagon" color="original" size="parent" />
 				</a>
 			</div>
 		{/if}
@@ -94,7 +94,8 @@
 			position: absolute;
 			inset: auto 0 0 0;
 
-			padding: 0 1.25rem 1.25rem;
+			padding: 0 1.25rem 0.875rem;
+			height: 2.5rem;
 
 			display: flex;
 			align-items: center;
@@ -106,9 +107,8 @@
 			}
 
 			.link-to-project {
-				background-color: var(--color-blue);
-				width: 2.25rem;
-				height: 1.375rem;
+				width: 2.5rem;
+				aspect-ratio: 1;
 
 				position: relative;
 
@@ -116,41 +116,23 @@
 				align-items: center;
 				justify-content: center;
 
-				transition: transform 0.2s ease-in-out;
+				transition: transform 0.1s ease-in-out;
 
 				&:hover {
-					transform: scale(110%);
-					transition: transform 0.2s ease-in-out;
+					transform: scale(112%);
+					transition: transform 0.2s ease-out;
 				}
 
 				a {
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					padding: 0.375rem;
+					padding: 0.125rem;
 					z-index: 2;
 
 					&:focus-visible {
 						outline: 2px solid var(--color-black);
 					}
-				}
-
-				&:before {
-					content: '';
-					position: absolute;
-					top: -0.5rem;
-					border-left: 1.15rem solid transparent;
-					border-right: 1.15rem solid transparent;
-					border-bottom: 0.5rem solid var(--color-blue);
-				}
-
-				&:after {
-					content: '';
-					position: absolute;
-					bottom: -0.5rem;
-					border-left: 1.15rem solid transparent;
-					border-right: 1.15rem solid transparent;
-					border-top: 0.5rem solid var(--color-blue);
 				}
 			}
 		}

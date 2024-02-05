@@ -36,7 +36,7 @@
 </script>
 
 <div class="results-section">
-	<h2>Projektergebnisse</h2>
+	<h2 id="project-results">Projektergebnisse</h2>
 	<p class="intro-text">
 		Während das SHUFFLE-Projekt weiterläuft, stehen bereits jetzt erste Ergebnisse und Projekte zur
 		Verfügung, die Sie erkunden und ausprobieren können. In den kommenden Wochen und Monaten werden
