@@ -26,7 +26,7 @@
 
 <div class="video-wrapper">
 	<!-- svelte-ignore a11y-media-has-caption -->
-	<video controls muted>
+	<video controls muted poster="{base}/videos/dgs_shuffle_teaser.jpg">
 		<source src="{base}/videos/dgs_shuffle.mp4" type="video/mp4" />
 		Ihr Browser unterstützt die Wiedergabe von Videos nicht.
 	</video>
