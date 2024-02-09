@@ -38,7 +38,8 @@ export const BLINDDATE: Project = {
 				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE) 2022',
 			placeOfPublicationLang: 'en',
 			linkText: 'Zum Poster Abstract',
-			link: 'https://www.icchp-aaate.org/content/using-design-thinking-methods-developing-digital-accessibility-learning-resource'
+			link: 'https://www.icchp-aaate.org/content/using-design-thinking-methods-developing-digital-accessibility-learning-resource',
+			showLink: true
 		},
 		{
 			title: 'Persona Co-design for Improving Digital Accessibility',
@@ -56,7 +57,8 @@ export const BLINDDATE: Project = {
 			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
 			placeOfPublicationLang: 'en',
 			linkText: 'Zum Poster Abstract',
-			link: 'https://dl.acm.org/doi/10.1145/3544549.3585857'
+			link: 'https://dl.acm.org/doi/10.1145/3544549.3585857',
+			showLink: true
 		},
 		{
 			title: 'Re-Conceptualizing Disability Simulations: a guided strategies-based approach',
@@ -72,7 +74,8 @@ export const BLINDDATE: Project = {
 				'Association for the Advancement of Assistive Technology in Europe (AAATE) 2023',
 			placeOfPublicationLang: 'en',
 			linkText: 'Zum Paper (PDF)',
-			link: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=277'
+			link: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=277',
+			showLink: true
 		},
 		{
 			title:
@@ -92,7 +95,8 @@ export const BLINDDATE: Project = {
 				'Kongress des Verband für Blinden- und Sehbehindertenpädagogik e. V. (VBS) 2023',
 			placeOfPublicationLang: 'de',
 			linkText: 'TODO',
-			link: 'https://shuffle-projekt.de/'
+			link: 'https://shuffle-projekt.de/',
+			showLink: false
 		}
 	]
 };

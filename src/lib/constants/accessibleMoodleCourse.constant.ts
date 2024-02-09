@@ -29,7 +29,8 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 			placeOfPublicationLang: 'de',
 			releaseDate: '2022-06',
 			linkText: 'Zum Kapitel',
-			link: 'https://visual-books.com/moodle-kann-mehr/'
+			link: 'https://visual-books.com/moodle-kann-mehr/',
+			showLink: true
 		}
 	]
 };

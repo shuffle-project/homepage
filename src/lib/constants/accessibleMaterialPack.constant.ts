@@ -32,7 +32,8 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 				'Medienpädagogik: Zeitschrift für Theorie Und Praxis Der Medienbildung 20 (Inklusive Medienbildung):169-82',
 			placeOfPublicationLang: 'de',
 			link: 'https://doi.org/10.21240/mpaed/jb20/2023.09.07.X',
-			linkText: 'Zum Paper'
+			linkText: 'Zum Paper',
+			showLink: true
 		}
 	]
 };

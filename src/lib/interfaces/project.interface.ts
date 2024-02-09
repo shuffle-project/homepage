@@ -32,6 +32,7 @@ export interface Publication {
 	releaseDate: string;
 	linkText: string;
 	link: string;
+	showLink: boolean;
 }
 
 export interface Project {
