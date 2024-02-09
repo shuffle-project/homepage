@@ -12,5 +12,12 @@ export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
 	showLinkToProject: false,
 	linkText: 'Zu Digitale Barrierefreiheit an Hochschulen (Moodle)',
 	linkToProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=72',
-	partners: ['Universität Bielefeld', 'Hochschule der Medien Stuttgart']
+	partners: ['Universität Bielefeld', 'Hochschule der Medien Stuttgart'],
+	joinEvaluation: {
+		title: 'Melden Sie sich bei uns!',
+		introduction:
+			'Egal, ob Sie bereits Erfahrung haben oder sich dem Thema annähern möchten. Auf Anfrage erhalten Sie Zugang zu unserem Kurs und können uns Ihr wertvolles Feedback im Anschluss mitteilen. Wir freuen uns auf Ihre Beteiligung!',
+		contactEmail: 'jkuhlmann3@uni-bielefeld.de',
+		contactName: 'Judith Kuhlmann'
+	}
 };
