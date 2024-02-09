@@ -162,6 +162,14 @@ export const OLD_MEMBERS = [
 	{
 		name: 'Anna-Maria Warmuth',
 		projectPartner: 'Pädagogische Hochschule Heidelberg'
+	},
+	{
+		name: 'Insa Menke',
+		projectPartner: 'Universität Bielefeld'
+	},
+	{
+		name: 'Andreas Burkard',
+		projectPartner: 'Hochschule der Medien Stuttgart'
 	}
 ] as const satisfies TeamMember[];
 

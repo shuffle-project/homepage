@@ -41,13 +41,15 @@
 					</table>
 
 					<div class="link-wrapper">
-						<LinkNewTab
-							link={publication.link}
-							details={publication.title}
-							detailsLang={publication.titleLang}
-						>
-							{publication.linkText}
-						</LinkNewTab>
+						{#if publication.showLink}
+							<LinkNewTab
+								link={publication.link}
+								details={publication.title}
+								detailsLang={publication.titleLang}
+							>
+								{publication.linkText}
+							</LinkNewTab>
+						{/if}
 					</div>
 				</div>
 			</li>

@@ -37,6 +37,11 @@
 			<span class="sr-only">{project.linkText} (öffnet neues Fenster)</span>
 			<Icon svg="open-in-new-tab" color="white" />
 		</a>
+	{:else}
+		<p class="in-development-info">
+			Das Projekt befindet sich derzeit noch in der Entwicklungsphase, daher steht noch kein Link
+			zur Verfügung.
+		</p>
 	{/if}
 </div>
 
@@ -103,18 +108,29 @@
 			align-items: center;
 			gap: 0.3125rem;
 		}
+
+		.in-development-info {
+			background-color: var(--color-blue-line);
+			margin: 0rem -1.875rem -1.875rem;
+			padding: 0.75rem 1.875rem;
+		}
 	}
 
 	@media (max-width: 40.5625rem) {
 		.project-header {
 			.upper-part {
 				flex-direction: column;
-				margin-bottom: 3rem;
 
 				.decorative-icon {
 					min-width: 100%;
 					max-height: 10rem;
 					padding: 1.25rem 2.5rem;
+				}
+			}
+
+			&:has(.link-to-project) {
+				.upper-part {
+					margin-bottom: 3rem;
 				}
 			}
 

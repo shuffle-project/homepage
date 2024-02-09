@@ -31,7 +31,7 @@
 			<a href="{base}/">Erklärung zur Barrierefreiheit</a>
 		</li>
 		<li>
-			<a href="{base}/">Gebärdensprache (DGS)</a>
+			<a href="{base}/dgs">Gebärdensprache (DGS)</a>
 		</li>
 		<li>
 			<a href="{base}/imprint">Impressum</a>

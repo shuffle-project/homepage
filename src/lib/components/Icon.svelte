@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
 
 	export let svg: string;
 	export let alt = '';
-	export let color: 'white' | 'black' | 'blue' | 'dark-grey' = 'black';
+	export let color: 'original' | 'white' | 'black' | 'blue' | 'dark-grey' = 'black';
 	export let size: '20' | '24' | '30' | '16' | 'parent' = '24';
 
 	const svgSize = 'size-' + size;

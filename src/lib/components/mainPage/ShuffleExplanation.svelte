@@ -1,10 +1,22 @@
 <div class="shuffle-explanation-section">
 	<h2>Was ist SHUFFLE?</h2>
 	<p>
-		TEXT-ÜBERARBEITEN: Das SHUFFLE-Projekt unterstützt eine chancengerechte Teilhabe an digitaler
-		Lehre für Studierende mit individuellen Bedarfen. Wir erarbeiten ein Reifegradmodell, mit dem
-		Hochschulen den Zustand der Barrierefreiheit ihrer digitalen Hochschullehre anhand von
-		multidimensionalen Daten messen, bewerten, und systematisch verbessern kann.
+		Die Digitalisierung der Hochschullehre bringt diverse Chancen und zu vermeidende Risiken mit
+		sich. Während digitale Lerninhalte von Studierenden mit individuellen Bedarfen zwar als
+		hilfreich für den Studienerfolg empfunden werden, gilt es dennoch durch die Digitalisierung neu
+		entstandene Barrieren abzubauen. Es muss eine chancengerechte Teilhabe an der digitalen Lehre
+		für alle Studierende gewährleistet werden, wie dies auch im Hochschulrahmengesetz gefordert ist.
+	</p>
+	<p>
+		Das Ziel von SHUFFLE ist es, eine systematische Verbesserung der aktuellen Situation digitaler
+		Barrierefreiheit an deutschen Hochschulen zu erreichen. Bei der Analyse und Umsetzung der
+		Maßnahmen werden Lehrende und Studierende mit eingebunden und es wird nach dem Universal Design
+		for Learning (UDL) Ansatz gearbeitet. Die Grundsätze von UDL führen dazu, dass von zugänglichen
+		Lernmaterialien und -umgebungen alle Studierende profitieren können.
+	</p>
+	<p>
+		Alle im Projekt erarbeiteten Ergebnisse werden der Öffentlichkeit kostenlos zur Verfügung
+		gestellt und der gesamte Quellcode als Open-Source veröffentlicht.
 	</p>
 </div>
 

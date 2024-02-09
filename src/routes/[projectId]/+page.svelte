@@ -15,7 +15,7 @@
 
 <div class="wrapper">
 	<div class="back-link-wrapper">
-		<BackLink />
+		<BackLink linkTo="/#project-results" />
 	</div>
 	<ProjectHeader {project} />
 

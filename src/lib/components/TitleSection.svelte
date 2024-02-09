@@ -2,6 +2,7 @@
 	<div class="title-section">
 		<h1 class="title"><slot name="title" /></h1>
 		<p class="intro-text"><slot name="intro-text" /></p>
+		<slot name="dgs-icon" />
 	</div>
 </div>
 
@@ -21,5 +22,9 @@
 		padding-inline: var(--outer-spacing);
 		margin-inline: auto;
 		box-sizing: border-box;
+
+		h1 {
+			line-height: 120%;
+		}
 	}
 </style>
