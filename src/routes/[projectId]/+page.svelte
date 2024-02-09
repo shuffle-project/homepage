@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BackLink from '$lib/components/BackLink.svelte';
+	import Gallery from '$lib/components/projectDetailPage/Gallery.svelte';
 	import Info from '$lib/components/projectDetailPage/Info.svelte';
 	import JoinEvaluation from '$lib/components/projectDetailPage/JoinEvaluation.svelte';
 	import ProjectHeader from '$lib/components/projectDetailPage/ProjectHeader.svelte';
@@ -27,9 +28,9 @@
 		<JoinEvaluation join={project.joinEvaluation} />
 	{/if}
 
-	<!-- {#if project.gallery}
+	{#if project.gallery}
 		<Gallery gallery={project.gallery} projectId={project.id} />
-	{/if} -->
+	{/if}
 
 	{#if project.publications}
 		<Publications publications={project.publications} heading="Publikationen" />

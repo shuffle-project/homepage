@@ -22,8 +22,14 @@ export const BLINDDATE: Project = {
 	},
 	gallery: [
 		{
-			src: 'blinddate-gallery-3',
-			alt: 'TODO'
+			src: 'blinddate-gallery-2.png',
+			description:
+				'Die Persona Maxi ist neben einer interaktiven Komponente zu sehen. Die "Umdrehbare Karte" beinhaltet ein klares Statement der Persona, in diesem Fall: "Ich bin nicht faul und unzuverlässig!" '
+		},
+		{
+			src: 'blinddate-gallery-3.png',
+			description:
+				'Die Persona Gabriel erklärt in seinem Simulationsspiel auf BlindDate eine Strategie, die ihm bei seiner Sehbeeinträchtigung hilft. So bewegt er sein Kopf viel hin und her und empfiehlt der spielenden Person dies ebenso zu tun, um die Aufgabe zu lösen.'
 		}
 	],
 	publications: [

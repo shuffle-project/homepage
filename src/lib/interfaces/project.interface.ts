@@ -25,8 +25,7 @@ export interface JoinEvaluation {
 
 export interface Image {
 	src: string;
-	alt?: string;
-	visibleDescription?: string;
+	description: string;
 }
 
 export interface Publication {
