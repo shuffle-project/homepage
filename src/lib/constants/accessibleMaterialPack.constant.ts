@@ -7,9 +7,10 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 	shortSummary:
 		'Eine Sammlung von zentralen Informationen und Checklisten für Lehrende, die bei der Gestaltung barrierefreier digitaler Lehre unterstützt.',
 	targetGroup: ['Für Lehrende'],
-	showLinkToProject: true,
-	linkToProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=46',
-	linkText: 'Materialpaket barrierefreie Lehre (Moodle)',
+	link: {
+		toProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=46',
+		label: 'Materialpaket barrierefreie Lehre (Moodle)'
+	},
 	summary:
 		'Das Materialpaket bündelt zentrale Informationen zur Umsetzung barrierefreier Hochschullehre. Knappe Checklisten geben Hinweise zur Umsetzung möglichst barrierefreier Dokumente und Lehrsituationen. Ergänzend dazu findet man ausführliche Anleitungen und Hilfestellungen zur Umsetzung der in den Checklisten aufgeführten Anforderungen. In einer Wissensdatenbank werden zusätzlich Informationen zu weiteren Aspekten im Kontext barrierefreier digitaler Lehre bereitgestellt.',
 	partners: ['Universität Bielefeld'],

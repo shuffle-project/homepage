@@ -35,17 +35,29 @@ export interface Publication {
 	showLink: boolean;
 }
 
+export interface SubProject {
+	title: string;
+	summary: string;
+	link: {
+		toProject: string;
+		label: string;
+	};
+}
+
 export interface Project {
 	id: string;
 	title: string;
 	category: string;
 	shortSummary: string;
 	targetGroup: TargetGroup[];
-	showLinkToProject: boolean;
-	linkToProject: string;
-	linkText: string;
+	showInDevelopmentInfo?: boolean;
+	link?: {
+		toProject: string;
+		label: string;
+	};
 	summary: string;
 	partners: ProjectPartners[];
+	subProjects?: SubProject[];
 	info?: string;
 	joinEvaluation?: JoinEvaluation;
 	publications?: Publication[];

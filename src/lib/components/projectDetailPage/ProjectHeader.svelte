@@ -2,6 +2,7 @@
 	import type { Project } from '$lib/interfaces/project.interface';
 
 	import Icon from '../Icon.svelte';
+	import LinkNewTab from '../LinkNewTab.svelte';
 	export let project: Project;
 </script>
 
@@ -31,13 +32,32 @@
 			</ul>
 		</div>
 	</div>
-	{#if project.showLinkToProject}
-		<a href={project.linkToProject} class="link-to-project">
-			<span aria-hidden="true">{project.linkText}</span>
-			<span class="sr-only">{project.linkText} (öffnet neues Fenster)</span>
+	{#if project.link}
+		<a href={project.link.toProject} class="link-to-project">
+			<span aria-hidden="true">{project.link.label}</span>
+			<span class="sr-only">{project.link.label} (öffnet neues Fenster)</span>
 			<Icon svg="open-in-new-tab" color="white" />
 		</a>
-	{:else}
+	{/if}
+
+	{#if project.subProjects}
+		<div class="subprojects-wrapper">
+			{#each project.subProjects as subProject}
+				<div class="subproject">
+					<hr aria-hidden="true" />
+					<h2>{subProject.title}</h2>
+					<p>{subProject.summary}</p>
+					<div class="link-to-subproject">
+						<LinkNewTab invertedStyle link={subProject.link.toProject}
+							>{subProject.link.label}</LinkNewTab
+						>
+					</div>
+				</div>
+			{/each}
+		</div>
+	{/if}
+
+	{#if project.showInDevelopmentInfo}
 		<p class="in-development-info">
 			Das Projekt befindet sich derzeit noch in der Entwicklungsphase, daher steht noch kein Link
 			zur Verfügung.
@@ -92,6 +112,23 @@
 						width: 1.875rem;
 						height: 1.875rem;
 					}
+				}
+			}
+		}
+
+		.subprojects-wrapper {
+			margin-top: -1.875rem;
+			.subproject {
+				hr {
+					height: 1px;
+					border: none;
+					background-color: var(--color-blue-line);
+					margin: 1.875rem 0;
+				}
+
+				.link-to-subproject {
+					display: flex;
+					justify-content: end;
 				}
 			}
 		}

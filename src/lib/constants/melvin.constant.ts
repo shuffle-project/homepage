@@ -7,9 +7,10 @@ export const MELVIN: Project = {
 	shortSummary:
 		'Erstelle schnell und einfach Videos mit Untertiteln und teile sie in einem barrierefreien Video-Player.',
 	targetGroup: ['Für Lehrende'],
-	showLinkToProject: true,
-	linkToProject: 'https://melvin.shuffle-projekt.de',
-	linkText: 'Zu Melvin',
+	link: {
+		toProject: 'https://melvin.shuffle-projekt.de',
+		label: 'Zu Melvin'
+	},
 	summary:
 		'Barrierefreie Videos sind wichtig, jedoch oft mit einem enormen Aufwand, notwendigem Know-How und dem Einsatz unterschiedlicher Tools verbunden. Melvin bietet hierfür eine schnellere und bequemere Lösung an. Innerhalb einer Webanwendung können Sie ihre Videos aufnehmen, automatisch untertiteln lassen und durch einen barrierefreien Player das fertige Video mitsamt Transkript teilen. Die Untertitel können Sie zudem alleine oder im Team verbessern, im Nachhinein oder während eines Livestreams.',
 	partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Heidelberg'],

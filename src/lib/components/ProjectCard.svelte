@@ -26,11 +26,11 @@
 			<span aria-hidden="true">Mehr Informationen</span>
 			<span class="sr-only">Mehr Informationen über {project.title}</span>
 		</a>
-		{#if project.showLinkToProject}
+		{#if project.link}
 			<a
 				class="link-to-project"
-				href={project.linkToProject}
-				aria-label="{project.linkText} (Öffnet neues Fenster)"
+				href={project.link.toProject}
+				aria-label="{project.link.label} (Öffnet neues Fenster)"
 				><Icon svg="open-new-tab-hexagon" color="original" size="parent" />
 			</a>
 		{/if}

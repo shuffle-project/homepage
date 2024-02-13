@@ -7,9 +7,10 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 	shortSummary:
 		'Dieser Moodle-Kurs beinhaltet Informationen und Umsetz&shy;ungshilfen zur barrierefreien Gestaltung eines Moodle-Kurses und E-Prüfungen.',
 	targetGroup: ['Für Lehrende'],
-	showLinkToProject: true,
-	linkToProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=7',
-	linkText: 'Zum Barrierefreien-Moodle-Kurs',
+	link: {
+		toProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=7',
+		label: 'Zum Barrierefreien-Moodle-Kurs'
+	},
 	summary:
 		'Bei der Planung von Lehrveranstaltungen und Prüfungen ist es zwingend notwendig, die Bedarfe von allen Studierenden von Anfang an zu berücksichtigen. Dieser Moodle-Kurs umfasst wichtige Tipps und konkrete Anweisungen, um Moodle-Kurse und E-Prüfungen möglichst barrierefrei zu gestalten. Er soll als Unterstützungstool für Lehrende dienen und mit Hintergrundinformationen sowie einfach verständlichen Tipps zur Barrierefreiheit in Moodle die Gestaltung von barrierefreier digitaler Lehre in Moodle vereinfachen.',
 	partners: ['Universität Bielefeld'],

@@ -9,9 +9,10 @@ export const BLINDDATE: Project = {
 	targetGroup: ['Für Lehrende'],
 	summary:
 		'"BlindDate" ist eine digitale Plattform, die Lehrenden eine Begegnung mit virtuellen Studierende mit individuellen Bedarfen ermöglicht. Diese "Personas" zeigen typische Barrieren in ihrem Studienalltag, sowie Strategien zur Bewältigung derselben, auf und steigern so das Bewusstsein der Benutzenden. Konkrete Handlungsempfehlungen helfen Ihnen, Barrieren in der eigenen Lehre abzubauen.',
-	showLinkToProject: true,
-	linkText: 'Zu BlindDate',
-	linkToProject: 'https://barrierefreies-blinddate.de/',
+	link: {
+		label: 'Zu BlindDate',
+		toProject: 'https://barrierefreies-blinddate.de/'
+	},
 	partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Heidelberg'],
 	joinEvaluation: {
 		title: 'Feedback geben',
