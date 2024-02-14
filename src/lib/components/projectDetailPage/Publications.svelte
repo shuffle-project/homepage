@@ -72,7 +72,7 @@
 		}
 
 		li {
-			padding: 0.625rem 0;
+			padding: 1.25rem 0;
 
 			.title {
 				font-weight: bold;

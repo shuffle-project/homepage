@@ -68,7 +68,7 @@
 		}
 
 		.content {
-			padding: 0.5rem 1rem 0rem;
+			padding: 0.5rem 1.125rem 0rem;
 
 			.subtitle {
 				color: var(--color-dark-grey);
@@ -103,7 +103,7 @@
 			position: absolute;
 			inset: auto 0 0 0;
 
-			padding: 0 1.25rem 0.875rem;
+			padding: 0 1.125rem 0.875rem;
 			height: 2.5rem;
 
 			display: flex;

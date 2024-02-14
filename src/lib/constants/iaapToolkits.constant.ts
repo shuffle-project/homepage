@@ -31,6 +31,7 @@ export const IAAP_TOOLKITS: Project = {
 			}
 		}
 	],
+	info: 'Das Toolkit umfasst (i) den Lehrplan und (ii) die Unterlagen zur Prüfungsanmeldung, die am Ende der verlinkten Seite heruntergeladen werden können.',
 	joinEvaluation: {
 		title: 'Feedback geben',
 		introduction:
