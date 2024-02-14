@@ -7,7 +7,7 @@
 	export let invertedStyle = false;
 </script>
 
-<a href={link} class:invertedStyle>
+<a href={link} class:invertedStyle target="_blank" rel="noopener noreferrer">
 	<span aria-hidden="true"><slot /></span>
 	<span class="sr-only"
 		><slot /><span lang={detailsLang}>{details}</span> (öffnet neues Fenster)</span

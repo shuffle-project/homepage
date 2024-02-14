@@ -152,6 +152,7 @@
 	.embla__slide {
 		flex: 0 0 100%;
 		min-width: 0;
+		padding: 1.25rem 0;
 	}
 
 	@media (min-width: 25.625rem) {

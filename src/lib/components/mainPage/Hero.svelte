@@ -17,7 +17,7 @@
 <style lang="scss">
 	.hero-section {
 		background: var(--color-blue-gradient);
-		height: max(30rem, 100vh);
+		height: max(30rem, 70vh);
 
 		display: flex;
 		flex-direction: column;
@@ -28,6 +28,7 @@
 		img {
 			width: 10rem;
 			height: 10rem;
+			margin-top: 4.375rem;
 		}
 
 		h1 {

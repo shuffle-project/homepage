@@ -22,10 +22,12 @@
 
 <style lang="scss">
 	.shuffle-explanation-section {
-		margin: var(--section-vertical-spacing) var(--outer-spacing);
+		margin: var(--section-vertical-spacing) 0;
+		padding: var(--section-vertical-spacing) var(--outer-spacing);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		background: var(--color-blue-gradient);
 
 		h2 {
 			margin-bottom: 1.25rem;

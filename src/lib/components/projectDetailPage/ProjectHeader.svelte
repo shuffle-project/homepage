@@ -33,11 +33,9 @@
 		</div>
 	</div>
 	{#if project.link}
-		<a href={project.link.toProject} class="link-to-project">
-			<span aria-hidden="true">{project.link.label}</span>
-			<span class="sr-only">{project.link.label} (öffnet neues Fenster)</span>
-			<Icon svg="open-in-new-tab" color="white" />
-		</a>
+		<div class="link-to-project">
+			<LinkNewTab invertedStyle link={project.link.toProject}>{project.link.label}</LinkNewTab>
+		</div>
 	{/if}
 
 	{#if project.subProjects}
@@ -136,14 +134,6 @@
 		.link-to-project {
 			position: absolute;
 			inset: auto 1.875rem 1.875rem auto;
-
-			background-color: var(--color-blue);
-			color: var(--color-white);
-			padding: 0.375rem 0.75rem;
-			text-decoration: none;
-			display: flex;
-			align-items: center;
-			gap: 0.3125rem;
 		}
 
 		.in-development-info {

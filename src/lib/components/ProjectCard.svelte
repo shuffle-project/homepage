@@ -11,29 +11,31 @@
 	<div class="decorative-icon">
 		<Icon svg={project.id} color="white" size="parent" />
 	</div>
-	<div class="content">
-		<p class="subtitle">{project.category}</p>
+	<div class="content-wrapper">
+		<div class="content">
+			<p class="subtitle">{project.category}</p>
 
-		<div class="title">
-			<h3>{project.title}</h3>
+			<div class="title">
+				<h3>{project.title}</h3>
+			</div>
+
+			<hr aria-hidden="true" />
+			<p>{@html project.shortSummary}</p>
 		</div>
-
-		<hr aria-hidden="true" />
-		<p>{@html project.shortSummary}</p>
-	</div>
-	<div class="links">
-		<a href="{base}/{project.id}" class="link-more-info">
-			<span aria-hidden="true">Mehr Informationen</span>
-			<span class="sr-only">Mehr Informationen über {project.title}</span>
-		</a>
-		{#if project.link}
-			<a
-				class="link-to-project"
-				href={project.link.toProject}
-				aria-label="{project.link.label} (Öffnet neues Fenster)"
-				><Icon svg="open-new-tab-hexagon" color="original" size="parent" />
+		<div class="links">
+			<a href="{base}/{project.id}" class="link-more-info">
+				<span aria-hidden="true">Mehr Informationen</span>
+				<span class="sr-only">Mehr Informationen über {project.title}</span>
 			</a>
-		{/if}
+			{#if project.link}
+				<a
+					class="link-to-project"
+					href={project.link.toProject}
+					aria-label="{project.link.label} (Öffnet neues Fenster)"
+					><Icon svg="open-new-tab-hexagon" color="original" size="parent" />
+				</a>
+			{/if}
+		</div>
 	</div>
 </div>
 
@@ -44,9 +46,8 @@
 		width: 100%;
 
 		background-color: var(--color-white);
-		box-shadow: 0px 6px 10px 6px rgba(var(--color-black-rgb), 0.05);
-
-		position: relative;
+		// box-shadow: 0px 6px 10px 6px rgba(var(--color-black-rgb), 0.05);
+		// box-shadow: 0px 0px 20px 6px rgba(var(--color-blue-rgb), 0.2);
 
 		&.horizontal-center {
 			margin-inline: auto;
@@ -59,8 +60,15 @@
 			box-sizing: border-box;
 		}
 
+		.content-wrapper {
+			border: 1px solid var(--color-blue-line);
+			border-top: 0px;
+			position: relative;
+			min-height: calc(25rem - 8.125rem);
+		}
+
 		.content {
-			padding: 0.5rem 1.25rem 0rem;
+			padding: 0.5rem 1rem 0rem;
 
 			.subtitle {
 				color: var(--color-dark-grey);

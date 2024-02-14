@@ -78,14 +78,14 @@
 
 <style lang="scss">
 	.results-section {
-		background: var(--color-blue-gradient);
-		padding: var(--section-vertical-spacing) var(--outer-spacing);
+		background: var(--color-white);
+		padding: 0 var(--outer-spacing);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
 		h2 {
-			margin-bottom: 1.25rem;
+			padding: var(--section-vertical-spacing) 0 1.25rem;
 		}
 
 		.intro-text {

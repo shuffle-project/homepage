@@ -10,6 +10,6 @@
 </svelte:head>
 
 <Hero />
-<ShuffleExplanation />
 <Projects />
+<ShuffleExplanation />
 <ProjectPartners />
