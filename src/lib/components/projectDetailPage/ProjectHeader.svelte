@@ -115,7 +115,6 @@
 		}
 
 		.subprojects-wrapper {
-			margin-top: -1.875rem;
 			.subproject {
 				hr {
 					height: 1px;
