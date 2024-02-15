@@ -5,6 +5,7 @@ import { DIGITAL_ACCESSIBILITY_UNIVERSITY } from './digitalAccessibilityUniversi
 import { IAAP_TOOLKITS } from './iaapToolkits.constant';
 import { MATURITY_MODEL } from './maturityModel.constant';
 import { MELVIN } from './melvin.constant';
+import { MOOC_COURSES } from './moocCourses.constant';
 
 export const ALL_PROJECTS = [
 	ACCESSIBLE_MOODLE_COURSE,
@@ -12,6 +13,7 @@ export const ALL_PROJECTS = [
 	BLINDDATE,
 	DIGITAL_ACCESSIBILITY_UNIVERSITY,
 	IAAP_TOOLKITS,
+	MATURITY_MODEL,
 	MELVIN,
-	MATURITY_MODEL
+	MOOC_COURSES
 ];
