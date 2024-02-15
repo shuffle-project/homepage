@@ -43,7 +43,7 @@
 		zudem weitere hinzukommen.
 	</p>
 
-	<div role="tablist" class="tablist" aria-label="Projektergebnisse filtern">
+	<!-- <div role="tablist" class="tablist" aria-label="Projektergebnisse filtern">
 		{#each tabOptions as tabOption, i}
 			<button
 				id="results-tab-{i}"
@@ -56,7 +56,7 @@
 				{tabOption}
 			</button>
 		{/each}
-	</div>
+	</div> -->
 
 	<div class="results-list desktop">
 		{#key selectedProjects}
