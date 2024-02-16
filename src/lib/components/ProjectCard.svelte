@@ -32,6 +32,8 @@
 					class="link-to-project"
 					href={project.link.toProject}
 					aria-label="{project.link.label} (Öffnet neues Fenster)"
+					target="_blank"
+					rel="noopener noreferrer"
 					><Icon svg="open-new-tab-hexagon" color="original" size="parent" />
 				</a>
 			{/if}
