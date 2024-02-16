@@ -30,7 +30,7 @@
 			{#if project.link}
 				<a
 					class="link-to-project"
-					href={project.link.toProject}
+					href={project.link.url}
 					aria-label="{project.link.label} (Öffnet neues Fenster)"
 					target="_blank"
 					rel="noopener noreferrer"

@@ -18,7 +18,7 @@ export const IAAP_TOOLKITS: Project = {
 				'Dieses Toolkit enthält Informationen über die CPACC-Zertifizierung (Certified Professional in Accessibility Core Competencies), die eine einjährige Erfahrung im Bereich der Barrierefreiheit oder eine neue/veränderte Rolle mit einer gewissen Verantwortung für Barrierefreiheit voraussetzt.  Es enthält einen Lehrplan für die Studienvorbereitung und Informationen über die Anmeldung und die Prüfungen. für Kandidaten aus der DACH-Region.',
 			link: {
 				label: 'Zum CPACC-Toolkit',
-				toProject: 'https://iaap-dach.org/CPACC.html'
+				url: 'https://iaap-dach.org/CPACC.html'
 			}
 		},
 		{
@@ -27,7 +27,7 @@ export const IAAP_TOOLKITS: Project = {
 				'Dieses Toolkit enthält Informationen über die Zertifizierung zum Web Accessibility Specialist (WAS). Das WAS-Zertifikat bestätigt technische Fertigkeiten für Personen mit mindestens mittlerer Erfahrung in der Konzeption, Entwicklung, Implementierung, Bewertung und Bereitstellung barrierefreier webbasierter Inhalte, Projekte und Dienstleistungen.  Es enthält einen Lehrplan für die Studienvorbereitung und Informationen über die Anmeldung und die Prüfungen. für Kandidaten aus der DACH-Region.',
 			link: {
 				label: 'Zum WAS-Toolkit',
-				toProject: 'https://iaap-dach.org/zertifizierungen/was.html'
+				url: 'https://iaap-dach.org/zertifizierungen/was.html'
 			}
 		}
 	],

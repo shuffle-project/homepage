@@ -12,7 +12,7 @@ export const ILIAS_COURSE: Project = {
 	partners: ['Pädagogische Hochschule Freiburg'],
 	link: {
 		label: 'Zum Lernraum für (digitale) Barrierefreiheit in der Lehre (ILIAS)',
-		toProject: 'https://ilias-extern.ph-freiburg.de/goto.php?target=cat_18205&client_id=phfr-ext'
+		url: 'https://ilias-extern.ph-freiburg.de/goto.php?target=cat_18205&client_id=phfr-ext'
 	},
 	joinEvaluation: {
 		title: 'Feedback und Rückfragen',

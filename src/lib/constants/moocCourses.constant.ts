@@ -17,7 +17,7 @@ export const MOOC_COURSES: Project = {
 				'In diesem Kurs können Sie die Grundlagen des barrierefreien Lernens und Lehrens kennenlernen, sowohl aus der Sicht eines Professors, der Barrierefreiheit lehrt, als auch aus der Sicht mehrerer Studierender mit Behinderungen. Der Kurs beinhaltet auch praktische Aspekte der inklusiven Lehre, wie z. B. das barrierefreie Erstellen von Textdokumenten und Präsentationen oder das Hinzufügen von Untertiteln zu Videos. Dieser Einführungskurs richtet sich an Lehrkräfte und studentisches Hilfspersonal in der Hochschulbildung.',
 			link: {
 				label: 'Zu Barrierefreies Lehren und Lernen (Moodle)',
-				toProject: 'https://mooc.hdm-stuttgart.de/course/view.php?id=21'
+				url: 'https://mooc.hdm-stuttgart.de/course/view.php?id=21'
 			}
 		},
 		{
@@ -26,7 +26,7 @@ export const MOOC_COURSES: Project = {
 				'Dieser Kurs ist eine Einführung in die Barrierefreiheit des Internets aus der Perspektive von Benutzern mit Behinderungen.  In den vier Kursmodulen werden Aspekte der Benutzerfreundlichkeit und Barrierefreiheit für Menschen mit Sehbehinderungen, Hörbehinderungen, motorischen Behinderungen und kognitiven Behinderungen untersucht. Der Inhalt umfasst Informationen über Herausforderungen und Strategien sowie praktische Übungen. Dieser Kurs richtet sich an Studierende, die an der Erstellung und Entwicklung von Produkten und Dienstleistungen beteiligt sind.',
 			link: {
 				label: 'Zur Einführung in die Barrierefreiheit (Moodle)',
-				toProject: 'https://mooc.hdm-stuttgart.de/course/view.php?id=22'
+				url: 'https://mooc.hdm-stuttgart.de/course/view.php?id=22'
 			}
 		}
 	],

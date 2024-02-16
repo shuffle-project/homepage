@@ -8,7 +8,7 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 		'Dieser Moodle-Kurs beinhaltet Informationen und Umsetz&shy;ungshilfen zur barrierefreien Gestaltung eines Moodle-Kurses und E-Prüfungen.',
 	targetGroup: ['Für Lehrende'],
 	link: {
-		toProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=7',
+		url: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=7',
 		label: 'Zum Barrierefreien-Moodle-Kurs'
 	},
 	summary:
@@ -29,9 +29,10 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 			placeOfPublication: 'Buchkapitel in "MoodleKannMehr - nicht nur im Distanzunterricht!"',
 			placeOfPublicationLang: 'de',
 			releaseDate: '2022-06',
-			linkText: 'Zum Kapitel',
-			link: 'https://visual-books.com/moodle-kann-mehr/',
-			showLink: true
+			link: {
+				url: 'https://visual-books.com/moodle-kann-mehr/',
+				label: 'Zum Kapitel'
+			}
 		}
 	]
 };

@@ -8,7 +8,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 		'Eine Sammlung von zentralen Informationen und Checklisten für Lehrende, die bei der Gestaltung barrierefreier digitaler Lehre unterstützt.',
 	targetGroup: ['Für Lehrende'],
 	link: {
-		toProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=46',
+		url: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=46',
 		label: 'Materialpaket barrierefreie Lehre (Moodle)'
 	},
 	summary:
@@ -32,9 +32,10 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 			placeOfPublication:
 				'Medienpädagogik: Zeitschrift für Theorie Und Praxis Der Medienbildung 20 (Inklusive Medienbildung):169-82',
 			placeOfPublicationLang: 'de',
-			link: 'https://doi.org/10.21240/mpaed/jb20/2023.09.07.X',
-			linkText: 'Zum Paper',
-			showLink: true
+			link: {
+				url: 'https://doi.org/10.21240/mpaed/jb20/2023.09.07.X',
+				label: 'Zum Paper'
+			}
 		}
 	]
 };

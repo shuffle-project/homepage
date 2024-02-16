@@ -43,9 +43,10 @@ export const MATURITY_MODEL: Project = {
 			],
 			placeOfPublication: 'Frontiers Computer Science - Volume 5 2023',
 			placeOfPublicationLang: 'en',
-			linkText: 'Zum Paper',
-			link: 'https://www.frontiersin.org/articles/10.3389/fcomp.2023.1134320/full',
-			showLink: true
+			link: {
+				label: 'Zum Paper',
+				url: 'https://www.frontiersin.org/articles/10.3389/fcomp.2023.1134320/full'
+			}
 		},
 		{
 			title:
@@ -56,9 +57,10 @@ export const MATURITY_MODEL: Project = {
 			placeOfPublication:
 				'Association for the Advancement of Assistive Technology in Europe (AAATE) 2023',
 			placeOfPublicationLang: 'en',
-			linkText: 'Zum Abstract',
-			link: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=93',
-			showLink: true
+			link: {
+				label: 'Zum Abstract',
+				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=93'
+			}
 		},
 		{
 			title:
@@ -77,10 +79,7 @@ export const MATURITY_MODEL: Project = {
 				'Gottfried Zimmermann'
 			],
 			placeOfPublication: 'Gemeinschaften in Neuen Medien 2023',
-			placeOfPublicationLang: 'de',
-			link: '',
-			linkText: '',
-			showLink: false
+			placeOfPublicationLang: 'de'
 		},
 		{
 			title: 'Der Umfang von Barrierefreiheit an Hochschulen',
@@ -88,10 +87,7 @@ export const MATURITY_MODEL: Project = {
 			releaseDate: '2023-09',
 			contributors: ['Nadine Auer', 'Verena Kersken', 'Gerhard Weber', 'Gottfried Zimmermann'],
 			placeOfPublication: 'Gemeinschaften in Neuen Medien 2023',
-			placeOfPublicationLang: 'de',
-			link: '',
-			linkText: '',
-			showLink: false
+			placeOfPublicationLang: 'de'
 		}
 	]
 };

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Publication } from '$lib/interfaces/project.interface';
 	import Icon from '../Icon.svelte';
-	import LinkNewTab from '../LinkNewTab.svelte';
+	import Link from '../Link.svelte';
 
 	export let publications: Publication[];
 	export let heading: string = '';
@@ -41,14 +41,15 @@
 					</table>
 
 					<div class="link-wrapper">
-						{#if publication.showLink}
-							<LinkNewTab
-								link={publication.link}
+						{#if publication.link}
+							<Link
+								link={publication.link.url}
 								details={publication.title}
 								detailsLang={publication.titleLang}
+								download={publication.link.download}
 							>
-								{publication.linkText}
-							</LinkNewTab>
+								{publication.link.label}
+							</Link>
 						{/if}
 					</div>
 				</div>

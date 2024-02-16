@@ -30,16 +30,18 @@ export interface Publication {
 	placeOfPublication: string;
 	placeOfPublicationLang: 'de' | 'en';
 	releaseDate: string;
-	linkText: string;
-	link: string;
-	showLink: boolean;
+	link?: {
+		label: string;
+		url: string;
+		download?: boolean;
+	};
 }
 
 export interface SubProject {
 	title: string;
 	summary: string;
 	link: {
-		toProject: string;
+		url: string;
 		label: string;
 	};
 }
@@ -52,7 +54,7 @@ export interface Project {
 	targetGroup: TargetGroup[];
 	showInDevelopmentInfo?: boolean;
 	link?: {
-		toProject: string;
+		url: string;
 		label: string;
 	};
 	summary: string;

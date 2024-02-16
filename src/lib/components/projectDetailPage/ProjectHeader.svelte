@@ -2,7 +2,7 @@
 	import type { Project } from '$lib/interfaces/project.interface';
 
 	import Icon from '../Icon.svelte';
-	import LinkNewTab from '../LinkNewTab.svelte';
+	import Link from '../Link.svelte';
 	export let project: Project;
 </script>
 
@@ -13,7 +13,6 @@
 		</div>
 		<div class="project-details">
 			<div class="title">
-				<!-- <div class="color-square" /> -->
 				<h1>{@html project.title}</h1>
 			</div>
 			<p>{project.summary}</p>
@@ -34,7 +33,7 @@
 	</div>
 	{#if project.link}
 		<div class="link-to-project">
-			<LinkNewTab invertedStyle link={project.link.toProject}>{project.link.label}</LinkNewTab>
+			<Link invertedStyle link={project.link.url}>{project.link.label}</Link>
 		</div>
 	{/if}
 
@@ -46,9 +45,7 @@
 					<h2>{subProject.title}</h2>
 					<p>{subProject.summary}</p>
 					<div class="link-to-subproject">
-						<LinkNewTab invertedStyle link={subProject.link.toProject}
-							>{subProject.link.label}</LinkNewTab
-						>
+						<Link invertedStyle link={subProject.link.url}>{subProject.link.label}</Link>
 					</div>
 				</div>
 			{/each}
