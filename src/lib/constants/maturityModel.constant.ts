@@ -79,7 +79,11 @@ export const MATURITY_MODEL: Project = {
 				'Gottfried Zimmermann'
 			],
 			placeOfPublication: 'Gemeinschaften in Neuen Medien 2023',
-			placeOfPublicationLang: 'de'
+			placeOfPublicationLang: 'de',
+			link: {
+				label: 'Zum Tagungsband',
+				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
+			}
 		},
 		{
 			title: 'Der Umfang von Barrierefreiheit an Hochschulen',
@@ -87,7 +91,11 @@ export const MATURITY_MODEL: Project = {
 			releaseDate: '2023-09',
 			contributors: ['Nadine Auer', 'Verena Kersken', 'Gerhard Weber', 'Gottfried Zimmermann'],
 			placeOfPublication: 'Gemeinschaften in Neuen Medien 2023',
-			placeOfPublicationLang: 'de'
+			placeOfPublicationLang: 'de',
+			link: {
+				label: 'Zum Tagungsband',
+				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
+			}
 		}
 	]
 };
