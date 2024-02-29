@@ -6,13 +6,6 @@ export const TEAM_LEADERSHIP = [
 		name: 'Prof. Dr. Gottfried Zimmermann',
 		projectPartner: 'Hochschule der Medien Stuttgart',
 		img: 'gottfried-zimmermann.jpg'
-	},
-	{
-		title: 'Projektleitung',
-		name: 'Dr. Verena Kersken',
-		projectPartner: 'Hochschule der Medien Stuttgart',
-		email: 'kersken@hdm-stuttgart.de',
-		img: 'verena-kersken.jpg'
 	}
 ] as const satisfies TeamMember[];
 
@@ -143,6 +136,11 @@ export const TEAM_MEMBERS = [
 ] as const;
 
 export const OLD_MEMBERS = [
+	{
+		name: 'Dr. Verena Kersken',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'verena-kersken.jpg'
+	},
 	{
 		name: 'Jule Günter',
 		projectPartner: 'Universität Bielefeld'

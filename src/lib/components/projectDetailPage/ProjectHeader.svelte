@@ -90,6 +90,7 @@
 					display: flex;
 					align-items: baseline;
 					hyphens: auto;
+					-webkit-hyphens: auto;
 
 					h1 {
 						line-height: 110%;

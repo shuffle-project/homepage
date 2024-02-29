@@ -86,6 +86,7 @@
 					font-size: 1.375rem;
 
 					hyphens: auto;
+					-webkit-hyphens: auto;
 				}
 			}
 
