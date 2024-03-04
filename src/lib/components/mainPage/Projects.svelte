@@ -92,44 +92,44 @@
 			max-width: var(--max-text-width);
 		}
 
-		.tablist {
-			width: 100%;
-			max-width: var(--max-text-width);
+		// .tablist {
+		// 	width: 100%;
+		// 	max-width: var(--max-text-width);
 
-			padding: 0.625rem;
+		// 	padding: 0.625rem;
 
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.625rem;
+		// 	display: flex;
+		// 	flex-wrap: wrap;
+		// 	gap: 0.625rem;
 
-			button {
-				background-color: transparent;
-				color: var(--color-black);
-				border: 1px solid var(--color-black);
-				font-size: 0.875rem;
-				padding: 0.25rem 0.5rem;
-				cursor: pointer;
+		// button {
+		// 	background-color: transparent;
+		// 	color: var(--color-black);
+		// 	border: 1px solid var(--color-black);
+		// 	font-size: 0.875rem;
+		// 	padding: 0.25rem 0.5rem;
+		// 	cursor: pointer;
 
-				// Without it, there is some flickering while switching the tabs
-				transition: all 0s ease-in-out;
+		// Without it, there is some flickering while switching the tabs
+		// transition: all 0s ease-in-out;
 
-				position: relative;
+		// position: relative;
 
-				&[aria-selected='true'] {
-					color: var(--color-white);
-					background-color: var(--color-black);
-				}
+		// &[aria-selected='true'] {
+		// 	color: var(--color-white);
+		// 	background-color: var(--color-black);
+		// }
 
-				&:hover {
-					outline: none;
-				}
+		// 		&:hover {
+		// 			outline: none;
+		// 		}
 
-				&:focus-visible {
-					outline: 2px solid var(--color-black);
-					outline-offset: 2px;
-				}
-			}
-		}
+		// 		&:focus-visible {
+		// 			outline: 2px solid var(--color-black);
+		// 			outline-offset: 2px;
+		// 		}
+		// 	}
+		// }
 
 		.results-list {
 			display: flex;

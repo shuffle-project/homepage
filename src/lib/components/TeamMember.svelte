@@ -1,8 +1,42 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
+	import { onMount } from 'svelte';
 
 	export let member: TeamMember;
+	let emailUser = '';
+	let emailHost = '';
+
+	let linkEl: HTMLAnchorElement;
+
+	onMount(() => {
+		if (member.email) {
+			linkEl.addEventListener('mouseover', () => decode());
+			linkEl.addEventListener('focus', () => decode());
+			// linkEl.addEventListener('mouseout', () => encode());
+			// linkEl.addEventListener('blur', () => encode());
+
+			emailUser = member.email.split('@')[0];
+			emailHost = member.email.split('@')[1];
+		}
+	});
+
+	function decode() {
+		const fullEmailHref = `mailto:${emailUser}@${emailHost}`;
+		const fullEmail = `${emailUser}@${emailHost}`;
+
+		linkEl.setAttribute('href', fullEmailHref);
+		linkEl.text = fullEmail;
+	}
+
+	// function encode() {
+	// 	linkEl.setAttribute('href', emailUser);
+	// 	linkEl.text = `@${emailUser}`;
+	// }
+
+	function handleAnchorClick(e: Event) {
+		e.preventDefault();
+	}
 </script>
 
 <li>
@@ -24,7 +58,12 @@
 	<p class="member-project-partner">{member.projectPartner}</p>
 
 	{#if member.email}
-		<a href="mailto:{member.email}" class="member-email">{member.email}</a>
+		<a
+			bind:this={linkEl}
+			on:click={(e) => handleAnchorClick(e)}
+			href="mailto:{emailUser}"
+			class="member-email">@{emailUser}</a
+		>
 	{/if}
 </li>
 

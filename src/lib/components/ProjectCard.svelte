@@ -9,7 +9,9 @@
 
 <div class="result-card" class:horizontal-center={horizontalCenter}>
 	<div class="decorative-icon">
-		<Icon svg={project.id} color="white" size="parent" />
+		<a href="{base}/{project.id}" aria-label="Mehr Informationen über {project.title}">
+			<Icon svg={project.id} color="white" size="parent" />
+		</a>
 	</div>
 	<div class="content-wrapper">
 		<div class="content">
@@ -60,6 +62,10 @@
 			height: 8.125rem;
 			padding: 1.25rem;
 			box-sizing: border-box;
+
+			a:focus-visible {
+				outline: 2px solid var(--color-white);
+			}
 		}
 
 		.content-wrapper {
