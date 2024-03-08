@@ -18,7 +18,10 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 	joinEvaluation: {
 		title: 'Projektpartner*in werden',
 		introduction: '',
-		contactEmail: 'shuffle@uni-bielefeld.de',
+		contact: {
+			short: 'shuffle',
+			domain: 'uni-bielefeld.de'
+		},
 		contactName: 'ZAB Uni Bielefeld'
 	},
 	publications: [

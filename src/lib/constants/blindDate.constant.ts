@@ -19,7 +19,10 @@ export const BLINDDATE: Project = {
 		introduction:
 			'Die Webseite befindet sich aktuell noch in der Entwicklung. Wir freuen uns über Feedback und Rückmeldungen zu den Inhalten oder möglichen technischen Barrieren. Durch die Umfragen auf den jeweiligen Persona-Seiten oder über die folgende Email-Adresse.',
 		contactName: 'Niklas Egger',
-		contactEmail: 'egger@hdm-stuttgart.de'
+		contact: {
+			short: 'egger',
+			domain: 'hdm-stuttgart.de'
+		}
 	},
 	publications: [
 		{

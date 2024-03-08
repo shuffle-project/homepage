@@ -20,7 +20,10 @@ export const CERTIFICATE_COURSE: Project = {
 		title: 'Feedback geben',
 		introduction:
 			'Wir würden uns freuen, Ihr Feedback zu unserem Online-Kurs zu erhalten! Ihre Meinung ist uns wichtig, um unsere Kurse kontinuierlich zu verbessern. Vielen Dank im Voraus!',
-		contactEmail: 'heitmeier@hdm-stuttgart.de',
+		contact: {
+			short: 'heitmeier',
+			domain: 'hdm-stuttgart.de'
+		},
 		contactName: 'Kathy-Ann Heitmeier'
 	}
 };

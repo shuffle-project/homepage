@@ -15,7 +15,10 @@ export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
 		title: 'Melden Sie sich bei uns!',
 		introduction:
 			'Egal, ob Sie bereits Erfahrung haben oder sich dem Thema annähern möchten. Auf Anfrage erhalten Sie Zugang zu unserem Kurs und können uns Ihr wertvolles Feedback im Anschluss mitteilen. Wir freuen uns auf Ihre Beteiligung!',
-		contactEmail: 'jkuhlmann3@uni-bielefeld.de',
+		contact: {
+			short: 'jkuhlmann3',
+			domain: 'uni-bielefeld.de'
+		},
 		contactName: 'Judith Kuhlmann'
 	}
 };

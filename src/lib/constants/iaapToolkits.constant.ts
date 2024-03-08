@@ -37,6 +37,9 @@ export const IAAP_TOOLKITS: Project = {
 		introduction:
 			'Wir würden uns sehr über Ihr Feedback zu unseren Toolkits freuen! Ihre Meinung ist uns wichtig, damit wir unsere Kurse kontinuierlich verbessern können. Vielen Dank im Voraus!',
 		contactName: 'Gottfried Zimmermann',
-		contactEmail: 'zimmermanng@hdm-stuttgart.de'
+		contact: {
+			short: 'zimmermanng',
+			domain: 'hdm-stuttgart.de'
+		}
 	}
 };

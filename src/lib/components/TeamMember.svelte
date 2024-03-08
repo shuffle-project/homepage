@@ -1,21 +1,17 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
-	import { notificationMessage } from '$lib/store';
-	import { buildContactEmail } from '$lib/utils/utils';
+	import { onCopyEmailToClipboard } from '$lib/utils/utils';
 	import Icon from './Icon.svelte';
 
 	export let member: TeamMember;
 
-	function onCopyEmailToClipboard() {
-		const email = buildContactEmail(member.contact!.short, member.contact!.domain);
+	let short = '';
+	let domain = '';
 
-		setTimeout(async () => {
-			//date to retrigger the #key in the notification component
-			//while pressing the same button again
-			notificationMessage.set(`${email}=${Date.now()}`);
-			await navigator.clipboard.writeText(email);
-		});
+	if (member.contact) {
+		short = member.contact.short;
+		domain = member.contact.domain;
 	}
 </script>
 
@@ -41,7 +37,7 @@
 		<button
 			class="email-button"
 			aria-label="E-Mail von {member.name} in die Zwischenablage kopieren"
-			on:click={() => onCopyEmailToClipboard()}
+			on:click={() => onCopyEmailToClipboard(short, domain)}
 		>
 			<span aria-hidden="true">E-Mail</span>
 			<Icon svg="copy" size="16" color="blue" />

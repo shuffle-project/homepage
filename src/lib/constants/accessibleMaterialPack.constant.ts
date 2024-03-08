@@ -20,7 +20,10 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 		introduction:
 			'Unser umfangreiches Materialpaket ist ab sofort mit einem Gastzugang frei zugänglich. Nutzen Sie das Forum im Kurs oder die angegebene Kontaktadresse für Feedback, Diskussionen und Ideenaustausch. Ihre Rückmeldungen helfen uns dabei, unsere Materialien stetig zu verbessern.',
 		contactName: 'Judith Kuhlmann',
-		contactEmail: 'jkuhlmann3@uni-bielefeld.de'
+		contact: {
+			short: 'jkuhlmann3',
+			domain: 'uni-bielefeld.de'
+		}
 	},
 	publications: [
 		{

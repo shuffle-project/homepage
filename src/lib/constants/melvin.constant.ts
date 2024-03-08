@@ -19,7 +19,10 @@ export const MELVIN: Project = {
 		introduction:
 			'Melvin befindet sich aktuell noch in der Entwicklung. Falls Sie trotzdem schon mal die aktuelle Version ausprobieren möchten, können Sie sich gerne bei der folgenden Kontaktperson melden.',
 		contactName: 'Korbinian Kuhn',
-		contactEmail: 'kuhnko@hdm-stuttgart.de'
+		contact: {
+			short: 'kuhnko',
+			domain: 'hdm-stuttgart.de'
+		}
 	},
 	publications: [
 		{
@@ -50,7 +53,7 @@ export const MELVIN: Project = {
 			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
 			placeOfPublicationLang: 'en',
 			link: {
-				url: 'https://dl.acm.org/doi/10.1145/3544549.3585724',
+				url: 'https://www.zotero.org/groups/5106564/shuffle-public/search/Accuracy%20of%20AI-generated%20Captions/titleCreatorYear/items/42F2H4KK/item-list',
 				label: 'Zum Paper'
 			}
 		},

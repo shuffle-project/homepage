@@ -18,7 +18,10 @@ export const ILIAS_COURSE: Project = {
 		title: 'Feedback und Rückfragen',
 		introduction:
 			'Damit wir unser Angebot für Sie optimieren können, sind wir auf Ihr Feedback angewiesen. Haben Sie Fragen zu den Inhalten, Einwände, oder Anregungen, schreiben Sie uns eine E-Mail. Wir freuen uns über jede Nachricht.',
-		contactEmail: 'shuffle@ph-freiburg.de',
+		contact: {
+			short: 'shuffle',
+			domain: 'ph-freiburg.de'
+		},
 		contactName: 'dem SHUFFLE Freiburg Team'
 	}
 };

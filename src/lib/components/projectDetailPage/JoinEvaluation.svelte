@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { JoinEvaluation } from '$lib/interfaces/project.interface';
-	import CopyEmail from '../CopyEmail.svelte';
+	import { onCopyEmailToClipboard } from '$lib/utils/utils';
+	import Icon from '../Icon.svelte';
 
 	export let join: JoinEvaluation;
 </script>
@@ -13,9 +14,17 @@
 	<hr aria-hidden="true" />
 	<div class="call-to-action">
 		<h3>Kontakt</h3>
-		<p>Bitte melden Sie sich bei {join.contactName} unter:</p>
-		<a class="contact-email" href="mailto:{join.contactEmail}">{join.contactEmail}</a>
-		<CopyEmail email={join.contactEmail} />
+		<p>
+			Bitte melden Sie sich bei {join.contactName} über die folgende E-Mail Adresse:
+		</p>
+		<button
+			class="email-button"
+			aria-label="E-Mail von {join.contactName} in die Zwischenablage kopieren"
+			on:click={() => onCopyEmailToClipboard(join.contact.short, join.contact.domain)}
+		>
+			<span aria-hidden="true">E-Mail</span>
+			<Icon svg="copy" size="16" color="blue" />
+		</button>
 	</div>
 </div>
 
@@ -44,9 +53,16 @@
 				margin-bottom: 0;
 			}
 
-			.contact-email {
+			.email-button {
+				min-height: 1.875rem;
+
+				font-size: 1rem;
 				color: var(--color-blue);
 				text-decoration: none;
+
+				display: flex;
+				align-items: center;
+				gap: 0.25rem;
 			}
 		}
 	}

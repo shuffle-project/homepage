@@ -20,7 +20,10 @@ export interface JoinEvaluation {
 	title: string;
 	introduction: string;
 	contactName: string;
-	contactEmail: string;
+	contact: {
+		short: string;
+		domain: string;
+	};
 }
 
 export interface Publication {
