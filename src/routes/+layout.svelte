@@ -36,7 +36,11 @@
 			<span>{$notificationMessage}</span>
 			<strong>In die Zwischenablage kopiert</strong>
 		</p>
-		<button on:click={() => notificationMessage.set('')} aria-label="Benachrichtigung schließen">
+		<button
+			tabindex={$notificationMessage === '' ? -1 : 0}
+			on:click={() => notificationMessage.set('')}
+			aria-label="Zwischenablage-Benachrichtigung schließen"
+		>
 			<Icon svg="close" color="black" size="30" />
 			<span class="escape-key-info" aria-hidden="true">esc</span>
 		</button>
