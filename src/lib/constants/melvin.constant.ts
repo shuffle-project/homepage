@@ -53,8 +53,9 @@ export const MELVIN: Project = {
 			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
 			placeOfPublicationLang: 'en',
 			link: {
-				url: 'https://www.zotero.org/groups/5106564/shuffle-public/search/Accuracy%20of%20AI-generated%20Captions/titleCreatorYear/items/42F2H4KK/item-list',
-				label: 'Zum Paper'
+				url: 'downloads/Accuracy_of_AI_generated_Captions_With_Collaborative_Manual_Corrections_in_Real_Time.pdf',
+				label: 'Paper herunterladen (PDF)',
+				download: true
 			}
 		},
 		{

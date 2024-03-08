@@ -26,6 +26,11 @@ export interface JoinEvaluation {
 	};
 }
 
+export interface Image {
+	src: string;
+	description: string;
+}
+
 export interface Publication {
 	title: string;
 	titleLang: 'de' | 'en';
@@ -65,5 +70,6 @@ export interface Project {
 	subProjects?: SubProject[];
 	info?: string;
 	joinEvaluation?: JoinEvaluation;
+	gallery?: Image[];
 	publications?: Publication[];
 }

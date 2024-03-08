@@ -16,6 +16,18 @@ export const MATURITY_MODEL: Project = {
 		'Pädagogische Hochschule Freiburg',
 		'Pädagogische Hochschule Heidelberg'
 	],
+	gallery: [
+		{
+			src: 'Uebersicht_Dimensionen.jpg',
+			description:
+				'Visualisierung der verschiedenen Dimensionen und Bereiche, die im SHUFFLE-Reifegradmodell analysiert werden.'
+		},
+		{
+			src: 'Beispiel-Ergebnis.jpg',
+			description:
+				'Beispielhafte Darstellung des Ergebnisses im Reifegradmodell: Netzdiagramm der erreichten Stufen je Themen-Bereich'
+		}
+	],
 	joinEvaluation: {
 		title: 'Reifegradmodell testen',
 		introduction:
