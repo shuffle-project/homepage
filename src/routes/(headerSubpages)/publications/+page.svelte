@@ -36,14 +36,14 @@
 		} else {
 			let publications = [...sortedAllPublications.get(publicationYear)!, publication];
 			publications.sort((a, b) => {
-				return new Date(a.releaseDate).getMonth() - new Date(b.releaseDate).getMonth();
+				return new Date(b.releaseDate).getMonth() - new Date(a.releaseDate).getMonth();
 			});
 
 			sortedAllPublications.set(publicationYear, publications);
 		}
 	});
 
-	const readyPublications = new Map([...sortedAllPublications.entries()].reverse());
+	const readyPublications = new Map([...sortedAllPublications.entries()].toSorted().reverse());
 </script>
 
 <svelte:head>
