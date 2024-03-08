@@ -33,8 +33,9 @@
 		class:hidden={$notificationMessage === ''}
 	>
 		<p role="status">
-			<span>{$notificationMessage}</span>
+			<span>{$notificationMessage.split('=')[0]}</span>
 			<strong>In die Zwischenablage kopiert</strong>
+			<span class="sr-only">Escape-Taste um Benachrichtigung zu schließen</span>
 		</p>
 		<button
 			tabindex={$notificationMessage === '' ? -1 : 0}

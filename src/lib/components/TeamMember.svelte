@@ -11,7 +11,9 @@
 		const email = buildContactEmail(member.contact!.short, member.contact!.domain);
 
 		setTimeout(async () => {
-			notificationMessage.set(email);
+			//date to retrigger the #key in the notification component
+			//while pressing the same button again
+			notificationMessage.set(`${email}=${Date.now()}`);
 			await navigator.clipboard.writeText(email);
 		});
 	}
