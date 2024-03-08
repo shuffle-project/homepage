@@ -69,7 +69,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 3.125rem 1.875rem;
+		gap: 1.875rem 1.875rem;
 	}
 
 	@media (min-width: 41.875rem) {

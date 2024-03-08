@@ -1,41 +1,19 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
-	import { onMount } from 'svelte';
+	import { notificationMessage } from '$lib/store';
+	import { buildContactEmail } from '$lib/utils/utils';
+	import Icon from './Icon.svelte';
 
 	export let member: TeamMember;
-	let emailUser = '';
-	let emailHost = '';
 
-	let linkEl: HTMLAnchorElement;
+	function onCopyEmailToClipboard() {
+		const email = buildContactEmail(member.contact!.short, member.contact!.domain);
 
-	onMount(() => {
-		if (member.email) {
-			linkEl.addEventListener('mouseover', () => decode());
-			linkEl.addEventListener('focus', () => decode());
-			// linkEl.addEventListener('mouseout', () => encode());
-			// linkEl.addEventListener('blur', () => encode());
-
-			emailUser = member.email.split('@')[0];
-			emailHost = member.email.split('@')[1];
-		}
-	});
-
-	function decode() {
-		const fullEmailHref = `mailto:${emailUser}@${emailHost}`;
-		const fullEmail = `${emailUser}@${emailHost}`;
-
-		linkEl.setAttribute('href', fullEmailHref);
-		linkEl.text = fullEmail;
-	}
-
-	// function encode() {
-	// 	linkEl.setAttribute('href', emailUser);
-	// 	linkEl.text = `@${emailUser}`;
-	// }
-
-	function handleAnchorClick(e: Event) {
-		e.preventDefault();
+		setTimeout(async () => {
+			notificationMessage.set(email);
+			await navigator.clipboard.writeText(email);
+		});
 	}
 </script>
 
@@ -57,13 +35,17 @@
 	<p class="member-name">{member.name}</p>
 	<p class="member-project-partner">{member.projectPartner}</p>
 
-	{#if member.email}
-		<a
-			bind:this={linkEl}
-			on:click={(e) => handleAnchorClick(e)}
-			href="mailto:{emailUser}"
-			class="member-email">@{emailUser}</a
+	{#if member.contact}
+		<button
+			class="email-button"
+			aria-label="E-Mail von {member.name} in die Zwischenablage kopieren"
+			on:click={() => onCopyEmailToClipboard()}
 		>
+			<span aria-hidden="true">E-Mail</span>
+			<Icon svg="copy" size="16" color="blue" />
+		</button>
+	{:else}
+		<div class="email-button-placeholder" />
 	{/if}
 </li>
 
@@ -95,10 +77,20 @@
 		font-size: 0.875rem;
 	}
 
-	.member-email {
-		font-size: 0.875rem;
+	.email-button {
+		min-height: 1.875rem;
+
+		font-size: 1rem;
 		color: var(--color-blue);
 		text-decoration: none;
+
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
+
+	.email-button-placeholder {
+		min-height: 1.875rem;
 	}
 
 	.img-wrapper {
