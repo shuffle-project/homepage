@@ -3,7 +3,7 @@
 	<p>
 		Die Digitalisierung der Hochschullehre bringt diverse Chancen und zu vermeidende Risiken mit
 		sich. Während digitale Lerninhalte von Studierenden mit individuellen Bedarfen zwar als
-		hilfreich für den Studienerfolg empfunden werden, gilt es dennoch durch die Digitalisierung neu
+		hilfreich für den Studienerfolg empfunden werden, gilt es dennoch, durch Digitalisierung neu
 		entstandene Barrieren abzubauen. Es muss eine chancengerechte Teilhabe an der digitalen Lehre
 		für alle Studierende gewährleistet werden, wie dies auch im Hochschulrahmengesetz gefordert ist.
 	</p>
