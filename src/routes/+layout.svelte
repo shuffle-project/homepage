@@ -32,7 +32,7 @@
 		aria-hidden={$notificationMessage === ''}
 		class:hidden={$notificationMessage === ''}
 	>
-		<p role="alert">
+		<p role="status">
 			<span>{$notificationMessage}</span>
 			<strong>In die Zwischenablage kopiert</strong>
 		</p>
