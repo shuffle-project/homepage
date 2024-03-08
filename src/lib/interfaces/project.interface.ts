@@ -20,7 +20,10 @@ export interface JoinEvaluation {
 	title: string;
 	introduction: string;
 	contactName: string;
-	contactEmail: string;
+	contact: {
+		short: string;
+		domain: string;
+	};
 }
 
 export interface Image {
@@ -35,9 +38,20 @@ export interface Publication {
 	placeOfPublication: string;
 	placeOfPublicationLang: 'de' | 'en';
 	releaseDate: string;
-	linkText: string;
-	link: string;
-	showLink: boolean;
+	link?: {
+		label: string;
+		url: string;
+		download?: boolean;
+	};
+}
+
+export interface SubProject {
+	title: string;
+	summary: string;
+	link: {
+		url: string;
+		label: string;
+	};
 }
 
 export interface Project {
@@ -46,11 +60,14 @@ export interface Project {
 	category: string;
 	shortSummary: string;
 	targetGroup: TargetGroup[];
-	showLinkToProject: boolean;
-	linkToProject: string;
-	linkText: string;
+	showInDevelopmentInfo?: boolean;
+	link?: {
+		url: string;
+		label: string;
+	};
 	summary: string;
 	partners: ProjectPartners[];
+	subProjects?: SubProject[];
 	info?: string;
 	joinEvaluation?: JoinEvaluation;
 	gallery?: Image[];

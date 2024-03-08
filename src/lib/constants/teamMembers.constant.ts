@@ -6,13 +6,6 @@ export const TEAM_LEADERSHIP = [
 		name: 'Prof. Dr. Gottfried Zimmermann',
 		projectPartner: 'Hochschule der Medien Stuttgart',
 		img: 'gottfried-zimmermann.jpg'
-	},
-	{
-		title: 'Projektleitung',
-		name: 'Dr. Verena Kersken',
-		projectPartner: 'Hochschule der Medien Stuttgart',
-		email: 'kersken@hdm-stuttgart.de',
-		img: 'verena-kersken.jpg'
 	}
 ] as const satisfies TeamMember[];
 
@@ -25,8 +18,11 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Ann-Katrin Böhm',
 		projectPartner: 'Pädagogische Hochschule Heidelberg',
-		email: 'boehm3@ph-heidelberg.de',
-		img: 'ann-katrin-boehm.jpg'
+		img: 'ann-katrin-boehm.jpg',
+		contact: {
+			short: 'boehm3',
+			domain: 'ph-heidelberg.de'
+		}
 	},
 	{
 		name: 'Anna Weidenbach',
@@ -35,8 +31,11 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Prof. Dr. Anna-Maria Kamin',
 		projectPartner: 'Universität Bielefeld',
-		email: 'anna-maria.kamin@uni-bielefeld.de',
-		img: 'anna-maria-kamin.jpg'
+		img: 'anna-maria-kamin.jpg',
+		contact: {
+			short: 'anna-maria.kamin',
+			domain: 'uni-bielefeld.de'
+		}
 	},
 	{
 		name: 'Dr. Barbara Bogner',
@@ -82,8 +81,11 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Dr. Kathy-Ann Heitmeier',
 		projectPartner: 'Hochschule der Medien Stuttgart',
-		email: 'heitmeier@hdm-stuttgart.de',
-		img: 'kathy-ann-heitmeier.jpg'
+		img: 'kathy-ann-heitmeier.jpg',
+		contact: {
+			short: 'heitmeier',
+			domain: 'hdm-stuttgart.de'
+		}
 	},
 	{
 		name: 'Kim Althoff',
@@ -93,8 +95,11 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Korbinian Kuhn',
 		projectPartner: 'Hochschule der Medien Stuttgart',
-		email: 'kuhnko@hdm-stuttgart.de',
-		img: 'korbinian-kuhn.jpg'
+		img: 'korbinian-kuhn.jpg',
+		contact: {
+			short: 'kuhnko',
+			domain: 'hdm-stuttgart.de'
+		}
 	},
 	{
 		name: 'Prof. Dr. Markus Lang',
@@ -108,14 +113,20 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Nadine Auer',
 		projectPartner: 'Hochschule der Medien Stuttgart',
-		email: 'auer@hdm-stuttgart.de',
-		img: 'nadine-auer.jpg'
+		img: 'nadine-auer.jpg',
+		contact: {
+			short: 'auer',
+			domain: 'hdm-stuttgart.de'
+		}
 	},
 	{
 		name: 'Niklas Egger',
 		projectPartner: 'Hochschule der Medien Stuttgart',
-		email: 'egger@hdm-stuttgart.de',
-		img: 'niklas-egger.jpg'
+		img: 'niklas-egger.jpg',
+		contact: {
+			short: 'egger',
+			domain: 'hdm-stuttgart.de'
+		}
 	},
 	{
 		name: 'Patricia Piskorek',
@@ -140,9 +151,14 @@ export const TEAM_MEMBERS = [
 		name: 'Susanne Kuhnert',
 		projectPartner: 'Hochschule der Medien Stuttgart'
 	}
-] as const;
+] as const satisfies TeamMember[];
 
 export const OLD_MEMBERS = [
+	{
+		name: 'Dr. Verena Kersken',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'verena-kersken.jpg'
+	},
 	{
 		name: 'Jule Günter',
 		projectPartner: 'Universität Bielefeld'

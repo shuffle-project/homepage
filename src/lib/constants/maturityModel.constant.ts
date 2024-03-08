@@ -9,9 +9,7 @@ export const MATURITY_MODEL: Project = {
 	targetGroup: ['Für Lehrende', 'Für die Hochschulleitung'],
 	summary:
 		'Das SHUFFLE-Reifegradmodell ist ein Unterstützungstool zur Verbesserung der (digitalen) Barrierefreiheit an Hochschulen. Es hilft Verantwortlichen, relevante Daten strukturiert zu erheben und zu bündeln. Durch das 5-stufige Modell können sich Hochschulen einen Überblick über den Stand ihrer (digitalen) Barrierefreiheit verschaffen. Das Reifegradmodell unterstützt dann bei dessen systematischen Ausbau, indem es Optimierungspotentiale aufzeigt und konkrete Handlungsempfehlungen dafür gibt.',
-	showLinkToProject: false,
-	linkText: '',
-	linkToProject: '',
+	showInDevelopmentInfo: true,
 	partners: [
 		'Hochschule der Medien Stuttgart',
 		'Universität Bielefeld',
@@ -22,7 +20,10 @@ export const MATURITY_MODEL: Project = {
 		title: 'Reifegradmodell testen',
 		introduction:
 			'Das Reifegradmodell kann momentan in einer ersten Pilotphase getestet werden. Wenn Sie es an Ihrer Hochschule einsetzen möchten, kontaktieren Sie uns gerne. Sie erhalten dann die Dokumente zur Anwendung des Reifegradmodells. Auch bei allgemeinen Fragen zu unserem Reifegradmodell können Sie sich jederzeit an uns wenden.',
-		contactEmail: 'auer@hdm-stuttgart.de',
+		contact: {
+			short: 'auer',
+			domain: 'hdm-stuttgart.de'
+		},
 		contactName: 'Nadine Auer'
 	},
 	publications: [
@@ -45,9 +46,10 @@ export const MATURITY_MODEL: Project = {
 			],
 			placeOfPublication: 'Frontiers Computer Science - Volume 5 2023',
 			placeOfPublicationLang: 'en',
-			linkText: 'Zum Paper',
-			link: 'https://www.frontiersin.org/articles/10.3389/fcomp.2023.1134320/full',
-			showLink: true
+			link: {
+				label: 'Zum Paper',
+				url: 'https://www.frontiersin.org/articles/10.3389/fcomp.2023.1134320/full'
+			}
 		},
 		{
 			title:
@@ -58,9 +60,10 @@ export const MATURITY_MODEL: Project = {
 			placeOfPublication:
 				'Association for the Advancement of Assistive Technology in Europe (AAATE) 2023',
 			placeOfPublicationLang: 'en',
-			linkText: 'Zum Abstract',
-			link: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=93',
-			showLink: true
+			link: {
+				label: 'Zum Abstract',
+				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=93'
+			}
 		},
 		{
 			title:
@@ -80,9 +83,10 @@ export const MATURITY_MODEL: Project = {
 			],
 			placeOfPublication: 'Gemeinschaften in Neuen Medien 2023',
 			placeOfPublicationLang: 'de',
-			link: '',
-			linkText: '',
-			showLink: false
+			link: {
+				label: 'Zum Tagungsband',
+				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
+			}
 		},
 		{
 			title: 'Der Umfang von Barrierefreiheit an Hochschulen',
@@ -91,9 +95,10 @@ export const MATURITY_MODEL: Project = {
 			contributors: ['Nadine Auer', 'Verena Kersken', 'Gerhard Weber', 'Gottfried Zimmermann'],
 			placeOfPublication: 'Gemeinschaften in Neuen Medien 2023',
 			placeOfPublicationLang: 'de',
-			link: '',
-			linkText: '',
-			showLink: false
+			link: {
+				label: 'Zum Tagungsband',
+				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
+			}
 		}
 	]
 };

@@ -1,8 +1,18 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
+	import { onCopyEmailToClipboard } from '$lib/utils/utils';
+	import Icon from './Icon.svelte';
 
 	export let member: TeamMember;
+
+	let short = '';
+	let domain = '';
+
+	if (member.contact) {
+		short = member.contact.short;
+		domain = member.contact.domain;
+	}
 </script>
 
 <li>
@@ -23,8 +33,17 @@
 	<p class="member-name">{member.name}</p>
 	<p class="member-project-partner">{member.projectPartner}</p>
 
-	{#if member.email}
-		<a href="mailto:{member.email}" class="member-email">{member.email}</a>
+	{#if member.contact}
+		<button
+			class="email-button"
+			aria-label="E-Mail von {member.name} in die Zwischenablage kopieren"
+			on:click={() => onCopyEmailToClipboard(short, domain)}
+		>
+			<span aria-hidden="true">E-Mail</span>
+			<Icon svg="copy" size="16" color="blue" />
+		</button>
+	{:else}
+		<div class="email-button-placeholder" />
 	{/if}
 </li>
 
@@ -56,10 +75,20 @@
 		font-size: 0.875rem;
 	}
 
-	.member-email {
-		font-size: 0.875rem;
+	.email-button {
+		min-height: 1.875rem;
+
+		font-size: 1rem;
 		color: var(--color-blue);
 		text-decoration: none;
+
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
+
+	.email-button-placeholder {
+		min-height: 1.875rem;
 	}
 
 	.img-wrapper {

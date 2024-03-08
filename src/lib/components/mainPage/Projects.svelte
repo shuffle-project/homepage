@@ -43,7 +43,7 @@
 		zudem weitere hinzukommen.
 	</p>
 
-	<div role="tablist" class="tablist" aria-label="Projektergebnisse filtern">
+	<!-- <div role="tablist" class="tablist" aria-label="Projektergebnisse filtern">
 		{#each tabOptions as tabOption, i}
 			<button
 				id="results-tab-{i}"
@@ -56,7 +56,7 @@
 				{tabOption}
 			</button>
 		{/each}
-	</div>
+	</div> -->
 
 	<div class="results-list desktop">
 		{#key selectedProjects}
@@ -78,58 +78,58 @@
 
 <style lang="scss">
 	.results-section {
-		background: var(--color-blue-gradient);
-		padding: var(--section-vertical-spacing) var(--outer-spacing);
+		background: var(--color-white);
+		padding: 0 var(--outer-spacing);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
 		h2 {
-			margin-bottom: 1.25rem;
+			padding: var(--section-vertical-spacing) 0 1.25rem;
 		}
 
 		.intro-text {
 			max-width: var(--max-text-width);
 		}
 
-		.tablist {
-			width: 100%;
-			max-width: var(--max-text-width);
+		// .tablist {
+		// 	width: 100%;
+		// 	max-width: var(--max-text-width);
 
-			padding: 0.625rem;
+		// 	padding: 0.625rem;
 
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.625rem;
+		// 	display: flex;
+		// 	flex-wrap: wrap;
+		// 	gap: 0.625rem;
 
-			button {
-				background-color: transparent;
-				color: var(--color-black);
-				border: 1px solid var(--color-black);
-				font-size: 0.875rem;
-				padding: 0.25rem 0.5rem;
-				cursor: pointer;
+		// button {
+		// 	background-color: transparent;
+		// 	color: var(--color-black);
+		// 	border: 1px solid var(--color-black);
+		// 	font-size: 0.875rem;
+		// 	padding: 0.25rem 0.5rem;
+		// 	cursor: pointer;
 
-				// Without it, there is some flickering while switching the tabs
-				transition: all 0s ease-in-out;
+		// Without it, there is some flickering while switching the tabs
+		// transition: all 0s ease-in-out;
 
-				position: relative;
+		// position: relative;
 
-				&[aria-selected='true'] {
-					color: var(--color-white);
-					background-color: var(--color-black);
-				}
+		// &[aria-selected='true'] {
+		// 	color: var(--color-white);
+		// 	background-color: var(--color-black);
+		// }
 
-				&:hover {
-					outline: none;
-				}
+		// 		&:hover {
+		// 			outline: none;
+		// 		}
 
-				&:focus-visible {
-					outline: 2px solid var(--color-black);
-					outline-offset: 2px;
-				}
-			}
-		}
+		// 		&:focus-visible {
+		// 			outline: 2px solid var(--color-black);
+		// 			outline-offset: 2px;
+		// 		}
+		// 	}
+		// }
 
 		.results-list {
 			display: flex;

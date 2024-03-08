@@ -9,16 +9,20 @@ export const BLINDDATE: Project = {
 	targetGroup: ['Für Lehrende'],
 	summary:
 		'"BlindDate" ist eine digitale Plattform, die Lehrenden eine Begegnung mit virtuellen Studierende mit individuellen Bedarfen ermöglicht. Diese "Personas" zeigen typische Barrieren in ihrem Studienalltag, sowie Strategien zur Bewältigung derselben, auf und steigern so das Bewusstsein der Benutzenden. Konkrete Handlungsempfehlungen helfen Ihnen, Barrieren in der eigenen Lehre abzubauen.',
-	showLinkToProject: true,
-	linkText: 'Zu BlindDate',
-	linkToProject: 'https://barrierefreies-blinddate.de/',
+	link: {
+		label: 'Zu BlindDate',
+		url: 'https://barrierefreies-blinddate.de/'
+	},
 	partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Heidelberg'],
 	joinEvaluation: {
 		title: 'Feedback geben',
 		introduction:
 			'Die Webseite befindet sich aktuell noch in der Entwicklung. Wir freuen uns über Feedback und Rückmeldungen zu den Inhalten oder möglichen technischen Barrieren. Durch die Umfragen auf den jeweiligen Persona-Seiten oder über die folgende Email-Adresse.',
 		contactName: 'Niklas Egger',
-		contactEmail: 'egger@hdm-stuttgart.de'
+		contact: {
+			short: 'egger',
+			domain: 'hdm-stuttgart.de'
+		}
 	},
 	gallery: [
 		{
@@ -49,9 +53,10 @@ export const BLINDDATE: Project = {
 			placeOfPublication:
 				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE) 2022',
 			placeOfPublicationLang: 'en',
-			linkText: 'Zum Poster Abstract',
-			link: 'https://www.icchp-aaate.org/content/using-design-thinking-methods-developing-digital-accessibility-learning-resource',
-			showLink: true
+			link: {
+				label: 'Zum Poster Abstract',
+				url: 'https://www.icchp-aaate.org/content/using-design-thinking-methods-developing-digital-accessibility-learning-resource'
+			}
 		},
 		{
 			title: 'Persona Co-design for Improving Digital Accessibility',
@@ -68,9 +73,10 @@ export const BLINDDATE: Project = {
 			],
 			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
 			placeOfPublicationLang: 'en',
-			linkText: 'Zum Poster Abstract',
-			link: 'https://dl.acm.org/doi/10.1145/3544549.3585857',
-			showLink: true
+			link: {
+				label: 'Zum Poster Abstract',
+				url: 'https://dl.acm.org/doi/10.1145/3544549.3585857'
+			}
 		},
 		{
 			title: 'Re-Conceptualizing Disability Simulations: a guided strategies-based approach',
@@ -85,9 +91,10 @@ export const BLINDDATE: Project = {
 			placeOfPublication:
 				'Association for the Advancement of Assistive Technology in Europe (AAATE) 2023',
 			placeOfPublicationLang: 'en',
-			linkText: 'Zum Paper (PDF)',
-			link: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=277',
-			showLink: true
+			link: {
+				label: 'Zum Paper (PDF)',
+				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=277'
+			}
 		},
 		{
 			title:
@@ -106,9 +113,11 @@ export const BLINDDATE: Project = {
 			placeOfPublication:
 				'Kongress des Verband für Blinden- und Sehbehindertenpädagogik e. V. (VBS) 2023',
 			placeOfPublicationLang: 'de',
-			linkText: 'TODO',
-			link: 'https://shuffle-projekt.de/',
-			showLink: false
+			link: {
+				label: 'Folien herunterladen (PowerPoint)',
+				url: 'downloads/Marburg_2023_Shuffle_Vortrag_AB_25.07.23.pptx',
+				download: true
+			}
 		}
 	]
 };

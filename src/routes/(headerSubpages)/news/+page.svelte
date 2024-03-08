@@ -15,6 +15,13 @@
 </TitleSection>
 
 <div class="articles">
+	<ArticlePreview title="Wir wurden verlängert!" time="14.02.2024" link="wir-wurden-verlaengert">
+		Am Montag, den 29.01.24 erhielten alle vier Standorte unseres Verbundprojekts eine freudige
+		Nachricht: Die Stiftung „Innovation in der Hochschullehre“ verlängert die Förderung unseres
+		Projekts bis Ende 2025. Wir freuen uns sehr und gehen nun mit neuem Wind in den Segeln in Pilot-
+		und Evaluationsphasen, um einen Zugang für alle an deutschen Hochschulen voranzutreiben! […]</ArticlePreview
+	>
+
 	<ArticlePreview
 		title="SHUFFLE-Projekttreffen in Heidelberg"
 		time="23.10.2023"

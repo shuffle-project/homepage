@@ -7,9 +7,10 @@ export const MELVIN: Project = {
 	shortSummary:
 		'Erstelle schnell und einfach Videos mit Untertiteln und teile sie in einem barrierefreien Video-Player.',
 	targetGroup: ['Für Lehrende'],
-	showLinkToProject: true,
-	linkToProject: 'https://melvin.shuffle-projekt.de',
-	linkText: 'Zu Melvin',
+	link: {
+		url: 'https://melvin.shuffle-projekt.de',
+		label: 'Zu Melvin'
+	},
 	summary:
 		'Barrierefreie Videos sind wichtig, jedoch oft mit einem enormen Aufwand, notwendigem Know-How und dem Einsatz unterschiedlicher Tools verbunden. Melvin bietet hierfür eine schnellere und bequemere Lösung an. Innerhalb einer Webanwendung können Sie ihre Videos aufnehmen, automatisch untertiteln lassen und durch einen barrierefreien Player das fertige Video mitsamt Transkript teilen. Die Untertitel können Sie zudem alleine oder im Team verbessern, im Nachhinein oder während eines Livestreams.',
 	partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Heidelberg'],
@@ -18,7 +19,10 @@ export const MELVIN: Project = {
 		introduction:
 			'Melvin befindet sich aktuell noch in der Entwicklung. Falls Sie trotzdem schon mal die aktuelle Version ausprobieren möchten, können Sie sich gerne bei der folgenden Kontaktperson melden.',
 		contactName: 'Korbinian Kuhn',
-		contactEmail: 'kuhnko@hdm-stuttgart.de'
+		contact: {
+			short: 'kuhnko',
+			domain: 'hdm-stuttgart.de'
+		}
 	},
 	publications: [
 		{
@@ -36,9 +40,10 @@ export const MELVIN: Project = {
 			placeOfPublication:
 				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE) 2022',
 			placeOfPublicationLang: 'en',
-			link: 'https://aaate.net/wp-content/uploads/sites/12/2023/08/OAC22_V1.0_Part_1.pdf#page=165',
-			linkText: 'Zum Paper (PDF)',
-			showLink: true
+			link: {
+				url: 'https://aaate.net/wp-content/uploads/sites/12/2023/08/OAC22_V1.0_Part_1.pdf#page=165',
+				label: 'Zum Paper (PDF)'
+			}
 		},
 		{
 			title: 'Accuracy of AI-generated Captions With Collaborative Manual Corrections in Real-Time',
@@ -47,9 +52,10 @@ export const MELVIN: Project = {
 			contributors: ['Korbinian Kuhn', 'Verena Kersken', 'Gottfried Zimmermann'],
 			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
 			placeOfPublicationLang: 'en',
-			link: 'https://dl.acm.org/doi/10.1145/3544549.3585724',
-			linkText: 'Zum Paper',
-			showLink: true
+			link: {
+				url: 'https://www.zotero.org/groups/5106564/shuffle-public/search/Accuracy%20of%20AI-generated%20Captions/titleCreatorYear/items/42F2H4KK/item-list',
+				label: 'Zum Paper'
+			}
 		},
 		{
 			title: 'Measuring the Accuracy of Automatic Speech Recognition Solutions',
@@ -64,9 +70,10 @@ export const MELVIN: Project = {
 			],
 			placeOfPublication: 'ACM Transactions on Accessible Computing, Volume 16, Issue 4',
 			placeOfPublicationLang: 'en',
-			link: 'https://dl.acm.org/doi/10.1145/3636513',
-			linkText: 'Zum Paper',
-			showLink: true
+			link: {
+				url: 'https://dl.acm.org/doi/10.1145/3636513',
+				label: 'Zum Paper'
+			}
 		}
 	]
 };

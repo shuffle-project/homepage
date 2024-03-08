@@ -5,5 +5,8 @@ export interface TeamMember {
 	name: string;
 	projectPartner: ProjectPartners;
 	img?: string;
-	email?: string;
+	contact?: {
+		short: string;
+		domain: string;
+	};
 }

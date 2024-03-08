@@ -84,6 +84,12 @@
 	<div class="content-wrapper">
 		<ul>
 			<li>
+				<a
+					on:click|preventDefault={() => goToSite('/#project-results')}
+					href="{base}/#project-results">Projektergebnisse</a
+				>
+			</li>
+			<li>
 				<a on:click|preventDefault={() => goToSite('/team')} href="{base}/team">Team</a>
 			</li>
 			<li>

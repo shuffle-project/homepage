@@ -7,9 +7,10 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 	shortSummary:
 		'Eine Sammlung von zentralen Informationen und Checklisten für Lehrende, die bei der Gestaltung barrierefreier digitaler Lehre unterstützt.',
 	targetGroup: ['Für Lehrende'],
-	showLinkToProject: true,
-	linkToProject: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=46',
-	linkText: 'Zum Materialpaket barrierefreie Lehre (Moodle)',
+	link: {
+		url: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=46',
+		label: 'Materialpaket barrierefreie Lehre (Moodle)'
+	},
 	summary:
 		'Das Materialpaket bündelt zentrale Informationen zur Umsetzung barrierefreier Hochschullehre. Knappe Checklisten geben Hinweise zur Umsetzung möglichst barrierefreier Dokumente und Lehrsituationen. Ergänzend dazu findet man ausführliche Anleitungen und Hilfestellungen zur Umsetzung der in den Checklisten aufgeführten Anforderungen. In einer Wissensdatenbank werden zusätzlich Informationen zu weiteren Aspekten im Kontext barrierefreier digitaler Lehre bereitgestellt.',
 	partners: ['Universität Bielefeld'],
@@ -19,7 +20,10 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 		introduction:
 			'Unser umfangreiches Materialpaket ist ab sofort mit einem Gastzugang frei zugänglich. Nutzen Sie das Forum im Kurs oder die angegebene Kontaktadresse für Feedback, Diskussionen und Ideenaustausch. Ihre Rückmeldungen helfen uns dabei, unsere Materialien stetig zu verbessern.',
 		contactName: 'Judith Kuhlmann',
-		contactEmail: 'jkuhlmann3@uni-bielefeld.de'
+		contact: {
+			short: 'jkuhlmann3',
+			domain: 'uni-bielefeld.de'
+		}
 	},
 	publications: [
 		{
@@ -31,9 +35,10 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 			placeOfPublication:
 				'Medienpädagogik: Zeitschrift für Theorie Und Praxis Der Medienbildung 20 (Inklusive Medienbildung):169-82',
 			placeOfPublicationLang: 'de',
-			link: 'https://doi.org/10.21240/mpaed/jb20/2023.09.07.X',
-			linkText: 'Zum Paper',
-			showLink: true
+			link: {
+				url: 'https://doi.org/10.21240/mpaed/jb20/2023.09.07.X',
+				label: 'Zum Paper'
+			}
 		}
 	]
 };

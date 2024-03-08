@@ -43,6 +43,9 @@
 
 			<ul>
 				<li>
+					<a href="{base}/#project-results">Projektergebnisse</a>
+				</li>
+				<li>
 					<a href="{base}/team">Team</a>
 				</li>
 				<li>
@@ -143,7 +146,7 @@
 		margin: 0;
 	}
 
-	@media (max-width: 40.5625rem) {
+	@media (max-width: 46.1875rem) {
 		header {
 			.header {
 				ul {
@@ -153,7 +156,7 @@
 		}
 	}
 
-	@media (min-width: 40.625rem) {
+	@media (min-width: 46.25rem) {
 		header {
 			.header {
 				.menu-button-wrapper {

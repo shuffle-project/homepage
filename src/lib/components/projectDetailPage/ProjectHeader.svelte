@@ -2,6 +2,7 @@
 	import type { Project } from '$lib/interfaces/project.interface';
 
 	import Icon from '../Icon.svelte';
+	import Link from '../Link.svelte';
 	export let project: Project;
 </script>
 
@@ -12,7 +13,6 @@
 		</div>
 		<div class="project-details">
 			<div class="title">
-				<!-- <div class="color-square" /> -->
 				<h1>{@html project.title}</h1>
 			</div>
 			<p>{project.summary}</p>
@@ -31,13 +31,28 @@
 			</ul>
 		</div>
 	</div>
-	{#if project.showLinkToProject}
-		<a href={project.linkToProject} class="link-to-project">
-			<span aria-hidden="true">{project.linkText}</span>
-			<span class="sr-only">{project.linkText} (öffnet neues Fenster)</span>
-			<Icon svg="open-in-new-tab" color="white" />
-		</a>
-	{:else}
+	{#if project.link}
+		<div class="link-to-project">
+			<Link invertedStyle link={project.link.url}>{project.link.label}</Link>
+		</div>
+	{/if}
+
+	{#if project.subProjects}
+		<div class="subprojects-wrapper">
+			{#each project.subProjects as subProject}
+				<div class="subproject">
+					<hr aria-hidden="true" />
+					<h2>{subProject.title}</h2>
+					<p>{subProject.summary}</p>
+					<div class="link-to-subproject">
+						<Link invertedStyle link={subProject.link.url}>{subProject.link.label}</Link>
+					</div>
+				</div>
+			{/each}
+		</div>
+	{/if}
+
+	{#if project.showInDevelopmentInfo}
 		<p class="in-development-info">
 			Das Projekt befindet sich derzeit noch in der Entwicklungsphase, daher steht noch kein Link
 			zur Verfügung.
@@ -75,6 +90,7 @@
 					display: flex;
 					align-items: baseline;
 					hyphens: auto;
+					-webkit-hyphens: auto;
 
 					h1 {
 						line-height: 110%;
@@ -96,17 +112,25 @@
 			}
 		}
 
+		.subprojects-wrapper {
+			.subproject {
+				hr {
+					height: 1px;
+					border: none;
+					background-color: var(--color-blue-line);
+					margin: 1.875rem 0;
+				}
+
+				.link-to-subproject {
+					display: flex;
+					justify-content: end;
+				}
+			}
+		}
+
 		.link-to-project {
 			position: absolute;
 			inset: auto 1.875rem 1.875rem auto;
-
-			background-color: var(--color-blue);
-			color: var(--color-white);
-			padding: 0.375rem 0.75rem;
-			text-decoration: none;
-			display: flex;
-			align-items: center;
-			gap: 0.3125rem;
 		}
 
 		.in-development-info {

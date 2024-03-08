@@ -1,6 +1,6 @@
 <script>
 	import { base } from '$app/paths';
-	import LinkNewTab from '../LinkNewTab.svelte';
+	import Link from '../Link.svelte';
 </script>
 
 <div class="project-partners-section">
@@ -78,12 +78,9 @@
 				Organisation und Verwaltung werden von Bund und Ländern zur Verfügung gestellt.
 			</p>
 			<div class="link-wrapper">
-				<LinkNewTab
-					link="https://stiftung-hochschullehre.de/"
-					details="Innovation in der Hochschullehre"
-				>
+				<Link link="https://stiftung-hochschullehre.de/" details="Innovation in der Hochschullehre">
 					Zur Webseite der Stiftung
-				</LinkNewTab>
+				</Link>
 			</div>
 		</div>
 	</div>

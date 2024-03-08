@@ -57,16 +57,13 @@
 				<a href="{base}/{project.id}">{project.title}</a>
 			</li>
 		{/each}
-		<!-- <li>
-			<a href="{base}/blinddate">BlindDate</a>
-		</li>
-		<li>
-			<a href="{base}/melvin">Melvin</a>
-		</li> -->
 	</ul>
 
 	<h2>Alle News (Neueste zuerst)</h2>
 	<ul>
+		<li>
+			<a href="{base}/news/wir-wurden-verlaengert">Wir wurden verlängert!</a>
+		</li>
 		<li>
 			<a href="{base}/news/shuffle-projekttreffen-in-heidelberg"
 				>SHUFFLE-Projekttreffen in Heidelberg</a
