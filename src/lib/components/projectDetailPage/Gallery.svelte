@@ -38,6 +38,8 @@
 			flex-direction: row;
 			border: 1px solid var(--color-blue-line);
 			margin-top: 1.25rem;
+			width: 100%;
+			margin-left: 0rem;
 
 			.image {
 				display: flex;
