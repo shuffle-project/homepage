@@ -35,9 +35,7 @@
 				if (mutation.attributeName === 'open') {
 					const dialog: any = mutation.target;
 					const isOpen = dialog.hasAttribute('open');
-
 					if (!isOpen) return;
-
 					dialog.removeAttribute('inert');
 
 					//set focus
@@ -57,7 +55,7 @@
 	});
 
 	function goToSite(site: string) {
-		menu.close();
+		toggleDisplay();
 		goto(base + site);
 	}
 </script>
