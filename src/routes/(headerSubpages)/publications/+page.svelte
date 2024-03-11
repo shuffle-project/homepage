@@ -43,7 +43,7 @@
 		}
 	});
 
-	const readyPublications = new Map([...sortedAllPublications.entries()].toSorted().reverse());
+	const readyPublications = new Map([...sortedAllPublications.entries()].sort().reverse());
 </script>
 
 <svelte:head>
