@@ -125,7 +125,7 @@
 		justify-content: center;
 
 		height: 3rem;
-		aspect-ratio: 1/1;
+		width: 3rem;
 	}
 
 	.previous-button {

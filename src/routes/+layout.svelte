@@ -32,7 +32,7 @@
 		aria-hidden={$notificationMessage === ''}
 		class:hidden={$notificationMessage === ''}
 	>
-		<p role="status">
+		<p role="status" aria-live="polite">
 			<span>{$notificationMessage.split('=')[0]}</span>
 			<strong>In die Zwischenablage kopiert</strong>
 			<span class="sr-only">Escape-Taste um Benachrichtigung zu schließen</span>

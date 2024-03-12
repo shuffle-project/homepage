@@ -142,9 +142,8 @@
 
 		.mobile {
 			position: relative;
-			max-width: 100vw; // results in jitter when page resice // TODO fix
+			max-width: calc(100% + 2.5rem); // results in jitter when page resice // TODO fix
 			min-width: 100%;
-			margin-inline: -1.25rem;
 		}
 	}
 

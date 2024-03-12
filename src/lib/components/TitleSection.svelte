@@ -10,7 +10,7 @@
 	.title-section-wrapper {
 		width: 100%;
 		background: var(--color-blue-gradient);
-		padding-block: 4rem;
+		padding: 6rem 0 2rem;
 		height: 14rem;
 		display: flex;
 		align-items: flex-end;
