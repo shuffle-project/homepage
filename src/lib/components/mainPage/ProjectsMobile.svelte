@@ -46,7 +46,6 @@
 	aria-label="Projekte"
 	options={splideOptions}
 	bind:this={carousel}
-	class="carousel"
 	hasTrack={false}
 >
 	<button
@@ -72,6 +71,7 @@
 		<button
 			on:focusout={() => (componentHasFocus = false)}
 			on:focusin={() => (componentHasFocus = true)}
+			on:click={() => moveSlide('<')}
 			class="previous-button after-card"
 			aria-label="Vorheriges Projekt"
 		>
@@ -102,22 +102,20 @@
 {/if}
 
 <style lang="scss">
-	.carousel {
-		.slider-navigation {
-			max-width: 16.25rem;
-			position: relative;
-			height: 3rem;
-			margin-inline: auto;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-top: 1.25rem;
+	.slider-navigation {
+		max-width: 16.25rem;
+		position: relative;
+		height: 3rem;
+		margin-inline: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1.25rem;
 
-			.slide-number-info {
-				text-align: center;
-				color: var(--color-dark-grey);
-				font-size: 0.875rem;
-			}
+		.slide-number-info {
+			text-align: center;
+			color: var(--color-dark-grey);
+			font-size: 0.875rem;
 		}
 	}
 
