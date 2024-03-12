@@ -7,6 +7,8 @@
 	import { quintOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 
+	let notificationCloseFocus = false;
+
 	function onHandleGlobalKeypress(e: KeyboardEvent) {
 		if (e.key !== 'Escape') return;
 		if ($notificationMessage !== '') {
@@ -25,7 +27,7 @@
 
 <Footer />
 
-<div role="status" aria-live="polite">
+<div aria-live={!notificationCloseFocus ? 'polite' : 'off'}>
 	{#key $notificationMessage}
 		<div
 			transition:fly={{ duration: 600, easing: quintOut, y: 100 }}
@@ -41,7 +43,9 @@
 			<button
 				tabindex={$notificationMessage === '' ? -1 : 0}
 				on:click={() => notificationMessage.set('')}
-				aria-label="Zwischenablage-Benachrichtigung schließen"
+				on:focusin={() => (notificationCloseFocus = true)}
+				on:focusout={() => (notificationCloseFocus = false)}
+				aria-label={notificationCloseFocus ? 'Zwischenablage-Benachrichtigung schließen' : ''}
 			>
 				<Icon svg="close" color="black" size="30" />
 				<span class="escape-key-info" aria-hidden="true">esc</span>
