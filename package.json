@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@splidejs/svelte-splide": "^0.2.9",
 		"embla-carousel-svelte": "8.0.0-rc19"
 	}
 }
