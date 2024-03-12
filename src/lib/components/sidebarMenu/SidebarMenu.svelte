@@ -58,10 +58,6 @@
 		toggleDisplay();
 		goto(base + site);
 	}
-
-	function goToSiteWithKeyboard(site: string) {
-		goto(base + site);
-	}
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
@@ -89,36 +85,22 @@
 				<a
 					on:click|preventDefault={() => goToSite('/#project-results')}
 					href="{base}/#project-results"
-					on:keyup|preventDefault={() => goToSiteWithKeyboard('/#project-results')}
-					>Projektergebnisse</a
 				>
+					Projektergebnisse
+				</a>
 			</li>
 			<li>
-				<a
-					on:click|preventDefault={() => goToSite('/team')}
-					on:keyup|preventDefault={() => goToSite('/team')}
-					href="{base}/team">Team</a
-				>
+				<a on:click|preventDefault={() => goToSite('/team')} href="{base}/team">Team</a>
 			</li>
 			<li>
-				<a
-					on:click|preventDefault={() => goToSite('/news')}
-					on:keyup|preventDefault={() => goToSite('/news')}
-					href="{base}/news">Aktuelles</a
-				>
+				<a on:click|preventDefault={() => goToSite('/news')} href="{base}/news">Aktuelles</a>
 			</li>
 			<li>
-				<a
-					on:click|preventDefault={() => goToSite('/contact')}
-					on:keyup|preventDefault={() => goToSite('/contact')}
-					href="{base}/contact">Kontakt</a
-				>
+				<a on:click|preventDefault={() => goToSite('/contact')} href="{base}/contact">Kontakt</a>
 			</li>
 			<li>
-				<a
-					on:click|preventDefault={() => goToSite('/publications')}
-					on:keyup|preventDefault={() => goToSite('/publications')}
-					href="{base}/publications">Publikationen</a
+				<a on:click|preventDefault={() => goToSite('/publications')} href="{base}/publications"
+					>Publikationen</a
 				>
 			</li>
 		</ul>

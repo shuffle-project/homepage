@@ -25,28 +25,30 @@
 
 <Footer />
 
-{#key $notificationMessage}
-	<div
-		transition:fly={{ duration: 600, easing: quintOut, y: 100 }}
-		class="test"
-		aria-hidden={$notificationMessage === ''}
-		class:hidden={$notificationMessage === ''}
-	>
-		<p role="status" aria-live="polite">
-			<span>{$notificationMessage.split('=')[0]}</span>
-			<strong>In die Zwischenablage kopiert</strong>
-			<span class="sr-only">Escape-Taste um Benachrichtigung zu schließen</span>
-		</p>
-		<button
-			tabindex={$notificationMessage === '' ? -1 : 0}
-			on:click={() => notificationMessage.set('')}
-			aria-label="Zwischenablage-Benachrichtigung schließen"
+<div role="status" aria-live="polite">
+	{#key $notificationMessage}
+		<div
+			transition:fly={{ duration: 600, easing: quintOut, y: 100 }}
+			class="test"
+			aria-hidden={$notificationMessage === ''}
+			class:hidden={$notificationMessage === ''}
 		>
-			<Icon svg="close" color="black" size="30" />
-			<span class="escape-key-info" aria-hidden="true">esc</span>
-		</button>
-	</div>
-{/key}
+			<p>
+				<span>{$notificationMessage.split('=')[0]}</span>
+				<strong>In die Zwischenablage kopiert</strong>
+				<span class="sr-only">Escape-Taste um Benachrichtigung zu schließen</span>
+			</p>
+			<button
+				tabindex={$notificationMessage === '' ? -1 : 0}
+				on:click={() => notificationMessage.set('')}
+				aria-label="Zwischenablage-Benachrichtigung schließen"
+			>
+				<Icon svg="close" color="black" size="30" />
+				<span class="escape-key-info" aria-hidden="true">esc</span>
+			</button>
+		</div>
+	{/key}
+</div>
 
 <svelte:window on:keyup={(e) => onHandleGlobalKeypress(e)} />
 
