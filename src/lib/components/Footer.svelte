@@ -13,7 +13,7 @@
 			<a href="{base}/privacy">Datenschutz</a>
 		</li>
 		<li>
-			<a href="{base}/">Erklärung zur Barrierefreiheit</a>
+			<a href="{base}/accessibility">Erklärung zur Barrierefreiheit</a>
 		</li>
 		<li>
 			<a href="{base}/dgs">Gebärdensprache (DGS)</a>

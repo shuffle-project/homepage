@@ -19,7 +19,6 @@
 
 <div class="page-content headings-with-padding">
 	<h2>Alle Seiten (alphabetisch)</h2>
-	<!-- Add project subpages when ready -->
 	<ul>
 		<li>
 			<a href="{base}/news">Aktuelles</a>
@@ -28,7 +27,7 @@
 			<a href="{base}/privacy">Datenschutz</a>
 		</li>
 		<li>
-			<a href="{base}/">Erklärung zur Barrierefreiheit</a>
+			<a href="{base}/accessibility">Erklärung zur Barrierefreiheit</a>
 		</li>
 		<li>
 			<a href="{base}/dgs">Gebärdensprache (DGS)</a>
