@@ -78,6 +78,7 @@
 			.decorative-icon {
 				min-width: clamp(5.9375rem, 25vw + 1rem, 11.875rem);
 				aspect-ratio: 1/1.5;
+
 				background-color: var(--color-grey-blue);
 				padding-inline: 2.5rem;
 				box-sizing: border-box;
@@ -147,7 +148,7 @@
 
 				.decorative-icon {
 					min-width: 100%;
-					max-height: 10rem;
+					height: 10rem;
 					padding: 1.25rem 2.5rem;
 				}
 			}
