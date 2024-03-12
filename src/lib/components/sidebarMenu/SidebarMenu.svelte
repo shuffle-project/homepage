@@ -83,24 +83,32 @@
 		<ul>
 			<li>
 				<a
-					on:click|preventDefault={() => goToSite('/#project-results')}
+					on:click|preventDefault|stopPropagation={() => goToSite('/#project-results')}
 					href="{base}/#project-results"
 				>
 					Projektergebnisse
 				</a>
 			</li>
 			<li>
-				<a on:click|preventDefault={() => goToSite('/team')} href="{base}/team">Team</a>
+				<a on:click|preventDefault|stopPropagation={() => goToSite('/team')} href="{base}/team"
+					>Team</a
+				>
 			</li>
 			<li>
-				<a on:click|preventDefault={() => goToSite('/news')} href="{base}/news">Aktuelles</a>
+				<a on:click|preventDefault|stopPropagation={() => goToSite('/news')} href="{base}/news"
+					>Aktuelles</a
+				>
 			</li>
 			<li>
-				<a on:click|preventDefault={() => goToSite('/contact')} href="{base}/contact">Kontakt</a>
+				<a
+					on:click|preventDefault|stopPropagation={() => goToSite('/contact')}
+					href="{base}/contact">Kontakt</a
+				>
 			</li>
 			<li>
-				<a on:click|preventDefault={() => goToSite('/publications')} href="{base}/publications"
-					>Publikationen</a
+				<a
+					on:click|preventDefault|stopPropagation={() => goToSite('/publications')}
+					href="{base}/publications">Publikationen</a
 				>
 			</li>
 		</ul>
