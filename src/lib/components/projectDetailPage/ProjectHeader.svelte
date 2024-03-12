@@ -15,7 +15,7 @@
 			<div class="title">
 				<h1>{@html project.title}</h1>
 			</div>
-			<p>{project.summary}</p>
+			<p>{@html project.summary}</p>
 
 			<ul class="project-partners" aria-label="Projektpartner">
 				{#each project.partners as partner}
@@ -43,7 +43,7 @@
 				<div class="subproject">
 					<hr aria-hidden="true" />
 					<h2>{subProject.title}</h2>
-					<p>{subProject.summary}</p>
+					<p>{@html subProject.summary}</p>
 					<div class="link-to-subproject">
 						<Link invertedStyle link={subProject.link.url}>{subProject.link.label}</Link>
 					</div>
