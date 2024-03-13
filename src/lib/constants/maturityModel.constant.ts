@@ -20,12 +20,12 @@ export const MATURITY_MODEL: Project = {
 		{
 			src: 'Uebersicht_Dimensionen.jpg',
 			description:
-				'Visualisierung der verschiedenen Dimensionen und Bereiche, die im SHUFFLE-Reifegradmodell analysiert werden.'
+				'Visualisierung der verschiedenen Dimensionen und Bereiche, die im SHUFFLE-Reifegradmodell analysiert werden. Es besteht aus den folgenden Bereichen: Beratung und Support (Beratung, Unterstützungsangebote, Austausch), Lehren und Lernen (Nachteilsausgleich, Prüfungsleistungen, Training und Unterstützung, Sensibilisierung, Prüfung auf Barrierefreiheit von Lehrmaterial), Strategie (Zielgruppe Studierende mit Beeinträchtigungen, Partizipation, Kollaboration, Steuerungsinstrumente, Akkreditierung) und Struktur (Feedback- und Beschwerdemanagement, Webauftritt, Infrastruktur, Beschaffung, Finanzielle Ressourcen, Personelle Ressourcen).'
 		},
 		{
 			src: 'Beispiel-Ergebnis.jpg',
 			description:
-				'Beispielhafte Darstellung des Ergebnisses im Reifegradmodell: Netzdiagramm der erreichten Stufen je Themen-Bereich'
+				'Beispielhafte Darstellung des Ergebnisses im Reifegradmodell: Mithilfe eines Netzdiagramms wird pro Indikator (19 Stück) die erreichte Stufen zwischen 0 und 4 dargestellt, um einen Überblick zu erhalten, wie die eigene Hochschule in den verschiedenen Bereichen aufgestellt ist.'
 		}
 	],
 	joinEvaluation: {

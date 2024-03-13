@@ -46,6 +46,7 @@
 				align-items: center;
 				justify-content: center;
 				min-width: 65%;
+
 				img {
 					object-fit: contain;
 					max-width: 100%;

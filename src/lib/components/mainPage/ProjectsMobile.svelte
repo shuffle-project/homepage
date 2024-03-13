@@ -26,12 +26,14 @@
 			slideLabel: '%s von %s'
 		},
 		pagination: false,
-		arrows: false
+		arrows: false,
+		speed: 1600
 	};
 
 	let carouselSelectedIndex: number = 0;
 
 	let componentHasFocus = false;
+
 	$: ariaLiveText =
 		selectedProjects[carouselSelectedIndex].title +
 		', ' +
@@ -41,8 +43,13 @@
 
 	function moveSlide(direction: string) {
 		if (!carousel) return;
+		componentHasFocus = true;
 		carousel.go(direction);
 		carouselSelectedIndex = carousel.splide.index;
+	}
+
+	function handleMove(index: number | undefined) {
+		if (index !== undefined) carouselSelectedIndex = index;
 	}
 </script>
 
@@ -53,10 +60,10 @@
 	options={splideOptions}
 	bind:this={carousel}
 	hasTrack={false}
+	on:move={(e) => handleMove(e?.detail.index)}
 >
 	<button
 		on:focusout={() => (componentHasFocus = false)}
-		on:focusin={() => (componentHasFocus = true)}
 		on:click={() => moveSlide('<')}
 		class="previous-button before-card"
 		aria-label="Vorheriges Projekt"
@@ -76,7 +83,6 @@
 	<div class="slider-navigation">
 		<button
 			on:focusout={() => (componentHasFocus = false)}
-			on:focusin={() => (componentHasFocus = true)}
 			on:click={() => moveSlide('<')}
 			class="previous-button after-card"
 			aria-label="Vorheriges Projekt"
@@ -90,7 +96,6 @@
 
 		<button
 			on:focusout={() => (componentHasFocus = false)}
-			on:focusin={() => (componentHasFocus = true)}
 			on:click={() => moveSlide('>')}
 			class="next-button"
 			aria-label="Nächstes Projekt"
