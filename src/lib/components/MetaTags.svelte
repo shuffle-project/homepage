@@ -1,7 +1,8 @@
 <script lang="ts">
 	let description = 'Hochschulinitiative digitale Barrierefreiheit für Alle';
 	let title = 'SHUFFLE';
-	let previewImage = 'https://shuffle-project.github.io/homepage/meta/shuffle-preview.jpg';
+	// let previewImage = 'https://shuffle-project.github.io/homepage/meta/shuffle-preview.jpg';
+	let previewImage = 'https://shuffle-projekt.de/meta/shuffle-preview.jpg';
 </script>
 
 <svelte:head>
