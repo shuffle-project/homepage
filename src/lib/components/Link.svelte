@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import Icon from './Icon.svelte';
 
 	export let link: string;
@@ -17,7 +18,7 @@
 		<Icon svg="open-in-new-tab" size="20" color={invertedStyle ? 'white' : 'blue'} />
 	</a>
 {:else}
-	<a href={link} download>
+	<a href={base + '/' + link} download>
 		<span aria-hidden="true"><slot /></span>
 		<span class="sr-only"><slot /><span lang={detailsLang}>{details}</span></span>
 		<Icon svg="download" size="20" color="blue" />
