@@ -2,6 +2,13 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title
+		>“Interview zur Zukunft der digitalen (barrierefreien) Lehre an der Universität Bielefeld -
+		SHUFFLE</title
+	>
+</svelte:head>
+
 <ArticleHeader
 	title="Interview zur Zukunft der digitalen (barrierefreien) Lehre an der Universität Bielefeld"
 	authorName="Sebastian Koch"

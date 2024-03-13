@@ -3,6 +3,12 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title
+		>“Ich brauche Unterstützung!” – Was sich Lehrende für eine barrierearme Lehre wünschen - SHUFFLE</title
+	>
+</svelte:head>
+
 <ArticleHeader
 	title="“Ich brauche Unterstützung!” – Was sich Lehrende für eine barrierearme Lehre wünschen"
 	authorName="Jule Günter"

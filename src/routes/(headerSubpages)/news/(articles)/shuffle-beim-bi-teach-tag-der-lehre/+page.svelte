@@ -3,6 +3,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>SHUFFLE beim Bi.teach – Tag der Lehre - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="SHUFFLE beim Bi.teach – Tag der Lehre"
 	authorName="Christin Stormer"

@@ -3,6 +3,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Posterpräsentation vor medienpädagogischem Fachpublikum - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Posterpräsentation vor medienpädagogischem Fachpublikum"
 	authorName="Jule Günter"

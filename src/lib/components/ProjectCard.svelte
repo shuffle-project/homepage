@@ -73,6 +73,10 @@
 			border-top: 0px;
 			position: relative;
 			min-height: calc(25rem - 8.125rem);
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 		}
 
 		.content {
@@ -84,8 +88,6 @@
 			}
 
 			.title {
-				position: relative;
-
 				h3 {
 					padding: 0;
 					line-height: 120%;
@@ -109,9 +111,6 @@
 		}
 
 		.links {
-			position: absolute;
-			inset: auto 0 0 0;
-
 			padding: 0 1.125rem 0.875rem;
 			height: 2.5rem;
 

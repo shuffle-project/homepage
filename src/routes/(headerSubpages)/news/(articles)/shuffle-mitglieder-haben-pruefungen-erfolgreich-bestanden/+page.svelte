@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>SHUFFLE-Mitglieder haben Prüfungen erfolgreich bestanden - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="SHUFFLE-Mitglieder haben Prüfungen erfolgreich bestanden"
 	authorName="Dr. Kathy-Ann Heitmeier"

@@ -19,7 +19,7 @@
 		</p>
 		<button
 			class="email-button"
-			aria-label="E-Mail von {join.contactName} in die Zwischenablage kopieren"
+			aria-label="E-Mail Adresse von {join.contactName} in die Zwischenablage kopieren"
 			on:click={() => onCopyEmailToClipboard(join.contact.short, join.contact.domain)}
 		>
 			<Icon svg="copy" size="16" color="blue" />

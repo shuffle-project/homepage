@@ -2,6 +2,13 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title
+		>Die Zukunft barrierefrei! – SHUFFLE mit zwei Beiträgen beim University Future Festival 2023 -
+		SHUFFLE</title
+	>
+</svelte:head>
+
 <ArticleHeader
 	title="Die Zukunft barrierefrei! – SHUFFLE mit zwei Beiträgen beim University Future Festival 2023"
 	authorName="Hakan Ali Cetin"

@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Ein Jahr SHUFFLE: Gemeinsames Treffen in Präsenz am 08.-09.09.22 - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Ein Jahr SHUFFLE: Gemeinsames Treffen in Präsenz am 08.-09.09.22"
 	authorName="Christin Stormer"

@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Danke an die Expert*innen aus Beratung und Strategieentwicklung! - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Danke an die Expert*innen aus Beratung und Strategieentwicklung!"
 	authorName="Jule Günter"

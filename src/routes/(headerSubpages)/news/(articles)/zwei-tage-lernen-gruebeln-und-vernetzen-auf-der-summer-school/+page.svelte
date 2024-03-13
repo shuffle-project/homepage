@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Zwei Tage lernen, grübeln und vernetzen auf der Summer School - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Zwei Tage lernen, grübeln und vernetzen auf der Summer School"
 	authorName="Hakan Ali Cetin"

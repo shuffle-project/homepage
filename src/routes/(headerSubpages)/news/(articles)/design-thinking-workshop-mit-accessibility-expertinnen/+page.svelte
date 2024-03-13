@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Design Thinking Workshop mit Accessibility Expert*Innen - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Design Thinking Workshop mit Accessibility Expert*Innen"
 	authorName="Dr. Verena Kersken"

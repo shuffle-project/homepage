@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>SHUFFLE auf der ICCHP-AAATE - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="SHUFFLE auf der ICCHP-AAATE"
 	authorName="Patricia Piskorek"

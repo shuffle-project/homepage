@@ -17,7 +17,13 @@
 		i18n: {
 			prev: 'Vorheriges Projekt',
 			next: 'Nächstes Projekt',
-			slide: 'Projekt'
+			first: 'Zum ersten Projekt gehen',
+			last: 'Zum letzten Projekt gehen',
+			slideX: 'Zum Projekt %s gehen',
+			pageX: 'Zur Seite %s gehen',
+			carousel: 'Karussell',
+			slide: 'Projekt',
+			slideLabel: '%s von %s'
 		},
 		pagination: false,
 		arrows: false

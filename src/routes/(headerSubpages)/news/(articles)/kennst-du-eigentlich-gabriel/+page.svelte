@@ -3,6 +3,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Kennst Du eigentlich Gabriel? - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Kennst Du eigentlich Gabriel?"
 	authorName="Patricia Piskorek"

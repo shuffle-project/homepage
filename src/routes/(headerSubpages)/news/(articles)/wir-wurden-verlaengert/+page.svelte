@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Wir wurden verlängert! - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader title="Wir wurden verlängert!" authorName="Ann-Katrin Böhm" date="14.02.2024" />
 
 <p>

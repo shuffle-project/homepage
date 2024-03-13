@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Konferenzbeiträge bei der GeNeMe 2023 - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Konferenzbeiträge bei der GeNeMe 2023"
 	authorName="Nadine Auer"

@@ -36,7 +36,7 @@
 	{#if member.contact}
 		<button
 			class="email-button"
-			aria-label="E-Mail von {member.name} in die Zwischenablage kopieren"
+			aria-label="E-Mail Adresse von {member.name} in die Zwischenablage kopieren"
 			on:click={() => onCopyEmailToClipboard(short, domain)}
 		>
 			<Icon svg="copy" size="16" color="blue" />

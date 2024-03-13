@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Erklärvideo zu Universal Design for Learning (UDL) - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Erklärvideo zu Universal Design for Learning (UDL)"
 	authorName="Jule Günter"

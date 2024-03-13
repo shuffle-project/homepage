@@ -2,6 +2,13 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title
+		>SHUFFLE bei der Tagung “Digitale Barrierefreiheit weiter denken” am Freitag 16.09.2022 -
+		SHUFFLE</title
+	>
+</svelte:head>
+
 <ArticleHeader
 	title="SHUFFLE bei der Tagung “Digitale Barrierefreiheit weiter denken” am Freitag 16.09.2022"
 	authorName="Christin Stormer"

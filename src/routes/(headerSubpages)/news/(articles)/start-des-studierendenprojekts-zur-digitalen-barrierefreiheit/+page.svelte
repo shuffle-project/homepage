@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Start des Studierendenprojekts zur digitalen Barrierefreiheit - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Start des Studierendenprojekts zur digitalen Barrierefreiheit"
 	authorName="Christin Stormer"

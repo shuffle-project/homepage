@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>CHI2023 - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader title="CHI2023" authorName="Korbinian Kuhn" date="07.06.2023" />
 
 <p>SHUFFLE auf der CHI 2023.</p>

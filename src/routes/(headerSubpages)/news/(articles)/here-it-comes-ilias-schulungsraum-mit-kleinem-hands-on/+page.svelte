@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Here it Comes: ILIAS Schulungsraum mit kleiner Preview - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Here it Comes: ILIAS Schulungsraum mit kleiner Preview"
 	authorName="Franziska Neumann"

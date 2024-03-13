@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>SHUFFLE beim 5. Workshop barrierefreie Dokumente - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="SHUFFLE beim 5. Workshop barrierefreie Dokumente"
 	authorName="Christin Stormer"

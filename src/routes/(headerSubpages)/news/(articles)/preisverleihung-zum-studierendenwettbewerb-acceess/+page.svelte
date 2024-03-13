@@ -3,6 +3,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Preisverleihung zum Studierendenwettbewerb ACCEESS - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader
 	title="Preisverleihung zum Studierendenwettbewerb ACCEESS"
 	authorName="Christin Stormer"

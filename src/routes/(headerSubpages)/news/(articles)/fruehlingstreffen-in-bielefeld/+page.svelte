@@ -3,6 +3,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>Frühlingstreffen in Bielefeld - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader title="Frühlingstreffen in Bielefeld" authorName="Nadine Auer" date="17.05.2023" />
 
 <p>

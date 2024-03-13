@@ -2,6 +2,10 @@
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
+<svelte:head>
+	<title>SHUFFLE unterwegs - SHUFFLE</title>
+</svelte:head>
+
 <ArticleHeader title="SHUFFLE unterwegs" authorName="Jule Günter" date="03.12.2022" />
 
 <p>
