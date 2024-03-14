@@ -85,7 +85,7 @@
 		align-items: center;
 
 		h2 {
-			padding: var(--section-vertical-spacing) 0 1.25rem;
+			margin: var(--section-vertical-spacing) 0 1.25rem;
 		}
 
 		.intro-text {

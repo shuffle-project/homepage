@@ -27,7 +27,11 @@
 		},
 		pagination: false,
 		arrows: false,
-		speed: 1600
+		speed: 800,
+		drag: 'free' as const,
+		snap: true,
+		flickPower: 450,
+		easing: 'ease'
 	};
 
 	let carouselSelectedIndex: number = 0;
@@ -49,7 +53,13 @@
 	}
 
 	function handleMove(index: number | undefined) {
+		console.log(index);
 		if (index !== undefined) carouselSelectedIndex = index;
+	}
+
+	function handleScrolled() {
+		if (!carousel) return;
+		carouselSelectedIndex = carousel.splide.index;
 	}
 </script>
 
@@ -60,7 +70,8 @@
 	options={splideOptions}
 	bind:this={carousel}
 	hasTrack={false}
-	on:move={(e) => handleMove(e?.detail.index)}
+	on:moved={(e) => handleMove(e?.detail.index)}
+	on:scrolled={() => handleScrolled()}
 >
 	<button
 		on:focusout={() => (componentHasFocus = false)}
