@@ -61,128 +61,128 @@
 	<h2>Alle News (Neueste zuerst)</h2>
 	<ul>
 		<li>
-			<a href="{base}/news/wir-wurden-verlaengert">Wir wurden verlängert!</a>
+			<a href="{base}/aktuelles/wir-wurden-verlaengert">Wir wurden verlängert!</a>
 		</li>
 		<li>
-			<a href="{base}/news/shuffle-projekttreffen-in-heidelberg"
+			<a href="{base}/aktuelles/shuffle-projekttreffen-in-heidelberg"
 				>SHUFFLE-Projekttreffen in Heidelberg</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/konferenzbeitraege-bei-der-geneme-2023"
+			<a href="{base}/aktuelles/konferenzbeitraege-bei-der-geneme-2023"
 				>Konferenzbeiträge bei der GeNeMe 2023</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/zwei-tage-lernen-gruebeln-und-vernetzen-auf-der-summer-school"
+			<a href="{base}/aktuelles/zwei-tage-lernen-gruebeln-und-vernetzen-auf-der-summer-school"
 				>Zwei Tage lernen, grübeln und vernetzen auf der Summer School</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/kennst-du-eigentlich-gabriel">Kennst Du eigentlich Gabriel?</a>
+			<a href="{base}/aktuelles/kennst-du-eigentlich-gabriel">Kennst Du eigentlich Gabriel?</a>
 		</li>
 		<li>
-			<a href="{base}/news/chi2023">CHI2023</a>
+			<a href="{base}/aktuelles/chi2023">CHI2023</a>
 		</li>
 		<li>
-			<a href="{base}/news/accessibility-day-in-stuttgart">Accessibility Day in Stuttgart</a>
+			<a href="{base}/aktuelles/accessibility-day-in-stuttgart">Accessibility Day in Stuttgart</a>
 		</li>
 		<li>
-			<a href="{base}/news/fruehlingstreffen-in-bielefeld">Frühlingstreffen in Bielefeld</a>
+			<a href="{base}/aktuelles/fruehlingstreffen-in-bielefeld">Frühlingstreffen in Bielefeld</a>
 		</li>
 		<li>
 			<a
-				href="{base}/news/die-zukunft-barrierefrei-shuffle-mit-zwei-beitraegen-beim-university-future-festival-2023"
+				href="{base}/aktuelles/die-zukunft-barrierefrei-shuffle-mit-zwei-beitraegen-beim-university-future-festival-2023"
 				>Die Zukunft barrierefrei! – SHUFFLE mit zwei Beiträgen beim University Future Festival 2023</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/shuffle-unterwegs">SHUFFLE unterwegs</a>
+			<a href="{base}/aktuelles/shuffle-unterwegs">SHUFFLE unterwegs</a>
 		</li>
 		<li>
-			<a href="{base}/news/shuffle-beim-bi-teach-tag-der-lehre"
+			<a href="{base}/aktuelles/shuffle-beim-bi-teach-tag-der-lehre"
 				>SHUFFLE beim Bi.teach – Tag der Lehre</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/shuffle-mitglieder-haben-pruefungen-erfolgreich-bestanden"
+			<a href="{base}/aktuelles/shuffle-mitglieder-haben-pruefungen-erfolgreich-bestanden"
 				>SHUFFLE-Mitglieder haben Prüfungen erfolgreich bestanden</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/shuffle-auf-der-icchp-aaate">SHUFFLE auf der ICCHP-AAATE</a>
+			<a href="{base}/aktuelles/shuffle-auf-der-icchp-aaate">SHUFFLE auf der ICCHP-AAATE</a>
 		</li>
 		<li>
-			<a href="{base}/news/preisverleihung-zum-studierendenwettbewerb-acceess"
+			<a href="{base}/aktuelles/preisverleihung-zum-studierendenwettbewerb-acceess"
 				>Preisverleihung zum Studierendenwettbewerb ACCEESS</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/posterpraesentation-vor-medienpaedagogischem-fachpublikum"
+			<a href="{base}/aktuelles/posterpraesentation-vor-medienpaedagogischem-fachpublikum"
 				>Posterpräsentation vor medienpädagogischem Fachpublikum</a
 			>
 		</li>
 		<li>
 			<a
-				href="{base}/news/shuffle-bei-der-tagung-digitale-barrierefreiheit-weiter-denken-am-freitag-16-09-2022"
+				href="{base}/aktuelles/shuffle-bei-der-tagung-digitale-barrierefreiheit-weiter-denken-am-freitag-16-09-2022"
 				>SHUFFLE bei der Tagung “Digitale Barrierefreiheit weiter denken” am Freitag 16.09.2022</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/danke-an-die-expertinnen-aus-beratung-und-strategieentwicklung"
+			<a href="{base}/aktuelles/danke-an-die-expertinnen-aus-beratung-und-strategieentwicklung"
 				>Danke an die Expert*innen aus Beratung und Strategieentwicklung!</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/ein-jahr-shuffle-gemeinsames-treffen-in-praesenz-am-08-09-09-22"
+			<a href="{base}/aktuelles/ein-jahr-shuffle-gemeinsames-treffen-in-praesenz-am-08-09-09-22"
 				>Ein Jahr SHUFFLE: Gemeinsames Treffen in Präsenz am 08.-09.09.22</a
 			>
 		</li>
 		<li>
 			<a
-				href="{base}/news/ich-brauche-unterstuetzung-was-sich-lehrende-fuer-eine-barrierearme-lehre-wuenschen"
+				href="{base}/aktuelles/ich-brauche-unterstuetzung-was-sich-lehrende-fuer-eine-barrierearme-lehre-wuenschen"
 				>“Ich brauche Unterstützung!” – Was sich Lehrende für eine barrierearme Lehre wünschen</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/here-it-comes-ilias-schulungsraum-mit-kleinem-hands-on"
+			<a href="{base}/aktuelles/here-it-comes-ilias-schulungsraum-mit-kleinem-hands-on"
 				>Here it Comes: ILIAS Schulungsraum mit kleiner Preview</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/shuffle-beim-5-workshop-barrierefreie-dokumente"
+			<a href="{base}/aktuelles/shuffle-beim-5-workshop-barrierefreie-dokumente"
 				>SHUFFLE beim 5. Workshop barrierefreie Dokumente</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/erklaervideo-zu-universal-design-for-learning-udl"
+			<a href="{base}/aktuelles/erklaervideo-zu-universal-design-for-learning-udl"
 				>Erklärvideo zu Universal Design for Learning (UDL)</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/start-des-studierendenprojekts-zur-digitalen-barrierefreiheit"
+			<a href="{base}/aktuelles/start-des-studierendenprojekts-zur-digitalen-barrierefreiheit"
 				>Start des Studierendenprojekts zur digitalen Barrierefreiheit</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/design-thinking-workshop-mit-accessibility-expertinnen"
+			<a href="{base}/aktuelles/design-thinking-workshop-mit-accessibility-expertinnen"
 				>Design Thinking Workshop mit Accessibility Expert*Innen</a
 			>
 		</li>
 		<li>
 			<a
-				href="{base}/news/interview-zur-zukunft-der-digitalen-barrierefreien-lehre-an-der-universitaet-bielefeld"
+				href="{base}/aktuelles/interview-zur-zukunft-der-digitalen-barrierefreien-lehre-an-der-universitaet-bielefeld"
 				>Interview zur Zukunft der digitalen (barrierefreien) Lehre an der Universität Bielefeld</a
 			>
 		</li>
 		<li>
 			<a
-				href="{base}/news/neues-aus-dem-ap01-umfrage-zu-digitaler-barrierefreiheit-in-der-hochschullehre"
+				href="{base}/aktuelles/neues-aus-dem-ap01-umfrage-zu-digitaler-barrierefreiheit-in-der-hochschullehre"
 				>Beginn der Umfrage!</a
 			>
 		</li>
 		<li>
-			<a href="{base}/news/jetzt-geht-es-los">Jetzt geht es los!</a>
+			<a href="{base}/aktuelles/jetzt-geht-es-los">Jetzt geht es los!</a>
 		</li>
 	</ul>
 </div>

@@ -26,7 +26,7 @@
 	Diskussionsrunden kamen wir in den Austausch über unterschiedliche Unterstützungsangebote der
 	Bibliothek, den Anspruch an die Umsetzung eines
 
-	<a href="https://shuffle-projekt.de/news/erklaervideo-zu-universal-design-for-learning-udl/">
+	<a href="https://shuffle-projekt.de/aktuelles/erklaervideo-zu-universal-design-for-learning-udl/">
 		Universal Designs
 	</a>
 
