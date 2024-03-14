@@ -21,22 +21,22 @@
 	<h2>Alle Seiten (alphabetisch)</h2>
 	<ul>
 		<li>
-			<a href="{base}/news">Aktuelles</a>
+			<a href="{base}/aktuelles">Aktuelles</a>
 		</li>
 		<li>
-			<a href="{base}/privacy">Datenschutz</a>
+			<a href="{base}/datenschutz">Datenschutz</a>
 		</li>
 		<li>
-			<a href="{base}/accessibility">Erklärung zur Barrierefreiheit</a>
+			<a href="{base}/barrierefreiheit">Erklärung zur Barrierefreiheit</a>
 		</li>
 		<li>
 			<a href="{base}/dgs">Gebärdensprache (DGS)</a>
 		</li>
 		<li>
-			<a href="{base}/imprint">Impressum</a>
+			<a href="{base}/impressum">Impressum</a>
 		</li>
 		<li>
-			<a href="{base}/contact">Kontakt</a>
+			<a href="{base}/kontakt">Kontakt</a>
 		</li>
 		<li>
 			<a href="{base}/leichte-sprache">Leichte Sprache</a>

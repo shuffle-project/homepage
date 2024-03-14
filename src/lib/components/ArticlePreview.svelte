@@ -10,7 +10,7 @@
 	<time datetime={time}>{time}</time>
 	<h2>{title}</h2>
 	<p><slot /></p>
-	<a href="{base}/news/{link}">
+	<a href="{base}/aktuelles/{link}">
 		<span aria-hidden="true">Mehr erfahren</span>
 		<span class="sr-only">Mehr erfahren über {title}</span>
 	</a>

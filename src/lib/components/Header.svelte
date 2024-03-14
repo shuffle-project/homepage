@@ -43,19 +43,19 @@
 
 			<ul>
 				<li>
-					<a href="{base}/#project-results">Projektergebnisse</a>
+					<a href="{base}/#projektergebnisse">Projektergebnisse</a>
 				</li>
 				<li>
 					<a href="{base}/team">Team</a>
 				</li>
 				<li>
-					<a href="{base}/news">Aktuelles</a>
+					<a href="{base}/aktuelles">Aktuelles</a>
 				</li>
 				<li>
-					<a href="{base}/contact">Kontakt</a>
+					<a href="{base}/kontakt">Kontakt</a>
 				</li>
 				<li>
-					<a href="{base}/publications">Publikationen</a>
+					<a href="{base}/publikationen">Publikationen</a>
 				</li>
 			</ul>
 

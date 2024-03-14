@@ -83,8 +83,8 @@
 		<ul>
 			<li>
 				<a
-					on:click|preventDefault|stopPropagation={() => goToSite('/#project-results')}
-					href="{base}/#project-results"
+					on:click|preventDefault|stopPropagation={() => goToSite('/#projektergebnisse')}
+					href="{base}/#projektergebnisse"
 				>
 					Projektergebnisse
 				</a>
@@ -95,20 +95,21 @@
 				>
 			</li>
 			<li>
-				<a on:click|preventDefault|stopPropagation={() => goToSite('/news')} href="{base}/news"
-					>Aktuelles</a
+				<a
+					on:click|preventDefault|stopPropagation={() => goToSite('/aktuelles')}
+					href="{base}/aktuelles">Aktuelles</a
 				>
 			</li>
 			<li>
 				<a
-					on:click|preventDefault|stopPropagation={() => goToSite('/contact')}
-					href="{base}/contact">Kontakt</a
+					on:click|preventDefault|stopPropagation={() => goToSite('/kontakt')}
+					href="{base}/kontakt">Kontakt</a
 				>
 			</li>
 			<li>
 				<a
-					on:click|preventDefault|stopPropagation={() => goToSite('/publications')}
-					href="{base}/publications">Publikationen</a
+					on:click|preventDefault|stopPropagation={() => goToSite('/publikationen')}
+					href="{base}/publikationen">Publikationen</a
 				>
 			</li>
 		</ul>

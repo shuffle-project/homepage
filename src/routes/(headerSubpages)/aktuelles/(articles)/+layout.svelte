@@ -6,7 +6,7 @@
 
 <div class="page-content">
 	<div class="backlink-wrapper">
-		<BackLink linkTo="/news" label="Zurück zur Übersicht" paddingLeft={false} />
+		<BackLink linkTo="/aktuelles" label="Zurück zur Übersicht" paddingLeft={false} />
 	</div>
 
 	<slot />

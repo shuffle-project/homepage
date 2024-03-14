@@ -7,13 +7,13 @@
 	<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 	<ul>
 		<li>
-			<a href="{base}/imprint">Impressum</a>
+			<a href="{base}/impressum">Impressum</a>
 		</li>
 		<li>
-			<a href="{base}/privacy">Datenschutz</a>
+			<a href="{base}/datenschutz">Datenschutz</a>
 		</li>
 		<li>
-			<a href="{base}/accessibility">Erklärung zur Barrierefreiheit</a>
+			<a href="{base}/barrierefreiheit">Erklärung zur Barrierefreiheit</a>
 		</li>
 		<li>
 			<a href="{base}/dgs">Gebärdensprache (DGS)</a>
