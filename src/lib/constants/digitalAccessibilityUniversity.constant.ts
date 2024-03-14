@@ -1,7 +1,7 @@
 import type { Project } from '$lib/interfaces/project.interface';
 
 export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
-	id: 'digital-accessibility-university',
+	id: 'digitale-barrierefreiheit-an-hochschulen',
 	title: 'Digitale Barrierefreiheit an Hochschulen',
 	category: 'Moodle-Kurs',
 	shortSummary:

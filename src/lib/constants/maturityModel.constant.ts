@@ -1,7 +1,7 @@
 import type { Project } from '$lib/interfaces/project.interface';
 
 export const MATURITY_MODEL: Project = {
-	id: 'maturity-model',
+	id: 'shuffle-reifegradmodell',
 	title: 'SHUFFLE-Reifegradmodell',
 	category: 'Analyse-Tool',
 	shortSummary:

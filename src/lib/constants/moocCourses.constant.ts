@@ -1,7 +1,7 @@
 import type { Project } from '$lib/interfaces/project.interface';
 
 export const MOOC_COURSES: Project = {
-	id: 'mooc-courses',
+	id: 'barrierefreiheit-lehren-und-web',
 	title: 'Barrierefreiheit: Lehren & Web',
 	category: 'Moodle-Kurs',
 	shortSummary:

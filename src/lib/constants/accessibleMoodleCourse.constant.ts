@@ -1,7 +1,7 @@
 import type { Project } from '$lib/interfaces/project.interface';
 
 export const ACCESSIBLE_MOODLE_COURSE: Project = {
-	id: 'accessible-moodle-course',
+	id: 'barrierefreie-moodle-kurse',
 	title: 'Barrierefreie Moodle-Kurse',
 	category: 'Moodle-Kurs',
 	shortSummary:

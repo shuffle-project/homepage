@@ -1,7 +1,7 @@
 import type { Project } from '$lib/interfaces/project.interface';
 
 export const ACCESSIBLE_MATERIAL_PACK: Project = {
-	id: 'accessible-material-pack',
+	id: 'materialpaket-barrierefreie-lehre',
 	title: 'Materialpaket barrierefreie Lehre',
 	category: 'Moodle-Kurs',
 	shortSummary:

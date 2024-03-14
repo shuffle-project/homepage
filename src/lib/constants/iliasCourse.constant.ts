@@ -1,7 +1,7 @@
 import type { Project } from '$lib/interfaces/project.interface';
 
 export const ILIAS_COURSE: Project = {
-	id: 'ilias-course',
+	id: 'ilias-barrierefrei',
 	title: 'ILIAS Barrierefrei',
 	category: 'ILIAS-Kurs',
 	shortSummary:
