@@ -35,7 +35,7 @@
 	</button>
 
 	{#if copySuccessInfoVisible}
-		<div aria-live="polite" class="copy-success-info">Kopiert</div>
+		<div aria-live="polite" class="copy-success-info"><strong>Kopiert</strong></div>
 	{/if}
 </div>
 
@@ -61,8 +61,8 @@
 	}
 
 	.copy-success-info {
-		background-color: var(--color-black);
-		color: var(--color-white);
+		background-color: var(--color-yellow);
+		color: var(--color-black);
 
 		padding: 0.25rem 0.625rem;
 		font-size: 0.875rem;

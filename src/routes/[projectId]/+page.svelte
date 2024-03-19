@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BackLink from '$lib/components/BackLink.svelte';
+	import PlayerExtended from '$lib/components/player/PlayerExtended.svelte';
 	import Gallery from '$lib/components/projectDetailPage/Gallery.svelte';
 	import Info from '$lib/components/projectDetailPage/Info.svelte';
 	import JoinEvaluation from '$lib/components/projectDetailPage/JoinEvaluation.svelte';
@@ -22,6 +23,10 @@
 
 	{#if project.info}
 		<Info infoMessage={project.info} />
+	{/if}
+
+	{#if project.video}
+		<PlayerExtended extendedPlayerConfig={project.video} />
 	{/if}
 
 	{#if project.joinEvaluation}

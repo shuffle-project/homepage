@@ -1,4 +1,5 @@
 import type { TeamMemberName } from '$lib/constants/teamMembers.constant';
+import type { ExtendedPlayerConfig } from './player.interface';
 
 const TARGET_GROUP = {
 	LECTURERS: 'Für Lehrende',
@@ -72,4 +73,5 @@ export interface Project {
 	joinEvaluation?: JoinEvaluation;
 	gallery?: Image[];
 	publications?: Publication[];
+	video?: ExtendedPlayerConfig;
 }
