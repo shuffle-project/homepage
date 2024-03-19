@@ -53,10 +53,14 @@ export const MELVIN: Project = {
 			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
 			placeOfPublicationLang: 'en',
 			link: {
-				url: 'downloads/Accuracy_of_AI_generated_Captions_With_Collaborative_Manual_Corrections_in_Real_Time.pdf',
-				label: 'Paper herunterladen (PDF)',
-				download: true
+				url: 'https://dl.acm.org/doi/10.1145/3544549.3585724?cid=99660781441',
+				label: 'Zum Paper'
 			}
+			// link: {
+			// 	url: 'downloads/Accuracy_of_AI_generated_Captions_With_Collaborative_Manual_Corrections_in_Real_Time.pdf',
+			// 	label: 'Paper herunterladen (PDF)',
+			// 	download: true
+			// }
 		},
 		{
 			title: 'Measuring the Accuracy of Automatic Speech Recognition Solutions',

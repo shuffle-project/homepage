@@ -24,6 +24,31 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 			domain: 'uni-bielefeld.de'
 		}
 	},
+	video: {
+		title: 'Vorstellungsvideo',
+		videos: [
+			{
+				title: 'Video',
+				videoPathMp4:
+					'/videos/materialpaket-barrierefreie-lehre/vorstellung-materialpaket-barrierefreie-lehre.mp4',
+				poster:
+					'/videos/materialpaket-barrierefreie-lehre/teaser-vorstellung-materialpaket-barrierefreie-lehre.jpg',
+				captionsArray: [
+					{
+						path: '/videos/materialpaket-barrierefreie-lehre/untertitel-vorstellung-materialpaket-barrierefreie-lehre.vtt',
+						lang: 'de',
+						label: 'Deutsche Untertitel'
+					}
+				]
+			}
+		],
+		transcripts: [
+			{
+				title: 'Video mit Audiodeskription',
+				body: '<p>Eine Audiodeskription liegt für dieses Video nicht vor. Das Bildgeschehen ist für das Verständnis nicht erforderlich.</p>'
+			}
+		]
+	},
 	publications: [
 		{
 			title:

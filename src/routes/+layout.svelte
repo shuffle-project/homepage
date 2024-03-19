@@ -4,6 +4,8 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import MetaTags from '$lib/components/MetaTags.svelte';
 	import { notificationMessage } from '$lib/store';
+	import { deviceHasTouchScreen } from '$lib/utils/utils';
+	import { onMount } from 'svelte';
 	import { quintOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 
@@ -15,6 +17,11 @@
 			notificationMessage.set('');
 		}
 	}
+
+	let touchscreen = false;
+	onMount(() => {
+		touchscreen = deviceHasTouchScreen();
+	});
 </script>
 
 <MetaTags />
