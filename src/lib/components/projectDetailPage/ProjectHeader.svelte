@@ -42,7 +42,7 @@
 			{#each project.subProjects as subProject}
 				<div class="subproject">
 					<hr aria-hidden="true" />
-					<h2>{subProject.title}</h2>
+					<h2>{@html subProject.title}</h2>
 					<p>{@html subProject.summary}</p>
 					<div class="link-to-subproject">
 						<Link invertedStyle link={subProject.link.url}>{subProject.link.label}</Link>

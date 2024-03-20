@@ -29,6 +29,16 @@ export const IAAP_TOOLKITS: Project = {
 				label: 'Zum WAS-Toolkit',
 				url: 'https://iaap-dach.org/zertifizierungen/was.html'
 			}
+		},
+		{
+			title:
+				'Toolkit zur lokalen Organisation von IAAP-Prüfungen <span lang="en">(Hosted Exam Events)</span>',
+			summary:
+				'IAAP-Zertifikatsprüfungen werden zentral von IAAP Global koordiniert. Als Organisation (zum Beispiel Bildungseinrichtung oder Firma) kann man <span lang="en">"Proctor"</span> dafür sein. Das heißt, man stellt einen Raum, die Infrastruktur und eine Aufsicht (<span lang="en">"Proctoring"</span>) für eine geschlossene oder offene Gruppe von Prüfungskandidatinnen und -kandidaten zur Verfügung, in Absprache mit IAAP Global.',
+			link: {
+				label: 'Zum Organisations-Toolkit',
+				url: 'https://iaap-dach.org/zertifizierungen/pruefungsmoeglichkeiten-fuer-iaap-zertifizierungen.html'
+			}
 		}
 	],
 	info: 'Das Toolkit umfasst (i) den Lehrplan und (ii) die Unterlagen zur Prüfungsanmeldung, die am Ende der verlinkten Seite heruntergeladen werden können.',
