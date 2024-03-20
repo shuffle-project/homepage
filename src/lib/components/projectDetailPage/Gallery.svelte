@@ -7,7 +7,7 @@
 </script>
 
 <div class="wrapper">
-	<h2>Bildergallerie</h2>
+	<h2>Bildergalerie</h2>
 	{#each gallery as image, i}
 		<figure class="image-wrapper">
 			<div class="image" role="group">
