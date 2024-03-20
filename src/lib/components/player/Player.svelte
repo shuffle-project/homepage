@@ -68,6 +68,15 @@ subtitles	The track defines subtitles, used to display subtitles in a video
 		}
 	}
 
+	$: {
+		if (!muted && volume === 0) {
+			onMute();
+		}
+		if (muted && volume !== 0) {
+			onMute();
+		}
+	}
+
 	onMount(() => {
 		isiOSDevice = isIOSDevice();
 		useNativeControls = isiOSDevice;
@@ -107,6 +116,14 @@ subtitles	The track defines subtitles, used to display subtitles in a video
 	function onMute() {
 		muted = !muted;
 		ariaLiveContent = muted ? 'Stummgeschalten' : 'Ton aktiviert';
+
+		if (muted && volume !== 0) {
+			volume = 0;
+		}
+
+		if (!muted && volume === 0) {
+			volume = 0.5;
+		}
 	}
 
 	function onKeyDownTimeProgress(ev: KeyboardEvent) {
@@ -246,7 +263,6 @@ subtitles	The track defines subtitles, used to display subtitles in a video
 							step="0.1"
 							bind:value={volume}
 							bind:this={volumeSlider}
-							disabled={muted}
 							class="volume-slider"
 						/>
 					</div>
