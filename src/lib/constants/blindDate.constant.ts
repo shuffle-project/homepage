@@ -62,7 +62,7 @@ export const BLINDDATE: Project = {
 			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
 			placeOfPublicationLang: 'en',
 			link: {
-				label: 'Zum Poster Abstract',
+				label: 'Zum Paper',
 				url: 'https://dl.acm.org/doi/10.1145/3544549.3585857'
 			}
 		},

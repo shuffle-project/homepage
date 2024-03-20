@@ -43,6 +43,7 @@ export interface Publication {
 		label: string;
 		url: string;
 		download?: boolean;
+		allowReferrer?: boolean;
 	};
 }
 

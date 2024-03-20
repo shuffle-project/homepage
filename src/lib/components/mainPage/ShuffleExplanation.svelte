@@ -18,6 +18,9 @@
 		Alle im Projekt erarbeiteten Ergebnisse werden der Öffentlichkeit kostenlos zur Verfügung
 		gestellt und der gesamte Quellcode als Open-Source veröffentlicht.
 	</p>
+	<p>
+		Seit August 2021 läuft das SHUFFLE-Projekt und wird bis zum 31. Dezember 2025 weitergeführt.
+	</p>
 </div>
 
 <style lang="scss">

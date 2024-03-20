@@ -47,6 +47,7 @@
 								details={publication.title}
 								detailsLang={publication.titleLang}
 								download={publication.link.download}
+								allowReferrer={publication.link.allowReferrer}
 							>
 								{publication.link.label}
 							</Link>

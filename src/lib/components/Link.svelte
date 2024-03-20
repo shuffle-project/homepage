@@ -7,10 +7,16 @@
 	export let detailsLang: 'de' | 'en' = 'de';
 	export let invertedStyle = false;
 	export let download = false;
+	export let allowReferrer = false;
 </script>
 
 {#if !download}
-	<a href={link} class:invertedStyle target="_blank" rel="noopener noreferrer">
+	<a
+		href={link}
+		class:invertedStyle
+		target="_blank"
+		rel={allowReferrer ? 'noopener no-referrer-when-downgrade' : 'noopener noreferrer'}
+	>
 		<span aria-hidden="true"><slot /></span>
 		<span class="sr-only"
 			><slot /><span lang={detailsLang}>{details}</span> (öffnet neues Fenster)</span
