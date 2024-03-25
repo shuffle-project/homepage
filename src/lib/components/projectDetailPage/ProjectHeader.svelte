@@ -54,8 +54,8 @@
 
 	{#if project.showInDevelopmentInfo}
 		<p class="in-development-info">
-			Das Projekt befindet sich derzeit noch in der Entwicklungsphase, daher steht noch kein Link
-			zur Verfügung.
+			Dieses Projektergebnis befindet sich derzeit noch in der Entwicklungsphase, daher steht noch
+			kein Link zur Verfügung.
 		</p>
 	{/if}
 </div>
