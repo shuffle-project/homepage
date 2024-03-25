@@ -63,7 +63,11 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Hakan Ali Cetin',
 		projectPartner: 'Pädagogische Hochschule Freiburg',
-		img: 'hakan-ali-cetin.jpg'
+		img: 'hakan-ali-cetin.jpg',
+		contact: {
+			short: ' hakan.cetin',
+			domain: 'ph-freiburg.de'
+		}
 	},
 	{
 		name: 'Prof. Dr. Johannes Hennies',
