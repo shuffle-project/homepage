@@ -89,6 +89,7 @@
 <style lang="scss">
 	.project-partners-section {
 		margin: var(--section-vertical-spacing) var(--outer-spacing);
+		background: var(--color-blue-gradient);
 
 		h2 {
 			text-align: center;
