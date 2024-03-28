@@ -53,7 +53,6 @@
 	}
 
 	function handleMove(index: number | undefined) {
-		console.log(index);
 		if (index !== undefined) carouselSelectedIndex = index;
 	}
 
