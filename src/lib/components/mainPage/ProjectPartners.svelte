@@ -88,7 +88,8 @@
 
 <style lang="scss">
 	.project-partners-section {
-		margin: var(--section-vertical-spacing) var(--outer-spacing);
+		margin-block: var(--section-vertical-spacing) -3.125rem;
+		padding: var(--section-vertical-spacing) var(--outer-spacing);
 		background: var(--color-blue-gradient);
 
 		h2 {

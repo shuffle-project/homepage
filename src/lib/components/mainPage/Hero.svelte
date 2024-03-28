@@ -1,16 +1,10 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { onMount } from 'svelte';
 	import Icon from '../Icon.svelte';
 	import ProjectDuration from './ProjectDuration.svelte';
-	let mobileUserAgent = false;
-
-	onMount(() => {
-		mobileUserAgent = navigator.userAgent.includes('Mobile');
-	});
 </script>
 
-<div class="hero-section" class:mobileUserAgent>
+<div class="hero-section">
 	<div class="title-wrapper">
 		<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 		<h1>SHUFFLE</h1>
@@ -31,7 +25,7 @@
 				Lernmaterialien und -umgebungen zu bieten.
 			</p>
 		</div>
-		<div class="table-content">
+		<div class="table-content desktop">
 			<table>
 				<tr>
 					<th>Laufzeit</th>
@@ -68,6 +62,52 @@
 							</li>
 						</ul>
 					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="table-content mobile">
+			<table>
+				<tr>
+					<th> Laufzeit </th>
+				</tr>
+				<tr>
+					<ProjectDuration />
+				</tr>
+			</table>
+
+			<table>
+				<tr>
+					<th> Gefördert von </th>
+				</tr>
+				<tr class="funded-by">
+					<Icon svg={'icon-stiftung'} size="24" color="dark-grey" />
+					<span>Stiftung Innovation in der Hochschullehre</span>
+				</tr>
+			</table>
+
+			<table>
+				<tr>
+					<th> Projektpartner </th>
+				</tr>
+				<tr class="project-partner">
+					<ul>
+						<li>
+							<Icon svg={'icon-stuttgart'} size="24" color="dark-grey" />
+							<span>Hochschule der Medien Stuttgart</span>
+						</li>
+						<li>
+							<Icon svg={'icon-bielefeld'} size="24" color="dark-grey" />
+							<span>Universität Bielefeld</span>
+						</li>
+						<li>
+							<Icon svg={'icon-heidelberg'} size="24" color="dark-grey" />
+							<span>Pädagogische Hochschule Heidelberg</span>
+						</li>
+						<li>
+							<Icon svg={'icon-freiburg'} size="24" color="dark-grey" />
+							<span>Pädagogische Hochschule Freiburg</span>
+						</li>
+					</ul>
 				</tr>
 			</table>
 		</div>
@@ -112,6 +152,7 @@
 
 			display: flex;
 			justify-content: space-evenly;
+			gap: 1.25rem;
 
 			.text-content,
 			.table-content {
@@ -120,19 +161,29 @@
 			}
 
 			.table-content {
-				table {
-					border-spacing: 1.25rem;
+				padding: 0.875rem 0;
+
+				&.mobile {
+					display: none;
 				}
 
 				th {
 					text-align: right;
+					padding-right: 1.25rem;
+					padding-bottom: 1.25rem;
+
 					&.project-partner-title {
 						vertical-align: text-top;
 					}
 				}
 
+				td {
+					padding-bottom: 1.25rem;
+				}
+
 				.funded-by {
 					display: flex;
+					align-items: center;
 					gap: 0.625rem;
 				}
 
@@ -152,9 +203,53 @@
 				}
 			}
 		}
+	}
 
-		&.mobileUserAgent {
-			height: max(42rem);
+	@media (max-width: 67.5rem) {
+		.hero-section {
+			.content-wrapper {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+
+	@media (max-width: 32.5rem) {
+		.hero-section {
+			.content-wrapper {
+				.desktop {
+					display: none;
+				}
+
+				.mobile.table-content {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					max-width: 24rem;
+					opacity: 0%;
+					animation: fade-in 0.5s ease-out forwards;
+					animation-delay: 0.5s;
+
+					table {
+						margin-bottom: 1.25rem;
+						width: 100%;
+
+						th {
+							text-align: left;
+							padding-bottom: 0.625rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@keyframes fade-in {
+		0% {
+			opacity: 0%;
+		}
+		100% {
+			opacity: 100%;
 		}
 	}
 </style>
