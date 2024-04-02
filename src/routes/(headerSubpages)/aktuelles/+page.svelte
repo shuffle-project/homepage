@@ -16,6 +16,17 @@
 
 <div class="articles">
 	<ArticlePreview
+		title="Webinar-Serie zu SHUFFLE-Projektergebnissen"
+		time="03.04.2024"
+		link="webinar-serie-zu-shuffle-projektergebnissen"
+	>
+		Eine Hochschule für alle. Eine systematische Verbesserung der digitalen Barrierefreiheit an
+		Hochschulen. Das sind unter anderem die Ziele des SHUFFLE-Projekts, welches in dieser
+		vierteiligen Serie erste Zwischenergebnisse präsentiert und zum Dialog einlädt. Ob Sie an der
+		Hochschule arbeiten oder einen anderen Hintergrund haben, wir freuen uns Ihnen zu zeigen […]
+	</ArticlePreview>
+
+	<ArticlePreview
 		title="DurchgeSHUFFLEt in Freiburg"
 		time="28.03.2024"
 		link="durchgeshufflet-in-freiburg"
