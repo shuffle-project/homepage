@@ -122,7 +122,7 @@
 		Logfiles (z.B. IP-Adresse, s.o.) werden für den reibungslosen Betrieb der Website gespeichert.
 	</p>
 	<p>
-		Rechtsgrundlage ist das öffentliche Interesse nach <a
+		Rechts·grundlage ist das öffentliche Interesse nach <a
 			href="https://dejure.org/gesetze/DSGVO/6.html">Art. 6 Abs. 1 Buchstabe e DS-GVO</a
 		>.
 	</p>
