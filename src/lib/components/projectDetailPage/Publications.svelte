@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { Publication } from '$lib/interfaces/project.interface';
+	import type { Publication, PublicationCategory } from '$lib/interfaces/project.interface';
 	import Icon from '../Icon.svelte';
 	import Link from '../Link.svelte';
 
 	export let publications: Publication[];
-	export let heading: string = '';
-	export let year: number = -1;
+	export let category: PublicationCategory;
+	export let headingLevel: 'h2' | 'h3' = 'h3';
 
 	function getContributorsString(contributors: string[]) {
 		let allNames = '';
@@ -21,10 +21,14 @@
 </script>
 
 <div class="wrapper">
-	{#if heading !== ''}
-		<h2>{heading}</h2>
+	{#if headingLevel === 'h2'}
+		<h2>{category}</h2>
 	{/if}
-	<ul aria-label={year !== -1 ? `Veröffentlichungen von ${year}` : ''}>
+	{#if headingLevel === 'h3'}
+		<h3>{category}</h3>
+	{/if}
+
+	<ul aria-label={category}>
 		{#each publications as publication, i}
 			<li>
 				<p class="title" lang={publication.titleLang}>{publication.title}</p>
@@ -70,6 +74,7 @@
 
 		ul {
 			padding: 0;
+			margin: 0;
 			list-style-type: none;
 		}
 
@@ -104,6 +109,7 @@
 		}
 
 		h2,
+		h3,
 		li {
 			padding-inline: 1.875rem;
 			box-sizing: border-box;
@@ -116,14 +122,16 @@
 			background-color: var(--color-blue-line);
 		}
 
-		h2 {
-			margin-top: 5rem;
+		h2,
+		h3 {
+			margin-top: 2rem;
 		}
 	}
 
 	@media (max-width: 40.5625rem) {
 		.wrapper {
 			h2,
+			h3,
 			li {
 				padding-inline: 0;
 			}

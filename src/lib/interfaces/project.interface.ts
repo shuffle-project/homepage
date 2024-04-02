@@ -32,6 +32,12 @@ export interface Image {
 	description: string;
 }
 
+export type PublicationCategory =
+	| 'Paper'
+	| 'Workshops'
+	| 'Posterpräsentationen'
+	| 'Sonstige Veröffentlichungen';
+
 export interface Publication {
 	title: string;
 	titleLang: 'de' | 'en';
@@ -45,6 +51,7 @@ export interface Publication {
 		download?: boolean;
 		allowReferrer?: boolean;
 	};
+	category: PublicationCategory;
 }
 
 export interface SubProject {
