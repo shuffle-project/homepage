@@ -27,6 +27,9 @@
 			<a href="{base}/datenschutz">Datenschutz</a>
 		</li>
 		<li>
+			<a href="{base}/datenschutz-in-einfacher-sprache">Datenschutz in einfacher Sprache</a>
+		</li>
+		<li>
 			<a href="{base}/barrierefreiheit">Erklärung zur Barrierefreiheit</a>
 		</li>
 		<li>
@@ -60,6 +63,9 @@
 
 	<h2>Alle News (Neueste zuerst)</h2>
 	<ul>
+		<li>
+			<a href="{base}/aktuelles/durchgeshufflet-in-freiburg">DurchgeSHUFFLEt in Freiburg</a>
+		</li>
 		<li>
 			<a href="{base}/aktuelles/wir-wurden-verlaengert">Wir wurden verlängert!</a>
 		</li>

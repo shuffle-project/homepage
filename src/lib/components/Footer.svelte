@@ -12,6 +12,7 @@
 		<li>
 			<a href="{base}/datenschutz">Datenschutz</a>
 		</li>
+
 		<li>
 			<a href="{base}/barrierefreiheit">Erklärung zur Barrierefreiheit</a>
 		</li>
@@ -20,6 +21,9 @@
 		</li>
 		<li>
 			<a href="{base}/leichte-sprache">Leichte Sprache</a>
+		</li>
+		<li>
+			<a href="{base}/datenschutz-in-einfacher-sprache">Datenschutz in einfacher Sprache</a>
 		</li>
 		<li>
 			<a href="{base}/sitemap">Sitemap</a>
