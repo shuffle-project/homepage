@@ -15,6 +15,17 @@
 </TitleSection>
 
 <div class="articles">
+	<ArticlePreview
+		title="DurchgeSHUFFLEt in Freiburg"
+		time="28.03.2024"
+		link="durchgeshufflet-in-freiburg"
+	>
+		Ende März fand unser Frühlingstreffen im sonnigen Freiburg statt. Nachdem wir im Februar die
+		Zusage der Verlängerung des Projekts bis Ende Dezember 2025 bekommen haben, nutzten wir das
+		Präsenztreffen für eine Bestandsaufnahme und Koordination der weiteren Aufgaben. So haben wir
+		uns am Donnerstag zunächst […]
+	</ArticlePreview>
+
 	<ArticlePreview title="Wir wurden verlängert!" time="14.02.2024" link="wir-wurden-verlaengert">
 		Am Montag, den 29.01.24 erhielten alle vier Standorte unseres Verbundprojekts eine freudige
 		Nachricht: Die Stiftung „Innovation in der Hochschullehre“ verlängert die Förderung unseres

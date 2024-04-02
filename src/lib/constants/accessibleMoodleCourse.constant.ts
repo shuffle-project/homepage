@@ -35,7 +35,8 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 			link: {
 				url: 'https://visual-books.com/moodle-kann-mehr/',
 				label: 'Zum Kapitel'
-			}
+			},
+			category: 'Sonstige Veröffentlichungen'
 		}
 	]
 };

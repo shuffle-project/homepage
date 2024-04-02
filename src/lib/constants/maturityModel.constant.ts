@@ -61,7 +61,8 @@ export const MATURITY_MODEL: Project = {
 			link: {
 				label: 'Zum Paper',
 				url: 'https://www.frontiersin.org/articles/10.3389/fcomp.2023.1134320/full'
-			}
+			},
+			category: 'Paper'
 		},
 		{
 			title:
@@ -75,7 +76,8 @@ export const MATURITY_MODEL: Project = {
 			link: {
 				label: 'Zum Abstract',
 				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=93'
-			}
+			},
+			category: 'Workshops'
 		},
 		{
 			title:
@@ -98,7 +100,8 @@ export const MATURITY_MODEL: Project = {
 			link: {
 				label: 'Zum Tagungsband',
 				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
-			}
+			},
+			category: 'Paper'
 		},
 		{
 			title: 'Der Umfang von Barrierefreiheit an Hochschulen',
@@ -110,7 +113,21 @@ export const MATURITY_MODEL: Project = {
 			link: {
 				label: 'Zum Tagungsband',
 				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
-			}
+			},
+			category: 'Paper'
+		},
+		{
+			title: 'Digitale Barrierefreiheit an Hochschulen zum Wachsen bringen ',
+			titleLang: 'de',
+			releaseDate: '2023-04',
+			contributors: ['Ann-Katrin Böhm', 'Christin Stormer'],
+			placeOfPublication: 'Lightning Talk auf dem University:Future Festival 2023',
+			placeOfPublicationLang: 'de',
+			link: {
+				label: 'Zur Aufnahme (YouTube)',
+				url: 'https://www.youtube.com/watch?v=i6yikMDgwSE#t=06m35s)'
+			},
+			category: 'Sonstige Veröffentlichungen'
 		}
 	]
 };
