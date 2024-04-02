@@ -3,11 +3,11 @@
 </script>
 
 <svelte:head>
-	<title>Datenschutzerklärung in leichter Sprache - SHUFFLE</title>
+	<title>Datenschutzerklärung in einfacher Sprache - SHUFFLE</title>
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Datenschutz<wbr />erklärung in leichter Sprache</svelte:fragment>
+	<svelte:fragment slot="title">Datenschutz<wbr />erklärung in einfacher Sprache</svelte:fragment>
 </TitleSection>
 
 <div class="page-content headings-with-padding">
@@ -16,8 +16,8 @@
 		Das Projekt SHUFFLE ist ein Forschung·sprojekt <br />an der Hoch·schule der Medien (HdM)
 		Stuttgart.
 		<br />
-		Es gibt auch noch weitere Projekt·partner. <br />Es dauert voraussichtlich 3 Jahre (2021 bis
-		2024).
+		Es gibt auch noch weitere Projekt·partner. <br />Es dauert voraussichtlich 4 Jahre (2021 bis
+		2025).
 		<br />
 		Das Projekt wird von der Stiftung Innovation in der Hochschullehre (STiL) gefördert.
 		<br />
@@ -79,7 +79,6 @@
 
 	<ul>
 		<li>Sie die Seite problemlos sehen und lesen können,</li>
-		<li>wir ein Kontaktformular anbieten und auf Ihre Anfragen antworten können,</li>
 		<li>wir Videos und andere Angebote bereitstellen können.</li>
 	</ul>
 
@@ -93,7 +92,7 @@
 	<p>
 		Beim Besuch unserer Internet-Seite werden Daten verarbeitet.
 		<br /> Sie haben einen Browser.
-		<br />Zum Beispiel: Internet Explorer oder Firefox.
+		<br />Zum Beispiel: Chrome, Edge oder Firefox.
 		<br />Und wir haben Server.
 		<br />Die meisten davon stehen in der HdM.
 		<br />Ihre Daten werden vom Browser an unsere Server gesendet.
@@ -152,7 +151,7 @@
 	</p>
 
 	<h3>Zusätzliche Dienste</h3>
-	<p>Kontakt·formulare und E-Mails werden für Anfragen genutzt.</p>
+	<p>E-Mails werden für Anfragen genutzt.</p>
 	<p>Externe Dienst·leister sind vertraglich an DSGVO-konforme Daten·verarbeitung gebunden.</p>
 	<p>
 		Rechts·grundlage ist Einwilligung oder öffentliches Interesse,

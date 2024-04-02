@@ -23,7 +23,7 @@
 			<a href="{base}/leichte-sprache">Leichte Sprache</a>
 		</li>
 		<li>
-			<a href="{base}/datenschutz-in-leichter-sprache">Datenschutz in leichter Sprache</a>
+			<a href="{base}/datenschutz-in-einfacher-sprache">Datenschutz in einfacher Sprache</a>
 		</li>
 		<li>
 			<a href="{base}/sitemap">Sitemap</a>
