@@ -44,7 +44,8 @@ export const BLINDDATE: Project = {
 			link: {
 				label: 'Zum Poster Abstract',
 				url: 'https://www.icchp-aaate.org/content/using-design-thinking-methods-developing-digital-accessibility-learning-resource'
-			}
+			},
+			category: 'Posterpräsentationen'
 		},
 		{
 			title: 'Persona Co-design for Improving Digital Accessibility',
@@ -64,7 +65,8 @@ export const BLINDDATE: Project = {
 			link: {
 				label: 'Zum Paper',
 				url: 'https://dl.acm.org/doi/10.1145/3544549.3585857'
-			}
+			},
+			category: 'Paper'
 		},
 		{
 			title: 'Re-Conceptualizing Disability Simulations: a guided strategies-based approach',
@@ -82,7 +84,8 @@ export const BLINDDATE: Project = {
 			link: {
 				label: 'Zum Paper (PDF)',
 				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=277'
-			}
+			},
+			category: 'Paper'
 		},
 		{
 			title:
@@ -105,7 +108,8 @@ export const BLINDDATE: Project = {
 				label: 'Folien herunterladen (PowerPoint)',
 				url: 'downloads/Marburg_2023_Shuffle_Vortrag_AB_25.07.23.pptx',
 				download: true
-			}
+			},
+			category: 'Sonstige Veröffentlichungen'
 		}
 	]
 };

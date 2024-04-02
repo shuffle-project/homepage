@@ -2,22 +2,8 @@
 	import Publications from '$lib/components/projectDetailPage/Publications.svelte';
 	import { ALL_PROJECTS } from '$lib/constants/allProjects.constant';
 	import type { Publication } from '$lib/interfaces/project.interface';
+	import { onMount } from 'svelte';
 	import TitleSection from '../../../lib/components/TitleSection.svelte';
-
-	const months = [
-		'Januar',
-		'Februar',
-		'März',
-		'April',
-		'Mai',
-		'Juni',
-		'Juli',
-		'August',
-		'September',
-		'Oktober',
-		'November',
-		'Dezember'
-	];
 
 	let unsortedAllPublications: Publication[] = [];
 
@@ -25,25 +11,35 @@
 		if ('publications' in project) unsortedAllPublications.push(...project.publications!);
 	});
 
-	let sortedAllPublications = new Map<number, Publication[]>();
+	let publicationPaper: Publication[] = [];
+	let publicationWorkshops: Publication[] = [];
+	let publicationPoster: Publication[] = [];
+	let publicationOther: Publication[] = [];
 
-	unsortedAllPublications.forEach((publication: Publication) => {
-		const publicationYear = new Date(publication.releaseDate).getFullYear();
-		const yearEntry = sortedAllPublications.get(publicationYear);
-
-		if (!yearEntry) {
-			sortedAllPublications.set(publicationYear, [publication]);
-		} else {
-			let publications = [...sortedAllPublications.get(publicationYear)!, publication];
-			publications.sort((a, b) => {
-				return new Date(b.releaseDate).getMonth() - new Date(a.releaseDate).getMonth();
+	onMount(() => {
+		if (unsortedAllPublications) {
+			unsortedAllPublications.forEach((pub) => {
+				switch (pub.category) {
+					case 'Paper':
+						publicationPaper = [...publicationPaper, pub];
+						break;
+					case 'Workshops':
+						publicationWorkshops = [...publicationWorkshops, pub];
+						break;
+					case 'Posterpräsentationen':
+						publicationPoster = [...publicationPoster, pub];
+						break;
+					default:
+						publicationOther = [...publicationOther, pub];
+				}
 			});
 
-			sortedAllPublications.set(publicationYear, publications);
+			publicationPaper.sort((a, b) => a.title.localeCompare(b.title));
+			publicationWorkshops.sort((a, b) => a.title.localeCompare(b.title));
+			publicationPoster.sort((a, b) => a.title.localeCompare(b.title));
+			publicationOther.sort((a, b) => a.title.localeCompare(b.title));
 		}
 	});
-
-	const readyPublications = new Map([...sortedAllPublications.entries()].sort().reverse());
 </script>
 
 <svelte:head>
@@ -58,17 +54,28 @@
 	</svelte:fragment>
 </TitleSection>
 
-{#if readyPublications}
-	<div class="page-content">
-		{#each readyPublications as yearEntry, i}
-			<h2>
-				{yearEntry[0]}
-			</h2>
-
-			<Publications year={yearEntry[0]} publications={yearEntry[1]} />
-		{/each}
-	</div>
-{/if}
+<div class="page-content">
+	{#if publicationPaper.length > 0}
+		<Publications publications={publicationPaper} category="Paper" headingLevel="h2" />
+	{/if}
+	{#if publicationWorkshops.length > 0}
+		<Publications publications={publicationWorkshops} category="Workshops" headingLevel="h2" />
+	{/if}
+	{#if publicationPoster.length > 0}
+		<Publications
+			publications={publicationPoster}
+			category="Posterpräsentationen"
+			headingLevel="h2"
+		/>
+	{/if}
+	{#if publicationOther.length > 0}
+		<Publications
+			publications={publicationOther}
+			category="Sonstige Veröffentlichungen"
+			headingLevel="h2"
+		/>
+	{/if}
+</div>
 
 <style lang="scss">
 	.page-content {
