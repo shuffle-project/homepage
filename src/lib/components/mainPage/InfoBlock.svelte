@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import Icon from '../Icon.svelte';
 
 	export let headline: string;
@@ -8,7 +9,7 @@
 <div class="wrapper">
 	<div class="info-block">
 		<h2>{headline}</h2>
-		<a href={link}>
+		<a href={base + link}>
 			<span aria-hidden="true">Mehr Informationen</span>
 			<span class="sr-only">Mehr Informationen über {headline}</span>
 			<Icon svg="arrow-right" color="white" />
