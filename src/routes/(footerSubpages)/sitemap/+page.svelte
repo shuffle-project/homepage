@@ -64,6 +64,11 @@
 	<h2>Alle News (Neueste zuerst)</h2>
 	<ul>
 		<li>
+			<a href="{base}/aktuelles/webinar-serie-zu-shuffle-projektergebnissen"
+				>Webinar-Serie zu SHUFFLE-Projektergebnissen</a
+			>
+		</li>
+		<li>
 			<a href="{base}/aktuelles/durchgeshufflet-in-freiburg">DurchgeSHUFFLEt in Freiburg</a>
 		</li>
 		<li>
