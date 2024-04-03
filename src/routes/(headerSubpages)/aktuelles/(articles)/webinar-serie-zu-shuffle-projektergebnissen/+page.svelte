@@ -31,7 +31,7 @@
 	zu besuchen.
 </p>
 
-<h2>Mi 15.05.2024 um 14-15 Uhr: Webinar zu AP03/08/09 (Titel ändern)</h2>
+<h2>Digitale Lernräume und Materialien barrierefrei gestalten</h2>
 <p class="date">
 	<Icon svg="event" color="dark-grey" />
 	15.05.2024 um 14:00-15:00 Uhr
@@ -42,6 +42,26 @@
 		Zum ZOOM-Raum (Kenncode: 165483)
 	</a>
 </span>
+<p>
+	Um allen Studierenden, unabhängig von ihren persönlichen Umständen, die Teilhabe an der
+	Hochschullehre zu ermöglichen, bedarf es barrierefreie Lehre. Hierbei müssen Lehrende bei der
+	Planung und Durchführung von Lehrveranstaltungen und Prüfungen, sowie der Erstellung von
+	Lernmaterialien und -räumen einiges beachten.
+</p>
+<p>
+	In diesem Webinar haben Sie die Möglichkeit drei verschiedene Kurse kennenzulernen, die Sie bei
+	einer digital barrierefreien Gestaltung Ihrer Lehrmaterialien und -räume unterstützen. Zwei dieser
+	Kurse, ein Moodle-Kurs sowie ein Ilias-Kurs, geben Hinweise und Unterstützungsmöglichkeiten zur
+	barrierefreien Gestaltung dieser Lernmanagementsysteme. Dazu stellen wir wichtige Tipps, konkrete
+	Anweisungen sowie Beispiele zur Verfügung, um Kurse in Moodle oder Ilias möglichst barrierefrei zu
+	gestalten. Der dritte Kurs, das Materialpaket, bündelt Informationen zur Gestaltung barrierefreier
+	Hochschullehre. Übersichtliche Checklisten geben Hinweise zur Umsetzung möglichst barrierefreier
+	Dokumente sowie Lehrsituationen und werden durch ausführliche Anleitungen zur Umsetzung ergänzt.
+</p>
+<p>
+	Das Webinar ist für all diejenigen interessant, die ihre Lehre für alle zugänglich gestalten
+	wollen!
+</p>
 
 <h2>Ein BlindDate mit virtuellen Studierenden – Sensibilisierung durch Perspektivwechsel</h2>
 <p class="date">
@@ -67,7 +87,7 @@
 	etwas über den Erstellungsprozess der Personas, die interaktiven Elemente der Webseite und noch
 	nicht veröffentlichte Inhalte.
 </p>
-<h2>Mi 12.06.2024 um 14-15 Uhr: Webinar zu AP01/02 (Titel ändern)</h2>
+<h2>Systematische Analyse und Entwicklung von (digitaler) Barrierefreiheit an Hochschulen</h2>
 <p class="date">
 	<Icon svg="event" color="dark-grey" />
 	12.06.2024 um 14:00-15:00 Uhr
@@ -78,6 +98,23 @@
 		Zum ZOOM-Raum (Kenncode: 165483)
 	</a>
 </span>
+<p>
+	Die Barrierefreiheit von Hochschulen ist gesetzlich gefordert und wird doch nur selten umfänglich
+	umgesetzt. Der Grund hierfür ist, dass Hochschulen komplexe Organisationstypen sind und
+	Stakeholder aus allen Bereichen der Hochschule mit einbezogen werden müssen. Verantwortliche an
+	den Hochschulen benötigen deshalb Unterstützung, um herauszufinden, welche Faktoren in den
+	unterschiedlichen Bereichen der Hochschule für die Barrierefreiheit relevant sind und welche
+	Schritte nacheinander gegangen werden sollten.
+</p>
+<p>
+	Wir möchten Ihnen dafür das SHUFFLE-Reifegradmodell vorstellen. Es ist ein Unterstützungstool zur
+	Verbesserung der (digitalen) Barrierefreiheit an Hochschulen und hilft Verantwortlichen, relevante
+	Daten strukturiert zu erheben, zu bündeln und diese strategisch einzusetzen. So ist es Ihnen
+	möglich, den Ist-Stand der (digitalen) Barrierefreiheit an Ihrer Hochschule zu ermitteln. Mit
+	Hilfe der bereitgestellten Handlungsempfehlungen und Good-Practice-Beispiele aus dem
+	Hochschulalltag können Sie an die Analyse des Ist-Standes auch eine Weiterentwicklung der
+	(digitalen) Barrierefreiheit anschließen.
+</p>
 <h2>Digitale Barrierefreiheit im Hochschulkontext: Zertifikat “Barrierefrei Lehren”</h2>
 <p class="date">
 	<Icon svg="event" color="dark-grey" />
