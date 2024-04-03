@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import Icon from '../Icon.svelte';
+	import InfoBlock from './InfoBlock.svelte';
 	import ProjectDuration from './ProjectDuration.svelte';
 </script>
 
@@ -112,6 +113,11 @@
 			</table>
 		</div>
 	</div>
+
+	<InfoBlock
+		headline="Webinar-Serie zu SHUFFLE-Projektergebnissen"
+		link="/aktuelles/webinar-serie-zu-shuffle-projektergebnissen"
+	/>
 </div>
 
 <style lang="scss">
