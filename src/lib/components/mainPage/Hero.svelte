@@ -17,7 +17,7 @@
 				In SHUFFLE werden Maßnahmen auf technischer, struktureller und didaktischer Ebene zur
 				Verbesserung von digitaler Barrierefreiheit an Hochschulen entwickelt, erprobt und dauerhaft
 				als <span lang="en">Open-Source</span>-Lösungen bereitgestellt. Damit setzt SHUFFLE an den
-				Forderungen des Hochschulrahmengesetz an, eine chancengerechte digitaler Teilhabe für alle
+				Forderungen des Hochschulrahmengesetzes an, eine chancengerechte digitaler Teilhabe für alle
 				Studierenden zu gewährleisten.
 			</p>
 			<p>
