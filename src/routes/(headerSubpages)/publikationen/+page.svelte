@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ApaToggle from '$lib/components/APAToggle.svelte';
 	import Publications from '$lib/components/projectDetailPage/Publications.svelte';
 	import { ALL_PROJECTS } from '$lib/constants/allProjects.constant';
 	import type { Publication } from '$lib/interfaces/project.interface';
@@ -55,6 +56,8 @@
 </TitleSection>
 
 <div class="page-content">
+	<ApaToggle />
+
 	{#if publicationPaper.length > 0}
 		<Publications
 			publications={publicationPaper}
