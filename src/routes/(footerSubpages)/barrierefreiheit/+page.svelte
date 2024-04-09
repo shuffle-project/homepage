@@ -66,7 +66,7 @@
 		</li>
 	</ul>
 
-	<h2>Durchsetzungsverfahren</h2>
+	<h2>Schlichtungsverfahren</h2>
 	<p>
 		Um zu gewährleisten, dass diese Webseiten und mobilen Anwendungen den in § 10 Absatz 1 L-BGG
 		beschriebenen Anforderungen genügen, können Sie sich per Email an die <em
@@ -84,23 +84,15 @@
 	</p>
 
 	<p>
-		Die Beauftragte der Landesregierung für die Belange von Menschen mit Behinderungen können Sie
-		wie folgt erreichen:
+		Die Schlichtungsstelle des Landeszentrums Barrierefreiheit (LZ-BARR) können Sie wie folgt
+		erreichen: <a href="mailto:schlichtung@barrierefreiheit.bwl.de"
+			>schlichtung@barrierefreiheit.bwl.de</a
+		>,
+		<a href="tel:004971112339375">Tel. +49 711 123 39375</a>
+		, Adresse: Landeszentrum Barrierefreiheit, Schlichtungsstelle, Else-Josenhans-Straße 6, 70173 Stuttgart.
 	</p>
 
-	<p>
-		Simone Fischer<br />Ministerium für Soziales, Gesundheit und Integration Baden-Württemberg<br
-		/>Else-Josenhans-Straße 6<br />70173 Stuttgart
-	</p>
-
-	<ul>
-		<li>
-			<a href="mailto:Poststelle@bfbmb.bwl.de">Poststelle@bfbmb.bwl.de</a>
-		</li>
-		<li>
-			<a href="tel:004907112793366">+49 711 279-3366</a>
-		</li>
-	</ul>
+	<p>Das Schlichtungsverfahren ist unentgeltlich.</p>
 
 	<p>
 		Die Kontaktdaten des für Sie zuständigen kommunalen Beauftragten für die Belange von Menschen
