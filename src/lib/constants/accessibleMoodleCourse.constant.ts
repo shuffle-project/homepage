@@ -26,17 +26,17 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 	},
 	publications: [
 		{
-			title: 'Inklusion und Barrierefreiheit',
+			title: 'Sammelbandartikel „Inklusion und Barrierefreiheit“',
 			titleLang: 'de',
 			contributors: ['Tanja Kräwinkel (Herausgebende)', 'Michael Joahnnfunke', 'Christin Stormer'],
-			placeOfPublication: 'Buchkapitel in "MoodleKannMehr - nicht nur im Distanzunterricht!"',
+			placeOfPublication: 'Sammelbandartikel in "MoodleKannMehr - nicht nur im Distanzunterricht!"',
 			placeOfPublicationLang: 'de',
 			releaseDate: '2022-06',
 			link: {
 				url: 'https://visual-books.com/moodle-kann-mehr/',
-				label: 'Zum Kapitel'
+				label: 'Zum Sammelband'
 			},
-			category: 'Sonstige Veröffentlichungen'
+			category: 'Paper / Buchbeiträge'
 		}
 	]
 };

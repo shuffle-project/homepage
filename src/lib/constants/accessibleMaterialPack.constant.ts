@@ -63,7 +63,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 				url: 'https://doi.org/10.21240/mpaed/jb20/2023.09.07.X',
 				label: 'Zum Paper'
 			},
-			category: 'Paper'
+			category: 'Paper / Buchbeiträge'
 		}
 	]
 };

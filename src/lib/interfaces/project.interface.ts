@@ -33,9 +33,10 @@ export interface Image {
 }
 
 export type PublicationCategory =
-	| 'Paper'
+	| 'Paper / Buchbeiträge'
 	| 'Workshops'
 	| 'Posterpräsentationen'
+	| 'Abschlussarbeiten'
 	| 'Sonstige Veröffentlichungen';
 
 export interface Publication {

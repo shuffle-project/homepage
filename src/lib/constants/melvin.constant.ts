@@ -38,27 +38,27 @@ export const MELVIN: Project = {
 				'Gottfried Zimmermann'
 			],
 			placeOfPublication:
-				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE) 2022',
+				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE)',
 			placeOfPublicationLang: 'en',
 			link: {
 				url: 'https://aaate.net/wp-content/uploads/sites/12/2023/08/OAC22_V1.0_Part_1.pdf#page=165',
 				label: 'Zum Paper (PDF)'
 			},
-			category: 'Paper'
+			category: 'Paper / Buchbeiträge'
 		},
 		{
 			title: 'Accuracy of AI-generated Captions With Collaborative Manual Corrections in Real-Time',
 			titleLang: 'en',
 			releaseDate: '2023-04',
 			contributors: ['Korbinian Kuhn', 'Verena Kersken', 'Gottfried Zimmermann'],
-			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
+			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems',
 			placeOfPublicationLang: 'en',
 			link: {
 				url: 'https://dl.acm.org/doi/10.1145/3544549.3585724?cid=99660781441',
 				label: 'Zum Paper',
 				allowReferrer: true
 			},
-			category: 'Paper'
+			category: 'Paper / Buchbeiträge'
 			// link: {
 			// 	url: 'downloads/Accuracy_of_AI_generated_Captions_With_Collaborative_Manual_Corrections_in_Real_Time.pdf',
 			// 	label: 'Paper herunterladen (PDF)',
@@ -82,7 +82,26 @@ export const MELVIN: Project = {
 				url: 'https://dl.acm.org/doi/10.1145/3636513',
 				label: 'Zum Paper'
 			},
-			category: 'Paper'
+			category: 'Paper / Buchbeiträge'
+		},
+		{
+			title: 'Melvin – Multi-user editor for live subtitles',
+			titleLang: 'en',
+			releaseDate: '2022-07',
+			contributors: [
+				'Benedikt Reuter',
+				'Korbinian Kuhn',
+				'Niklas Egger',
+				'Prof. Dr. Gottfried Zimmermann'
+			],
+			placeOfPublication:
+				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE)',
+			placeOfPublicationLang: 'en',
+			link: {
+				label: 'Zum Poster Abstract',
+				url: 'https://www.icchp-aaate.org/content/melvin-%E2%80%93-multi-user-editor-live-subtitles'
+			},
+			category: 'Posterpräsentationen'
 		}
 	]
 };

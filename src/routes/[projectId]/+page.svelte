@@ -17,11 +17,15 @@
 	let publicationPoster: Publication[] = [];
 	let publicationOther: Publication[] = [];
 
+	// function sortDate(a: string, b: string) {
+	// 	return new Date(b) - new Date (a);
+	// }
+
 	onMount(() => {
 		if (project.publications) {
 			project.publications.forEach((pub) => {
 				switch (pub.category) {
-					case 'Paper':
+					case 'Paper / Buchbeiträge':
 						publicationPaper = [...publicationPaper, pub];
 						break;
 					case 'Workshops':
@@ -35,10 +39,10 @@
 				}
 			});
 
-			publicationPaper.sort((a, b) => a.title.localeCompare(b.title));
-			publicationWorkshops.sort((a, b) => a.title.localeCompare(b.title));
-			publicationPoster.sort((a, b) => a.title.localeCompare(b.title));
-			publicationOther.sort((a, b) => a.title.localeCompare(b.title));
+			publicationPaper.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
+			publicationWorkshops.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
+			publicationPoster.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
+			publicationOther.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
 		}
 	});
 </script>
@@ -72,7 +76,7 @@
 	{#if project.publications}
 		<h2 class="publication-header">Publikationen</h2>
 		{#if publicationPaper.length > 0}
-			<Publications publications={publicationPaper} category="Paper" />
+			<Publications publications={publicationPaper} category="Paper / Buchbeiträge" />
 		{/if}
 		{#if publicationWorkshops.length > 0}
 			<Publications publications={publicationWorkshops} category="Workshops" />

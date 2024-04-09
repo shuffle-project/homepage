@@ -20,7 +20,7 @@
 		if (unsortedAllPublications) {
 			unsortedAllPublications.forEach((pub) => {
 				switch (pub.category) {
-					case 'Paper':
+					case 'Paper / Buchbeiträge':
 						publicationPaper = [...publicationPaper, pub];
 						break;
 					case 'Workshops':
@@ -34,10 +34,10 @@
 				}
 			});
 
-			publicationPaper.sort((a, b) => a.title.localeCompare(b.title));
-			publicationWorkshops.sort((a, b) => a.title.localeCompare(b.title));
-			publicationPoster.sort((a, b) => a.title.localeCompare(b.title));
-			publicationOther.sort((a, b) => a.title.localeCompare(b.title));
+			publicationPaper.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
+			publicationWorkshops.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
+			publicationPoster.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
+			publicationOther.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
 		}
 	});
 </script>
@@ -56,7 +56,11 @@
 
 <div class="page-content">
 	{#if publicationPaper.length > 0}
-		<Publications publications={publicationPaper} category="Paper" headingLevel="h2" />
+		<Publications
+			publications={publicationPaper}
+			category="Paper / Buchbeiträge"
+			headingLevel="h2"
+		/>
 	{/if}
 	{#if publicationWorkshops.length > 0}
 		<Publications publications={publicationWorkshops} category="Workshops" headingLevel="h2" />

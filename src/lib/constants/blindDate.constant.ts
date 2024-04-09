@@ -39,7 +39,7 @@ export const BLINDDATE: Project = {
 				'Gottfried Zimmermann'
 			],
 			placeOfPublication:
-				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE) 2022',
+				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE)',
 			placeOfPublicationLang: 'en',
 			link: {
 				label: 'Zum Poster Abstract',
@@ -60,13 +60,14 @@ export const BLINDDATE: Project = {
 				'Markus Lang',
 				'Gottfried Zimmermann'
 			],
-			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems 2023',
+			placeOfPublication: 'ACM CHI Conference on Human Factors in Computing Systems',
 			placeOfPublicationLang: 'en',
 			link: {
 				label: 'Zum Paper',
-				url: 'https://dl.acm.org/doi/10.1145/3544549.3585857'
+				url: 'https://dl.acm.org/doi/10.1145/3544549.3585857?cid=99660778490',
+				allowReferrer: true
 			},
-			category: 'Paper'
+			category: 'Paper / Buchbeiträge'
 		},
 		{
 			title: 'Re-Conceptualizing Disability Simulations: a guided strategies-based approach',
@@ -79,13 +80,13 @@ export const BLINDDATE: Project = {
 				'Gottfried Zimmermann'
 			],
 			placeOfPublication:
-				'Association for the Advancement of Assistive Technology in Europe (AAATE) 2023',
+				'Association for the Advancement of Assistive Technology in Europe (AAATE)',
 			placeOfPublicationLang: 'en',
 			link: {
 				label: 'Zum Paper (PDF)',
 				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=277'
 			},
-			category: 'Paper'
+			category: 'Paper / Buchbeiträge'
 		},
 		{
 			title:
@@ -102,7 +103,7 @@ export const BLINDDATE: Project = {
 				'Gottfried Zimmermann'
 			],
 			placeOfPublication:
-				'Kongress des Verband für Blinden- und Sehbehindertenpädagogik e. V. (VBS) 2023',
+				'Kongress des Verband für Blinden- und Sehbehindertenpädagogik e. V. (VBS)',
 			placeOfPublicationLang: 'de',
 			link: {
 				label: 'Folien herunterladen (PowerPoint)',

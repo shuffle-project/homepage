@@ -56,13 +56,13 @@ export const MATURITY_MODEL: Project = {
 				'Gerhard Weber',
 				'Gottfried Zimmermann'
 			],
-			placeOfPublication: 'Frontiers Computer Science - Volume 5 2023',
+			placeOfPublication: 'Frontiers Computer Science - Volume 5',
 			placeOfPublicationLang: 'en',
 			link: {
 				label: 'Zum Paper',
 				url: 'https://www.frontiersin.org/articles/10.3389/fcomp.2023.1134320/full'
 			},
-			category: 'Paper'
+			category: 'Paper / Buchbeiträge'
 		},
 		{
 			title:
@@ -71,7 +71,7 @@ export const MATURITY_MODEL: Project = {
 			releaseDate: '2023-08',
 			contributors: ['Gottfried Zimmermann', 'Nadine Auer', 'Verena Kersken'],
 			placeOfPublication:
-				'Association for the Advancement of Assistive Technology in Europe (AAATE) 2023',
+				'Association for the Advancement of Assistive Technology in Europe (AAATE)',
 			placeOfPublicationLang: 'en',
 			link: {
 				label: 'Zum Abstract',
@@ -95,33 +95,33 @@ export const MATURITY_MODEL: Project = {
 				'Gerhard Weber',
 				'Gottfried Zimmermann'
 			],
-			placeOfPublication: 'Gemeinschaften in Neuen Medien 2023',
+			placeOfPublication: 'Gemeinschaften in Neuen Medien',
 			placeOfPublicationLang: 'de',
 			link: {
 				label: 'Zum Tagungsband',
 				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
 			},
-			category: 'Paper'
+			category: 'Paper / Buchbeiträge'
 		},
 		{
 			title: 'Der Umfang von Barrierefreiheit an Hochschulen',
 			titleLang: 'de',
 			releaseDate: '2023-09',
 			contributors: ['Nadine Auer', 'Verena Kersken', 'Gerhard Weber', 'Gottfried Zimmermann'],
-			placeOfPublication: 'Gemeinschaften in Neuen Medien 2023',
+			placeOfPublication: 'Gemeinschaften in Neuen Medien',
 			placeOfPublicationLang: 'de',
 			link: {
 				label: 'Zum Tagungsband',
 				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
 			},
-			category: 'Paper'
+			category: 'Paper / Buchbeiträge'
 		},
 		{
 			title: 'Digitale Barrierefreiheit an Hochschulen zum Wachsen bringen ',
 			titleLang: 'de',
 			releaseDate: '2023-04',
 			contributors: ['Ann-Katrin Böhm', 'Christin Stormer'],
-			placeOfPublication: 'Lightning Talk auf dem University:Future Festival 2023',
+			placeOfPublication: 'Lightning Talk auf dem University:Future Festival',
 			placeOfPublicationLang: 'de',
 			link: {
 				label: 'Zur Aufnahme (YouTube)',

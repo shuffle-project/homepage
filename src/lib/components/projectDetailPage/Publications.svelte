@@ -42,6 +42,10 @@
 							<th><Icon svg="location" alt="Ort der Veröffentlichung:" color="dark-grey" /></th>
 							<td lang={publication.placeOfPublicationLang}>{publication.placeOfPublication}</td>
 						</tr>
+						<tr>
+							<th><Icon svg="calender" alt="Jahr der Veröffentlichung" color="dark-grey" /></th>
+							<td>{publication.releaseDate.split('-')[0]}</td>
+						</tr>
 					</table>
 
 					<div class="link-wrapper">
