@@ -56,7 +56,9 @@
 </TitleSection>
 
 <div class="page-content">
-	<ApaToggle />
+	<div class="apa-button-wrapper">
+		<ApaToggle />
+	</div>
 
 	{#if publicationPaper.length > 0}
 		<Publications
@@ -91,6 +93,13 @@
 		width: 100%;
 		margin: 1.875rem auto 0 auto;
 		padding-inline: var(--outer-spacing);
+
+		.apa-button-wrapper {
+			margin-bottom: 4rem;
+			max-width: 60rem;
+			box-sizing: border-box;
+			padding-right: 0rem;
+		}
 	}
 
 	h2 {
@@ -103,6 +112,12 @@
 	@media (min-width: 40.625rem) {
 		h2 {
 			padding-inline: 1.875rem;
+		}
+
+		.page-content {
+			.apa-button-wrapper {
+				padding-right: 3.75rem;
+			}
 		}
 	}
 </style>

@@ -10,12 +10,13 @@
 <style lang="scss">
 	.wrapper {
 		border-bottom: 1px solid var(--color-blue-line);
-		margin-bottom: 4rem;
+
 		padding: 0.625rem 1.875rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 0.25rem;
+		width: 100%;
 
 		label {
 			cursor: pointer;
