@@ -1,5 +1,7 @@
 <script lang="ts">
 	import type { Publication, PublicationCategory } from '$lib/interfaces/project.interface';
+	import { useAPAFormat } from '$lib/store';
+	import { fade } from 'svelte/transition';
 	import Icon from '../Icon.svelte';
 	import Link from '../Link.svelte';
 
@@ -18,6 +20,28 @@
 		});
 		return allNames;
 	}
+
+	function getAPAContributorsString(contributors: string[]) {
+		let allNames = '';
+		contributors.forEach((contributor, i) => {
+			const cleanedName = contributor
+				.replaceAll('Prof.', '')
+				.replaceAll('Dr.', '')
+				.replaceAll('(Herausgebende)', '')
+				.trim();
+
+			const shortendName = `${cleanedName.split(' ')[1]}, ${cleanedName.split(' ')[0].charAt(0)}.`;
+
+			if (i === 0) {
+				allNames = allNames + ` ${shortendName}`;
+			} else if (i !== contributors.length - 1 && i !== 0) {
+				allNames = allNames + `, ${shortendName}`;
+			} else {
+				allNames = allNames + `, & ${shortendName}`;
+			}
+		});
+		return allNames;
+	}
 </script>
 
 <div class="wrapper">
@@ -29,44 +53,66 @@
 	{/if}
 
 	<ul aria-label={category}>
-		{#each publications as publication, i}
-			<li>
-				<p class="title" lang={publication.titleLang}>{publication.title}</p>
-				<div class="more-info-wrapper">
-					<table>
-						<tr>
-							<th><Icon svg="person" alt="Beitragende:" color="dark-grey" /></th>
-							<td>{getContributorsString(publication.contributors)}</td>
-						</tr>
-						<tr>
-							<th><Icon svg="location" alt="Ort der Veröffentlichung:" color="dark-grey" /></th>
-							<td lang={publication.placeOfPublicationLang}>{publication.placeOfPublication}</td>
-						</tr>
-						<tr>
-							<th><Icon svg="calender" alt="Jahr der Veröffentlichung" color="dark-grey" /></th>
-							<td>{publication.releaseDate.split('-')[0]}</td>
-						</tr>
-					</table>
-
-					<div class="link-wrapper">
-						{#if publication.link}
-							<Link
-								link={publication.link.url}
-								details={publication.title}
-								detailsLang={publication.titleLang}
-								download={publication.link.download}
-								allowReferrer={publication.link.allowReferrer}
-							>
-								{publication.link.label}
-							</Link>
+		{#if $useAPAFormat}
+			<div in:fade={{ duration: 600 }}>
+				{#each publications as publication, i}
+					<li>
+						{getAPAContributorsString(publication.contributors)}
+						({publication.releaseDate.split('-')[0]}).
+						<span lang={publication.titleLang}>{publication.title}</span>.
+						<em lang={publication.placeOfPublicationLang}>{publication.placeOfPublication}</em>.
+						{#if publication.link && !publication.link.download}
+							<a class="apa-link" href={publication.link.url}>{publication.link.url}</a>
 						{/if}
-					</div>
-				</div>
-			</li>
-			{#if i !== publications.length - 1}
-				<hr aria-hidden="true" />
-			{/if}
-		{/each}
+					</li>
+					{#if i !== publications.length - 1}
+						<hr aria-hidden="true" />
+					{/if}
+				{/each}
+			</div>
+		{:else}
+			<div in:fade={{ duration: 600 }}>
+				{#each publications as publication, i}
+					<li>
+						<p class="title" lang={publication.titleLang}>{publication.title}</p>
+						<div class="more-info-wrapper">
+							<table>
+								<tr>
+									<th><Icon svg="person" alt="Beitragende:" color="dark-grey" /></th>
+									<td>{getContributorsString(publication.contributors)}</td>
+								</tr>
+								<tr>
+									<th><Icon svg="location" alt="Ort der Veröffentlichung:" color="dark-grey" /></th>
+									<td lang={publication.placeOfPublicationLang}>{publication.placeOfPublication}</td
+									>
+								</tr>
+								<tr>
+									<th><Icon svg="calender" alt="Jahr der Veröffentlichung" color="dark-grey" /></th>
+									<td>{publication.releaseDate.split('-')[0]}</td>
+								</tr>
+							</table>
+
+							<div class="link-wrapper">
+								{#if publication.link}
+									<Link
+										link={publication.link.url}
+										details={publication.title}
+										detailsLang={publication.titleLang}
+										download={publication.link.download}
+										allowReferrer={publication.link.allowReferrer}
+									>
+										{publication.link.label}
+									</Link>
+								{/if}
+							</div>
+						</div>
+					</li>
+					{#if i !== publications.length - 1}
+						<hr aria-hidden="true" />
+					{/if}
+				{/each}
+			</div>
+		{/if}
 	</ul>
 </div>
 
@@ -75,6 +121,10 @@
 		width: 100%;
 		max-width: 60rem;
 		box-sizing: border-box;
+
+		.apa-link {
+			word-break: break-all;
+		}
 
 		ul {
 			padding: 0;

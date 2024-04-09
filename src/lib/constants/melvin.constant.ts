@@ -88,12 +88,7 @@ export const MELVIN: Project = {
 			title: 'Melvin – Multi-user editor for live subtitles',
 			titleLang: 'en',
 			releaseDate: '2022-07',
-			contributors: [
-				'Benedikt Reuter',
-				'Korbinian Kuhn',
-				'Niklas Egger',
-				'Prof. Dr. Gottfried Zimmermann'
-			],
+			contributors: ['Benedikt Reuter', 'Korbinian Kuhn', 'Niklas Egger', 'Gottfried Zimmermann'],
 			placeOfPublication:
 				'Joint International Conference on Digital Inclusion, Assistive Technology & Accessibility (ICCHP / AAATE)',
 			placeOfPublicationLang: 'en',

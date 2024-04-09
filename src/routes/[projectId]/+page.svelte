@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ApaToggle from '$lib/components/APAToggle.svelte';
 	import BackLink from '$lib/components/BackLink.svelte';
 	import PlayerExtended from '$lib/components/player/PlayerExtended.svelte';
 	import Gallery from '$lib/components/projectDetailPage/Gallery.svelte';
@@ -74,7 +75,11 @@
 	{/if}
 
 	{#if project.publications}
-		<h2 class="publication-header">Publikationen</h2>
+		<div class="publication-header">
+			<h2>Publikationen</h2>
+			<ApaToggle />
+		</div>
+
 		{#if publicationPaper.length > 0}
 			<Publications publications={publicationPaper} category="Paper / Buchbeiträge" />
 		{/if}
@@ -103,8 +108,14 @@
 		text-align: left;
 		width: 100%;
 		max-width: 60rem;
-		padding-inline: 1.875rem;
+		padding-right: 3.75rem;
 		box-sizing: border-box;
+		margin-bottom: 2rem;
+
+		h2 {
+			padding-inline: 1.875rem;
+			margin-bottom: 1.25rem;
+		}
 	}
 
 	.back-link-wrapper {
@@ -115,7 +126,10 @@
 
 	@media (max-width: 40.5625rem) {
 		.publication-header {
-			padding-inline: 0;
+			padding-right: 0rem;
+			h2 {
+				padding-inline: 0;
+			}
 		}
 	}
 </style>
