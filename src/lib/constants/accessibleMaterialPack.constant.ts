@@ -57,7 +57,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 			contributors: ['Judith Kuhlmann', 'Jule Günter', 'Anna-Maria Kamin'],
 			releaseDate: '2023-09',
 			placeOfPublication:
-				'Medienpädagogik: Zeitschrift für Theorie Und Praxis Der Medienbildung 20 (Inklusive Medienbildung):169-82',
+				'Medienpädagogik: Zeitschrift für Theorie Und Praxis Der Medienbildung 20 (Inklusive Medienbildung):169-182',
 			placeOfPublicationLang: 'de',
 			link: {
 				url: 'https://doi.org/10.21240/mpaed/jb20/2023.09.07.X',
@@ -69,7 +69,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 				Kuhlmann, J., Günter, J. & Kamin, A.-M. (2023). Digitale Hochschullehre für Alle
 				gestalten. Ergebnisse einer Lehrendenbefragung an vier Hochschulen.
 				<em>MedienPädagogik: Zeitschrift für Theorie und Praxis in der Medienbildung,</em>
-				20, 169-82.
+				20, 169-182.
 				<a href="https://doi.org/10.21240/mpaed/jb20/2023.09.07.X."
 					>https://doi.org/10.21240/mpaed/jb20/2023.09.07.X.</a
 				>
