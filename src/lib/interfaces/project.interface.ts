@@ -53,6 +53,7 @@ export interface Publication {
 		allowReferrer?: boolean;
 	};
 	category: PublicationCategory;
+	apa: string;
 }
 
 export interface SubProject {

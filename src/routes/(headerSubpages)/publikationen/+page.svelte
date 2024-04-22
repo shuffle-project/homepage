@@ -2,11 +2,12 @@
 	import ApaToggle from '$lib/components/APAToggle.svelte';
 	import Publications from '$lib/components/projectDetailPage/Publications.svelte';
 	import { ALL_PROJECTS } from '$lib/constants/allProjects.constant';
+	import { GENERAL_PUBLICATIONS } from '$lib/constants/generalPublications.constant';
 	import type { Publication } from '$lib/interfaces/project.interface';
 	import { onMount } from 'svelte';
 	import TitleSection from '../../../lib/components/TitleSection.svelte';
 
-	let unsortedAllPublications: Publication[] = [];
+	let unsortedAllPublications: Publication[] = [...GENERAL_PUBLICATIONS];
 
 	ALL_PROJECTS.forEach((project) => {
 		if ('publications' in project) unsortedAllPublications.push(...project.publications!);

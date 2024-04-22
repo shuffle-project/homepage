@@ -44,7 +44,22 @@ export const MELVIN: Project = {
 				url: 'https://aaate.net/wp-content/uploads/sites/12/2023/08/OAC22_V1.0_Part_1.pdf#page=165',
 				label: 'Zum Paper (PDF)'
 			},
-			category: 'Paper / Buchbeiträge'
+			category: 'Paper / Buchbeiträge',
+			apa: `	<span>
+				Piskorek, P., Sienel, N., Kuhn, K., Kersken, V., & Zimmermann, G. (2022).
+				<span lang="en">
+					Evaluating collaborative editing of ai-generated live subtitles by non-professionals
+					in German university lectures. In A. Petz & E.-J. Hoogerwerf (edt.),
+				</span>
+				<em lang="en">
+					ICCHP-AAATE 2022 Open Access Compendium "Assistive Technology, Accessibility and
+					(e)Inclusion" Part I
+				</em>
+				(S.165-175).
+				<a href="https://doi.org/10.35011/icchp-aaate22-p1-22"
+					>https://doi.org/10.35011/icchp-aaate22-p1-22</a
+				>
+			</span>`
 		},
 		{
 			title: 'Accuracy of AI-generated Captions With Collaborative Manual Corrections in Real-Time',
@@ -58,12 +73,21 @@ export const MELVIN: Project = {
 				label: 'Zum Paper',
 				allowReferrer: true
 			},
-			category: 'Paper / Buchbeiträge'
-			// link: {
-			// 	url: 'downloads/Accuracy_of_AI_generated_Captions_With_Collaborative_Manual_Corrections_in_Real_Time.pdf',
-			// 	label: 'Paper herunterladen (PDF)',
-			// 	download: true
-			// }
+			category: 'Paper / Buchbeiträge',
+			apa: `	<span>
+			Kuhn, K., Kersken, V., & Zimmermann, G. (2023).
+				<span lang="en">
+					Accuracy of AI-generated Captions With Collaborative Manual Corrections in
+					Real-Time.</span
+				>
+				<em lang="en">
+					Extended Abstracts of the 2023 CHI Conference on Human Factors in Computing Systems,
+				</em>
+				1-7.
+				<a href="https://doi.org/10.1145/3544549.3585724"
+					>https://doi.org/10.1145/3544549.3585724</a
+				>
+			</span>`
 		},
 		{
 			title: 'Measuring the Accuracy of Automatic Speech Recognition Solutions',
@@ -82,7 +106,16 @@ export const MELVIN: Project = {
 				url: 'https://dl.acm.org/doi/10.1145/3636513',
 				label: 'Zum Paper'
 			},
-			category: 'Paper / Buchbeiträge'
+			category: 'Paper / Buchbeiträge',
+			apa: `	<span>
+							Kuhn, K., Kersken, V., Reuter, B., Egger, N., & Zimmermann, G. (2024). 
+							<span lang="en"
+								>Measuring the Accuracy of Automatic Speech Recognition Solutions.</span
+							>
+							<em lang="en">ACM Transactions on Accessible Computing, Volume 16, Issue 4,</em>
+							1-23.
+							<a href="https://doi.org/10.1145/3636513">https://doi.org/10.1145/3636513</a>
+					</span>`
 		},
 		{
 			title: 'Melvin – Multi-user editor for live subtitles',
@@ -96,7 +129,21 @@ export const MELVIN: Project = {
 				label: 'Zum Poster Abstract',
 				url: 'https://www.icchp-aaate.org/content/melvin-%E2%80%93-multi-user-editor-live-subtitles'
 			},
-			category: 'Posterpräsentationen'
+			category: 'Posterpräsentationen',
+			apa: `<span>
+				Reuter, B., Kuhn, K., Egger, N., & Zimmermann, G. (2022).
+				<em lang="en"> Melvin – Multi-user editor for live subtitles </em>
+				<span lang="en">
+					[Poster]. Joint International Conference on Digital Inclusion, Assistive Technology
+					& Accessibility (ICCHP / AAATE),
+				</span>
+				Lecco, Italien.
+				<a
+					href="https://www.icchp-aaate.org/content/melvin-%E2%80%93-multi-user-editor-live-subtitles"
+				>
+					https://www.icchp-aaate.org/content/melvin-%E2%80%93-multi-user-editor-live-subtitles</a
+				>
+			</span>`
 		}
 	]
 };

@@ -63,7 +63,41 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 				url: 'https://doi.org/10.21240/mpaed/jb20/2023.09.07.X',
 				label: 'Zum Paper'
 			},
-			category: 'Paper / Buchbeiträge'
+			category: 'Paper / Buchbeiträge',
+			apa: `
+			<span>
+				Kuhlmann, J., Günter, J. & Kamin, A.-M. (2023). Digitale Hochschullehre für Alle
+				gestalten. Ergebnisse einer Lehrendenbefragung an vier Hochschulen.
+				<em>MedienPädagogik: Zeitschrift für Theorie und Praxis in der Medienbildung,</em>
+				20, 169-82.
+				<a href="https://doi.org/10.21240/mpaed/jb20/2023.09.07.X."
+					>https://doi.org/10.21240/mpaed/jb20/2023.09.07.X.</a
+				>
+			</span>`
+		},
+		{
+			title: 'Sensibilisierung und Qualifizierung von Lehrenden für die digitale Barrierefreiheit',
+			titleLang: 'de',
+			releaseDate: '2023-09',
+			contributors: ['Judith Kuhlmann, Anna-Maria Kamin, Dustin Matzel, Michael Johannfunke'],
+			placeOfPublication: 'Turn Conference ’23 Prototyp Zukunft',
+			placeOfPublicationLang: 'de',
+			category: 'Sonstige Veröffentlichungen',
+			link: {
+				label: 'Folien herunterladen (PowerPoint)',
+				url: 'downloads/Praesentation_TURN23_barrierefrei.pptx',
+				download: true
+			},
+			apa: `	<span>
+				Kuhlmann, J., Kamin, A.-M., Matzel, D. & Johannfunke, M. (2023).
+				<em>
+					Sensibilisierung und Qualifizierung von Lehrenden für die digitale Barrierefreiheit
+				</em>
+				[Vortrag]. Turn Conference ’23 Prototyp Zukunft, Köln.
+				<a href="https://shuffle-projekt.de/downloads/Praesentation_TURN23_barrierefrei.pptx"
+					>https://shuffle-projekt.de/downloads/Praesentation_TURN23_barrierefrei.pptx</a
+				>
+			</span>`
 		}
 	]
 };

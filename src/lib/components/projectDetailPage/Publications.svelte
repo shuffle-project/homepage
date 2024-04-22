@@ -57,13 +57,7 @@
 			<div in:fade={{ duration: 600 }}>
 				{#each publications as publication, i}
 					<li>
-						{getAPAContributorsString(publication.contributors)}
-						({publication.releaseDate.split('-')[0]}).
-						<span lang={publication.titleLang}>{publication.title}</span>.
-						<em lang={publication.placeOfPublicationLang}>{publication.placeOfPublication}</em>.
-						{#if publication.link && !publication.link.download}
-							<a class="apa-link" href={publication.link.url}>{publication.link.url}</a>
-						{/if}
+						{@html publication.apa}
 					</li>
 					{#if i !== publications.length - 1}
 						<hr aria-hidden="true" />
@@ -121,6 +115,11 @@
 		width: 100%;
 		max-width: 60rem;
 		box-sizing: border-box;
+
+		.end-dot {
+			padding: 0;
+			margin: 0;
+		}
 
 		.apa-link {
 			word-break: break-all;

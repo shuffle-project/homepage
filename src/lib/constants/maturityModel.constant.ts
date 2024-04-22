@@ -62,7 +62,20 @@ export const MATURITY_MODEL: Project = {
 				label: 'Zum Paper',
 				url: 'https://www.frontiersin.org/articles/10.3389/fcomp.2023.1134320/full'
 			},
-			category: 'Paper / Buchbeiträge'
+			category: 'Paper / Buchbeiträge',
+			apa: `	<span>
+				Auer, N., Kalemba, S., Stormer, C., Boehm, A.‑K., Cetin, H. A., Gutjahr, A. et al.
+				(2023).
+				<span lang="en">
+					How to measure the accessibility maturity of organizations - A survey on
+					accessibility maturity models for higher education.
+				</span>
+				<em lang="en"> Frontiers in Computer Science, </em>
+				5, 1134320.
+				<a href="https://doi.org/10.3389/fcomp.2023.1134320"
+					>https://doi.org/10.3389/fcomp.2023.1134320</a
+				>
+			</span>`
 		},
 		{
 			title:
@@ -77,7 +90,22 @@ export const MATURITY_MODEL: Project = {
 				label: 'Zum Abstract',
 				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=93'
 			},
-			category: 'Workshops'
+			category: 'Workshops',
+			apa: `<span>
+				Zimmermann, G., Auer, N., & Kersken, V. (2023).
+				<em lang="en">
+					Applying Accessibility Maturity Models to Measure the Accessibility of Organizations
+				</em>
+				<span lang="en">
+					[Educational Session]. Association for the Advancement of Assistive Technology in
+					Europe (AAATE),
+				</span>
+				Paris, Frankreich.
+				<a
+					href="https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=93"
+					>https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=93</a
+				>
+			</span>`
 		},
 		{
 			title:
@@ -101,7 +129,16 @@ export const MATURITY_MODEL: Project = {
 				label: 'Zum Tagungsband',
 				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
 			},
-			category: 'Paper / Buchbeiträge'
+			category: 'Paper / Buchbeiträge',
+			apa: `
+			<span>
+				Auer, N., Kersken, V., Böhm, A., Gutjahr, A., Kalemba, S., Cetin, H. A., Stormer, C.,
+				Weber, G., & Zimmermann, G. (2023). Methodik und Zwischenergebnisse zur Entwicklung
+				eines Reifegradmodells für digitale Barrierefreiheit an Hochschulen.
+				<em>Gemeinschaften in Neuen Medien,</em>
+				(S. 139-145).
+				<a href="https://d-nb.info/1321171013">https://d-nb.info/1321171013</a>
+			</span>`
 		},
 		{
 			title: 'Der Umfang von Barrierefreiheit an Hochschulen',
@@ -114,10 +151,18 @@ export const MATURITY_MODEL: Project = {
 				label: 'Zum Tagungsband',
 				url: 'https://tud.qucosa.de/landing-page/?tx_dlf%5Bid%5D=https%3A%2F%2Ftud.qucosa.de%2Fapi%2Fqucosa%253A89795%2Fmets'
 			},
-			category: 'Paper / Buchbeiträge'
+			category: 'Paper / Buchbeiträge',
+			apa: `
+			<span>
+				Auer, N., Kersken, V., Weber, G., & Zimmermann, G. (2023). Der Umfang von
+				Barrierefreiheit an Hochschulen.
+				<em>Gemeinschaften in Neuen Medien,</em>
+				(S. 126-138).
+				<a href="https://d-nb.info/1321171013">https://d-nb.info/1321171013 </a>
+			</span>`
 		},
 		{
-			title: 'Digitale Barrierefreiheit an Hochschulen zum Wachsen bringen ',
+			title: 'Digitale Barrierefreiheit an Hochschulen zum Wachsen bringen',
 			titleLang: 'de',
 			releaseDate: '2023-04',
 			contributors: ['Ann-Katrin Böhm', 'Christin Stormer'],
@@ -127,7 +172,16 @@ export const MATURITY_MODEL: Project = {
 				label: 'Zur Aufnahme (YouTube)',
 				url: 'https://www.youtube.com/watch?v=i6yikMDgwSE#t=06m35s)'
 			},
-			category: 'Sonstige Veröffentlichungen'
+			category: 'Sonstige Veröffentlichungen',
+			apa: `<span>
+				Böhm, A., & Stormer, C. (2023).
+				<em> Digitale Barrierefreiheit an Hochschulen zum Wachsen bringen </em>
+				<span lang="en">[Lightning Talk]</span>. University:FutureFestival, Berlin,
+				Deutschland.
+				<a href="https://www.youtube.com/watch?v=i6yikMDgwSE#t=06m35s)"
+					>https://www.youtube.com/watch?v=i6yikMDgwSE#t=06m35s)
+				</a>
+			</span>`
 		}
 	]
 };

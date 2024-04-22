@@ -26,7 +26,7 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 	},
 	publications: [
 		{
-			title: 'Sammelbandartikel „Inklusion und Barrierefreiheit“',
+			title: 'SHUFFLE – Hochschul-Initiative Digitale Barrierefreiheit für Alle',
 			titleLang: 'de',
 			contributors: ['Tanja Kräwinkel (Herausgebende)', 'Michael Joahnnfunke', 'Christin Stormer'],
 			placeOfPublication: 'Sammelbandartikel in "MoodleKannMehr - nicht nur im Distanzunterricht!"',
@@ -36,7 +36,13 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 				url: 'https://visual-books.com/moodle-kann-mehr/',
 				label: 'Zum Sammelband'
 			},
-			category: 'Paper / Buchbeiträge'
+			category: 'Paper / Buchbeiträge',
+			apa: `<span>
+				Johannfunke, M. & Stormer, C. (2022). SHUFFLE – Hochschul-Initiative Digitale
+				Barrierefreiheit für Alle. In T. Kräwinkel (Hrsg.),
+				<em>#MoodleKannMehr: - nicht nur im Distanzunterricht!,</em>
+				(S. 105-108). Visual Ink Publishing.
+			</span>`
 		}
 	]
 };
