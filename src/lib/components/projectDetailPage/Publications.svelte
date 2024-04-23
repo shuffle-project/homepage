@@ -121,10 +121,6 @@
 			margin: 0;
 		}
 
-		.apa-link {
-			word-break: break-all;
-		}
-
 		ul {
 			padding: 0;
 			margin: 0;

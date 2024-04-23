@@ -24,7 +24,7 @@ export const GENERAL_PUBLICATIONS: Publication[] = [
 			url: 'https://doi.org/10.21248/gups.62773'
 		},
 		category: 'Paper / Buchbeiträge',
-		apa: `<span>
+		apa: `<span class="apa-publication">
             Stormer, C., Kalemba, S., Brunner, G., Hennies, J., Johannfunke, M., Kamin, A.-M.,
             Kersken, V. & Zimmermann, G. (2023). SHUFFLE – Hochschulinitiative digitale
             Barrierefreiheit für Alle: Vorhaben und Visionen. In Voß-Nakkour, S., Rustemeier, L.,

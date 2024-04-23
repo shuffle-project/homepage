@@ -26,6 +26,12 @@ h3 {
 	margin: 0;
 }
 
+.apa-publication {
+	a {
+		word-break: break-all;
+	}
+}
+
 .headings-with-padding {
 	h2 {
 		padding-top: 1.875rem;

@@ -51,8 +51,9 @@
 <TitleSection>
 	<svelte:fragment slot="title">Publikationen</svelte:fragment>
 	<svelte:fragment slot="intro-text"
-		>Im Folgenden sind alle Publikationen, die durch SHUFFLE veröffentlicht wurden. Sortiert nach
-		dem Veröffentlichungsdatum.
+		>Im Folgenden sind alle Publikationen des SHUFFLE-Projektes aufgelistet. Bei Veröffentlichungen
+		durch Dritte im Rahmen von beispielsweise Sammelbänden, können wir nicht für die
+		Barrierefreiheit garantieren.
 	</svelte:fragment>
 </TitleSection>
 
@@ -103,18 +104,7 @@
 		}
 	}
 
-	h2 {
-		margin-top: 4.375rem;
-		display: flex;
-		align-items: baseline;
-		gap: 0.3125rem;
-	}
-
 	@media (min-width: 40.625rem) {
-		h2 {
-			padding-inline: 1.875rem;
-		}
-
 		.page-content {
 			.apa-button-wrapper {
 				padding-right: 3.75rem;

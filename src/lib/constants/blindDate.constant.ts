@@ -46,7 +46,7 @@ export const BLINDDATE: Project = {
 				url: 'https://www.icchp-aaate.org/content/using-design-thinking-methods-developing-digital-accessibility-learning-resource'
 			},
 			category: 'Posterpräsentationen',
-			apa: `<span>
+			apa: `<span class="apa-publication">
 				Heitmeier, K., Böhm, A., Kersken, V., Piskorek, P., Egger, N., Lang, M., & Zimmermann,
 				G. (2022).
 				<em lang="en">
@@ -84,7 +84,7 @@ export const BLINDDATE: Project = {
 				allowReferrer: true
 			},
 			category: 'Paper / Buchbeiträge',
-			apa: `<span>
+			apa: `<span class="apa-publication">
 				Heitmeier, K.-A., Kersken, V., Piskorek, P., Böhm, A.-K., Egger, N., Lang, M., &
 				Zimmermann, G. (2023).
 				<span lang="en">Persona Co-Design for Improving Digital Accessibility.</span>
@@ -116,7 +116,7 @@ export const BLINDDATE: Project = {
 				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=277'
 			},
 			category: 'Paper / Buchbeiträge',
-			apa: `<span>
+			apa: `<span class="apa-publication">
 				Piskorek, P., Heitmeier, K.-A., Kersken, V., & Zimmermann, G. (2023).
 				<span lang="en">
 					Re-Conceptualizing Disability Simulations: A guided strategies-based approach. In G.
@@ -156,7 +156,7 @@ export const BLINDDATE: Project = {
 				download: true
 			},
 			category: 'Sonstige Veröffentlichungen',
-			apa: `<span>
+			apa: `<span class="apa-publication">
 				Lang, M., Böhm, A., Piskorek, P., Egger, N. (2023). 
 				<em>
 					Ein Schlüssel zu mehr Barrierefreiheit - Sensibilisierung von Lehrenden gegenüber

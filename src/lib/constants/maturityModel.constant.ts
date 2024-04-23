@@ -63,7 +63,7 @@ export const MATURITY_MODEL: Project = {
 				url: 'https://www.frontiersin.org/articles/10.3389/fcomp.2023.1134320/full'
 			},
 			category: 'Paper / Buchbeiträge',
-			apa: `	<span>
+			apa: `	<span class="apa-publication">
 				Auer, N., Kalemba, S., Stormer, C., Boehm, A.‑K., Cetin, H. A., Gutjahr, A. et al.
 				(2023).
 				<span lang="en">
@@ -91,7 +91,7 @@ export const MATURITY_MODEL: Project = {
 				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=93'
 			},
 			category: 'Workshops',
-			apa: `<span>
+			apa: `<span class="apa-publication">
 				Zimmermann, G., Auer, N., & Kersken, V. (2023).
 				<em lang="en">
 					Applying Accessibility Maturity Models to Measure the Accessibility of Organizations
@@ -131,7 +131,7 @@ export const MATURITY_MODEL: Project = {
 			},
 			category: 'Paper / Buchbeiträge',
 			apa: `
-			<span>
+			<span class="apa-publication">
 				Auer, N., Kersken, V., Böhm, A., Gutjahr, A., Kalemba, S., Cetin, H. A., Stormer, C.,
 				Weber, G., & Zimmermann, G. (2023). Methodik und Zwischenergebnisse zur Entwicklung
 				eines Reifegradmodells für digitale Barrierefreiheit an Hochschulen.
@@ -153,7 +153,7 @@ export const MATURITY_MODEL: Project = {
 			},
 			category: 'Paper / Buchbeiträge',
 			apa: `
-			<span>
+			<span class="apa-publication">
 				Auer, N., Kersken, V., Weber, G., & Zimmermann, G. (2023). Der Umfang von
 				Barrierefreiheit an Hochschulen.
 				<em>Gemeinschaften in Neuen Medien,</em>
@@ -173,7 +173,7 @@ export const MATURITY_MODEL: Project = {
 				url: 'https://www.youtube.com/watch?v=i6yikMDgwSE#t=06m35s)'
 			},
 			category: 'Sonstige Veröffentlichungen',
-			apa: `<span>
+			apa: `<span class="apa-publication">
 				Böhm, A., & Stormer, C. (2023).
 				<em> Digitale Barrierefreiheit an Hochschulen zum Wachsen bringen </em>
 				<span lang="en">[Lightning Talk]</span>. University:FutureFestival, Berlin,

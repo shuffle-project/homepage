@@ -65,7 +65,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 			},
 			category: 'Paper / Buchbeiträge',
 			apa: `
-			<span>
+			<span class="apa-publication">
 				Kuhlmann, J., Günter, J. & Kamin, A.-M. (2023). Digitale Hochschullehre für Alle
 				gestalten. Ergebnisse einer Lehrendenbefragung an vier Hochschulen.
 				<em>MedienPädagogik: Zeitschrift für Theorie und Praxis in der Medienbildung,</em>
@@ -88,7 +88,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 				url: 'downloads/Praesentation_TURN23_barrierefrei.pptx',
 				download: true
 			},
-			apa: `	<span>
+			apa: `	<span class="apa-publication">
 				Kuhlmann, J., Kamin, A.-M., Matzel, D. & Johannfunke, M. (2023).
 				<em>
 					Sensibilisierung und Qualifizierung von Lehrenden für die digitale Barrierefreiheit

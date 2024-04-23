@@ -45,7 +45,7 @@ export const MELVIN: Project = {
 				label: 'Zum Paper (PDF)'
 			},
 			category: 'Paper / Buchbeiträge',
-			apa: `	<span>
+			apa: `	<span class="apa-publication">
 				Piskorek, P., Sienel, N., Kuhn, K., Kersken, V., & Zimmermann, G. (2022).
 				<span lang="en">
 					Evaluating collaborative editing of ai-generated live subtitles by non-professionals
@@ -74,7 +74,7 @@ export const MELVIN: Project = {
 				allowReferrer: true
 			},
 			category: 'Paper / Buchbeiträge',
-			apa: `	<span>
+			apa: `	<span class="apa-publication">
 			Kuhn, K., Kersken, V., & Zimmermann, G. (2023).
 				<span lang="en">
 					Accuracy of AI-generated Captions With Collaborative Manual Corrections in
@@ -107,7 +107,7 @@ export const MELVIN: Project = {
 				label: 'Zum Paper'
 			},
 			category: 'Paper / Buchbeiträge',
-			apa: `	<span>
+			apa: `	<span class="apa-publication">
 							Kuhn, K., Kersken, V., Reuter, B., Egger, N., & Zimmermann, G. (2024). 
 							<span lang="en"
 								>Measuring the Accuracy of Automatic Speech Recognition Solutions.</span
@@ -130,7 +130,7 @@ export const MELVIN: Project = {
 				url: 'https://www.icchp-aaate.org/content/melvin-%E2%80%93-multi-user-editor-live-subtitles'
 			},
 			category: 'Posterpräsentationen',
-			apa: `<span>
+			apa: `<span class="apa-publication">
 				Reuter, B., Kuhn, K., Egger, N., & Zimmermann, G. (2022).
 				<em lang="en"> Melvin – Multi-user editor for live subtitles </em>
 				<span lang="en">
