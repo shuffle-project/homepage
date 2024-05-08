@@ -104,7 +104,8 @@ subtitles	The track defines subtitles, used to display subtitles in a video
 
 	// functions
 	function onPlayPause() {
-		if (isiOSDevice && useNativeControls) return;
+		if (useNativeControls) return;
+
 		if (video.paused) {
 			video.play();
 		} else {
@@ -192,6 +193,7 @@ subtitles	The track defines subtitles, used to display subtitles in a video
 		on:dblclick={onToggleFullscreen}
 		tabindex="0"
 		aria-label="Videospieler anklickbar"
+		class:native-controls={!useNativeControls}
 	>
 		<source type="video/mp4" src={base + videoData.videoPathMp4} />
 		{#each videoData.captionsArray as captionPath}
@@ -503,9 +505,13 @@ subtitles	The track defines subtitles, used to display subtitles in a video
 	}
 
 	video {
-		max-height: calc(100% - 6.25rem); // so fullscreen doesn't cut of bottom
 		margin-bottom: -0.375rem;
 		border: none;
+		background-color: var(--color-white);
+
+		&.native-controls {
+			max-height: calc(100% - 6.25rem); // so fullscreen doesn't cut of bottom
+		}
 
 		&.bg-black {
 			&::cue {
