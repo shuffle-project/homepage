@@ -16,6 +16,17 @@
 
 <div class="articles">
 	<ArticlePreview
+		title="Barrierenzähmen leicht gemacht!"
+		time="07.06.2024"
+		link="barrierenzaehmen-leicht-gemacht"
+	>
+		Vom 05. bis 07. Juni 2024 fand das diesjährige University:Future Festival statt. Dort hatten wir
+		am Mittwoch die Möglichkeit, unser Reifegradmodell in Form eines 30-minütigen Vortrags
+		vorzustellen. Hierfür waren wir von den Veranstaltern eingeladen worden, auf die Partnerbühne
+		nach Leipzig zu kommen. Passend zum Motto […]</ArticlePreview
+	>
+
+	<ArticlePreview
 		title="Webinar-Serie zu SHUFFLE-Projektergebnissen"
 		time="03.04.2024"
 		link="webinar-serie-zu-shuffle-projektergebnissen"

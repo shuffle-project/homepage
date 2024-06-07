@@ -133,9 +133,14 @@ subtitles	The track defines subtitles, used to display subtitles in a video
 			onPlayPause();
 		} else if (ev.key === 'ArrowRight') {
 			ev.preventDefault();
-			currentTime += 10;
+			if (currentTime + 10 >= duration) {
+				currentTime = duration;
+			} else {
+				currentTime += 10;
+			}
 		} else if (ev.key === 'ArrowLeft') {
 			ev.preventDefault();
+			if (currentTime === 0) return;
 			currentTime -= 10;
 		}
 	}

@@ -182,6 +182,26 @@ export const MATURITY_MODEL: Project = {
 					>https://www.youtube.com/watch?v=i6yikMDgwSE#t=06m35s)
 				</a>
 			</span>`
+		},
+		{
+			title: 'Vom Ungeheuer zum Schoßhund: Barrierenzähmen leicht gemacht',
+			titleLang: 'de',
+			releaseDate: '2024-06',
+			contributors: ['Nadine Auer'],
+			placeOfPublication: 'Vortrag auf dem University:Future Festival',
+			placeOfPublicationLang: 'de',
+			link: {
+				label: 'Zur Aufnahme (YouTube)',
+				url: 'https://www.youtube.com/live/UbVegfQEUTU?feature=shared&t=22206'
+			},
+			category: 'Sonstige Veröffentlichungen',
+			apa: `<span class="apa-publication">
+			Auer, N. (2024). <em> Vom Ungeheuer zum Schoßhund: Barrierenzähmen leicht gemacht </em>
+			[Vortrag]. University:Future Festival, Leipzig, Deutschland. <a href="https://www.youtube.com/live/UbVegfQEUTU?feature=shared&t=22206">
+			https://www.youtube.com/live/UbVegfQEUTU?feature=shared&t=22206</a>
+			</span>
+			
+			`
 		}
 	]
 };
