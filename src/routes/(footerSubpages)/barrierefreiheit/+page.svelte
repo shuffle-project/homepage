@@ -44,7 +44,7 @@
 	<h2>Erstellung dieser Erklärung zur Barrierefreiheit</h2>
 	<p>Diese Erklärung wurde am 12.03.2024 erstellt.</p>
 	<p>Sie beruht auf einer Selbstbewertung, die am 12.03.2024 durchgeführt wurde.</p>
-	<p>Diese Erklärung wurde zuletzt am 12.03.2024 überprüft.</p>
+	<p>Diese Erklärung wurde zuletzt am 04.06.2024 überprüft.</p>
 
 	<h2>Rückmeldung und Kontaktangaben</h2>
 	<p>
@@ -77,10 +77,8 @@
 	</p>
 
 	<p>
-		Falls die <em>SHUFFLE-Projekt-Partner</em> nicht innerhalb 4 Wochen auf Ihre Anfrage antwortet, können
-		Sie sich an die Beauftragte der Landesregierung für die Belange von Menschen mit Behinderungen oder
-		an die kommunalen Beauftragten für die Belange von Menschen mit Behinderungen im Rahmen der in §
-		14 Absatz 2 Satz 2 L-BGG und § 15 Absatz 3 Satz 2 L-BGG beschriebenen Ombudsfunktion wenden.
+		Falls die <em>SHUFFLE-Projekt-Partner</em> nicht innerhalb 4 Wochen auf Ihre Anfrage antworten, können
+		Sie sich an die Schlichtungsstelle des Landeszentrums Barrierefreiheit (LZ-BARR) wenden.
 	</p>
 
 	<p>
@@ -94,12 +92,7 @@
 
 	<p>Das Schlichtungsverfahren ist unentgeltlich.</p>
 
-	<p>
-		Die Kontaktdaten des für Sie zuständigen kommunalen Beauftragten für die Belange von Menschen
-		mit Behinderungen können Sie über die Webseite des Stadt- oder Landkreises in Erfahrung bringen,
-		in welchem Sie Ihren dauerhaften Wohnsitz haben.
-	</p>
-
+	
 	<p>
 		Auf die Möglichkeit des Verbandsklagerechts nach § 12 Absatz 1 Satz 1 Nummer 4 L-BGG wird
 		hingewiesen.
