@@ -98,6 +98,27 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 					>https://shuffle-projekt.de/downloads/Praesentation_TURN23_barrierefrei.pptx</a
 				>
 			</span>`
+		},
+		{
+			title: 'Sensitize and Qualify University Teachers for Digital Accessibility',
+			titleLang: 'en',
+			releaseDate: '2024-07',
+			contributors: ['Judith Kuhlmann', 'Kim Althoff', 'Anna-Maria Kamin', 'Michael Johannfunke'],
+			placeOfPublication:
+				'HCI International 2024 Posters, 26th International Conference on Human-Computer Interaction',
+			placeOfPublicationLang: 'en',
+			category: 'Paper / Buchbeiträge',
+			link: {
+				label: 'Zum Artikel',
+				url: 'https://trebuchet.public.springernature.app/get_content/2a5d469d-b470-48b7-8011-37127fd63d1c?sap-outbound-id=575EEE5A414046CD95AF99114E259DBBA62B08E8'
+			},
+			apa: `
+			<span class="apa-publication">
+				Kuhlmann, J., Althoff, K., Kamin, A.-M. & Johannfunke, M. (2024). Sensitize and Qualify
+				University Teachers for Digital Accessibility. In C. Stephanidis, M. Antona, S. Ntoa, G. Salvendy (Eds.), <em>HCI International 2024 Posters, 26th International Conference on Human-Computer Interaction, HCII 2024, Washington, DC, USA, June 29 – July 4, 2024, Proceedings, (Part 2, 66-74). Springer</em>.
+				<a href="https://trebuchet.public.springernature.app/get_content/2a5d469d-b470-48b7-8011-37127fd63d1c?sap-outbound-id=575EEE5A414046CD95AF99114E259DBBA62B08E8">https://trebuchet.public.springernature.app/get_content/2a5d469d-b470-48b7-8011-37127fd63d1c?sap-outbound-id=575EEE5A414046CD95AF99114E259DBBA62B08E8</a>
+			</span>
+			`
 		}
 	]
 };
