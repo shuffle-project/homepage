@@ -18,8 +18,7 @@
 			rel="noopener"
 			href="https://www.landesrecht-bw.de/perma?j=BehGleichStG_BW"
 			>Landesgesetz zur Gleichstellung von Menschen mit Behinderungen
-			(Landes-Behindertengleichstellungsgesetz – L-BGG) vom 17. Dezember 2014, zuletzt mehrfach
-			geändert durch Gesetz vom 25. Juli 2023</a
+			(Landes-Behindertengleichstellungsgesetz – L-BGG) vom 17. Dezember 2014, in der aktuell gültigen Fassung. </a
 		>. Die <em>SHUFFLE-Projekt-Partner</em> sind bemüht, ihre Webseiten und mobilen Anwendungen in Einklang
 		mit § 10 Absatz 1 des Landes-Behindertengleichstellungsgesetzes (L-BGG) barrierefrei zugänglich zu
 		gestalten.
