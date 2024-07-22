@@ -16,10 +16,9 @@
 		Diese Erklärung zur Barrierefreiheit bezieht sich auf das <a
 			target="_blank"
 			rel="noopener"
-			href="http://www.landesrecht-bw.de/jportal/portal/t/fv4/page/bsbawueprod.psml?pid=Dokumentanzeige&amp;showdoccase=1&amp;js_peid=Trefferliste&amp;documentnumber=1&amp;numberofresults=25&amp;fromdoctodoc=yes&amp;doc.id=jlr-BehGleichStGBW2014rahmen&amp;doc.part=X&amp;doc.price=0.0#focuspoint"
+			href="https://www.landesrecht-bw.de/perma?j=BehGleichStG_BW"
 			>Landesgesetz zur Gleichstellung von Menschen mit Behinderungen
-			(Landes-Behindertengleichstellungsgesetz – L-BGG) vom 17. Dezember 2014, zuletzt mehrfach
-			geändert durch Gesetz vom 25. Juli 2023</a
+			(Landes-Behindertengleichstellungsgesetz – L-BGG) vom 17. Dezember 2014, in der aktuell gültigen Fassung. </a
 		>. Die <em>SHUFFLE-Projekt-Partner</em> sind bemüht, ihre Webseiten und mobilen Anwendungen in Einklang
 		mit § 10 Absatz 1 des Landes-Behindertengleichstellungsgesetzes (L-BGG) barrierefrei zugänglich zu
 		gestalten.
