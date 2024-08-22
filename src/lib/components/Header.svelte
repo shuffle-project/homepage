@@ -40,28 +40,29 @@
 				<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
 				<span class="shuffle-logo-text">SHUFFLE</span>
 			</a>
+			<nav class="desktop-nav">
+				<ul>
+					<li>
+						<a href="{base}/#projektergebnisse">Projektergebnisse</a>
+					</li>
+					<li>
+						<a href="{base}/team">Team</a>
+					</li>
+					<li>
+						<a href="{base}/aktuelles">Aktuelles</a>
+					</li>
+					<li>
+						<a href="{base}/kontakt">Kontakt</a>
+					</li>
+					<li>
+						<a href="{base}/publikationen">Publikationen</a>
+					</li>
+				</ul>
+			</nav>
 
-			<ul>
-				<li>
-					<a href="{base}/#projektergebnisse">Projektergebnisse</a>
-				</li>
-				<li>
-					<a href="{base}/team">Team</a>
-				</li>
-				<li>
-					<a href="{base}/aktuelles">Aktuelles</a>
-				</li>
-				<li>
-					<a href="{base}/kontakt">Kontakt</a>
-				</li>
-				<li>
-					<a href="{base}/publikationen">Publikationen</a>
-				</li>
-			</ul>
-
-			<div class="menu-button-wrapper">
+			<nav class="menu-button-wrapper">
 				<MenuButton />
-			</div>
+			</nav>
 		</div>
 	</header>
 	<hr aria-hidden="true" />
@@ -149,6 +150,7 @@
 	@media (max-width: 46.1875rem) {
 		header {
 			.header {
+				.desktop-nav,
 				ul {
 					display: none;
 				}

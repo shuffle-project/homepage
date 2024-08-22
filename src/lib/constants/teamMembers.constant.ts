@@ -74,22 +74,9 @@ export const TEAM_MEMBERS = [
 		projectPartner: 'Pädagogische Hochschule Heidelberg'
 	},
 	{
-		name: 'Jörn Hoffmann',
-		projectPartner: 'Hochschule der Medien Stuttgart'
-	},
-	{
 		name: 'Judith Kuhlmann',
 		projectPartner: 'Universität Bielefeld',
 		img: 'judith-kuhlmann.jpeg'
-	},
-	{
-		name: 'Dr. Kathy-Ann Heitmeier',
-		projectPartner: 'Hochschule der Medien Stuttgart',
-		img: 'kathy-ann-heitmeier.jpg',
-		contact: {
-			short: 'heitmeier',
-			domain: 'hdm-stuttgart.de'
-		}
 	},
 	{
 		name: 'Kim Althoff',
@@ -102,6 +89,15 @@ export const TEAM_MEMBERS = [
 		img: 'korbinian-kuhn.jpg',
 		contact: {
 			short: 'kuhnko',
+			domain: 'hdm-stuttgart.de'
+		}
+	},
+	{
+		name: 'Laura Eppler',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'laura-eppler.jpg',
+		contact: {
+			short: 'eppler',
 			domain: 'hdm-stuttgart.de'
 		}
 	},
@@ -158,6 +154,15 @@ export const TEAM_MEMBERS = [
 ] as const satisfies TeamMember[];
 
 export const OLD_MEMBERS = [
+	{
+		name: 'Dr. Kathy-Ann Heitmeier',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'kathy-ann-heitmeier.jpg'
+	},
+	{
+		name: 'Jörn Hoffmann',
+		projectPartner: 'Hochschule der Medien Stuttgart'
+	},
 	{
 		name: 'Dr. Verena Kersken',
 		projectPartner: 'Hochschule der Medien Stuttgart',

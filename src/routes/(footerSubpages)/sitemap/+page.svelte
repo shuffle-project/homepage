@@ -64,6 +64,9 @@
 	<h2>Alle News (Neueste zuerst)</h2>
 	<ul>
 		<li>
+			<a href="{base}/aktuelles/barrierenzaehmen-leicht-gemacht">Barrierenzähmen leicht gemacht!</a>
+		</li>
+		<li>
 			<a href="{base}/aktuelles/webinar-serie-zu-shuffle-projektergebnissen"
 				>Webinar-Serie zu SHUFFLE-Projektergebnissen</a
 			>

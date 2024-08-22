@@ -248,8 +248,8 @@ subtitles	The track defines subtitles, used to display subtitles in a video
 
 						<button
 							id="mute-{randomId}"
-							aria-label="Ton stummschalten"
-							title="Ton stummschalten"
+							aria-label={muted ? 'Ton anschalten' : 'Ton stummschalten'}
+							title={muted ? 'Ton anschalten' : 'Ton stummschalten'}
 							aria-pressed={muted}
 							class="player-btn"
 							on:click={onMute}
@@ -282,7 +282,12 @@ subtitles	The track defines subtitles, used to display subtitles in a video
 							bind:captionsFontSize
 						/>
 
-						<button class="player-btn" title="Fullscreen" on:click={onToggleFullscreen}>
+						<button
+							class="player-btn"
+							title={fullscreen ? 'Vollbild schließen' : 'Vollbild'}
+							aria-label={fullscreen ? 'Vollbild schließen' : 'Vollbild'}
+							on:click={onToggleFullscreen}
+						>
 							{#if fullscreen}
 								<Icon svg="fullscreen-close" color="black" />
 							{:else}
