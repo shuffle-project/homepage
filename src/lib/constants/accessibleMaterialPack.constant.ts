@@ -93,7 +93,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 				<em>
 					Sensibilisierung und Qualifizierung von Lehrenden für die digitale Barrierefreiheit
 				</em>
-				[Vortrag]. Turn Conference ’23 Prototyp Zukunft, Köln.
+				<span lang="en">[Presentation]</span>. Turn Conference ’23 Prototyp Zukunft, <span>Cologne, Germany</span>.
 				<a href="https://shuffle-projekt.de/downloads/Praesentation_TURN23_barrierefrei.pptx"
 					>https://shuffle-projekt.de/downloads/Praesentation_TURN23_barrierefrei.pptx</a
 				>

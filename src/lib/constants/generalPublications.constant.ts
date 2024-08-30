@@ -33,7 +33,7 @@ export const GENERAL_PUBLICATIONS: Publication[] = [
                 Digitale Barrierefreiheit in der Bildung weiter denken. Innovative Impulse aus
                 Praxis, Technik und Didaktik,
             </em>
-            (S. 60-69). Universitätsbibliothek Johann Christian Senckenberg.
+            (pp. 60-69). Universitätsbibliothek Johann Christian Senckenberg.
             <a href="https://doi.org/10.21248/gups.62773">
                 https://doi.org/10.21248/gups.62773
             </a>

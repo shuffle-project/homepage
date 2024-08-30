@@ -41,7 +41,7 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 				Johannfunke, M. & Stormer, C. (2022). SHUFFLE – Hochschul-Initiative Digitale
 				Barrierefreiheit für Alle. In T. Kräwinkel (Hrsg.),
 				<em>#MoodleKannMehr: - nicht nur im Distanzunterricht!,</em>
-				(S. 105-108). Visual Ink Publishing.
+				(pp. 105-108). Visual Ink Publishing.
 			</span>`
 		}
 	]

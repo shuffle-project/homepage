@@ -136,7 +136,7 @@ export const MATURITY_MODEL: Project = {
 				Weber, G., & Zimmermann, G. (2023). Methodik und Zwischenergebnisse zur Entwicklung
 				eines Reifegradmodells für digitale Barrierefreiheit an Hochschulen.
 				<em>Gemeinschaften in Neuen Medien,</em>
-				(S. 139-145).
+				(pp. 139-145).
 				<a href="https://d-nb.info/1321171013">https://d-nb.info/1321171013</a>
 			</span>`
 		},
@@ -157,7 +157,7 @@ export const MATURITY_MODEL: Project = {
 				Auer, N., Kersken, V., Weber, G., & Zimmermann, G. (2023). Der Umfang von
 				Barrierefreiheit an Hochschulen.
 				<em>Gemeinschaften in Neuen Medien,</em>
-				(S. 126-138).
+				(pp. 126-138).
 				<a href="https://d-nb.info/1321171013">https://d-nb.info/1321171013 </a>
 			</span>`
 		},
@@ -176,8 +176,8 @@ export const MATURITY_MODEL: Project = {
 			apa: `<span class="apa-publication">
 				Böhm, A., & Stormer, C. (2023).
 				<em> Digitale Barrierefreiheit an Hochschulen zum Wachsen bringen </em>
-				<span lang="en">[Lightning Talk]</span>. University:FutureFestival, Berlin,
-				Deutschland.
+				<span lang="en">[Lightning Talk]. University:FutureFestival, Berlin,
+				Germany</span>.
 				<a href="https://www.youtube.com/watch?v=i6yikMDgwSE#t=06m35s)"
 					>https://www.youtube.com/watch?v=i6yikMDgwSE#t=06m35s)
 				</a>
@@ -197,7 +197,7 @@ export const MATURITY_MODEL: Project = {
 			category: 'Sonstige Veröffentlichungen',
 			apa: `<span class="apa-publication">
 			Auer, N. (2024). <em> Vom Ungeheuer zum Schoßhund: Barrierenzähmen leicht gemacht </em>
-			[Vortrag]. University:Future Festival, Leipzig, Deutschland. <a href="https://www.youtube.com/live/UbVegfQEUTU?feature=shared&t=22206">
+			<span lang="en">[Presentation]. University:Future Festival, Leipzig, Germany</span>. <a href="https://www.youtube.com/live/UbVegfQEUTU?feature=shared&t=22206">
 			https://www.youtube.com/live/UbVegfQEUTU?feature=shared&t=22206</a>
 			</span>
 			

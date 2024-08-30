@@ -137,12 +137,36 @@ export const MELVIN: Project = {
 					[Poster]. Joint International Conference on Digital Inclusion, Assistive Technology
 					& Accessibility (ICCHP / AAATE),
 				</span>
-				Lecco, Italien.
+				Lecco, <span lang="en">Italy</span>.
 				<a
 					href="https://www.icchp-aaate.org/content/melvin-%E2%80%93-multi-user-editor-live-subtitles"
 				>
 					https://www.icchp-aaate.org/content/melvin-%E2%80%93-multi-user-editor-live-subtitles</a
 				>
+			</span>`
+		},
+		{
+			title:
+				'Breaking Barriers: Simplifying Accessible Video Production with the Open Source Solution MELVIN',
+			titleLang: 'en',
+			releaseDate: '2024-07',
+			contributors: ['Benedikt Reuter', 'Korbinian Kuhn', 'Niklas Egger', 'Gottfried Zimmermann'],
+			placeOfPublication:
+				'International Conference on Computers Helping People with Special Need (ICCHP)',
+			placeOfPublicationLang: 'en',
+			link: {
+				label: 'Folien herunterladen (PowerPoint)',
+				url: 'downloads/Melvin_ICCHP_2024.pptx',
+				download: true
+			},
+			category: 'Sonstige Veröffentlichungen',
+			apa: `<span class="apa-publication">
+				Reuter, B., Kuhn, K., Egger, N., & Zimmermann, G. (2024).
+				<em lang="en"> Breaking Barriers: Simplifying Accessible Video Production with the Open Source Solution MELVIN </em>
+				<span lang="en">
+					<span lang="en">[Presentation]</span>. International Conference on Computers Helping People with Special Need (ICCHP),
+				</span>
+				Linz, <span lang="en">Austria</span>.
 			</span>`
 		}
 	]

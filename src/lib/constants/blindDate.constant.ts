@@ -56,7 +56,7 @@ export const BLINDDATE: Project = {
 					[Poster]. Joint International Conference on Digital Inclusion, Assistive Technology
 					& Accessibility (ICCHP / AAATE),
 				</span>
-				Lecco, Italien.
+				Lecco, <span lang="en">Italy</span>.
 				<a
 					href="https://www.icchp-aaate.org/content/using-design-thinking-methods-developing-digital-accessibility-learning-resource"
 					>https://www.icchp-aaate.org/content/using-design-thinking-methods-developing-digital-accessibility-learning-resource</a
@@ -126,7 +126,7 @@ export const BLINDDATE: Project = {
 					Book of Abstracts. 17th International Conference of the Association for the
 					Advancement of Assistive Technology in Europe, AAATE 2023
 				</em>
-				(S. 265-267).
+				(pp. 265-267).
 				<a
 					href="https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf"
 					>https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf</a
@@ -163,8 +163,8 @@ export const BLINDDATE: Project = {
 					Menschen mit Blindheit und Sehbeeinträchtigungen: Ergebnisse und Handlungsansätze
 					aus einem Forschungsprojekt
 				</em>
-				[Vortrag]. Kongress des Verbandes für Blinden- und Sehbehindertenpädagogik e. V. (VBS),
-				Marburg, Deutschland.
+				<span lang="en">[Presentation]</span>. Kongress des Verbandes für Blinden- und Sehbehindertenpädagogik e. V. (VBS),
+				Marburg, <span lang="en">Germany</span>.
 				<a
 					href="https://shuffle-projekt.de/downloads/Marburg_2023_Shuffle_Vortrag_AB_25.07.23.pptx"
 					>https://shuffle-projekt.de/downloads/Marburg_2023_Shuffle_Vortrag_AB_25.07.23.pptx</a
