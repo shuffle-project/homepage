@@ -164,9 +164,28 @@ export const MELVIN: Project = {
 				Reuter, B., Kuhn, K., Egger, N., & Zimmermann, G. (2024).
 				<em lang="en"> Breaking Barriers: Simplifying Accessible Video Production with the Open Source Solution MELVIN </em>
 				<span lang="en">
-					<span lang="en">[Presentation]</span>. International Conference on Computers Helping People with Special Need (ICCHP),
-				</span>
-				Linz, <span lang="en">Austria</span>.
+					[Presentation]. International Conference on Computers Helping People with Special Need (ICCHP),
+				Linz, Austria</span>.
+			</span>`
+		},
+		{
+			title:
+				'Beyond Levenshtein: Leveraging Multiple Algorithms for Robust Word Error Rate Computations And Granular Error Classifications',
+			titleLang: 'en',
+			releaseDate: '2024-09',
+			contributors: ['Korbinian Kuhn', 'Verena Kersken', 'Gottfried Zimmermann'],
+			placeOfPublication: 'Interspeech',
+			placeOfPublicationLang: 'en',
+			link: {
+				label: 'Zum Paper',
+				url: 'https://www.isca-archive.org/interspeech_2024/kuhn24_interspeech.html'
+			},
+			category: 'Paper / Buchbeiträge',
+			apa: `<span class="apa-publication">
+				 Kuhn, K., Kersken, V., & Zimmermann, G. (2024).
+				<span lang="en"> Beyond Levenshtein: Leveraging Multiple Algorithms for Robust Word Error Rate Computations And Granular Error Classifications.</span>
+				<em lang="en"> Interspeech 2024,</em> 4543-4547.
+				<a href="https://doi.org/10.21437/interspeech.2024-32">https://doi.org/10.21437/interspeech.2024-32</a>
 			</span>`
 		}
 	]
