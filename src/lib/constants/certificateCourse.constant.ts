@@ -8,7 +8,7 @@ export const CERTIFICATE_COURSE: Project = {
 		'Der Kurs behandelt die digitale Barrierefreiheit in der Hochschulbildung, rechtliche Grundlagen und mehr.',
 	targetGroup: ['Für Lehrende'],
 	summary:
-		'Dieser Zertifikatskurs befasst sich mit der Bedeutung der digitalen Barrierefreiheit in der Hochschulbildung. Er beleuchtet die demografischen Bedürfnisse, die rechtlichen Aspekte der inklusiven Bildung sowie die aktuellen Erfahrungen einiger Studierender mit Behinderungen in Universitätskursen. Er konzentriert sich auch auf praktische Tipps und Techniken, wie man digitale Lehrmaterialien und Plattformen besser barrierefrei gestalten kann. Zertifikat „Barrierefrei lehren“',
+		'Dieser Zertifikatskurs befasst sich mit der Bedeutung der digitalen Barrierefreiheit in der Hochschulbildung. Er beleuchtet die demografischen Bedürfnisse, die rechtlichen Aspekte der inklusiven Bildung sowie die aktuellen Erfahrungen einiger Studierender mit Behinderungen in Universitätskursen. Er konzentriert sich auch auf praktische Tipps und Techniken, wie man digitale Lehrmaterialien und Plattformen besser barrierefrei gestalten kann.',
 	link: {
 		label: 'Zum Lernkurs',
 		url: 'https://mooc.hdm-stuttgart.de/course/view.php?id=43'
