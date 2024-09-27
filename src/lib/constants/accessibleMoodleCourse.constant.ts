@@ -2,10 +2,10 @@ import type { Project } from '$lib/interfaces/project.interface';
 
 export const ACCESSIBLE_MOODLE_COURSE: Project = {
 	id: 'barrierefreie-moodle-kurse',
-	title: 'Barrierefreie Moodle-Kurse',
+	title: 'Moodle Barrierefrei',
 	category: 'Moodle-Kurs',
 	shortSummary:
-		'Dieser Moodle-Kurs beinhaltet Informationen und Umsetz&shy;ungshilfen zur barrierefreien Gestaltung eines Moodle-Kurses und E-Prüfungen.',
+		'Informationen und Umsetz&shy;ungshilfen zur barrierefreien Gestaltung von Moodle-Kursen und E-Prüfungen.',
 	targetGroup: ['Für Lehrende'],
 	link: {
 		url: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=7',

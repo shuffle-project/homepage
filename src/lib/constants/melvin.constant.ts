@@ -5,7 +5,7 @@ export const MELVIN: Project = {
 	title: 'Melvin',
 	category: 'Barrierefreie Videos',
 	shortSummary:
-		'Erstelle schnell und einfach Videos mit Untertiteln und teile sie in einem barrierefreien Video-Player.',
+		'Schnell und einfach Videos mit Untertiteln erstellen und in einem barrierefreien Video-Player teilen.',
 	targetGroup: ['Für Lehrende'],
 	link: {
 		url: 'https://melvin.shuffle-projekt.de',
