@@ -1,5 +1,8 @@
+import type { FILTER_OPTIONS } from '$lib/constants/filterOptions.constant';
 import type { TeamMemberName } from '$lib/constants/teamMembers.constant';
 import type { ExtendedPlayerConfig } from './player.interface';
+
+export type FilterOptions = (typeof FILTER_OPTIONS)[number]['value'];
 
 const TARGET_GROUP = {
 	LECTURERS: 'Für Lehrende',

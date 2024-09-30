@@ -5,7 +5,7 @@ export const MATURITY_MODEL: Project = {
 	title: 'SHUFFLE-Reifegradmodell',
 	category: 'Analyse-Tool',
 	shortSummary:
-		'Ein Unterstützungstool zur Analyse und Optimierung der digitalen Barrierefreiheit von Hochschulen.',
+		'Unterstützungstool zur Analyse und Optimierung der digitalen Barrierefreiheit von Hochschulen.',
 	targetGroup: ['Für Lehrende', 'Für die Hochschulleitung'],
 	summary:
 		'Das SHUFFLE-Reifegradmodell ist ein Unterstützungstool zur Verbesserung der (digitalen) Barrierefreiheit an Hochschulen. Es hilft Verantwortlichen, relevante Daten strukturiert zu erheben und zu bündeln. Durch das 5-stufige Modell können sich Hochschulen einen Überblick über den Stand ihrer (digitalen) Barrierefreiheit verschaffen. Das Reifegradmodell unterstützt dann bei dessen systematischen Ausbau, indem es Optimierungspotentiale aufzeigt und konkrete Handlungsempfehlungen dafür gibt.',

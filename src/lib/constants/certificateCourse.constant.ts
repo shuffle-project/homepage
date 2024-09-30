@@ -2,13 +2,15 @@ import type { Project } from '$lib/interfaces/project.interface';
 
 export const CERTIFICATE_COURSE: Project = {
 	id: 'lernkurs-knowledge-badge',
-	title: 'Lernkurs Knowledge Badge: Barrierefrei lehren',
+	title: 'Knowledge Badge: Barrierefrei lehren',
 	category: 'Moodle-Kurs',
 	shortSummary:
-		'Der Kurs behandelt die digitale Barrierefreiheit in der Hochschulbildung, rechtliche Grundlagen und mehr.',
+		// 'Der Kurs behandelt die digitale Barrierefreiheit in der Hochschulbildung, rechtliche Grundlagen und mehr.',
+		// 'Lernkurs zur IAAP-DACH-Prüfung zum Thema digitale Barrierefreiheit in der Hochschulbildung. ',
+		'Weiterbildungskurs für Hochschullehrende zum Thema digitale Barrierefreiheit (plus optionaler Prüfung).',
 	targetGroup: ['Für Lehrende'],
 	summary:
-		'Dieser Zertifikatskurs befasst sich mit der Bedeutung der digitalen Barrierefreiheit in der Hochschulbildung. Er beleuchtet die demografischen Bedürfnisse, die rechtlichen Aspekte der inklusiven Bildung sowie die aktuellen Erfahrungen einiger Studierender mit Behinderungen in Universitätskursen. Er konzentriert sich auch auf praktische Tipps und Techniken, wie man digitale Lehrmaterialien und Plattformen besser barrierefrei gestalten kann.',
+		'Dieser Lernkurs befasst sich mit der Bedeutung der digitalen Barrierefreiheit in der Hochschulbildung. Er beleuchtet die demografischen Bedürfnisse, die rechtlichen Aspekte der inklusiven Bildung sowie die aktuellen Erfahrungen einiger Studierender mit Behinderungen in Universitätskursen. Er konzentriert sich auch auf praktische Tipps und Techniken, wie man digitale Lehrmaterialien und Plattformen besser barrierefrei gestalten kann.',
 	link: {
 		label: 'Zum Lernkurs',
 		url: 'https://mooc.hdm-stuttgart.de/course/view.php?id=43'

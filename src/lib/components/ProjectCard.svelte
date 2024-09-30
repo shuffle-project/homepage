@@ -15,7 +15,7 @@
 	</div>
 	<div class="content-wrapper">
 		<div class="content">
-			<p class="subtitle">{project.category}</p>
+			<!-- <p class="subtitle">{project.category}</p> -->
 
 			<div class="title">
 				<h3>{project.title}</h3>
@@ -26,8 +26,8 @@
 		</div>
 		<div class="links">
 			<a href="{base}/{project.id}" class="link-more-info">
-				<span aria-hidden="true">Mehr Informationen</span>
-				<span class="sr-only">Mehr Informationen über {project.title}</span>
+				<span aria-hidden="true">Mehr erfahren</span>
+				<span class="sr-only">Mehr erfahren über {project.title}</span>
 			</a>
 			{#if project.link}
 				<a
@@ -45,7 +45,7 @@
 
 <style lang="scss">
 	.result-card {
-		min-height: 25rem;
+		min-height: 24rem;
 		max-width: 16.25rem;
 		width: 100%;
 
@@ -72,7 +72,7 @@
 			border: 1px solid var(--color-blue-line);
 			border-top: 0px;
 			position: relative;
-			min-height: calc(25rem - 8.125rem);
+			min-height: calc(24rem - 8.125rem);
 
 			display: flex;
 			flex-direction: column;
@@ -80,7 +80,7 @@
 		}
 
 		.content {
-			padding: 0.5rem 1.125rem 0rem;
+			padding: 0.625rem 1.125rem 0rem;
 
 			.subtitle {
 				color: var(--color-dark-grey);
