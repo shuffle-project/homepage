@@ -2,7 +2,7 @@ import type { Project } from '$lib/interfaces/project.interface';
 
 export const MATURITY_MODEL: Project = {
 	id: 'shuffle-reifegradmodell',
-	title: 'Reifegradmodell',
+	title: 'SHUFFLE-Reifegradmodell',
 	category: 'Analyse-Tool',
 	shortSummary:
 		'Unterstützungstool zur Analyse und Optimierung der digitalen Barrierefreiheit von Hochschulen.',

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ALL_PROJECTS } from '$lib/constants/allProjects.constant.js';
-	import type { Project, TargetGroup } from '$lib/interfaces/project.interface';
+	import { FILTER_OPTIONS } from '$lib/constants/filterOptions.constant';
+	import type { FilterOptions, Project, TargetGroup } from '$lib/interfaces/project.interface';
 
 	import ResultCard from '../ProjectCard.svelte';
 	import ProjectsMobile from './ProjectsMobile.svelte';
@@ -33,6 +34,12 @@
 			element?.click();
 		}
 	}
+
+	let selectedFilterOption: 'all' | FilterOptions = 'all';
+
+	function onSelectFilterOption(option: 'all' | FilterOptions) {
+		selectedFilterOption = option;
+	}
 </script>
 
 <div class="results-section">
@@ -43,20 +50,44 @@
 		zudem weitere hinzukommen.
 	</p>
 
-	<!-- <div role="tablist" class="tablist" aria-label="Projektergebnisse filtern">
-		{#each tabOptions as tabOption, i}
-			<button
-				id="results-tab-{i}"
-				role="tab"
-				aria-selected={selectedTab === tabOption}
-				tabindex={selectedTab === tabOption ? 0 : -1}
-				on:click={() => ((selectedTab = tabOption), (selectedIndex = i))}
-				on:keydown={onKeypressed}
-			>
-				{tabOption}
-			</button>
-		{/each}
-	</div> -->
+	<details>
+		<summary>
+			<span> Ergebnisse filtern </span>
+		</summary>
+
+		<div class="details-content" role="radiogroup" aria-label="Filteroptionen">
+			<div class="row-default">
+				<div class="input-wrapper">
+					<input
+						id="input-0"
+						type="radio"
+						name="filter"
+						value="all"
+						checked={selectedFilterOption === 'all'}
+						on:change={(e) => onSelectFilterOption('all')}
+					/>
+					<label for="input-0"> Alle Ergebnisse </label>
+				</div>
+			</div>
+			<div class="row-categories">
+				{#each FILTER_OPTIONS as option, i}
+					<div class="input-wrapper">
+						<input
+							id="input-{i + 1}"
+							type="radio"
+							name="filter"
+							value={option.value}
+							checked={selectedFilterOption === option.value}
+							on:change={() => onSelectFilterOption(option.value)}
+						/>
+						<label for="input-{i + 1}">
+							{option.label}
+						</label>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</details>
 
 	<div class="results-list desktop">
 		{#key selectedProjects}
@@ -77,6 +108,128 @@
 </div>
 
 <style lang="scss">
+	details {
+		width: 100%;
+		max-width: var(--max-text-width);
+		border: 1px solid var(--color-blue-line);
+
+		.details-content {
+			padding: 0.625rem;
+
+			// label {
+			// 	cursor: pointer;
+			// 	position: relative;
+			// 	display: flex;
+			// 	align-items: center;
+			// 	justify-content: center;
+			// 	gap: 0.25rem;
+
+			// 	// ---
+			// 	border: 1px solid var(--color-light-blue);
+			// 	background-color: var(--color-light-blue);
+			// 	padding: 0.125rem 0.375rem;
+
+			// 	input {
+			// 		width: 0.25rem;
+			// 		height: 0.25rem;
+			// opacity: 0;
+			// width: 0;
+			// height: 0;
+			// position: absolute;
+			// top: 0;
+			// left: 0;
+		}
+
+		// input + span {
+		// border: 1px solid var(--color-light-blue);
+		// background-color: var(--color-light-blue);
+		// padding: 0.125rem 0.375rem;
+		// }
+
+		// input:focus-visible + span {
+		// 	outline: 2px solid var(--color-black);
+		// 	outline-offset: 1px;
+		// }
+
+		// input:checked + span {
+		// 	background-color: var(--color-black);
+		// 	color: var(--color-white);
+		// }
+		// }
+
+		.input-wrapper {
+			display: flex;
+			align-items: center;
+			gap: 0.25rem;
+
+			label,
+			input {
+				cursor: pointer;
+			}
+
+			input {
+				-webkit-appearance: none;
+				appearance: none;
+				background-color: var(--color-white);
+				margin: 0;
+
+				border: 1px solid var(--color-black);
+				border-radius: 50%;
+				width: 1rem;
+				height: 1rem;
+			}
+
+			input:focus-visible {
+				outline: 1px solid var(--color-black);
+				outline-offset: 0px;
+			}
+
+			input:checked {
+				position: relative;
+
+				&::before {
+					content: '';
+					width: 0.625rem;
+					height: 0.625rem;
+					background-color: var(--color-black);
+					position: absolute;
+					top: 2px;
+					left: 2px;
+
+					border-radius: 50%;
+				}
+			}
+		}
+
+		.row-default {
+			margin-bottom: 1.625rem;
+		}
+
+		.row-categories {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.625rem 0.875rem;
+		}
+		// }
+
+		summary {
+			padding: 0.625rem;
+			font-weight: bold;
+			cursor: pointer;
+			position: relative;
+
+			&:focus-visible {
+				outline: 2px solid var(--color-black);
+			}
+		}
+	}
+
+	details[open] {
+		summary {
+			border-bottom: 1px solid var(--color-blue-line);
+		}
+	}
+
 	.results-section {
 		background: var(--color-white);
 		padding: 0 var(--outer-spacing);
@@ -91,45 +244,6 @@
 		.intro-text {
 			max-width: var(--max-text-width);
 		}
-
-		// .tablist {
-		// 	width: 100%;
-		// 	max-width: var(--max-text-width);
-
-		// 	padding: 0.625rem;
-
-		// 	display: flex;
-		// 	flex-wrap: wrap;
-		// 	gap: 0.625rem;
-
-		// button {
-		// 	background-color: transparent;
-		// 	color: var(--color-black);
-		// 	border: 1px solid var(--color-black);
-		// 	font-size: 0.875rem;
-		// 	padding: 0.25rem 0.5rem;
-		// 	cursor: pointer;
-
-		// Without it, there is some flickering while switching the tabs
-		// transition: all 0s ease-in-out;
-
-		// position: relative;
-
-		// &[aria-selected='true'] {
-		// 	color: var(--color-white);
-		// 	background-color: var(--color-black);
-		// }
-
-		// 		&:hover {
-		// 			outline: none;
-		// 		}
-
-		// 		&:focus-visible {
-		// 			outline: 2px solid var(--color-black);
-		// 			outline-offset: 2px;
-		// 		}
-		// 	}
-		// }
 
 		.results-list {
 			display: flex;
@@ -148,6 +262,10 @@
 	}
 
 	@media (max-width: 40.5625rem) {
+		details {
+			margin-bottom: 2.5rem;
+		}
+
 		.results-section {
 			.desktop {
 				display: none;
