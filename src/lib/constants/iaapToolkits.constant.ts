@@ -7,7 +7,6 @@ export const IAAP_TOOLKITS: Project = {
 	shortSummary:
 		// 'Diese Ressourcen wurden mit IAAP-DACH entwickelt, um Barrierefreiheits-Zertifizierungsinfos bereitzustellen.',
 		'Leitfaden zur Zertifizierung im Bereich Barrierefreiheit in Kooperation mit IAAP-DACH.',
-	targetGroup: ['Für Lehrende', 'Für die Hochschulleitung'],
 	summary:
 		'IAAP D-A-CH ist die deutschsprachige Vertretung der IAAP <span lang="en">(International Association of Accessibility Professionals)</span> und umfasst Mitglieder in Deutschland, Österreich und der Schweiz. Als Berufsverband ermöglicht er Experten im Bereich der Barrierefreiheit, sich zu vernetzen, weiterzubilden und zu zertifizieren. IAAP D-A-CH definiert fachliche Kernkompetenzen im Bereich der digitalen Barrierefreiheit, bietet Zertifizierungsverfahren an, fördert das Bewusstsein für die barrierefreie Gestaltung digitaler Produkte und Dienstleistungen und ermöglicht den Informations- und Wissensaustausch im deutschsprachigen Raum.',
 	showInDevelopmentInfo: false,

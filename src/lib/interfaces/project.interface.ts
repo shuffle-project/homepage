@@ -2,13 +2,6 @@ import type { FILTER_OPTIONS } from '$lib/constants/filterOptions.constant';
 import type { TeamMemberName } from '$lib/constants/teamMembers.constant';
 import type { ExtendedPlayerConfig } from './player.interface';
 
-export type FilterOptions = (typeof FILTER_OPTIONS)[number]['value'];
-
-const TARGET_GROUP = {
-	LECTURERS: 'Für Lehrende',
-	ADMINISTRATION: 'Für die Hochschulleitung'
-} as const;
-
 const PROJECT_PARTNERS = {
 	HDM: 'Hochschule der Medien Stuttgart',
 	BIELEFELD: 'Universität Bielefeld',
@@ -17,8 +10,8 @@ const PROJECT_PARTNERS = {
 } as const;
 
 type ObjectValues<T> = T[keyof T];
-export type TargetGroup = ObjectValues<typeof TARGET_GROUP>;
 export type ProjectPartners = ObjectValues<typeof PROJECT_PARTNERS>;
+export type FilterOptions = (typeof FILTER_OPTIONS)[number]['value'];
 
 export interface JoinEvaluation {
 	title: string;
@@ -73,7 +66,6 @@ export interface Project {
 	title: string;
 	category: string;
 	shortSummary: string;
-	targetGroup: TargetGroup[];
 	showInDevelopmentInfo?: boolean;
 	link?: {
 		url: string;

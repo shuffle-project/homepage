@@ -6,7 +6,6 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 	category: 'Moodle-Kurs',
 	shortSummary:
 		'Informationen und Umsetz&shy;ungshilfen zur barrierefreien Gestaltung von Moodle-Kursen und E-Prüfungen.',
-	targetGroup: ['Für Lehrende'],
 	link: {
 		url: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=7',
 		label: 'Zum Barrierefreien-Moodle-Kurs'

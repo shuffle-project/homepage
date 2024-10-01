@@ -1,44 +1,54 @@
 <script lang="ts">
 	import { ALL_PROJECTS } from '$lib/constants/allProjects.constant.js';
-	import { FILTER_OPTIONS } from '$lib/constants/filterOptions.constant';
-	import type { FilterOptions, Project, TargetGroup } from '$lib/interfaces/project.interface';
+	import {
+		AWARENESS_PROJECTS,
+		CERTIFICATION_PROJECTS,
+		CONSULTATION_PROJECTS,
+		FILTER_OPTIONS,
+		IT_PROJECTS,
+		STRATEGY_PROJECTS,
+		TEACHING_PROJECTS
+	} from '$lib/constants/filter.constant';
+	import type { FilterOptions, Project } from '$lib/interfaces/project.interface';
 
 	import ResultCard from '../ProjectCard.svelte';
 	import ProjectsMobile from './ProjectsMobile.svelte';
 
-	let selectedIndex: number = 0;
-	let selectedTab: 'Alle' | TargetGroup = 'Alle';
-	const tabOptions: ('Alle' | TargetGroup)[] = ['Alle', 'Für Lehrende', 'Für die Hochschulleitung'];
-
-	const projects = ALL_PROJECTS;
-
-	let selectedProjects: Project[] = [];
-
-	$: {
-		selectedProjects = projects.filter((pl) => {
-			if (selectedTab === 'Alle') return true;
-			if (pl.targetGroup.includes(selectedTab)) return true;
-		});
-	}
-
-	function onKeypressed(event: KeyboardEvent) {
-		if (event.code === 'ArrowLeft') {
-			event.preventDefault();
-			let element = document.getElementById(`results-tab-${selectedIndex - 1}`);
-			element?.focus();
-			element?.click();
-		} else if (event.code === 'ArrowRight') {
-			event.preventDefault();
-			let element = document.getElementById(`results-tab-${selectedIndex + 1}`);
-			element?.focus();
-			element?.click();
-		}
-	}
+	let selectedProjects: Project[] = ALL_PROJECTS;
 
 	let selectedFilterOption: 'all' | FilterOptions = 'all';
 
 	function onSelectFilterOption(option: 'all' | FilterOptions) {
 		selectedFilterOption = option;
+
+		switch (option) {
+			case 'all':
+				selectedProjects = ALL_PROJECTS;
+				break;
+			case 'consultation':
+				selectedProjects = CONSULTATION_PROJECTS;
+				break;
+			case 'awareness':
+				selectedProjects = AWARENESS_PROJECTS;
+				break;
+			case 'teaching':
+				selectedProjects = TEACHING_PROJECTS;
+				break;
+			case 'strategy':
+				selectedProjects = STRATEGY_PROJECTS;
+				break;
+			case 'it':
+				selectedProjects = IT_PROJECTS;
+				break;
+			case 'certification':
+				selectedProjects = CERTIFICATION_PROJECTS;
+				break;
+			default:
+				selectedProjects = ALL_PROJECTS;
+				break;
+		}
+
+		console.log(selectedProjects);
 	}
 </script>
 
