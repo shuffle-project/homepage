@@ -46,6 +46,9 @@
 						<a href="{base}/#projektergebnisse">Projektergebnisse</a>
 					</li>
 					<li>
+						<a href="{base}/webinaraufnahmen">Webinaraufnahmen</a>
+					</li>
+					<li>
 						<a href="{base}/team">Team</a>
 					</li>
 					<li>
@@ -147,7 +150,7 @@
 		margin: 0;
 	}
 
-	@media (max-width: 46.1875rem) {
+	@media (max-width: 54.9375rem) {
 		header {
 			.header {
 				.desktop-nav,
@@ -158,7 +161,7 @@
 		}
 	}
 
-	@media (min-width: 46.25rem) {
+	@media (min-width: 55rem) {
 		header {
 			.header {
 				.menu-button-wrapper {

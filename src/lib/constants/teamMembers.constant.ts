@@ -79,6 +79,10 @@ export const TEAM_MEMBERS = [
 		img: 'judith-kuhlmann.jpeg'
 	},
 	{
+		name: 'Kira Frankenfeld',
+		projectPartner: 'Hochschule der Medien Stuttgart'
+	},
+	{
 		name: 'Kim Althoff',
 		projectPartner: 'Universität Bielefeld',
 		img: 'kim-althoff.jpg'

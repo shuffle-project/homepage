@@ -2,11 +2,12 @@ import type { Project } from '$lib/interfaces/project.interface';
 
 export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
 	id: 'digitale-barrierefreiheit-an-hochschulen',
-	title: 'Digitale Barrierefreiheit an Hochschulen',
+	// title: 'Digitale Barrierefreiheit an Hochschulen',
+	title: 'Handlungsfelder digitale Inklusion',
 	category: 'Moodle-Kurs',
 	shortSummary:
-		'Handlungsempfehlungen zur strategischen und systematischen Stärkung von digitaler Barrierefreiheit.',
-	targetGroup: ['Für die Hochschulleitung', 'Für Lehrende'],
+		// 'Handlungsempfehlungen zur strategischen und systematischen Stärkung von digitaler Barrierefreiheit.',
+		'Empfehlungen und Good Practices zur systematischen Stärkung von digitaler Inklusion an Hochschulen.',
 	summary:
 		'Die Materialien die in dem Kurs bereitgestellt sind, richten sich an alle Akteure an Hochschulen, die ihr Verständnis für das Thema der digitalen Barrierefreiheit vertiefen und aktiv dazu beitragen möchten, ihre Institutionen systematisch zugänglicher zu gestalten. Die Kursmaterialien bieten nicht nur zentrale Informationen zu verschiedenen Themen der digitalen Barrierefreiheit, sondern auch konkrete Handlungsempfehlungen, die Sie in Ihrer täglichen Arbeit anwenden können.',
 	showInDevelopmentInfo: true,

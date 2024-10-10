@@ -150,8 +150,9 @@
 		denselben HdM-internen Servern wie die Website gehostet.
 	</p>
 	<p>
-		Auf der Website sind auch Videos in Form einer Verlinkung zum Videoportal YouTube eingebunden.
-		Nach Aufruf findet eine entsprechende Datenverarbeitung durch YouTube statt. Insofern gilt die
+		Auf der Website sind Videos der Videoplattform YouTube eingebettet sowie Verlinkungen zu
+		YouTube-Videos eingebunden. Nach Aufruf bzw. dem Akzeptieren der eingebetteten YouTube-Inhalte
+		findet eine entsprechende Datenverarbeitung durch YouTube statt. Insofern gilt die
 		Datenschutzerklärung des Mutterkonzerns Google: <a href="https://policies.google.com/privacy"
 			>https://policies.google.com/privacy</a
 		>.
