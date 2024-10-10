@@ -8,6 +8,7 @@ export const CERTIFICATE_COURSE: Project = {
 		'Weiterbildungskurs für Hochschullehrende zum Thema digitale Barrierefreiheit (plus optionaler Prüfung).',
 	summary:
 		'Dieser Lernkurs befasst sich mit der Bedeutung der digitalen Barrierefreiheit in der Hochschulbildung. Er beleuchtet die demografischen Bedürfnisse, die rechtlichen Aspekte der inklusiven Bildung sowie die aktuellen Erfahrungen einiger Studierender mit Behinderungen in Universitätskursen. Er konzentriert sich auch auf praktische Tipps und Techniken, wie man digitale Lehrmaterialien und Plattformen besser barrierefrei gestalten kann.',
+	webinar: 'barrierefrei-lehren',
 	link: {
 		label: 'Zum Lernkurs',
 		url: 'https://mooc.hdm-stuttgart.de/course/view.php?id=43'

@@ -90,6 +90,12 @@
 				</a>
 			</li>
 			<li>
+				<a
+					on:click|preventDefault|stopPropagation={() => goToSite('/webinaraufnahmen')}
+					href="{base}/webinaraufnahmen">Webinaraufnahmen</a
+				>
+			</li>
+			<li>
 				<a on:click|preventDefault|stopPropagation={() => goToSite('/team')} href="{base}/team"
 					>Team</a
 				>

@@ -1,4 +1,4 @@
-import type { FILTER_OPTIONS } from '$lib/constants/filterOptions.constant';
+import type { FILTER_OPTIONS } from '$lib/constants/filter.constant';
 import type { TeamMemberName } from '$lib/constants/teamMembers.constant';
 import type { ExtendedPlayerConfig } from './player.interface';
 
@@ -61,12 +61,22 @@ export interface SubProject {
 	};
 }
 
+export const WEBINAR_COMPONENTS = {
+	RGM: 'reifegradmodell',
+	LERNRAUME: 'digitale-lernraume',
+	BLINDDATE: 'blinddate',
+	BADGE: 'barrierefrei-lehren'
+} as const;
+
+export type WebinarComponent = ObjectValues<typeof WEBINAR_COMPONENTS>;
+
 export interface Project {
 	id: string;
 	title: string;
 	category: string;
 	shortSummary: string;
 	showInDevelopmentInfo?: boolean;
+	webinar?: WebinarComponent;
 	link?: {
 		url: string;
 		label: string;

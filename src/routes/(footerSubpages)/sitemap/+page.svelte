@@ -50,6 +50,9 @@
 		<li>
 			<a href="{base}/team">Team</a>
 		</li>
+		<li>
+			<a href="{base}/webinaraufnahmen">Webinaraufnahmen</a>
+		</li>
 	</ul>
 
 	<h2>Alle Projekte (alphabetisch)</h2>

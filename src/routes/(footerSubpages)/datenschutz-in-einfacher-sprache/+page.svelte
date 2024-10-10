@@ -129,7 +129,9 @@
 	<h3>Einbindung von Video·inhalten</h3>
 	<p>
 		Videos auf der Website werden meist auf Servern der HdM bereitgestellt.
-		<br />Verlinkte Videos zu YouTube unterliegen jedoch deren Daten·schut·zerklärung.
+		<br />Verlinkte Videos zu YouTube
+		<br /> oder eingebaute YouTube-Videos auf der Website
+		<br /> unterliegen jedoch deren Daten·schut·zerklärung.
 	</p>
 
 	<p>

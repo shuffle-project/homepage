@@ -15,8 +15,6 @@
 	</div>
 	<div class="content-wrapper">
 		<div class="content">
-			<!-- <p class="subtitle">{project.category}</p> -->
-
 			<div class="title">
 				<h3>{project.title}</h3>
 			</div>
@@ -81,11 +79,6 @@
 
 		.content {
 			padding: 0.625rem 1.125rem 0rem;
-
-			.subtitle {
-				color: var(--color-dark-grey);
-				font-size: 0.875rem;
-			}
 
 			.title {
 				h3 {

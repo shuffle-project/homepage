@@ -13,9 +13,12 @@
 		if ('publications' in project) unsortedAllPublications.push(...project.publications!);
 	});
 
+	console.log(unsortedAllPublications);
+
 	let publicationPaper: Publication[] = [];
 	let publicationWorkshops: Publication[] = [];
 	let publicationPoster: Publication[] = [];
+	let publicationTheses: Publication[] = [];
 	let publicationOther: Publication[] = [];
 
 	onMount(() => {
@@ -31,6 +34,9 @@
 					case 'Posterpräsentationen':
 						publicationPoster = [...publicationPoster, pub];
 						break;
+					case 'Abschlussarbeiten':
+						publicationTheses = [...publicationTheses, pub];
+						break;
 					default:
 						publicationOther = [...publicationOther, pub];
 				}
@@ -39,6 +45,7 @@
 			publicationPaper.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
 			publicationWorkshops.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
 			publicationPoster.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
+			publicationTheses.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
 			publicationOther.sort((a, b) => (b.releaseDate < a.releaseDate ? -1 : 1));
 		}
 	});
@@ -78,6 +85,9 @@
 			category="Posterpräsentationen"
 			headingLevel="h2"
 		/>
+	{/if}
+	{#if publicationTheses.length > 0}
+		<Publications publications={publicationTheses} category="Abschlussarbeiten" headingLevel="h2" />
 	{/if}
 	{#if publicationOther.length > 0}
 		<Publications
