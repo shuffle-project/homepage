@@ -8,6 +8,7 @@
 		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
 		ut labore et dolore magna aliquyam erat, sed diam voluptua.
 	</p>
+
 	<YouTubeWrapper
 		videoTitle="Digitale Lernräume und Materialien barrierefrei gestalten"
 		linkToYouTube="https://www.youtube.com/watch?v=hZzg3BgwkXU"
