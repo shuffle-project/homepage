@@ -5,8 +5,10 @@
 <div class="video-wrapper">
 	<h2 id="digitale-lernraume-webinar">Digitale Lernräume und Materialien barrierefrei gestalten</h2>
 	<p>
-		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-		ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		Wollen Sie Ihre Lehr-/Lernumgebung für alle Studierende zugänglich gestalten? Dann lernen Sie in
+		diesem Webinar, wie Sie mithilfe einfacher Checklisten und Umsetzungshilfen Ihre Materialien
+		(9:32) und Lernumgebungen in Moodle (17:50) und Ilias (27:10) digital barrierefrei umsetzen
+		können.
 	</p>
 
 	<YouTubeWrapper
