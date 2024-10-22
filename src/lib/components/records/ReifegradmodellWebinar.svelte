@@ -9,14 +9,11 @@
 	<p>
 		Wir möchten Ihnen das SHUFFLE-Reifegradmodell vorstellen. Es ist ein Selbstbewertungstool zur
 		Verbesserung der digitalen Teilhabe an Hochschulen und hilft Verantwortlichen, relevante Daten
-		strukturiert zu erheben, zu bündeln und diese strategisch einzusetzen. So ist es Ihnen möglich,
-		den Ist-Stand der digitalen Teilhabe an Ihrer Hochschule zu ermitteln. Mit Hilfe der
-		bereitgestellten Handlungsempfehlungen und Good-Practice-Beispiele aus dem Hochschulalltag
-		können Sie an die Analyse des Ist-Standes auch eine Weiterentwicklung der digitalen Teilhabe
-		anschließen. Im Webinar gehen wir auf die Schritte für die Entwicklung des Reifegradmodells ein
-		(ab 4:46) und stellen Ihnen das Reifegradmodell mit seinen verschiedenen Bestandteilen vor (ab
-		12:47) inklusive des Analysetools (ab 20:23), der Ergebnisdarstellung des Ist-Zustands (ab
-		25:52) und den Handlungsempfehlungen (ab 28:08).
+		strukturiert zu erheben, zu bündeln und diese strategisch einzusetzen. Im Webinar gehen wir auf
+		die Schritte für die Entwicklung des Reifegradmodells ein (ab 4:46) und stellen Ihnen das
+		Reifegradmodell mit seinen verschiedenen Bestandteilen vor (ab 12:47) inklusive des Analysetools
+		(ab 20:23), der Ergebnisdarstellung des Ist-Zustands (ab 25:52) und den Handlungsempfehlungen
+		(ab 28:08).
 	</p>
 	<YouTubeWrapper
 		videoTitle="Systematische Analyse und Entwicklung von (digitaler) Barrierefreiheit an Hochschulen"
