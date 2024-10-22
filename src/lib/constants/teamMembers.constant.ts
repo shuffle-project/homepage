@@ -48,6 +48,10 @@ export const TEAM_MEMBERS = [
 		img: 'benedikt-reuter.jpg'
 	},
 	{
+		name: 'Christof Lang',
+		projectPartner: 'Hochschule der Medien Stuttgart'
+	},
+	{
 		name: 'Dustin Matzel',
 		projectPartner: 'Universität Bielefeld',
 		img: 'dustin-matzel.jpg'
