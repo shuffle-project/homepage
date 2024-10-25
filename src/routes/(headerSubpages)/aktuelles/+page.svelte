@@ -16,6 +16,17 @@
 
 <div class="articles">
 	<ArticlePreview
+		title="Herbsttreffen in Bielefeld"
+		time="25.10.2024"
+		link="herbsttreffen-in-bielefeld"
+	>
+		Zum zweiten Mal trafen sich die Projektmitglieder am Standort Bielefeld. Dieses Mal fand das
+		Treffen vom 23.-24. September in einem inklusiven Hotel im Stadtteil Bethel statt. Es galt
+		insofern nicht nur über Inklusion zu sprechen, sondern sie auch ganz konkret zu erleben. Aus
+		inhaltlicher Sicht stand […]</ArticlePreview
+	>
+
+	<ArticlePreview
 		title="Barrierenzähmen leicht gemacht!"
 		time="07.06.2024"
 		link="barrierenzaehmen-leicht-gemacht"

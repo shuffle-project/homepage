@@ -67,6 +67,9 @@
 	<h2>Alle News (Neueste zuerst)</h2>
 	<ul>
 		<li>
+			<a href="{base}/aktuelles/herbsttreffen-in-bielefeld">Herbsttreffen in Bielefeld</a>
+		</li>
+		<li>
 			<a href="{base}/aktuelles/barrierenzaehmen-leicht-gemacht">Barrierenzähmen leicht gemacht!</a>
 		</li>
 		<li>
