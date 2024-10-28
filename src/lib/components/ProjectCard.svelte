@@ -9,7 +9,7 @@
 
 <div class="result-card" class:horizontal-center={horizontalCenter}>
 	<div class="decorative-icon">
-		<a href="{base}/{project.id}" aria-label="Mehr Informationen über {project.title}">
+		<a href="{base}/{project.id}" aria-label="Mehr erfahren über {project.title}">
 			<Icon svg={project.id} color="white" size="parent" />
 		</a>
 	</div>
