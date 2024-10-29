@@ -186,6 +186,26 @@ export const MELVIN: Project = {
 				<em lang="en"> Interspeech 2024,</em> 4543-4547.
 				<a href="https://doi.org/10.21437/interspeech.2024-32">https://doi.org/10.21437/interspeech.2024-32</a>
 			</span>`
+		},
+		{
+			title:
+				'Record, Transcribe, Share: An Accessible Open-Source Video Platform for Deaf and Hard of Hearing Viewers',
+			titleLang: 'en',
+			releaseDate: '2024-10',
+			contributors: ['Korbinian Kuhn', 'Benedikt Reuter', 'Niklas Egger', 'Gottfried Zimmermann'],
+			placeOfPublication:
+				'ASSETS 2024: Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility',
+			placeOfPublicationLang: 'en',
+			link: {
+				label: 'Zum Paper',
+				url: 'https://dl.acm.org/doi/10.1145/3663548.3688495'
+			},
+			category: 'Paper / Buchbeiträge',
+			apa: `<span class="apa-publication">
+				Kuhn, K., Reuter, B., Egger, N., & Zimmermann, G. (2024).
+				<span lang="en"> Record, Transcribe, Share: An Accessible Open-Source Video Platform for Deaf and Hard of Hearing Viewers.</span>
+				<em lang="en"> ASSETS 2024: Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility,</em> 1-6.
+				<a href="https://doi.org/10.1145/3663548.3688495">https://doi.org/10.1145/3663548.3688495</a>`
 		}
 	]
 };
