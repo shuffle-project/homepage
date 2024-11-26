@@ -16,6 +16,26 @@
 
 <div class="articles">
 	<ArticlePreview
+		title="Die neue Melvin-Version ist da!"
+		time="26.11.2024"
+		link="die-neue-melvin-version-ist-da"
+	>
+		Nach mehreren Monaten harter Arbeit, freut sich das Team endlich die neue Melvin Version
+		veröffentlichen zu können. Um unser Ziel eines einfachen und nahtlosen Workflows beim Erstellen
+		von barrierefreien Videos näher zu kommen, haben wir die folgenden Änderungen vorgenommen: […]</ArticlePreview
+	>
+
+	<ArticlePreview
+		title="Neue Horizonte: SHUFFLE auf der TURN Conference in Berlin"
+		time="26.11.2024"
+		link="neue-horizonte"
+	>
+		Am 14. und 15. November 2024 war ein Teil des SHUFFLE-Teams auf der TURN Conference in Berlin
+		dabei – und das nicht nur als Teilnehmende! Wir hatten die Gelegenheit, unsere Projekte
+		vorzustellen und uns mit vielen spannenden Akteur*innen aus Wissenschaft und Praxis […]</ArticlePreview
+	>
+
+	<ArticlePreview
 		title="Herbsttreffen in Bielefeld"
 		time="25.10.2024"
 		link="herbsttreffen-in-bielefeld"
