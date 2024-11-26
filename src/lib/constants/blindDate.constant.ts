@@ -194,6 +194,28 @@ export const BLINDDATE: Project = {
 			<span lang="en">(Master's thesis, <span lang="de">Hochschule der Medien Stuttgart</span>)</span>.
 			<a download href="https://shuffle-projekt.de/downloads/MA_Patricia-Piskorek_Disability-Simulations.pdf">	https://shuffle-projekt.de/downloads/MA_Patricia-Piskorek_Disability-Simulations.pdf</a>
 			</span>`
+		},
+		{
+			title: 'Ein BlindDate mit virtuellen Studierenden im digitalen Lern- und Begegnungsraum',
+			titleLang: 'de',
+			releaseDate: '2024-11',
+			contributors: ['Ann-Katrin Böhm', 'Patricia Piskorek', 'Niklas Egger'],
+			placeOfPublication: 'Turn Conference',
+			placeOfPublicationLang: 'en',
+			link: {
+				label: 'Folien herunterladen (PowerPoint)',
+				url: 'downloads/BlindDate_Turn24.pptx',
+				download: true
+			},
+			category: 'Sonstige Veröffentlichungen',
+			apa: `
+			<span class="apa-publication">
+				Böhm, A., Piskorek, P. & Egger, N. (2024).
+				<em>Ein BlindDate mit virtuellen Studierenden im digitalen Lern- und Begegnungsraum</em>
+				<span lang="en">[Short Presentation]. Turn Conference, Berlin, Germany</span>.
+				<a href="https://shuffle-projekt.de/downloads/BlindDate_Turn24.pptx">https://shuffle-projekt.de/downloads/BlindDate_Turn24.pptx</a>
+			</span>
+			`
 		}
 	]
 };
