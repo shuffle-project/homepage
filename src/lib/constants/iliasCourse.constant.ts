@@ -1,4 +1,5 @@
 import type { Project } from '$lib/interfaces/project.interface';
+import { LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS } from './generalPublications.constant';
 
 export const ILIAS_COURSE: Project = {
 	id: 'ilias-barrierefrei',
@@ -24,5 +25,6 @@ export const ILIAS_COURSE: Project = {
 			domain: 'ph-freiburg.de'
 		},
 		contactName: 'dem SHUFFLE Freiburg Team'
-	}
+	},
+	publications: [LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS]
 };

@@ -1,4 +1,8 @@
 import type { Project } from '$lib/interfaces/project.interface';
+import {
+	GESCHICHTEN_DER_ZUGAENGLICHKEIT,
+	LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS
+} from './generalPublications.constant';
 
 export const ACCESSIBLE_MOODLE_COURSE: Project = {
 	id: 'barrierefreie-moodle-kurse',
@@ -43,6 +47,8 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 				<em>#MoodleKannMehr: - nicht nur im Distanzunterricht!,</em>
 				(pp. 105-108). Visual Ink Publishing.
 			</span>`
-		}
+		},
+		GESCHICHTEN_DER_ZUGAENGLICHKEIT,
+		LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS
 	]
 };

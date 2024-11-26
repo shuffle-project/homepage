@@ -8,12 +8,18 @@
 	import TitleSection from '../../../lib/components/TitleSection.svelte';
 
 	let unsortedAllPublications: Publication[] = [...GENERAL_PUBLICATIONS];
+	const publicationTitles = new Set<string>();
 
 	ALL_PROJECTS.forEach((project) => {
-		if ('publications' in project) unsortedAllPublications.push(...project.publications!);
+		if ('publications' in project) {
+			project.publications!.forEach((pub) => {
+				if (!publicationTitles.has(pub.title)) {
+					unsortedAllPublications.push(pub);
+					publicationTitles.add(pub.title);
+				}
+			});
+		}
 	});
-
-	console.log(unsortedAllPublications);
 
 	let publicationPaper: Publication[] = [];
 	let publicationWorkshops: Publication[] = [];

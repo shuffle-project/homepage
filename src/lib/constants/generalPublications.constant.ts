@@ -40,3 +40,46 @@ export const GENERAL_PUBLICATIONS: Publication[] = [
         </span>`
 	}
 ];
+
+// Publications that are part of several different projects
+
+export const GESCHICHTEN_DER_ZUGAENGLICHKEIT: Publication = {
+	title: 'Geschichten der Zugänglichkeit – Digital barrierefreie Hochschule',
+	titleLang: 'de',
+	releaseDate: '2024-06',
+	contributors: ['Judith Kuhlmann', 'Sarah Bergmann'],
+	placeOfPublication: 'University:Future Festival',
+	placeOfPublicationLang: 'en',
+	category: 'Sonstige Veröffentlichungen',
+	link: {
+		label: 'Zur Aufnahme (YouTube)',
+		url: 'https://www.youtube.com/watch?v=4we2jfmzMXg&list=PLDE3NyZgHoK52iHqxk9CWDqocG2fxEf8Y'
+	},
+	apa: `
+	<span class="apa-publication">
+		Kuhlmann, J. & Bergmann, S. (2024). <em>Geschichten der Zugänglichkeit – Digital barrierefreie Hochschule</em> [Input]. <span lang="en">University:Future Festival, digital stage</span>.
+		<a href="https://www.youtube.com/watch?v=4we2jfmzMXg&list=PLDE3NyZgHoK52iHqxk9CWDqocG2fxEf8Y">https://www.youtube.com/watch?v=4we2jfmzMXg&list=PLDE3NyZgHoK52iHqxk9CWDqocG2fxEf8Y</a>
+	</span>
+	`
+};
+
+export const LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS: Publication = {
+	title: 'Lernmanagementsysteme Moodle und Ilias barrierefrei gestalten',
+	titleLang: 'de',
+	releaseDate: '2024-11',
+	contributors: ['Judith Kuhlmann', 'Kim Althoff', 'Hakan Ali Cetin'],
+	placeOfPublication: 'Turn Conference',
+	placeOfPublicationLang: 'en',
+	category: 'Sonstige Veröffentlichungen',
+	link: {
+		label: 'Folien herunterladen (PDF)',
+		url: 'downloads/Lernmanagementsysteme_TURN24.pdf',
+		download: true
+	},
+	apa: `
+		<span class="apa-publication">
+			Kuhlmann, J., Althoff, K. & Cetin, H. A. (2024). <em>Lernmanagementsysteme Moodle und Ilias barrierefrei gestalten</em> <span lang="en">[Short Presentation]. Turn Conference, Berlin, Germany</span>.
+			<a href="https://shuffle-projekt.de/downloads/Lernmanagementsysteme_TURN24.pdf">https://shuffle-projekt.de/downloads/Lernmanagementsysteme_TURN24.pdf</a>
+		</span>
+	`
+};

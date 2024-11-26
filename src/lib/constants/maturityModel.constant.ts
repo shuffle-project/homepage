@@ -166,8 +166,8 @@ export const MATURITY_MODEL: Project = {
 			titleLang: 'de',
 			releaseDate: '2023-04',
 			contributors: ['Ann-Katrin Böhm', 'Christin Stormer'],
-			placeOfPublication: 'Lightning Talk auf dem University:Future Festival',
-			placeOfPublicationLang: 'de',
+			placeOfPublication: 'University:Future Festival',
+			placeOfPublicationLang: 'en',
 			link: {
 				label: 'Zur Aufnahme (YouTube)',
 				url: 'https://www.youtube.com/watch?v=i6yikMDgwSE#t=06m35s)'
@@ -188,8 +188,8 @@ export const MATURITY_MODEL: Project = {
 			titleLang: 'de',
 			releaseDate: '2024-06',
 			contributors: ['Nadine Auer'],
-			placeOfPublication: 'Vortrag auf dem University:Future Festival',
-			placeOfPublicationLang: 'de',
+			placeOfPublication: 'University:Future Festival',
+			placeOfPublicationLang: 'en',
 			link: {
 				label: 'Zur Aufnahme (YouTube)',
 				url: 'https://www.youtube.com/live/UbVegfQEUTU?feature=shared&t=22206'

@@ -1,4 +1,5 @@
 import type { Project } from '$lib/interfaces/project.interface';
+import { GESCHICHTEN_DER_ZUGAENGLICHKEIT } from './generalPublications.constant';
 
 export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
 	// id: 'digitale-barrierefreiheit-an-hochschulen',
@@ -23,5 +24,6 @@ export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
 			domain: 'uni-bielefeld.de'
 		},
 		contactName: 'Judith Kuhlmann'
-	}
+	},
+	publications: [GESCHICHTEN_DER_ZUGAENGLICHKEIT]
 };

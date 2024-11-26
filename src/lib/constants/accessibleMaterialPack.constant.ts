@@ -1,4 +1,5 @@
 import type { Project } from '$lib/interfaces/project.interface';
+import { GESCHICHTEN_DER_ZUGAENGLICHKEIT } from './generalPublications.constant';
 
 export const ACCESSIBLE_MATERIAL_PACK: Project = {
 	id: 'materialpaket-barrierefreie-lehre',
@@ -80,7 +81,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 			titleLang: 'de',
 			releaseDate: '2023-09',
 			contributors: ['Judith Kuhlmann, Anna-Maria Kamin, Dustin Matzel, Michael Johannfunke'],
-			placeOfPublication: 'Turn Conference ’23 Prototyp Zukunft',
+			placeOfPublication: 'Turn Conference',
 			placeOfPublicationLang: 'de',
 			category: 'Sonstige Veröffentlichungen',
 			link: {
@@ -93,7 +94,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 				<em>
 					Sensibilisierung und Qualifizierung von Lehrenden für die digitale Barrierefreiheit
 				</em>
-				<span lang="en">[Presentation]</span>. Turn Conference ’23 Prototyp Zukunft, <span>Cologne, Germany</span>.
+				<span lang="en">[Presentation]</span>. Turn Conference, <span>Cologne, Germany</span>.
 				<a href="https://shuffle-projekt.de/downloads/Praesentation_TURN23_barrierefrei.pptx"
 					>https://shuffle-projekt.de/downloads/Praesentation_TURN23_barrierefrei.pptx</a
 				>
@@ -119,6 +120,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 				<a href="https://link.springer.com/chapter/10.1007/978-3-031-61947-2_8">https://link.springer.com/chapter/10.1007/978-3-031-61947-2_8</a>
 			</span>
 			`
-		}
+		},
+		GESCHICHTEN_DER_ZUGAENGLICHKEIT
 	]
 };
