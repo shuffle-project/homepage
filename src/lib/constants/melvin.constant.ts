@@ -17,10 +17,10 @@ export const MELVIN: Project = {
 		title: 'Melvin ausprobieren',
 		introduction:
 			'Melvin befindet sich aktuell noch in der Entwicklung. Falls Sie trotzdem schon mal die aktuelle Version ausprobieren möchten, können Sie sich gerne bei der folgenden Kontaktperson melden.',
-		contactName: 'Korbinian Kuhn',
+		contactName: 'dem Melvin-Team',
 		contact: {
-			short: 'kuhnko',
-			domain: 'hdm-stuttgart.de'
+			short: 'melvin',
+			domain: 'shuffle-projekt.de'
 		}
 	},
 	publications: [
