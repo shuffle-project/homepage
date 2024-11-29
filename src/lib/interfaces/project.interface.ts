@@ -81,6 +81,10 @@ export interface Project {
 		url: string;
 		label: string;
 	};
+	additionalLink?: {
+		url: string;
+		label: string;
+	};
 	summary: string;
 	partners: ProjectPartners[];
 	subProjects?: SubProject[];

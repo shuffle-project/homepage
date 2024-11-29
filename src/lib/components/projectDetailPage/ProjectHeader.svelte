@@ -31,9 +31,19 @@
 			</ul>
 		</div>
 	</div>
-	{#if project.link}
+	{#if project.link && !project.additionalLink}
 		<div class="link-to-project">
 			<Link invertedStyle link={project.link.url}>{project.link.label}</Link>
+		</div>
+	{/if}
+	{#if project.link && project.additionalLink}
+		<div class="link-to-project-wrapper">
+			<div class="secondary">
+				<Link secondaryStyle link={project.additionalLink.url}>{project.additionalLink.label}</Link>
+			</div>
+			<div class="primary">
+				<Link invertedStyle link={project.link.url}>{project.link.label}</Link>
+			</div>
 		</div>
 	{/if}
 
@@ -132,6 +142,13 @@
 		.link-to-project {
 			position: absolute;
 			inset: auto 1.875rem 1.875rem auto;
+		}
+
+		.link-to-project-wrapper {
+			display: flex;
+			gap: 0.5rem;
+			justify-content: flex-end;
+			flex-wrap: wrap;
 		}
 
 		.in-development-info {

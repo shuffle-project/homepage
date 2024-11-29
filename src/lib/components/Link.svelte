@@ -6,6 +6,7 @@
 	export let details = '';
 	export let detailsLang: 'de' | 'en' = 'de';
 	export let invertedStyle = false;
+	export let secondaryStyle = false;
 	export let download = false;
 	export let allowReferrer = false;
 </script>
@@ -14,6 +15,7 @@
 	<a
 		href={link}
 		class:invertedStyle
+		class:secondaryStyle
 		target="_blank"
 		rel={allowReferrer ? 'noopener no-referrer-when-downgrade' : 'noopener noreferrer'}
 	>
@@ -45,7 +47,15 @@
 		&.invertedStyle {
 			color: var(--color-white);
 			background-color: var(--color-blue);
-			padding: 0.25rem 0.5rem;
+			padding: 0.375rem 0.5rem;
+			border: 1px solid var(--color-blue);
+		}
+
+		&.secondaryStyle {
+			color: var(--color-blue);
+			border: 1px solid var(--color-blue);
+			background-color: var(--color-white);
+			padding: 0.375rem 0.5rem;
 		}
 	}
 
