@@ -73,6 +73,7 @@ export type WebinarComponent = ObjectValues<typeof WEBINAR_COMPONENTS>;
 export interface Project {
 	id: string;
 	title: string;
+	longTitle?: string;
 	category: string;
 	shortSummary: string;
 	showInDevelopmentInfo?: boolean;

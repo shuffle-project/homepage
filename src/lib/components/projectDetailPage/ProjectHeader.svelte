@@ -13,7 +13,11 @@
 		</div>
 		<div class="project-details">
 			<div class="title">
-				<h1>{@html project.title}</h1>
+				{#if project.longTitle}
+					<h1>{@html project.longTitle}</h1>
+				{:else}
+					<h1>{@html project.title}</h1>
+				{/if}
 			</div>
 			<p>{@html project.summary}</p>
 

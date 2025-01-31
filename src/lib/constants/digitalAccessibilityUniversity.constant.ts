@@ -2,10 +2,10 @@ import type { Project } from '$lib/interfaces/project.interface';
 import { GESCHICHTEN_DER_ZUGAENGLICHKEIT } from './generalPublications.constant';
 
 export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
-	// id: 'digitale-barrierefreiheit-an-hochschulen',
 	id: 'handlungsfelder-digitale-inklusion',
-	// title: 'Digitale Barrierefreiheit an Hochschulen',
-	title: 'Handlungsfelder digitale Inklusion',
+	title: 'Barrierefreiheit gestalten',
+	longTitle:
+		'Barrierefreiheit gestalten: Handlungsempfehlungen und Beispiele aus der Hochschulpraxis',
 	category: 'Moodle-Kurs',
 	shortSummary:
 		// 'Handlungsempfehlungen zur strategischen und systematischen Stärkung von digitaler Barrierefreiheit.',

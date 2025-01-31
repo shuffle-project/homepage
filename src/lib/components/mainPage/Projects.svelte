@@ -47,8 +47,6 @@
 				selectedProjects = ALL_PROJECTS;
 				break;
 		}
-
-		console.log(selectedProjects);
 	}
 </script>
 
