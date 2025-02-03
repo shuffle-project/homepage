@@ -6,6 +6,7 @@ import { DIGITAL_ACCESSIBILITY_UNIVERSITY } from './digitalAccessibilityUniversi
 import { IAAP_TOOLKITS } from './iaapToolkits.constant';
 import { ILIAS_COURSE } from './iliasCourse.constant';
 import { MATURITY_MODEL } from './maturityModel.constant';
+import { EASY_WEB_CHECK } from './easyWebCheck.constant';
 import { MELVIN } from './melvin.constant';
 import { MOOC_COURSES } from './moocCourses.constant';
 
@@ -26,7 +27,7 @@ export const TEACHING_PROJECTS = [
 	DIGITAL_ACCESSIBILITY_UNIVERSITY
 ];
 export const STRATEGY_PROJECTS = [MATURITY_MODEL, DIGITAL_ACCESSIBILITY_UNIVERSITY];
-export const IT_PROJECTS = [MELVIN, MATURITY_MODEL, DIGITAL_ACCESSIBILITY_UNIVERSITY];
+export const IT_PROJECTS = [MELVIN, MATURITY_MODEL, DIGITAL_ACCESSIBILITY_UNIVERSITY, EASY_WEB_CHECK];
 export const CERTIFICATION_PROJECTS = [
 	CERTIFICATE_COURSE,
 	IAAP_TOOLKITS,
