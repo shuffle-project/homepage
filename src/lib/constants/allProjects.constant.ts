@@ -8,6 +8,8 @@ import { ILIAS_COURSE } from './iliasCourse.constant';
 import { MATURITY_MODEL } from './maturityModel.constant';
 import { MELVIN } from './melvin.constant';
 import { MOOC_COURSES } from './moocCourses.constant';
+import { EASY_WEB_CHECK } from './easyWebCheck.constant';
+
 
 export const ALL_PROJECTS = [
 	MATURITY_MODEL,
@@ -21,5 +23,7 @@ export const ALL_PROJECTS = [
 	DIGITAL_ACCESSIBILITY_UNIVERSITY,
 
 	MOOC_COURSES,
-	IAAP_TOOLKITS
+	IAAP_TOOLKITS,
+
+	EASY_WEB_CHECK,
 ];
