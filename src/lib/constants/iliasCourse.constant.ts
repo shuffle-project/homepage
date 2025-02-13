@@ -4,7 +4,6 @@ import { LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS } from './generalPublications.co
 export const ILIAS_COURSE: Project = {
 	id: 'ilias-barrierefrei',
 	title: 'ILIAS Barrierefrei',
-	category: 'ILIAS-Kurs',
 	shortSummary:
 		'Informationen, Beispiele und Ressourcen zum Thema (digitale) Barrierefreiheit in und um ILIAS.',
 	summary:

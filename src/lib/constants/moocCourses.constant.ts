@@ -3,9 +3,7 @@ import type { Project } from '$lib/interfaces/project.interface';
 export const MOOC_COURSES: Project = {
 	id: 'barrierefreiheit-lehren-und-web',
 	title: 'Barrierefreiheit: Lehren & Web',
-	category: 'Moodle-Kurs',
 	shortSummary:
-		// 'Diese Kurse konzentrieren sich auf das Verständnis und die Umsetzung der digitalen Barrierefreiheit in der Hochschulbildung.',
 		'Lernkurse für Studierende und Lehrende zu digitaler Barrierefreiheit und deren technischer Umsetzung.',
 	summary:
 		'Der Kursinhalt wurde in Zusammenarbeit mit dem ERAMUS+ Projekt <span lang="en">IWAC (Integration of Web Accessibility Courses in ICT Programs)</span> entwickelt. Die EU-Richtlinie zur Barrierefreiheit im Web (2016/2102) legt Standards für die Barrierefreiheit aller Websites und Apps des öffentlichen Sektors fest. Zu den wichtigsten Zielgruppen für die Verbesserung der professionellen Kenntnisse und Fähigkeiten im Bereich Barrierefreiheit gehören Hochschullehrer und Studierende in IKT-Studiengängen.',

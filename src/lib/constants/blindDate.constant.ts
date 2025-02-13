@@ -3,7 +3,6 @@ import type { Project } from '$lib/interfaces/project.interface';
 export const BLINDDATE: Project = {
 	id: 'blinddate',
 	title: 'BlindDate',
-	category: 'Begegnungsplattform',
 	shortSummary:
 		'Virtuelle Studierende mit Beeinträchtigungen geben einen Einblick in ihren Studien&shy;alltag.',
 	summary:

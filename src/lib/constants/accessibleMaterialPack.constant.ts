@@ -4,7 +4,6 @@ import { GESCHICHTEN_DER_ZUGAENGLICHKEIT } from './generalPublications.constant'
 export const ACCESSIBLE_MATERIAL_PACK: Project = {
 	id: 'materialpaket-barrierefreie-lehre',
 	title: 'Materialpaket Lehre',
-	category: 'Moodle-Kurs',
 	shortSummary:
 		'Checklisten und Anleitungen zur Umsetzung barrierefreier Dokumente und Lehr-/Lernsettings.',
 	link: {

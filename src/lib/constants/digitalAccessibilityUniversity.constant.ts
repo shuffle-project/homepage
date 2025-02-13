@@ -6,7 +6,6 @@ export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
 	title: 'Barrierefreiheit gestalten',
 	longTitle:
 		'Barrierefreiheit gestalten: Handlungsempfehlungen und Beispiele aus der Hochschulpraxis',
-	category: 'Moodle-Kurs',
 	shortSummary:
 		// 'Handlungsempfehlungen zur strategischen und systematischen Stärkung von digitaler Barrierefreiheit.',
 		'Empfehlungen und Good Practices zur systematischen Stärkung von digitaler Inklusion an Hochschulen.',

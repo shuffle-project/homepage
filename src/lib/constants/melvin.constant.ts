@@ -3,7 +3,6 @@ import type { Project } from '$lib/interfaces/project.interface';
 export const MELVIN: Project = {
 	id: 'melvin',
 	title: 'Melvin',
-	category: 'Barrierefreie Videos',
 	shortSummary:
 		'Schnell und einfach Videos mit Untertiteln erstellen und in einem barrierefreien Video-Player teilen.',
 	link: {

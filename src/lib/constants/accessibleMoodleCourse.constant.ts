@@ -7,7 +7,6 @@ import {
 export const ACCESSIBLE_MOODLE_COURSE: Project = {
 	id: 'barrierefreie-moodle-kurse',
 	title: 'Moodle Barrierefrei',
-	category: 'Moodle-Kurs',
 	shortSummary:
 		'Informationen und Umsetz&shy;ungshilfen zur barrierefreien Gestaltung von Moodle-Kursen.',
 	link: {

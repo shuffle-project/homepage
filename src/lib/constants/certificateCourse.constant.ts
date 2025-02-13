@@ -3,7 +3,6 @@ import type { Project } from '$lib/interfaces/project.interface';
 export const CERTIFICATE_COURSE: Project = {
 	id: 'lernkurs-knowledge-badge',
 	title: 'Knowledge Badge: Barrierefrei lehren',
-	category: 'Moodle-Kurs',
 	shortSummary:
 		'Weiterbildungskurs für Hochschullehrende zum Thema digitale Barrierefreiheit (plus optionaler Prüfung).',
 	summary:

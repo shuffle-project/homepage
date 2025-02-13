@@ -3,7 +3,6 @@ import type { Project } from '$lib/interfaces/project.interface';
 export const IAAP_TOOLKITS: Project = {
 	id: 'iaap-toolkits',
 	title: 'IAAP-Toolkits',
-	category: 'Toolbox',
 	shortSummary:
 		// 'Diese Ressourcen wurden mit IAAP-DACH entwickelt, um Barrierefreiheits-Zertifizierungsinfos bereitzustellen.',
 		'Leitfaden zur Zertifizierung im Bereich Barrierefreiheit in Kooperation mit IAAP-DACH.',

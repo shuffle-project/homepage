@@ -74,7 +74,6 @@ export interface Project {
 	id: string;
 	title: string;
 	longTitle?: string;
-	category: string;
 	shortSummary: string;
 	showInDevelopmentInfo?: boolean;
 	webinar?: WebinarComponent;

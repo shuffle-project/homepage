@@ -3,7 +3,6 @@ import type { Project } from '$lib/interfaces/project.interface';
 export const EASY_WEB_CHECK: Project = {
 	id: 'easy-web-check',
 	title: 'Easy-Web-Check',
-	category: 'IT und Technik',
 	shortSummary:
 		'Schnell und einfach die Barrierefreiheit digitaler Inhalte prüfen und dokumentieren.',
 	link: {
