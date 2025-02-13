@@ -26,10 +26,10 @@
 		<Icon svg="open-in-new-tab" size="20" color={invertedStyle ? 'white' : 'blue'} />
 	</a>
 {:else}
-	<a href={base + '/' + link} download>
+	<a href={base + '/' + link} download class:invertedStyle class:secondaryStyle>
 		<span aria-hidden="true"><slot /></span>
 		<span class="sr-only"><slot /><span lang={detailsLang}>{details}</span></span>
-		<Icon svg="download" size="20" color="blue" />
+		<Icon svg="download" size="20" color={invertedStyle ? 'white' : 'blue'} />
 	</a>
 {/if}
 

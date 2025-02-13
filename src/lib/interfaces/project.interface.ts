@@ -86,6 +86,14 @@ export interface Project {
 		url: string;
 		label: string;
 	};
+	download?: {
+		url: string;
+		label: string;
+	};
+	additionalDownload?: {
+		url: string;
+		label: string;
+	};
 	summary: string;
 	partners: ProjectPartners[];
 	subProjects?: SubProject[];

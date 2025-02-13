@@ -35,19 +35,24 @@
 			</ul>
 		</div>
 	</div>
-	{#if project.link && !project.additionalLink}
-		<div class="link-to-project">
-			<Link invertedStyle link={project.link.url}>{project.link.label}</Link>
+	{#if project.download}
+		<div class="link-to-project-wrapper">
+			{#if project.additionalDownload}
+				<Link download secondaryStyle link={project.additionalDownload.url}
+					>{project.additionalDownload.label}</Link
+				>
+			{/if}
+			<Link download invertedStyle link={project.download.url}>{project.download.label}</Link>
 		</div>
 	{/if}
-	{#if project.link && project.additionalLink}
+
+	{#if project.link}
 		<div class="link-to-project-wrapper">
-			<div class="secondary">
+			{#if project.additionalLink}
 				<Link secondaryStyle link={project.additionalLink.url}>{project.additionalLink.label}</Link>
-			</div>
-			<div class="primary">
-				<Link invertedStyle link={project.link.url}>{project.link.label}</Link>
-			</div>
+			{/if}
+
+			<Link invertedStyle link={project.link.url}>{project.link.label}</Link>
 		</div>
 	{/if}
 
@@ -143,11 +148,6 @@
 			}
 		}
 
-		.link-to-project {
-			position: absolute;
-			inset: auto 1.875rem 1.875rem auto;
-		}
-
 		.link-to-project-wrapper {
 			display: flex;
 			gap: 0.5rem;
@@ -172,17 +172,6 @@
 					height: 10rem;
 					padding: 1.25rem 2.5rem;
 				}
-			}
-
-			&:has(.link-to-project) {
-				.upper-part {
-					margin-bottom: 3rem;
-				}
-			}
-
-			.link-to-project {
-				inset: auto 1.875rem 1.875rem auto;
-				margin-left: 1.875rem;
 			}
 		}
 	}
