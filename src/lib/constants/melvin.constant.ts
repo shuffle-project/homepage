@@ -19,7 +19,7 @@ export const MELVIN: Project = {
 		contactName: 'dem Melvin-Team',
 		contact: {
 			short: 'melvin',
-			domain: 'shuffle-projekt.de'
+			domain: 'hdm-stuttgart.de'
 		}
 	},
 	publications: [

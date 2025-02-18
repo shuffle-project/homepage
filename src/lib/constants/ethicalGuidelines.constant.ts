@@ -10,11 +10,11 @@ export const ETHICAL_GUIDELINES: Project = {
 	showInDevelopmentInfo: false,
 	partners: ['Hochschule der Medien Stuttgart'],
 	download: {
-		url: '',
+		url: 'https://shuffle-projekt.de/downloads/EthischeLeitlinien_SHUFFLE.pdf',
 		label: 'Leitlininen (PDF)'
 	},
 	additionalDownload: {
-		url: '',
+		url: 'https://shuffle-projekt.de/downloads/EthischeLeitlinien_SHUFFLE_leichteSprache.pdf',
 		label: 'Leitlinien (Leichte Sprache, PDF)'
 	}
 };

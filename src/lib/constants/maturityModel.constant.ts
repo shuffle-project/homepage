@@ -32,10 +32,10 @@ export const MATURITY_MODEL: Project = {
 		introduction:
 			'Das Reifegradmodell kann momentan in einer ersten Pilotphase getestet werden. Wenn Sie es an Ihrer Hochschule einsetzen möchten, kontaktieren Sie uns gerne. Sie erhalten dann die Dokumente zur Anwendung des Reifegradmodells. Auch bei allgemeinen Fragen zu unserem Reifegradmodell können Sie sich jederzeit an uns wenden.',
 		contact: {
-			short: 'auer',
+			short: 'shuffle-rgm',
 			domain: 'hdm-stuttgart.de'
 		},
-		contactName: 'Nadine Auer'
+		contactName: 'dem RGM-Team'
 	},
 	publications: [
 		{
