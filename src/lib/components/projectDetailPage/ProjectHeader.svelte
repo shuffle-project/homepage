@@ -38,11 +38,12 @@
 	{#if project.download}
 		<div class="link-to-project-wrapper">
 			{#if project.additionalDownload}
-				<Link download secondaryStyle link={project.additionalDownload.url}
+				<Link noBase download secondaryStyle link={project.additionalDownload.url}
 					>{project.additionalDownload.label}
 				</Link>
 			{/if}
-			<Link download invertedStyle link={project.download.url}>{project.download.label}</Link>
+			<Link noBase download invertedStyle link={project.download.url}>{project.download.label}</Link
+			>
 		</div>
 	{/if}
 

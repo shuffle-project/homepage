@@ -9,6 +9,7 @@
 	export let secondaryStyle = false;
 	export let download = false;
 	export let allowReferrer = false;
+	export let noBase = false;
 </script>
 
 {#if !download}
@@ -26,7 +27,7 @@
 		<Icon svg="open-in-new-tab" size="20" color={invertedStyle ? 'white' : 'blue'} />
 	</a>
 {:else}
-	<a href={base + '/' + link} download class:invertedStyle class:secondaryStyle>
+	<a href={!noBase ? base + '/' + link : link} download class:invertedStyle class:secondaryStyle>
 		<span aria-hidden="true"><slot /></span>
 		<span class="sr-only"><slot /><span lang={detailsLang}>{details}</span></span>
 		<Icon svg="download" size="20" color={invertedStyle ? 'white' : 'blue'} />
