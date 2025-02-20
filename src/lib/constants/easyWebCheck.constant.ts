@@ -19,7 +19,7 @@ export const EASY_WEB_CHECK: Project = {
 		contactName: 'dem Easy-Web-Check-Team',
 		contact: {
 			short: 'ewc',
-			domain: 'bf-lernen.de'
+			domain: 'hdm-stuttgart.de'
 		}
 	}
 };
