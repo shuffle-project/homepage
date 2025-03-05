@@ -2,8 +2,12 @@
 	import { base } from '$app/paths';
 	import type { Image } from '$lib/interfaces/project.interface';
 
-	export let gallery: Image[];
-	export let projectId: string;
+	interface Props {
+		gallery: Image[];
+		projectId: string;
+	}
+
+	let { gallery, projectId }: Props = $props();
 </script>
 
 <div class="wrapper">
@@ -13,7 +17,7 @@
 			<div class="image" role="group">
 				<img id="img-{projectId}-{i}" src="{base}/gallery/{projectId}/{image.src}" alt="" />
 			</div>
-			<div class="line" />
+			<div class="line"></div>
 			<figcaption class="description">
 				<p>{image.description}</p>
 			</figcaption>

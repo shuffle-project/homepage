@@ -2,14 +2,14 @@
 	import Icon from '../Icon.svelte';
 	import SidebarMenu from './SidebarMenu.svelte';
 
-	let sidebarMenu: SidebarMenu;
+	let sidebarMenu: SidebarMenu | undefined = $state();
 
-	function toggleSidebarMenuDisplay() {
-		sidebarMenu.toggleDisplay();
+	function toggleSidebarMenuDisplay(e: Event) {
+		sidebarMenu?.toggleDisplay(e);
 	}
 </script>
 
-<button on:click={() => toggleSidebarMenuDisplay()} aria-label="Hauptmenü öffnen">
+<button onclick={(e) => toggleSidebarMenuDisplay(e)} aria-label="Hauptmenü öffnen">
 	<Icon svg="menu" size="parent" />
 </button>
 

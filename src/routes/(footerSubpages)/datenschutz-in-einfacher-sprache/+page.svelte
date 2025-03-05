@@ -7,7 +7,9 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Datenschutz<wbr />erklärung in einfacher Sprache</svelte:fragment>
+	{#snippet title()}
+		Datenschutz<wbr />erklärung in einfacher Sprache
+	{/snippet}
 </TitleSection>
 
 <div class="page-content headings-with-padding">

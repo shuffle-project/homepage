@@ -1,3 +1,5 @@
+<!-- @migration-task Error while migrating Svelte code: `<tr>` cannot be a child of `<table>`. `<table>` only allows these children: `<caption>`, `<colgroup>`, `<tbody>`, `<thead>`, `<tfoot>`, `<style>`, `<script>`, `<template>`. The browser will 'repair' the HTML (by moving, removing, or inserting elements) which breaks Svelte's assumptions about the structure of your components.
+https://svelte.dev/e/node_invalid_placement -->
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Icon from '../Icon.svelte';
@@ -111,7 +113,6 @@
 	>
 		<Icon svg="subtitles" />
 	</button>
-	<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 	<dialog class="caption-menu" bind:this={captionMenu} on:keyup={(e) => handleKeyEvent(e)}>
 		<ul>
 			<li>
@@ -121,7 +122,7 @@
 							<Icon svg="check" />
 						</div>
 					{:else}
-						<div class="icon" />
+						<div class="icon"></div>
 					{/if}
 					Untertitel ausschalten</button
 				>
@@ -137,14 +138,14 @@
 								<Icon svg="check" />
 							</div>
 						{:else}
-							<div class="icon" />
+							<div class="icon"></div>
 						{/if}
 						{track.label}
 					</button>
 				</li>
 			{/each}
 			<li>
-				<button on:click|stopPropagation={() => modal.toggleDisplay()}>
+				<button on:click={(e) => modal.toggleDisplay(e)}>
 					<div class="icon">
 						<Icon svg="settings" />
 					</div>
@@ -155,7 +156,91 @@
 	</dialog>
 
 	<Modal bind:this={modal}>
-		<svelte:fragment slot="headline">Untertitel Einstellungen</svelte:fragment>
+		{#snippet headline()}
+			Untertitel Einstellungen
+		{/snippet}
+
+		{#snippet content()}
+			<div class="modal-content">
+				<div class="hint-wrapper">
+					<div class="hint">
+						<Icon svg="attention" />
+						<strong>Hinweis</strong>
+					</div>
+
+					<p class="hint-text">
+						Die ausgewählten Einstellungen werden direkt übernommen. In gewissen Internetbrowser
+						Betriebssystem Kombinationen kann es dazu kommen, dass die Änderung der Hintergrundfarbe
+						nicht übernommen wird.
+					</p>
+				</div>
+
+				<table class="style-selection" role="presentation">
+					<tbody>
+						<tr>
+							<td><label for="selectBackgroundColor">Hintergrundfarbe der Untertitel</label></td>
+							<td>
+								<select
+									id="selectBackgroundColor"
+									bind:value={captionsBackgroundColor}
+									on:click|stopPropagation
+									title="Untertitel Hintergrundfarbe"
+									class="custom-select"
+								>
+									<option on:click|stopPropagation value="black">schwarz</option>
+									<option on:click|stopPropagation value="red">rot</option>
+									<option on:click|stopPropagation value="yellow">gelb</option>
+									<option on:click|stopPropagation value="white">weiß</option>
+									<option on:click|stopPropagation value="blue">blau</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="selectFontColor">Schriftfarbe der Untertitel</label></td>
+							<td>
+								<select
+									id="selectFontColor"
+									class="custom-select"
+									bind:value={captionsFontColor}
+									on:click|stopPropagation
+									title="Untertitel Schriftfarbe"
+								>
+									<option on:click|stopPropagation value="black">schwarz</option>
+									<option on:click|stopPropagation value="red">rot</option>
+									<option on:click|stopPropagation value="yellow">gelb</option>
+									<option on:click|stopPropagation value="white">weiß</option>
+									<option on:click|stopPropagation value="blue">blau</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="selectFontSize">Schriftgröße der Untertitel</label></td>
+							<td>
+								<select
+									id="selectFontSize"
+									class="custom-select"
+									bind:value={captionsFontSize}
+									on:click|stopPropagation
+									title="Untertitel Schriftgröße"
+								>
+									<option on:click|stopPropagation value="small">klein</option>
+									<option on:click|stopPropagation value="medium">normal</option>
+									<option on:click|stopPropagation value="large">groß</option>
+									<option on:click|stopPropagation value="larger">größer</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p
+					class="exampleText example-{captionsFontSize} bg-{captionsBackgroundColor} fc-{captionsFontColor}"
+				>
+					So werden die Untertitel angezeigt
+				</p>
+			</div>
+		{/snippet}
+		<!-- <svelte:fragment slot="headline">Untertitel Einstellungen</svelte:fragment>
 		<svelte:fragment slot="content">
 			<div class="modal-content">
 				<div class="hint-wrapper">
@@ -172,69 +257,70 @@
 				</div>
 
 				<table class="style-selection" role="presentation">
-					<tr>
-						<td><label for="selectBackgroundColor">Hintergrundfarbe der Untertitel</label></td>
-						<td>
-							<select
-								id="selectBackgroundColor"
-								bind:value={captionsBackgroundColor}
-								on:click|stopPropagation
-								title="Untertitel Hintergrundfarbe"
-								class="custom-select"
-							>
-								<option on:click|stopPropagation value="black">schwarz</option>
-								<option on:click|stopPropagation value="red">rot</option>
-								<option on:click|stopPropagation value="yellow">gelb</option>
-								<option on:click|stopPropagation value="white">weiß</option>
-								<option on:click|stopPropagation value="blue">blau</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td><label for="selectFontColor">Schriftfarbe der Untertitel</label></td>
-						<td>
-							<select
-								id="selectFontColor"
-								class="custom-select"
-								bind:value={captionsFontColor}
-								on:click|stopPropagation
-								title="Untertitel Schriftfarbe"
-							>
-								<option on:click|stopPropagation value="black">schwarz</option>
-								<option on:click|stopPropagation value="red">rot</option>
-								<option on:click|stopPropagation value="yellow">gelb</option>
-								<option on:click|stopPropagation value="white">weiß</option>
-								<option on:click|stopPropagation value="blue">blau</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td><label for="selectFontSize">Schriftgröße der Untertitel</label></td>
-						<td>
-							<select
-								id="selectFontSize"
-								class="custom-select"
-								bind:value={captionsFontSize}
-								on:click|stopPropagation
-								title="Untertitel Schriftgröße"
-							>
-								<option on:click|stopPropagation value="small">klein</option>
-								<option on:click|stopPropagation value="medium">normal</option>
-								<option on:click|stopPropagation value="large">groß</option>
-								<option on:click|stopPropagation value="larger">größer</option>
-							</select>
-						</td>
-					</tr>
+					<tbody>
+						<tr>
+							<td><label for="selectBackgroundColor">Hintergrundfarbe der Untertitel</label></td>
+							<td>
+								<select
+									id="selectBackgroundColor"
+									bind:value={captionsBackgroundColor}
+									on:click|stopPropagation
+									title="Untertitel Hintergrundfarbe"
+									class="custom-select"
+								>
+									<option on:click|stopPropagation value="black">schwarz</option>
+									<option on:click|stopPropagation value="red">rot</option>
+									<option on:click|stopPropagation value="yellow">gelb</option>
+									<option on:click|stopPropagation value="white">weiß</option>
+									<option on:click|stopPropagation value="blue">blau</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="selectFontColor">Schriftfarbe der Untertitel</label></td>
+							<td>
+								<select
+									id="selectFontColor"
+									class="custom-select"
+									bind:value={captionsFontColor}
+									on:click|stopPropagation
+									title="Untertitel Schriftfarbe"
+								>
+									<option on:click|stopPropagation value="black">schwarz</option>
+									<option on:click|stopPropagation value="red">rot</option>
+									<option on:click|stopPropagation value="yellow">gelb</option>
+									<option on:click|stopPropagation value="white">weiß</option>
+									<option on:click|stopPropagation value="blue">blau</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="selectFontSize">Schriftgröße der Untertitel</label></td>
+							<td>
+								<select
+									id="selectFontSize"
+									class="custom-select"
+									bind:value={captionsFontSize}
+									on:click|stopPropagation
+									title="Untertitel Schriftgröße"
+								>
+									<option on:click|stopPropagation value="small">klein</option>
+									<option on:click|stopPropagation value="medium">normal</option>
+									<option on:click|stopPropagation value="large">groß</option>
+									<option on:click|stopPropagation value="larger">größer</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
 				</table>
 
-				<!-- style="background-color: {captionsBackgroundColor}; color: {captionsFontColor}; " -->
 				<p
 					class="exampleText example-{captionsFontSize} bg-{captionsBackgroundColor} fc-{captionsFontColor}"
 				>
 					So werden die Untertitel angezeigt
 				</p>
 			</div>
-		</svelte:fragment>
+		</svelte:fragment> -->
 	</Modal>
 </div>
 

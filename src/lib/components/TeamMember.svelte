@@ -4,10 +4,14 @@
 	import { onCopyEmailToClipboard } from '$lib/utils/utils';
 	import Icon from './Icon.svelte';
 
-	export let member: TeamMember;
+	interface Props {
+		member: TeamMember;
+	}
 
-	let short = '';
-	let domain = '';
+	let { member }: Props = $props();
+
+	let short = $state('');
+	let domain = $state('');
 
 	if (member.contact) {
 		short = member.contact.short;
@@ -43,13 +47,13 @@
 		<button
 			class="email-button"
 			aria-label="E-Mail Adresse von {member.name} in die Zwischenablage kopieren"
-			on:click={() => onCopyEmailToClipboard(short, domain)}
+			onclick={() => onCopyEmailToClipboard(short, domain)}
 		>
 			<Icon svg="copy" size="16" color="blue" />
 			<span aria-hidden="true">E-Mail Adresse</span>
 		</button>
 	{:else}
-		<div class="email-button-placeholder" />
+		<div class="email-button-placeholder"></div>
 	{/if}
 </li>
 

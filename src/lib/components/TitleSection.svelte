@@ -1,8 +1,16 @@
+<!-- @migration-task Error while migrating Svelte code: This migration would change the name of a slot making the component unusable -->
+<script lang="ts">
+	import type { Snippet } from 'svelte';
+
+	let { title, introText, dgsIcon }: { title: Snippet; introText?: Snippet; dgsIcon?: Snippet } =
+		$props();
+</script>
+
 <div class="title-section-wrapper">
 	<div class="title-section">
-		<h1 class="title"><slot name="title" /></h1>
-		<p class="intro-text"><slot name="intro-text" /></p>
-		<slot name="dgs-icon" />
+		<h1 class="title">{@render title?.()}</h1>
+		<p class="intro-text">{@render introText?.()}</p>
+		<p class="intro-text">{@render dgsIcon?.()}</p>
 	</div>
 </div>
 

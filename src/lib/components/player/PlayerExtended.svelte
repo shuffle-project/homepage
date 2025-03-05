@@ -3,11 +3,15 @@
 	import { getRandomId } from '$lib/utils/utils';
 	import Player from './Player.svelte';
 
-	export let extendedPlayerConfig: ExtendedPlayerConfig;
+	interface Props {
+		extendedPlayerConfig: ExtendedPlayerConfig;
+	}
+
+	let { extendedPlayerConfig }: Props = $props();
 
 	const randomId = getRandomId();
 
-	let selectedTab: number = 1;
+	let selectedTab: number = $state(1);
 
 	let tabcount = extendedPlayerConfig.videos.length + extendedPlayerConfig.transcripts.length;
 
@@ -38,8 +42,8 @@
 				role="tab"
 				aria-selected={selectedTab === index}
 				tabindex={selectedTab === index ? 0 : -1}
-				on:click={() => onSelectTab(index)}
-				on:keydown={onKeyUpTab}
+				onclick={() => onSelectTab(index)}
+				onkeydown={onKeyUpTab}
 			>
 				{video.title}
 			</button>
@@ -52,8 +56,8 @@
 				role="tab"
 				aria-selected={selectedTab === index}
 				tabindex={selectedTab === index ? 0 : -1}
-				on:click={() => onSelectTab(index)}
-				on:keydown={onKeyUpTab}
+				onclick={() => onSelectTab(index)}
+				onkeydown={onKeyUpTab}
 			>
 				{transcript.title}
 			</button>

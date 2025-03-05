@@ -3,7 +3,11 @@
 
 	import Icon from '../Icon.svelte';
 	import Link from '../Link.svelte';
-	export let project: Project;
+	interface Props {
+		project: Project;
+	}
+
+	let { project }: Props = $props();
 </script>
 
 <div class="project-header">

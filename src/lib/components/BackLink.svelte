@@ -2,9 +2,13 @@
 	import { base } from '$app/paths';
 	import Icon from './Icon.svelte';
 
-	export let label = 'Zurück zur Startseite';
-	export let linkTo = '/';
-	export let paddingLeft = true;
+	interface Props {
+		label?: string;
+		linkTo?: string;
+		paddingLeft?: boolean;
+	}
+
+	let { label = 'Zurück zur Startseite', linkTo = '/', paddingLeft = true }: Props = $props();
 </script>
 
 <div>

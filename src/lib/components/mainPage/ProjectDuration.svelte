@@ -2,8 +2,8 @@
 	import { onMount } from 'svelte';
 	import Icon from '../Icon.svelte';
 
-	let infoSpan: HTMLSpanElement;
-	let rangeInput: HTMLInputElement;
+	let infoSpan: HTMLSpanElement | undefined = $state();
+	let rangeInput: HTMLInputElement | undefined = $state();
 
 	let smallScreen = false;
 

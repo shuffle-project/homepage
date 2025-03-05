@@ -14,9 +14,9 @@
 	import ResultCard from '../ProjectCard.svelte';
 	import ProjectsMobile from './ProjectsMobile.svelte';
 
-	let selectedProjects: Project[] = ALL_PROJECTS;
+	let selectedProjects: Project[] = $state(ALL_PROJECTS);
 
-	let selectedFilterOption: 'all' | FilterOptions = 'all';
+	let selectedFilterOption: 'all' | FilterOptions = $state('all');
 
 	function onSelectFilterOption(option: 'all' | FilterOptions) {
 		selectedFilterOption = option;
@@ -72,7 +72,7 @@
 						name="filter"
 						value="all"
 						checked={selectedFilterOption === 'all'}
-						on:change={(e) => onSelectFilterOption('all')}
+						onchange={(e) => onSelectFilterOption('all')}
 					/>
 					<label for="input-0"> Alle Ergebnisse </label>
 				</div>
@@ -86,7 +86,7 @@
 							name="filter"
 							value={option.value}
 							checked={selectedFilterOption === option.value}
-							on:change={() => onSelectFilterOption(option.value)}
+							onchange={() => onSelectFilterOption(option.value)}
 						/>
 						<label for="input-{i + 1}">
 							{option.label}
@@ -123,47 +123,7 @@
 
 		.details-content {
 			padding: 0.625rem;
-
-			// label {
-			// 	cursor: pointer;
-			// 	position: relative;
-			// 	display: flex;
-			// 	align-items: center;
-			// 	justify-content: center;
-			// 	gap: 0.25rem;
-
-			// 	// ---
-			// 	border: 1px solid var(--color-light-blue);
-			// 	background-color: var(--color-light-blue);
-			// 	padding: 0.125rem 0.375rem;
-
-			// 	input {
-			// 		width: 0.25rem;
-			// 		height: 0.25rem;
-			// opacity: 0;
-			// width: 0;
-			// height: 0;
-			// position: absolute;
-			// top: 0;
-			// left: 0;
 		}
-
-		// input + span {
-		// border: 1px solid var(--color-light-blue);
-		// background-color: var(--color-light-blue);
-		// padding: 0.125rem 0.375rem;
-		// }
-
-		// input:focus-visible + span {
-		// 	outline: 2px solid var(--color-black);
-		// 	outline-offset: 1px;
-		// }
-
-		// input:checked + span {
-		// 	background-color: var(--color-black);
-		// 	color: var(--color-white);
-		// }
-		// }
 
 		.input-wrapper {
 			display: flex;

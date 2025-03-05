@@ -8,8 +8,13 @@
 	import { onMount } from 'svelte';
 	import { quintOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
 
-	let notificationCloseFocus = false;
+	let { children }: Props = $props();
+
+	let notificationCloseFocus = $state(false);
 
 	function onHandleGlobalKeypress(e: KeyboardEvent) {
 		if (e.key !== 'Escape') return;
@@ -29,7 +34,7 @@
 <Header />
 
 <main>
-	<slot />
+	{@render children?.()}
 </main>
 
 <Footer />
@@ -49,9 +54,9 @@
 			</p>
 			<button
 				tabindex={$notificationMessage === '' ? -1 : 0}
-				on:click={() => notificationMessage.set('')}
-				on:focusin={() => (notificationCloseFocus = true)}
-				on:focusout={() => (notificationCloseFocus = false)}
+				onclick={() => notificationMessage.set('')}
+				onfocusin={() => (notificationCloseFocus = true)}
+				onfocusout={() => (notificationCloseFocus = false)}
 				aria-label={notificationCloseFocus ? 'Zwischenablage-Benachrichtigung schließen' : ''}
 			>
 				<Icon svg="close" color="black" size="30" />
@@ -61,7 +66,7 @@
 	{/key}
 </div>
 
-<svelte:window on:keyup={(e) => onHandleGlobalKeypress(e)} />
+<svelte:window onkeyup={(e) => onHandleGlobalKeypress(e)} />
 
 <style lang="scss" global>
 	@import './../scss/_main.scss';

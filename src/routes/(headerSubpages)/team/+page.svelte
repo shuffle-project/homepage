@@ -13,11 +13,14 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Team</svelte:fragment>
-	<svelte:fragment slot="intro-text"
-		>Wir sind ein interdisziplinäres Team aus Professor*innen, Doktor*innen und wissenschaftlichen
+	{#snippet title()}
+		Team
+	{/snippet}
+
+	{#snippet introText()}
+		Wir sind ein interdisziplinäres Team aus Professor*innen, Doktor*innen und wissenschaftlichen
 		Mitarbeiter*innen aus verschiedensten Fachbereichen wie Pädagogik, Informatik und Ethik.
-	</svelte:fragment>
+	{/snippet}
 </TitleSection>
 
 <div class="page-content">

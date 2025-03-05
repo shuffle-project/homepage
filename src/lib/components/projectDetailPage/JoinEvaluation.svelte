@@ -3,7 +3,11 @@
 	import { onCopyEmailToClipboard } from '$lib/utils/utils';
 	import Icon from '../Icon.svelte';
 
-	export let join: JoinEvaluation;
+	interface Props {
+		join: JoinEvaluation;
+	}
+
+	let { join }: Props = $props();
 </script>
 
 <div class="wrapper">
@@ -20,7 +24,7 @@
 		<button
 			class="email-button"
 			aria-label="E-Mail Adresse von {join.contactName} in die Zwischenablage kopieren"
-			on:click={() => onCopyEmailToClipboard(join.contact.short, join.contact.domain)}
+			onclick={() => onCopyEmailToClipboard(join.contact.short, join.contact.domain)}
 		>
 			<Icon svg="copy" size="16" color="blue" />
 			<span aria-hidden="true">E-Mail Adresse</span>

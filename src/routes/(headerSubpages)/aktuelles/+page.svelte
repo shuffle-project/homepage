@@ -8,10 +8,13 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Aktuelles</svelte:fragment>
-	<svelte:fragment slot="intro-text"
-		>Hier finden Sie Beiträge, Neuigkeiten und Veröffentlichungen von SHUFFLE</svelte:fragment
-	>
+	{#snippet title()}
+		Aktuelles
+	{/snippet}
+
+	{#snippet introText()}
+		Hier finden Sie Beiträge, Neuigkeiten und Veröffentlichungen von SHUFFLE
+	{/snippet}
 </TitleSection>
 
 <div class="articles">

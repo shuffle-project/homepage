@@ -9,12 +9,15 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Erläuterung in Gebärdensprache (DGS)</svelte:fragment>
-	<svelte:fragment slot="dgs-icon">
+	{#snippet title()}
+		Erläuterung in Gebärdensprache (DGS)
+	{/snippet}
+
+	{#snippet dgsIcon()}
 		<div class="dgs-icon">
 			<Icon svg="dgs-symbol" color="original" size="parent" />
 		</div>
-	</svelte:fragment>
+	{/snippet}
 </TitleSection>
 
 <div class="page-content">
@@ -25,7 +28,7 @@
 </div>
 
 <div class="video-wrapper">
-	<!-- svelte-ignore a11y-media-has-caption -->
+	<!-- svelte-ignore a11y_media_has_caption -->
 	<video controls muted poster="{base}/videos/dgs_shuffle_teaser.jpg">
 		<source src="{base}/videos/dgs_shuffle.mp4" type="video/mp4" />
 		Ihr Browser unterstützt die Wiedergabe von Videos nicht.

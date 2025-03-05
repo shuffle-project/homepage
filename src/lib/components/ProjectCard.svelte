@@ -3,8 +3,12 @@
 	import type { Project } from '$lib/interfaces/project.interface';
 	import Icon from './Icon.svelte';
 
-	export let project: Project;
-	export let horizontalCenter = false;
+	interface Props {
+		project: Project;
+		horizontalCenter?: boolean;
+	}
+
+	let { project, horizontalCenter = false }: Props = $props();
 </script>
 
 <div class="result-card" class:horizontal-center={horizontalCenter}>

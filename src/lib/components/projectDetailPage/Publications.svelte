@@ -1,3 +1,5 @@
+<!-- @migration-task Error while migrating Svelte code: `<tr>` cannot be a child of `<table>`. `<table>` only allows these children: `<caption>`, `<colgroup>`, `<tbody>`, `<thead>`, `<tfoot>`, `<style>`, `<script>`, `<template>`. The browser will 'repair' the HTML (by moving, removing, or inserting elements) which breaks Svelte's assumptions about the structure of your components.
+https://svelte.dev/e/node_invalid_placement -->
 <script lang="ts">
 	import type { Publication, PublicationCategory } from '$lib/interfaces/project.interface';
 	import { useAPAFormat } from '$lib/store';
@@ -71,19 +73,26 @@
 						<p class="title" lang={publication.titleLang}>{publication.title}</p>
 						<div class="more-info-wrapper">
 							<table>
-								<tr>
-									<th><Icon svg="person" alt="Beitragende:" color="dark-grey" /></th>
-									<td>{getContributorsString(publication.contributors)}</td>
-								</tr>
-								<tr>
-									<th><Icon svg="location" alt="Ort der Veröffentlichung:" color="dark-grey" /></th>
-									<td lang={publication.placeOfPublicationLang}>{publication.placeOfPublication}</td
-									>
-								</tr>
-								<tr>
-									<th><Icon svg="calender" alt="Jahr der Veröffentlichung" color="dark-grey" /></th>
-									<td>{publication.releaseDate.split('-')[0]}</td>
-								</tr>
+								<tbody>
+									<tr>
+										<th><Icon svg="person" alt="Beitragende:" color="dark-grey" /></th>
+										<td>{getContributorsString(publication.contributors)}</td>
+									</tr>
+									<tr>
+										<th
+											><Icon svg="location" alt="Ort der Veröffentlichung:" color="dark-grey" /></th
+										>
+										<td lang={publication.placeOfPublicationLang}
+											>{publication.placeOfPublication}</td
+										>
+									</tr>
+									<tr>
+										<th
+											><Icon svg="calender" alt="Jahr der Veröffentlichung" color="dark-grey" /></th
+										>
+										<td>{publication.releaseDate.split('-')[0]}</td>
+									</tr>
+								</tbody>
 							</table>
 
 							<div class="link-wrapper">
