@@ -53,8 +53,12 @@
 			attributes: true
 		});
 
-		menu?.addEventListener('close', () => {
+		menu?.addEventListener('close', (e) => {
 			if (document?.body.hasAttribute('style')) document.body.removeAttribute('style');
+		});
+
+		menu?.addEventListener('cancel', (e) => {
+			toggleDisplay(e);
 		});
 	});
 
@@ -63,10 +67,20 @@
 		toggleDisplay(e);
 		goto(base + site);
 	}
+
+	// function handleKeyEvent(e: KeyboardEvent) {
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	e.stopImmediatePropagation();
+
+	// 	if (e.key === 'Escape') {
+	// 		toggleDisplay(e);
+	// 	}
+	// }
 </script>
 
-<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- <svelte:window onkeyup={(e) => handleKeyEvent(e)} /> -->
+
 <dialog inert bind:this={menu} aria-label="Hauptmenü" onclick={(e) => handleBackdropClick(e)}>
 	<div class="menu-header">
 		<button

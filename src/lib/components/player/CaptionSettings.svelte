@@ -97,7 +97,7 @@
 	}
 </script>
 
-<svelte:window on:click={(e) => handleMouseClick(e)} />
+<svelte:window onclick={(e) => handleMouseClick(e)} />
 
 <div class="wrapper">
 	<button
