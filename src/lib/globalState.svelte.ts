@@ -11,14 +11,6 @@ export class GlobalState {
 		this.notificationMessage = '';
 	}
 
-	setAPAFormat(value: boolean) {
-		this.useAPAFormat = value;
-	}
-
-	setYouTubeEmbed(value: boolean) {
-		this.allowYouTubeEmbed = value;
-	}
-
 	copyEmailToClipboard(short: string, domain: string) {
 		const email = `${short}@${domain}`;
 

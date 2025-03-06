@@ -24,10 +24,6 @@
 	let publicationTheses: Publication[] = $state([]);
 	let publicationOther: Publication[] = $state([]);
 
-	// function sortDate(a: string, b: string) {
-	// 	return new Date(b) - new Date (a);
-	// }
-
 	onMount(() => {
 		if (project.publications) {
 			project.publications.forEach((pub) => {

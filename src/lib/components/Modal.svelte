@@ -8,7 +8,6 @@
 
 	let { headline, content }: Props = $props();
 
-	// let menu: HTMLDialogElement = $state();
 	let menu: HTMLDialogElement;
 
 	export function toggleDisplay(e: MouseEvent) {
