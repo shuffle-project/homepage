@@ -67,19 +67,7 @@
 		toggleDisplay(e);
 		goto(base + site);
 	}
-
-	// function handleKeyEvent(e: KeyboardEvent) {
-	// 	e.preventDefault();
-	// 	e.stopPropagation();
-	// 	e.stopImmediatePropagation();
-
-	// 	if (e.key === 'Escape') {
-	// 		toggleDisplay(e);
-	// 	}
-	// }
 </script>
-
-<!-- <svelte:window onkeyup={(e) => handleKeyEvent(e)} /> -->
 
 <dialog inert bind:this={menu} aria-label="Hauptmenü" onclick={(e) => handleBackdropClick(e)}>
 	<div class="menu-header">
