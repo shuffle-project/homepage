@@ -1,15 +1,21 @@
-<!-- @migration-task Error while migrating Svelte code: `<tr>` cannot be a child of `<table>`. `<table>` only allows these children: `<caption>`, `<colgroup>`, `<tbody>`, `<thead>`, `<tfoot>`, `<style>`, `<script>`, `<template>`. The browser will 'repair' the HTML (by moving, removing, or inserting elements) which breaks Svelte's assumptions about the structure of your components.
-https://svelte.dev/e/node_invalid_placement -->
 <script lang="ts">
+	import { getGlobalState } from '$lib/globalState.svelte';
 	import type { Publication, PublicationCategory } from '$lib/interfaces/project.interface';
-	import { useAPAFormat } from '$lib/store';
 	import { fade } from 'svelte/transition';
 	import Icon from '../Icon.svelte';
 	import Link from '../Link.svelte';
 
-	export let publications: Publication[];
-	export let category: PublicationCategory;
-	export let headingLevel: 'h2' | 'h3' = 'h3';
+	const {
+		publications,
+		category,
+		headingLevel = 'h3'
+	}: {
+		publications: Publication[];
+		category: PublicationCategory;
+		headingLevel?: 'h2' | 'h3';
+	} = $props();
+
+	const globalState = getGlobalState();
 
 	function getContributorsString(contributors: string[]) {
 		let allNames = '';
@@ -18,28 +24,6 @@ https://svelte.dev/e/node_invalid_placement -->
 				allNames = allNames + ` ${contributor};`;
 			} else {
 				allNames = allNames + ` ${contributor}`;
-			}
-		});
-		return allNames;
-	}
-
-	function getAPAContributorsString(contributors: string[]) {
-		let allNames = '';
-		contributors.forEach((contributor, i) => {
-			const cleanedName = contributor
-				.replaceAll('Prof.', '')
-				.replaceAll('Dr.', '')
-				.replaceAll('(Herausgebende)', '')
-				.trim();
-
-			const shortendName = `${cleanedName.split(' ')[1]}, ${cleanedName.split(' ')[0].charAt(0)}.`;
-
-			if (i === 0) {
-				allNames = allNames + ` ${shortendName}`;
-			} else if (i !== contributors.length - 1 && i !== 0) {
-				allNames = allNames + `, ${shortendName}`;
-			} else {
-				allNames = allNames + `, & ${shortendName}`;
 			}
 		});
 		return allNames;
@@ -55,7 +39,7 @@ https://svelte.dev/e/node_invalid_placement -->
 	{/if}
 
 	<ul aria-label={category}>
-		{#if $useAPAFormat}
+		{#if globalState.useAPAFormat}
 			<div in:fade={{ duration: 600 }}>
 				{#each publications as publication, i}
 					<li>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { ExtendedPlayerConfig } from '$lib/interfaces/player.interface';
-	import { getRandomId } from '$lib/utils/utils';
+
 	import Player from './Player.svelte';
 
 	interface Props {
@@ -9,7 +9,7 @@
 
 	let { extendedPlayerConfig }: Props = $props();
 
-	const randomId = getRandomId();
+	const randomId = $props.id();
 
 	let selectedTab: number = $state(1);
 

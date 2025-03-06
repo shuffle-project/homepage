@@ -1,10 +1,12 @@
 <script lang="ts">
-	import { useAPAFormat } from '$lib/store';
+	import { getGlobalState } from '$lib/globalState.svelte';
+
+	const globalState = getGlobalState();
 </script>
 
 <div class="wrapper">
 	<label for="apa-toggle">APA-Quellenangaben verwenden</label>
-	<input id="apa-toggle" type="checkbox" bind:checked={$useAPAFormat} />
+	<input id="apa-toggle" type="checkbox" bind:checked={globalState.useAPAFormat} />
 </div>
 
 <style lang="scss">

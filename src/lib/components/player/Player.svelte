@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { getRandomId, isIOSDevice } from '$lib/utils/utils';
+	import { isIOSDevice } from '$lib/utils/utils';
 	import { onMount } from 'svelte';
 	import Icon from '../Icon.svelte';
 	import CaptionSettings from './CaptionSettings.svelte';
@@ -8,7 +8,7 @@
 	let { videoData } = $props();
 
 	let useNativeControls = $state(false);
-	const randomId = getRandomId();
+	const randomId = $props.id();
 
 	let isiOSDevice = $state(false);
 
