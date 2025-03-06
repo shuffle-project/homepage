@@ -74,7 +74,9 @@
 						<th> Laufzeit </th>
 					</tr>
 					<tr>
-						<ProjectDuration />
+						<td>
+							<ProjectDuration />
+						</td>
 					</tr>
 				</tbody>
 			</table>
@@ -254,6 +256,14 @@
 						th {
 							text-align: left;
 							padding-bottom: 0.625rem;
+						}
+
+						.funded-by {
+							td {
+								display: flex;
+								align-items: center;
+								gap: 0.625rem;
+							}
 						}
 					}
 				}

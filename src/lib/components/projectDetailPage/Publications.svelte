@@ -125,11 +125,6 @@ https://svelte.dev/e/node_invalid_placement -->
 		max-width: 60rem;
 		box-sizing: border-box;
 
-		.end-dot {
-			padding: 0;
-			margin: 0;
-		}
-
 		ul {
 			padding: 0;
 			margin: 0;

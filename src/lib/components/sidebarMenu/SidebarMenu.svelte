@@ -187,6 +187,7 @@
 
 	@media (prefers-reduced-motion: no-preference) {
 		dialog {
+			animation: animation-slide-out-right 0.4s ease-out;
 			@keyframes animation-slide-out-right {
 				from {
 					transform: translateX(-100%);
@@ -195,11 +196,10 @@
 					transform: translateX(0%);
 				}
 			}
-
-			animation: animation-slide-out-right 0.4s ease-out;
 		}
 
 		dialog[open] {
+			animation: animation-slide-in-right 0.4s ease-out;
 			@keyframes animation-slide-in-right {
 				from {
 					transform: translateX(100%);
@@ -208,8 +208,6 @@
 					transform: translateX(0%);
 				}
 			}
-
-			animation: animation-slide-in-right 0.4s ease-out;
 		}
 	}
 </style>
