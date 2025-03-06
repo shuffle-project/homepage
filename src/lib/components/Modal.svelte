@@ -1,10 +1,18 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Icon from './Icon.svelte';
+	interface Props {
+		headline?: import('svelte').Snippet;
+		content?: import('svelte').Snippet;
+	}
+
+	let { headline, content }: Props = $props();
 
 	let menu: HTMLDialogElement;
 
-	export function toggleDisplay() {
+	export function toggleDisplay(e: MouseEvent) {
+		e.stopPropagation();
+
 		if (menu?.open) {
 			menu?.close();
 			document?.body.removeAttribute('style');
@@ -16,6 +24,7 @@
 	}
 
 	function handleBackdropClick(e: MouseEvent) {
+		e.stopPropagation();
 		const dialogDimensions = menu?.getBoundingClientRect();
 		if (
 			e.clientX < dialogDimensions.left ||
@@ -23,7 +32,7 @@
 			e.clientY < dialogDimensions.top ||
 			e.clientY > dialogDimensions.bottom
 		) {
-			toggleDisplay();
+			toggleDisplay(e);
 		}
 	}
 
@@ -53,28 +62,23 @@
 	});
 </script>
 
-<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- TODO make aria label dynamic -->
 <dialog
 	inert
 	bind:this={menu}
 	aria-label="Untertitel Einstellungen"
-	on:click|stopPropagation={(e) => handleBackdropClick(e)}
+	onclick={(e) => handleBackdropClick(e)}
 >
 	<div class="menu-header">
-		<h1><slot name="headline" /></h1>
-		<button
-			autofocus
-			type="button"
-			on:click|stopPropagation={() => toggleDisplay()}
-			aria-label="Fertig"
-		>
+		<h1>{@render headline?.()}</h1>
+		<button autofocus type="button" onclick={(e) => toggleDisplay(e)} aria-label="Fertig">
 			<Icon svg="close" size="parent" />
 		</button>
 	</div>
 	<div class="content-wrapper" tabindex="0">
-		<slot name="content" />
+		{@render content?.()}
 	</div>
 </dialog>
 

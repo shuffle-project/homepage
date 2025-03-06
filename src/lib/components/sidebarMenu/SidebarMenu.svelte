@@ -4,9 +4,11 @@
 	import { onMount } from 'svelte';
 	import Icon from '../Icon.svelte';
 
-	let menu: HTMLDialogElement;
+	let menu: HTMLDialogElement | undefined = $state();
 
-	export function toggleDisplay() {
+	export function toggleDisplay(e: Event) {
+		e.stopPropagation();
+
 		if (menu?.open) {
 			menu?.close();
 			document?.body.removeAttribute('style');
@@ -19,13 +21,15 @@
 
 	function handleBackdropClick(e: MouseEvent) {
 		const dialogDimensions = menu?.getBoundingClientRect();
+		if (!dialogDimensions) return;
+
 		if (
 			e.clientX < dialogDimensions.left ||
 			e.clientX > dialogDimensions.right ||
 			e.clientY < dialogDimensions.top ||
 			e.clientY > dialogDimensions.bottom
 		) {
-			toggleDisplay();
+			toggleDisplay(e);
 		}
 	}
 
@@ -45,34 +49,44 @@
 			});
 		});
 
-		menuAttrObserver.observe(menu, {
+		menuAttrObserver.observe(menu!, {
 			attributes: true
 		});
 
-		menu?.addEventListener('close', () => {
+		menu?.addEventListener('close', (e) => {
 			if (document?.body.hasAttribute('style')) document.body.removeAttribute('style');
+		});
+
+		menu?.addEventListener('cancel', (e) => {
+			toggleDisplay(e);
 		});
 	});
 
-	function goToSite(site: string) {
-		toggleDisplay();
+	function goToSite(site: string, e: Event) {
+		e.preventDefault();
+		toggleDisplay(e);
 		goto(base + site);
 	}
+
+	// function handleKeyEvent(e: KeyboardEvent) {
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	// 	e.stopImmediatePropagation();
+
+	// 	if (e.key === 'Escape') {
+	// 		toggleDisplay(e);
+	// 	}
+	// }
 </script>
 
-<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<dialog
-	inert
-	bind:this={menu}
-	aria-label="Hauptmenü"
-	on:click|stopPropagation={(e) => handleBackdropClick(e)}
->
+<!-- <svelte:window onkeyup={(e) => handleKeyEvent(e)} /> -->
+
+<dialog inert bind:this={menu} aria-label="Hauptmenü" onclick={(e) => handleBackdropClick(e)}>
 	<div class="menu-header">
 		<button
 			autofocus
 			type="button"
-			on:click|stopPropagation={() => toggleDisplay()}
+			onclick={(e) => toggleDisplay(e)}
 			aria-label="Hauptmenü schließen"
 		>
 			<Icon svg="close" size="parent" />
@@ -82,40 +96,27 @@
 	<div class="content-wrapper">
 		<ul>
 			<li>
-				<a
-					on:click|preventDefault|stopPropagation={() => goToSite('/#projektergebnisse')}
-					href="{base}/#projektergebnisse"
-				>
+				<a onclick={(e) => goToSite('/#projektergebnisse', e)} href="{base}/#projektergebnisse">
 					Projektergebnisse
 				</a>
 			</li>
 			<li>
-				<a
-					on:click|preventDefault|stopPropagation={() => goToSite('/webinaraufnahmen')}
-					href="{base}/webinaraufnahmen">Webinaraufnahmen</a
+				<a onclick={(e) => goToSite('/webinaraufnahmen', e)} href="{base}/webinaraufnahmen"
+					>Webinaraufnahmen</a
 				>
 			</li>
 			<li>
-				<a on:click|preventDefault|stopPropagation={() => goToSite('/team')} href="{base}/team"
-					>Team</a
-				>
+				<a onclick={(e) => goToSite('/team', e)} href="{base}/team">Team</a>
 			</li>
 			<li>
-				<a
-					on:click|preventDefault|stopPropagation={() => goToSite('/aktuelles')}
-					href="{base}/aktuelles">Aktuelles</a
-				>
+				<a onclick={(e) => goToSite('/aktuelles', e)} href="{base}/aktuelles">Aktuelles</a>
 			</li>
 			<li>
-				<a
-					on:click|preventDefault|stopPropagation={() => goToSite('/kontakt')}
-					href="{base}/kontakt">Kontakt</a
-				>
+				<a onclick={(e) => goToSite('/kontakt', e)} href="{base}/kontakt">Kontakt</a>
 			</li>
 			<li>
-				<a
-					on:click|preventDefault|stopPropagation={() => goToSite('/publikationen')}
-					href="{base}/publikationen">Publikationen</a
+				<a onclick={(e) => goToSite('/publikationen', e)} href="{base}/publikationen"
+					>Publikationen</a
 				>
 			</li>
 		</ul>
@@ -200,6 +201,7 @@
 
 	@media (prefers-reduced-motion: no-preference) {
 		dialog {
+			animation: animation-slide-out-right 0.4s ease-out;
 			@keyframes animation-slide-out-right {
 				from {
 					transform: translateX(-100%);
@@ -208,11 +210,10 @@
 					transform: translateX(0%);
 				}
 			}
-
-			animation: animation-slide-out-right 0.4s ease-out;
 		}
 
 		dialog[open] {
+			animation: animation-slide-in-right 0.4s ease-out;
 			@keyframes animation-slide-in-right {
 				from {
 					transform: translateX(100%);
@@ -221,8 +222,6 @@
 					transform: translateX(0%);
 				}
 			}
-
-			animation: animation-slide-in-right 0.4s ease-out;
 		}
 	}
 </style>

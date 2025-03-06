@@ -7,7 +7,9 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Erläuterung in Leichter Sprache</svelte:fragment>
+	{#snippet title()}
+		Erläuterung in Leichter Sprache
+	{/snippet}
 </TitleSection>
 
 <div class="page-content headings-with-padding">

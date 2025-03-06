@@ -2,8 +2,12 @@
 	import { base } from '$app/paths';
 	import Icon from '../Icon.svelte';
 
-	export let headline: string;
-	export let link: string;
+	interface Props {
+		headline: string;
+		link: string;
+	}
+
+	let { headline, link }: Props = $props();
 </script>
 
 <div class="wrapper">

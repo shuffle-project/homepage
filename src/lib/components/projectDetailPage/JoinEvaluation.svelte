@@ -1,9 +1,15 @@
 <script lang="ts">
+	import { getGlobalState } from '$lib/globalState.svelte';
 	import type { JoinEvaluation } from '$lib/interfaces/project.interface';
-	import { onCopyEmailToClipboard } from '$lib/utils/utils';
 	import Icon from '../Icon.svelte';
 
-	export let join: JoinEvaluation;
+	const globalState = getGlobalState();
+
+	interface Props {
+		join: JoinEvaluation;
+	}
+
+	let { join }: Props = $props();
 </script>
 
 <div class="wrapper">
@@ -20,7 +26,7 @@
 		<button
 			class="email-button"
 			aria-label="E-Mail Adresse von {join.contactName} in die Zwischenablage kopieren"
-			on:click={() => onCopyEmailToClipboard(join.contact.short, join.contact.domain)}
+			onclick={() => globalState.copyEmailToClipboard(join.contact.short, join.contact.domain)}
 		>
 			<Icon svg="copy" size="16" color="blue" />
 			<span aria-hidden="true">E-Mail Adresse</span>

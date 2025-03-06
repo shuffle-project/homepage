@@ -1,13 +1,21 @@
 <script lang="ts">
+	import { getGlobalState } from '$lib/globalState.svelte';
 	import type { Publication, PublicationCategory } from '$lib/interfaces/project.interface';
-	import { useAPAFormat } from '$lib/store';
 	import { fade } from 'svelte/transition';
 	import Icon from '../Icon.svelte';
 	import Link from '../Link.svelte';
 
-	export let publications: Publication[];
-	export let category: PublicationCategory;
-	export let headingLevel: 'h2' | 'h3' = 'h3';
+	const {
+		publications,
+		category,
+		headingLevel = 'h3'
+	}: {
+		publications: Publication[];
+		category: PublicationCategory;
+		headingLevel?: 'h2' | 'h3';
+	} = $props();
+
+	const globalState = getGlobalState();
 
 	function getContributorsString(contributors: string[]) {
 		let allNames = '';
@@ -16,28 +24,6 @@
 				allNames = allNames + ` ${contributor};`;
 			} else {
 				allNames = allNames + ` ${contributor}`;
-			}
-		});
-		return allNames;
-	}
-
-	function getAPAContributorsString(contributors: string[]) {
-		let allNames = '';
-		contributors.forEach((contributor, i) => {
-			const cleanedName = contributor
-				.replaceAll('Prof.', '')
-				.replaceAll('Dr.', '')
-				.replaceAll('(Herausgebende)', '')
-				.trim();
-
-			const shortendName = `${cleanedName.split(' ')[1]}, ${cleanedName.split(' ')[0].charAt(0)}.`;
-
-			if (i === 0) {
-				allNames = allNames + ` ${shortendName}`;
-			} else if (i !== contributors.length - 1 && i !== 0) {
-				allNames = allNames + `, ${shortendName}`;
-			} else {
-				allNames = allNames + `, & ${shortendName}`;
 			}
 		});
 		return allNames;
@@ -53,7 +39,7 @@
 	{/if}
 
 	<ul aria-label={category}>
-		{#if $useAPAFormat}
+		{#if globalState.useAPAFormat}
 			<div in:fade={{ duration: 600 }}>
 				{#each publications as publication, i}
 					<li>
@@ -71,19 +57,26 @@
 						<p class="title" lang={publication.titleLang}>{publication.title}</p>
 						<div class="more-info-wrapper">
 							<table>
-								<tr>
-									<th><Icon svg="person" alt="Beitragende:" color="dark-grey" /></th>
-									<td>{getContributorsString(publication.contributors)}</td>
-								</tr>
-								<tr>
-									<th><Icon svg="location" alt="Ort der Veröffentlichung:" color="dark-grey" /></th>
-									<td lang={publication.placeOfPublicationLang}>{publication.placeOfPublication}</td
-									>
-								</tr>
-								<tr>
-									<th><Icon svg="calender" alt="Jahr der Veröffentlichung" color="dark-grey" /></th>
-									<td>{publication.releaseDate.split('-')[0]}</td>
-								</tr>
+								<tbody>
+									<tr>
+										<th><Icon svg="person" alt="Beitragende:" color="dark-grey" /></th>
+										<td>{getContributorsString(publication.contributors)}</td>
+									</tr>
+									<tr>
+										<th
+											><Icon svg="location" alt="Ort der Veröffentlichung:" color="dark-grey" /></th
+										>
+										<td lang={publication.placeOfPublicationLang}
+											>{publication.placeOfPublication}</td
+										>
+									</tr>
+									<tr>
+										<th
+											><Icon svg="calender" alt="Jahr der Veröffentlichung" color="dark-grey" /></th
+										>
+										<td>{publication.releaseDate.split('-')[0]}</td>
+									</tr>
+								</tbody>
 							</table>
 
 							<div class="link-wrapper">
@@ -115,11 +108,6 @@
 		width: 100%;
 		max-width: 60rem;
 		box-sizing: border-box;
-
-		.end-dot {
-			padding: 0;
-			margin: 0;
-		}
 
 		ul {
 			padding: 0;

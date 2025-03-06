@@ -1,8 +1,12 @@
 <script lang="ts">
 	import Icon from './Icon.svelte';
 
-	export let email: string;
-	let copySuccessInfoVisible = false;
+	interface Props {
+		email: string;
+	}
+
+	let { email }: Props = $props();
+	let copySuccessInfoVisible = $state(false);
 
 	function saveToClipboard() {
 		setTimeout(async () => {
@@ -24,9 +28,9 @@
 
 <div class="wrapper">
 	<button
-		on:keyup={(e) => handleKeyPress(e)}
-		on:click={() => saveToClipboard()}
-		on:focusout={() => handleFocusOut()}
+		onkeyup={(e) => handleKeyPress(e)}
+		onclick={() => saveToClipboard()}
+		onfocusout={() => handleFocusOut()}
 	>
 		<div class="icon-wrapper">
 			<Icon svg="copy" size="parent" color="dark-grey" />

@@ -1,10 +1,14 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 
-	export let svg: string;
-	export let alt = '';
-	export let color: 'original' | 'white' | 'black' | 'blue' | 'dark-grey' = 'black';
-	export let size: '20' | '24' | '30' | '16' | 'parent' = '24';
+	interface Props {
+		svg: string;
+		alt?: string;
+		color?: 'original' | 'white' | 'black' | 'blue' | 'dark-grey';
+		size?: '20' | '24' | '30' | '16' | 'parent';
+	}
+
+	let { svg = $bindable(), alt = '', color = 'black', size = '24' }: Props = $props();
 
 	const svgSize = 'size-' + size;
 	if (!svg.endsWith('.svg')) svg = svg + '.svg';

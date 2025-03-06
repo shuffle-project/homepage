@@ -1,16 +1,21 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { allowYouTubeEmbed } from '$lib/store';
-	export let src: string = '';
-	export let linkToYouTube: string = '';
-	export let videoTitle: string = '';
+	import { getGlobalState } from '$lib/globalState.svelte';
 
-	const randomId =
-		Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10);
+	const globalState = getGlobalState();
+	interface Props {
+		src?: string;
+		linkToYouTube?: string;
+		videoTitle?: string;
+	}
+
+	let { src = '', linkToYouTube = '', videoTitle = '' }: Props = $props();
+
+	const randomId = $props.id();
 </script>
 
 <div class="wrapper">
-	{#if $allowYouTubeEmbed}
+	{#if globalState.allowYouTubeEmbed}
 		<div class="content-size">
 			<iframe
 				width="100%"
@@ -31,7 +36,7 @@
 					<input
 						aria-describedby="privacy-{randomId}"
 						type="checkbox"
-						bind:checked={$allowYouTubeEmbed}
+						bind:checked={globalState.allowYouTubeEmbed}
 					/>
 				</label>
 

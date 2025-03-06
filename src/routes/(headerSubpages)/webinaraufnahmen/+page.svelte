@@ -11,10 +11,13 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Webinaraufnahmen</svelte:fragment>
-	<svelte:fragment slot="intro-text">
+	{#snippet title()}
+		Webinaraufnahmen
+	{/snippet}
+
+	{#snippet introText()}
 		Hier finden Sie alle Aufzeichnungen der bisherigen Webinare.
-	</svelte:fragment>
+	{/snippet}
 </TitleSection>
 
 <div class="page-content">

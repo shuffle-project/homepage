@@ -3,12 +3,22 @@
 	import Icon from '../Icon.svelte';
 	import Modal from '../Modal.svelte';
 
-	export let video: HTMLVideoElement;
+	let {
+		video,
+		captionsBackgroundColor = $bindable('black'),
+		captionsFontColor = $bindable('white'),
+		captionsFontSize = $bindable('small')
+	}: {
+		video: HTMLVideoElement;
+		captionsBackgroundColor: string;
+		captionsFontColor: string;
+		captionsFontSize: string;
+	} = $props();
 
 	let captionMenuButton: HTMLButtonElement;
 
 	let captionMenu: HTMLDialogElement;
-	let displayCaptionMenu = false;
+	let displayCaptionMenu = $state(false);
 
 	let modal: Modal;
 	let displayModal = false;
@@ -17,11 +27,15 @@
 		displayCaptionMenu = !displayCaptionMenu;
 	}
 
-	$: {
+	$effect(() => {
 		if (captionMenu) {
 			displayCaptionMenu ? captionMenu.show() : captionMenu.close();
 		}
-	}
+
+		window.localStorage.setItem('captionsBackgroundColor', captionsBackgroundColor);
+		window.localStorage.setItem('captionsFontColor', captionsFontColor);
+		window.localStorage.setItem('captionsFontSize', captionsFontSize);
+	});
 
 	function handleKeyEvent(e: KeyboardEvent) {
 		if (e.key === 'Escape') {
@@ -63,22 +77,7 @@
 		}
 	});
 
-	// caption styles
-	export let captionsBackgroundColor: string = 'black';
-	export let captionsFontColor: string = 'white';
-	export let captionsFontSize: string = 'small';
-
-	$: {
-		window.localStorage.setItem('captionsBackgroundColor', captionsBackgroundColor);
-	}
-	$: {
-		window.localStorage.setItem('captionsFontColor', captionsFontColor);
-	}
-	$: {
-		window.localStorage.setItem('captionsFontSize', captionsFontSize);
-	}
-
-	let selectedTrackLabel: string | null = null; // track active Caption
+	let selectedTrackLabel: string | null = $state(null); // track active Caption
 
 	function onSelectTextTrack(textTrack: TextTrack | null) {
 		if (textTrack) {
@@ -98,30 +97,29 @@
 	}
 </script>
 
-<svelte:window on:click={(e) => handleMouseClick(e)} />
+<svelte:window onclick={(e) => handleMouseClick(e)} />
 
 <div class="wrapper">
 	<button
 		bind:this={captionMenuButton}
 		aria-expanded={displayCaptionMenu}
-		on:click={() => toggleDisplayCaptionMenu()}
+		onclick={() => toggleDisplayCaptionMenu()}
 		title="Untertitel Untermenü"
 		aria-label="Untertitel Untermenü"
 		class="cc-btn"
 	>
 		<Icon svg="subtitles" />
 	</button>
-	<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-	<dialog class="caption-menu" bind:this={captionMenu} on:keyup={(e) => handleKeyEvent(e)}>
+	<dialog class="caption-menu" bind:this={captionMenu} onkeyup={(e) => handleKeyEvent(e)}>
 		<ul>
 			<li>
-				<button aria-pressed={selectedTrackLabel === null} on:click={() => onSelectTextTrack(null)}
+				<button aria-pressed={selectedTrackLabel === null} onclick={() => onSelectTextTrack(null)}
 					>{#if selectedTrackLabel === null}
 						<div class="icon">
 							<Icon svg="check" />
 						</div>
 					{:else}
-						<div class="icon" />
+						<div class="icon"></div>
 					{/if}
 					Untertitel ausschalten</button
 				>
@@ -130,21 +128,21 @@
 				<li>
 					<button
 						aria-pressed={track.label === selectedTrackLabel}
-						on:click={() => onSelectTextTrack(track)}
+						onclick={() => onSelectTextTrack(track)}
 					>
 						{#if track.label === selectedTrackLabel}
 							<div class="icon">
 								<Icon svg="check" />
 							</div>
 						{:else}
-							<div class="icon" />
+							<div class="icon"></div>
 						{/if}
 						{track.label}
 					</button>
 				</li>
 			{/each}
 			<li>
-				<button on:click|stopPropagation={() => modal.toggleDisplay()}>
+				<button onclick={(e) => modal.toggleDisplay(e)}>
 					<div class="icon">
 						<Icon svg="settings" />
 					</div>
@@ -155,8 +153,11 @@
 	</dialog>
 
 	<Modal bind:this={modal}>
-		<svelte:fragment slot="headline">Untertitel Einstellungen</svelte:fragment>
-		<svelte:fragment slot="content">
+		{#snippet headline()}
+			Untertitel Einstellungen
+		{/snippet}
+
+		{#snippet content()}
 			<div class="modal-content">
 				<div class="hint-wrapper">
 					<div class="hint">
@@ -172,69 +173,70 @@
 				</div>
 
 				<table class="style-selection" role="presentation">
-					<tr>
-						<td><label for="selectBackgroundColor">Hintergrundfarbe der Untertitel</label></td>
-						<td>
-							<select
-								id="selectBackgroundColor"
-								bind:value={captionsBackgroundColor}
-								on:click|stopPropagation
-								title="Untertitel Hintergrundfarbe"
-								class="custom-select"
-							>
-								<option on:click|stopPropagation value="black">schwarz</option>
-								<option on:click|stopPropagation value="red">rot</option>
-								<option on:click|stopPropagation value="yellow">gelb</option>
-								<option on:click|stopPropagation value="white">weiß</option>
-								<option on:click|stopPropagation value="blue">blau</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td><label for="selectFontColor">Schriftfarbe der Untertitel</label></td>
-						<td>
-							<select
-								id="selectFontColor"
-								class="custom-select"
-								bind:value={captionsFontColor}
-								on:click|stopPropagation
-								title="Untertitel Schriftfarbe"
-							>
-								<option on:click|stopPropagation value="black">schwarz</option>
-								<option on:click|stopPropagation value="red">rot</option>
-								<option on:click|stopPropagation value="yellow">gelb</option>
-								<option on:click|stopPropagation value="white">weiß</option>
-								<option on:click|stopPropagation value="blue">blau</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td><label for="selectFontSize">Schriftgröße der Untertitel</label></td>
-						<td>
-							<select
-								id="selectFontSize"
-								class="custom-select"
-								bind:value={captionsFontSize}
-								on:click|stopPropagation
-								title="Untertitel Schriftgröße"
-							>
-								<option on:click|stopPropagation value="small">klein</option>
-								<option on:click|stopPropagation value="medium">normal</option>
-								<option on:click|stopPropagation value="large">groß</option>
-								<option on:click|stopPropagation value="larger">größer</option>
-							</select>
-						</td>
-					</tr>
+					<tbody>
+						<tr>
+							<td><label for="selectBackgroundColor">Hintergrundfarbe der Untertitel</label></td>
+							<td>
+								<select
+									id="selectBackgroundColor"
+									bind:value={captionsBackgroundColor}
+									onclick={(e) => e.stopPropagation()}
+									title="Untertitel Hintergrundfarbe"
+									class="custom-select"
+								>
+									<option onclick={(e) => e.stopPropagation()} value="black">schwarz</option>
+									<option onclick={(e) => e.stopPropagation()} value="red">rot</option>
+									<option onclick={(e) => e.stopPropagation()} value="yellow">gelb</option>
+									<option onclick={(e) => e.stopPropagation()} value="white">weiß</option>
+									<option onclick={(e) => e.stopPropagation()} value="blue">blau</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="selectFontColor">Schriftfarbe der Untertitel</label></td>
+							<td>
+								<select
+									id="selectFontColor"
+									class="custom-select"
+									bind:value={captionsFontColor}
+									onclick={(e) => e.stopPropagation()}
+									title="Untertitel Schriftfarbe"
+								>
+									<option onclick={(e) => e.stopPropagation()} value="black">schwarz</option>
+									<option onclick={(e) => e.stopPropagation()} value="red">rot</option>
+									<option onclick={(e) => e.stopPropagation()} value="yellow">gelb</option>
+									<option onclick={(e) => e.stopPropagation()} value="white">weiß</option>
+									<option onclick={(e) => e.stopPropagation()} value="blue">blau</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><label for="selectFontSize">Schriftgröße der Untertitel</label></td>
+							<td>
+								<select
+									id="selectFontSize"
+									class="custom-select"
+									bind:value={captionsFontSize}
+									onclick={(e) => e.stopPropagation()}
+									title="Untertitel Schriftgröße"
+								>
+									<option onclick={(e) => e.stopPropagation()} value="small">klein</option>
+									<option onclick={(e) => e.stopPropagation()} value="medium">normal</option>
+									<option onclick={(e) => e.stopPropagation()} value="large">groß</option>
+									<option onclick={(e) => e.stopPropagation()} value="larger">größer</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
 				</table>
 
-				<!-- style="background-color: {captionsBackgroundColor}; color: {captionsFontColor}; " -->
 				<p
 					class="exampleText example-{captionsFontSize} bg-{captionsBackgroundColor} fc-{captionsFontColor}"
 				>
 					So werden die Untertitel angezeigt
 				</p>
 			</div>
-		</svelte:fragment>
+		{/snippet}
 	</Modal>
 </div>
 
@@ -254,10 +256,6 @@
 			gap: 0.5rem;
 			background-color: var(--color-yellow);
 			padding: 0.125rem 0.25rem;
-
-			p {
-				font-weight: bold;
-			}
 		}
 
 		.hint-text {

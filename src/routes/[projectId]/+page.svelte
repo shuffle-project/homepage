@@ -15,18 +15,14 @@
 	import { WEBINAR_COMPONENTS, type Publication } from '$lib/interfaces/project.interface.js';
 	import { onMount } from 'svelte';
 
-	export let data;
+	let { data } = $props();
 	const { project } = data;
 
-	let publicationPaper: Publication[] = [];
-	let publicationWorkshops: Publication[] = [];
-	let publicationPoster: Publication[] = [];
-	let publicationTheses: Publication[] = [];
-	let publicationOther: Publication[] = [];
-
-	// function sortDate(a: string, b: string) {
-	// 	return new Date(b) - new Date (a);
-	// }
+	let publicationPaper: Publication[] = $state([]);
+	let publicationWorkshops: Publication[] = $state([]);
+	let publicationPoster: Publication[] = $state([]);
+	let publicationTheses: Publication[] = $state([]);
+	let publicationOther: Publication[] = $state([]);
 
 	onMount(() => {
 		if (project.publications) {

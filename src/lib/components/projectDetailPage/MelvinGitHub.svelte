@@ -2,9 +2,6 @@
 	import Icon from '../Icon.svelte';
 </script>
 
-<!-- Vorher nochmal abchecken, ob Melvin bereit ist angezeigt zu werden,
- Reicht die Anleitung, um es aufzusetzen? -->
-
 <div class="wrapper">
 	<p>Sie möchten Melvin auf einem eigenen Server aufsetzen und nutzen?</p>
 	<a href="https://github.com/shuffle-project/melvin">

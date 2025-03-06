@@ -3,18 +3,23 @@
 	import Header from '$lib/components/Header.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 	import MetaTags from '$lib/components/MetaTags.svelte';
-	import { notificationMessage } from '$lib/store';
+	import { getGlobalState, setGlobalState } from '$lib/globalState.svelte';
 	import { deviceHasTouchScreen } from '$lib/utils/utils';
 	import { onMount } from 'svelte';
 	import { quintOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 
-	let notificationCloseFocus = false;
+	setGlobalState();
+	const globalState = getGlobalState();
+
+	let { children } = $props();
+
+	let notificationCloseFocus = $state(false);
 
 	function onHandleGlobalKeypress(e: KeyboardEvent) {
 		if (e.key !== 'Escape') return;
-		if ($notificationMessage !== '') {
-			notificationMessage.set('');
+		if (globalState.notificationMessage !== '') {
+			globalState.resetNotificationMessage();
 		}
 	}
 
@@ -29,29 +34,29 @@
 <Header />
 
 <main>
-	<slot />
+	{@render children?.()}
 </main>
 
 <Footer />
 
 <div aria-live={!notificationCloseFocus ? 'polite' : 'off'}>
-	{#key $notificationMessage}
+	{#key globalState.notificationMessage}
 		<div
 			transition:fly={{ duration: 600, easing: quintOut, y: 100 }}
-			class="test"
-			aria-hidden={$notificationMessage === ''}
-			class:hidden={$notificationMessage === ''}
+			class="notification"
+			aria-hidden={globalState.notificationMessage === ''}
+			class:hidden={globalState.notificationMessage === ''}
 		>
 			<p>
-				<span>{$notificationMessage.split('=')[0]}</span>
+				<span>{globalState.notificationMessage.split('=')[0]}</span>
 				<strong>In die Zwischenablage kopiert</strong>
 				<span class="sr-only">Escape-Taste um Benachrichtigung zu schließen</span>
 			</p>
 			<button
-				tabindex={$notificationMessage === '' ? -1 : 0}
-				on:click={() => notificationMessage.set('')}
-				on:focusin={() => (notificationCloseFocus = true)}
-				on:focusout={() => (notificationCloseFocus = false)}
+				tabindex={globalState.notificationMessage === '' ? -1 : 0}
+				onclick={() => globalState.resetNotificationMessage()}
+				onfocusin={() => (notificationCloseFocus = true)}
+				onfocusout={() => (notificationCloseFocus = false)}
 				aria-label={notificationCloseFocus ? 'Zwischenablage-Benachrichtigung schließen' : ''}
 			>
 				<Icon svg="close" color="black" size="30" />
@@ -61,16 +66,15 @@
 	{/key}
 </div>
 
-<svelte:window on:keyup={(e) => onHandleGlobalKeypress(e)} />
+<svelte:window onkeyup={(e) => onHandleGlobalKeypress(e)} />
 
 <style lang="scss" global>
 	@import './../scss/_main.scss';
 
-	.test {
+	.notification {
 		position: fixed;
 		inset: auto 0 0 0;
 		z-index: 100;
-		// background-color: var(--color-black);
 		background-color: var(--color-yellow);
 		margin-inline: auto;
 
@@ -82,10 +86,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		// opacity: 100%;
 
 		&.hidden {
-			// transform: translateY(100%);
 			opacity: 0%;
 			pointer-events: none;
 		}

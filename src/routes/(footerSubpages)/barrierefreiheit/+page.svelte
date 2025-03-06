@@ -7,7 +7,9 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Erklärung zur Barrierefreiheit</svelte:fragment>
+	{#snippet title()}
+		Erklärung zur Barrierefreiheit
+	{/snippet}
 </TitleSection>
 
 <div class="page-content headings-with-padding">

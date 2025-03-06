@@ -1,15 +1,20 @@
 <script lang="ts">
 	import BackLink from '../../../../lib/components/BackLink.svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
-<div class="top-space" />
+<div class="top-space"></div>
 
 <div class="page-content">
 	<div class="backlink-wrapper">
 		<BackLink linkTo="/aktuelles" label="Zurück zur Übersicht" paddingLeft={false} />
 	</div>
 
-	<slot />
+	{@render children?.()}
 </div>
 
 <style lang="scss">

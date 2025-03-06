@@ -1,15 +1,25 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 
-	export let title: string;
-	export let time: string;
-	export let link: string;
+	interface Props {
+		title: string;
+		time: string;
+		link: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let {
+		title,
+		time,
+		link,
+		children
+	}: Props = $props();
 </script>
 
 <article class="article-preview-wrapper">
 	<time datetime={time}>{time}</time>
 	<h2>{title}</h2>
-	<p><slot /></p>
+	<p>{@render children?.()}</p>
 	<a href="{base}/aktuelles/{link}">
 		<span aria-hidden="true">Mehr erfahren</span>
 		<span class="sr-only">Mehr erfahren über {title}</span>

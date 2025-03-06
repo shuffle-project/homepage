@@ -3,9 +3,13 @@
 	import { WHOLE_TEAM, type TeamMemberName } from '$lib/constants/teamMembers.constant';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
 
-	export let title: string;
-	export let authorName: TeamMemberName;
-	export let date: string;
+	interface Props {
+		title: string;
+		authorName: TeamMemberName;
+		date: string;
+	}
+
+	let { title, authorName, date }: Props = $props();
 	let author: TeamMember = WHOLE_TEAM.find((teamMember) => teamMember.name === authorName)!;
 </script>
 

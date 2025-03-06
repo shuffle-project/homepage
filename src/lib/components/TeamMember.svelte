@@ -1,13 +1,18 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { getGlobalState } from '$lib/globalState.svelte';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
-	import { onCopyEmailToClipboard } from '$lib/utils/utils';
 	import Icon from './Icon.svelte';
 
-	export let member: TeamMember;
+	const globalState = getGlobalState();
+	interface Props {
+		member: TeamMember;
+	}
 
-	let short = '';
-	let domain = '';
+	let { member }: Props = $props();
+
+	let short = $state('');
+	let domain = $state('');
 
 	if (member.contact) {
 		short = member.contact.short;
@@ -43,13 +48,13 @@
 		<button
 			class="email-button"
 			aria-label="E-Mail Adresse von {member.name} in die Zwischenablage kopieren"
-			on:click={() => onCopyEmailToClipboard(short, domain)}
+			onclick={() => globalState.copyEmailToClipboard(short, domain)}
 		>
 			<Icon svg="copy" size="16" color="blue" />
 			<span aria-hidden="true">E-Mail Adresse</span>
 		</button>
 	{:else}
-		<div class="email-button-placeholder" />
+		<div class="email-button-placeholder"></div>
 	{/if}
 </li>
 

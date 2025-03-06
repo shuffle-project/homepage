@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import MenuButton from './sidebarMenu/MenuButton.svelte';
 
-	let scrolling = false;
+	let scrolling = $state(false);
 	let throttle = false;
 
 	onMount(() => {

@@ -7,7 +7,9 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Impressum</svelte:fragment>
+	{#snippet title()}
+		Impressum
+	{/snippet}
 </TitleSection>
 
 <div class="page-content headings-with-padding">

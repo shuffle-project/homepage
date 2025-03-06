@@ -11,11 +11,13 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Kontakt</svelte:fragment>
-	<svelte:fragment slot="intro-text"
-		>Bei Fragen, Anregungen oder Wünschen, können Sie uns gerne per E-Mail schreiben. Sie werden
+	{#snippet title()}
+		Kontakt
+	{/snippet}
+	{#snippet introText()}
+		Bei Fragen, Anregungen oder Wünschen, können Sie uns gerne per E-Mail schreiben. Sie werden
 		zeitnah vom SHUFFLE-Team kontaktiert.
-	</svelte:fragment>
+	{/snippet}
 </TitleSection>
 
 <div class="wrapper">

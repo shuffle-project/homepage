@@ -21,11 +21,11 @@
 		}
 	});
 
-	let publicationPaper: Publication[] = [];
-	let publicationWorkshops: Publication[] = [];
-	let publicationPoster: Publication[] = [];
-	let publicationTheses: Publication[] = [];
-	let publicationOther: Publication[] = [];
+	let publicationPaper: Publication[] = $state([]);
+	let publicationWorkshops: Publication[] = $state([]);
+	let publicationPoster: Publication[] = $state([]);
+	let publicationTheses: Publication[] = $state([]);
+	let publicationOther: Publication[] = $state([]);
 
 	onMount(() => {
 		if (unsortedAllPublications) {
@@ -62,12 +62,15 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Publikationen</svelte:fragment>
-	<svelte:fragment slot="intro-text"
-		>Im Folgenden sind alle Publikationen des SHUFFLE-Projektes aufgelistet. Bei Veröffentlichungen
+	{#snippet title()}
+		Publikationen
+	{/snippet}
+
+	{#snippet introText()}
+		Im Folgenden sind alle Publikationen des SHUFFLE-Projektes aufgelistet. Bei Veröffentlichungen
 		durch Dritte im Rahmen von beispielsweise Sammelbänden, können wir nicht für die
 		Barrierefreiheit garantieren.
-	</svelte:fragment>
+	{/snippet}
 </TitleSection>
 
 <div class="page-content">

@@ -13,8 +13,13 @@
 </svelte:head>
 
 <TitleSection>
-	<svelte:fragment slot="title">Sitemap</svelte:fragment>
-	<svelte:fragment slot="intro-text">Diese Sitemap listet alle Seiten auf.</svelte:fragment>
+	{#snippet title()}
+		Sitemap
+	{/snippet}
+
+	{#snippet introText()}
+		Diese Sitemap listet alle Seiten auf.
+	{/snippet}
 </TitleSection>
 
 <div class="page-content headings-with-padding">

@@ -27,88 +27,102 @@
 		</div>
 		<div class="table-content desktop">
 			<table>
-				<tr>
-					<th>Laufzeit</th>
-					<td>
-						<ProjectDuration />
-					</td>
-				</tr>
-				<tr>
-					<th>Gefördert von</th>
-					<td class="funded-by">
-						<Icon svg={'icon-stiftung'} size="24" color="dark-grey" />
-						<span>Stiftung Innovation in der Hochschullehre</span>
-					</td>
-				</tr>
-				<tr>
-					<th class="project-partner-title">Projektpartner</th>
-					<td class="project-partner">
-						<ul>
-							<li>
-								<Icon svg={'icon-stuttgart'} size="24" color="dark-grey" />
-								<span>Hochschule der Medien Stuttgart</span>
-							</li>
-							<li>
-								<Icon svg={'icon-bielefeld'} size="24" color="dark-grey" />
-								<span>Universität Bielefeld</span>
-							</li>
-							<li>
-								<Icon svg={'icon-heidelberg'} size="24" color="dark-grey" />
-								<span>Pädagogische Hochschule Heidelberg</span>
-							</li>
-							<li>
-								<Icon svg={'icon-freiburg'} size="24" color="dark-grey" />
-								<span>Pädagogische Hochschule Freiburg</span>
-							</li>
-						</ul>
-					</td>
-				</tr>
+				<tbody>
+					<tr>
+						<th>Laufzeit</th>
+						<td>
+							<ProjectDuration />
+						</td>
+					</tr>
+					<tr>
+						<th>Gefördert von</th>
+						<td class="funded-by">
+							<Icon svg={'icon-stiftung'} size="24" color="dark-grey" />
+							<span>Stiftung Innovation in der Hochschullehre</span>
+						</td>
+					</tr>
+					<tr>
+						<th class="project-partner-title">Projektpartner</th>
+						<td class="project-partner">
+							<ul>
+								<li>
+									<Icon svg={'icon-stuttgart'} size="24" color="dark-grey" />
+									<span>Hochschule der Medien Stuttgart</span>
+								</li>
+								<li>
+									<Icon svg={'icon-bielefeld'} size="24" color="dark-grey" />
+									<span>Universität Bielefeld</span>
+								</li>
+								<li>
+									<Icon svg={'icon-heidelberg'} size="24" color="dark-grey" />
+									<span>Pädagogische Hochschule Heidelberg</span>
+								</li>
+								<li>
+									<Icon svg={'icon-freiburg'} size="24" color="dark-grey" />
+									<span>Pädagogische Hochschule Freiburg</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 		<div class="table-content mobile">
 			<table>
-				<tr>
-					<th> Laufzeit </th>
-				</tr>
-				<tr>
-					<ProjectDuration />
-				</tr>
+				<tbody>
+					<tr>
+						<th> Laufzeit </th>
+					</tr>
+					<tr>
+						<td>
+							<ProjectDuration />
+						</td>
+					</tr>
+				</tbody>
 			</table>
 
 			<table>
-				<tr>
-					<th> Gefördert von </th>
-				</tr>
-				<tr class="funded-by">
-					<Icon svg={'icon-stiftung'} size="24" color="dark-grey" />
-					<span>Stiftung Innovation in der Hochschullehre</span>
-				</tr>
+				<tbody>
+					<tr>
+						<th> Gefördert von </th>
+					</tr>
+					<tr class="funded-by">
+						<td>
+							<Icon svg={'icon-stiftung'} size="24" color="dark-grey" />
+							<span>Stiftung Innovation in der Hochschullehre</span>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 
 			<table>
-				<tr>
-					<th> Projektpartner </th>
-				</tr>
-				<tr class="project-partner">
-					<ul>
-						<li>
-							<Icon svg={'icon-stuttgart'} size="24" color="dark-grey" />
-							<span>Hochschule der Medien Stuttgart</span>
-						</li>
-						<li>
-							<Icon svg={'icon-bielefeld'} size="24" color="dark-grey" />
-							<span>Universität Bielefeld</span>
-						</li>
-						<li>
-							<Icon svg={'icon-heidelberg'} size="24" color="dark-grey" />
-							<span>Pädagogische Hochschule Heidelberg</span>
-						</li>
-						<li>
-							<Icon svg={'icon-freiburg'} size="24" color="dark-grey" />
-							<span>Pädagogische Hochschule Freiburg</span>
-						</li>
-					</ul>
-				</tr>
+				<tbody>
+					<tr>
+						<th> Projektpartner </th>
+					</tr>
+					<tr class="project-partner">
+						<td>
+							<ul>
+								<li>
+									<Icon svg={'icon-stuttgart'} size="24" color="dark-grey" />
+									<span>Hochschule der Medien Stuttgart</span>
+								</li>
+								<li>
+									<Icon svg={'icon-bielefeld'} size="24" color="dark-grey" />
+									<span>Universität Bielefeld</span>
+								</li>
+								<li>
+									<Icon svg={'icon-heidelberg'} size="24" color="dark-grey" />
+									<span>Pädagogische Hochschule Heidelberg</span>
+								</li>
+								<li>
+									<Icon svg={'icon-freiburg'} size="24" color="dark-grey" />
+									<span>Pädagogische Hochschule Freiburg</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 	</div>
@@ -242,6 +256,14 @@
 						th {
 							text-align: left;
 							padding-bottom: 0.625rem;
+						}
+
+						.funded-by {
+							td {
+								display: flex;
+								align-items: center;
+								gap: 0.625rem;
+							}
 						}
 					}
 				}

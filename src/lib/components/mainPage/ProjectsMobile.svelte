@@ -6,9 +6,13 @@
 	import Icon from '../Icon.svelte';
 	import ProjectCard from '../ProjectCard.svelte';
 
-	export let selectedProjects: Project[] = [];
+	interface Props {
+		selectedProjects?: Project[];
+	}
 
-	let carousel: Splide;
+	let { selectedProjects = [] }: Props = $props();
+
+	let carousel: Splide | undefined = $state();
 
 	const splideOptions = {
 		type: 'loop',
@@ -34,16 +38,17 @@
 		easing: 'ease'
 	};
 
-	let carouselSelectedIndex: number = 0;
+	let carouselSelectedIndex: number = $state(0);
 
-	let componentHasFocus = false;
+	let componentHasFocus = $state(false);
 
-	$: ariaLiveText =
+	let ariaLiveText = $derived(
 		selectedProjects[carouselSelectedIndex].title +
-		', ' +
-		(carouselSelectedIndex + 1) +
-		' von ' +
-		selectedProjects.length;
+			', ' +
+			(carouselSelectedIndex + 1) +
+			' von ' +
+			selectedProjects.length
+	);
 
 	function moveSlide(direction: string) {
 		if (!carousel) return;
@@ -73,8 +78,8 @@
 	on:scrolled={() => handleScrolled()}
 >
 	<button
-		on:focusout={() => (componentHasFocus = false)}
-		on:click={() => moveSlide('<')}
+		onfocusout={() => (componentHasFocus = false)}
+		onclick={() => moveSlide('<')}
 		class="previous-button before-card"
 		aria-label="Vorheriges Projekt"
 	>
@@ -88,12 +93,12 @@
 			</SplideSlide>
 		{/each}
 	</SplideTrack>
-	<div class="splide__arrows" />
+	<div class="splide__arrows"></div>
 
 	<div class="slider-navigation">
 		<button
-			on:focusout={() => (componentHasFocus = false)}
-			on:click={() => moveSlide('<')}
+			onfocusout={() => (componentHasFocus = false)}
+			onclick={() => moveSlide('<')}
 			class="previous-button after-card"
 			aria-label="Vorheriges Projekt"
 		>
@@ -105,8 +110,8 @@
 		</p>
 
 		<button
-			on:focusout={() => (componentHasFocus = false)}
-			on:click={() => moveSlide('>')}
+			onfocusout={() => (componentHasFocus = false)}
+			onclick={() => moveSlide('>')}
 			class="next-button"
 			aria-label="Nächstes Projekt"
 			><Icon svg="arrow-forward" size="30" />
