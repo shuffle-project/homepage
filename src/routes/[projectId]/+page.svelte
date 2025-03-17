@@ -5,6 +5,7 @@
 	import Gallery from '$lib/components/projectDetailPage/Gallery.svelte';
 	import Info from '$lib/components/projectDetailPage/Info.svelte';
 	import JoinEvaluation from '$lib/components/projectDetailPage/JoinEvaluation.svelte';
+	import MaturityModelPackage from '$lib/components/projectDetailPage/MaturityModelPackage.svelte';
 	import MelvinGitHub from '$lib/components/projectDetailPage/MelvinGitHub.svelte';
 	import ProjectHeader from '$lib/components/projectDetailPage/ProjectHeader.svelte';
 	import Publications from '$lib/components/projectDetailPage/Publications.svelte';
@@ -62,7 +63,12 @@
 	<div class="back-link-wrapper">
 		<BackLink linkTo="/#projektergebnisse" />
 	</div>
+
 	<ProjectHeader {project} />
+
+	{#if project.id === 'shuffle-reifegradmodell'}
+		<MaturityModelPackage />
+	{/if}
 
 	{#if project.info}
 		<Info infoMessage={project.info} />

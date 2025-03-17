@@ -16,7 +16,7 @@ export const BLINDDATE: Project = {
 	joinEvaluation: {
 		title: 'Feedback geben',
 		introduction:
-			'Die Webseite befindet sich aktuell noch in der Entwicklung. Wir freuen uns über Feedback und Rückmeldungen zu den Inhalten oder möglichen technischen Barrieren. Durch die Umfragen auf den jeweiligen Persona-Seiten oder über die folgende Email-Adresse.',
+			'Die Webseite befindet sich aktuell noch in der Entwicklung. Wir freuen uns über Feedback und Rückmeldungen zu den Inhalten oder möglichen technischen Barrieren. Durch die Umfragen auf der BlindDate-Startseite oder über die folgende Email-Adresse.',
 		contactName: 'dem BlindDate-Team',
 		contact: {
 			short: 'kontakt',
