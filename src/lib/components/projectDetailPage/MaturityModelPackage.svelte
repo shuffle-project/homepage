@@ -10,7 +10,7 @@
 			<p>
 				Mit den hier downloadbaren Dokumenten können Sie das Reifegradmodell direkt für Ihre
 				Hochschule anwenden. Sie finden in den Dokumenten eine kurze Einleitung, die beschreibt,
-				warum digitale Barrierefreiheit und das Reifegradmodell wichtig sind und die sie auch für
+				warum digitale Barrierefreiheit und das Reifegradmodell wichtig sind und die Sie auch für
 				die Kommunikation innerhalb Ihrer Hochschule nutzen können.
 			</p>
 			<p>
