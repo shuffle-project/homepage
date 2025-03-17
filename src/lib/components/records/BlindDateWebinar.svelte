@@ -24,6 +24,11 @@
 		h2 {
 			font-size: clamp(1rem, 4vw + 0.25rem, 1.875rem);
 		}
+
+		h2,
+		p {
+			padding-inline: 1.875rem;
+		}
 	}
 
 	@media (max-width: 41.25rem) {

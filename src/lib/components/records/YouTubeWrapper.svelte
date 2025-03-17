@@ -68,7 +68,7 @@
 
 	.not-allowed {
 		background-color: var(--color-light-blue);
-		padding: var(--outer-spacing);
+		padding: 1.875rem;
 	}
 
 	.toggle-wrapper {
@@ -133,7 +133,8 @@
 	}
 
 	@media (max-width: 41.25rem) {
-		.link-to-youtube {
+		.link-to-youtube,
+		.not-allowed {
 			padding-inline: var(--outer-spacing);
 		}
 	}
