@@ -101,11 +101,10 @@
 						border: none;
 					}
 
-					&:focus {
-						text-decoration: underline;
-						background-color: rgba(var(--color-black-rgb), 0.08);
-						outline: 2px solid rgba(var(--color-black-rgb), 0.08);
-						outline-offset: 0;
+					&:focus-visible {
+						text-decoration: none !important;
+						outline: 2px solid var(--color-black);
+						outline-offset: 2px;
 					}
 				}
 
