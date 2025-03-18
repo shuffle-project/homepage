@@ -9,18 +9,20 @@
 		<div class="text-wrapper">
 			<p>
 				Mit den hier downloadbaren Dokumenten können Sie das Reifegradmodell direkt für Ihre
-				Hochschule anwenden. Sie finden in den Dokumenten eine kurze Einleitung, die beschreibt,
-				warum digitale Barrierefreiheit und das Reifegradmodell wichtig sind und die Sie auch für
-				die Kommunikation innerhalb Ihrer Hochschule nutzen können.
+				Hochschule anwenden. Sie finden in den Dokumenten eine <strong>kurze Einleitung</strong>,
+				die beschreibt, warum digitale Barrierefreiheit und das Reifegradmodell wichtig sind und die
+				Sie auch für die Kommunikation innerhalb Ihrer Hochschule nutzen können.
 			</p>
 			<p>
-				Zudem finden Sie eine Anleitung, in der die Anwendung des Reifegradmodells beschrieben ist.
-				Die Anwendung selbst erfolgt momentan über die Excel-Datei „Anwendungstool“, in der Sie die
-				Stufen eintragen können und dann ein Ergebnis und für Ihre Stufe passende
-				Handlungsempfehlungen erhalten.
+				Zudem finden Sie eine <strong>Anleitung</strong>, in der die Anwendung des Reifegradmodells
+				beschrieben ist. Die Anwendung selbst erfolgt momentan über
+				<strong>die Excel-Datei „Anwendungstool“</strong>, in der Sie die Stufen eintragen können
+				und dann ein Ergebnis und für Ihre Stufe passende Handlungsempfehlungen erhalten.
 			</p>
 			<p>
-				Alle Handlungsempfehlungen sind zudem nochmals in dem Dokument „Handlungsempfehlungen“
+				Alle Handlungsempfehlungen sind zudem nochmals in dem Dokument <strong>
+					„Handlungsempfehlungen“</strong
+				>
 				zusammengefasst und auch noch durch Hinweise und Good-Practice-Beispiele erweitert.
 			</p>
 		</div>
