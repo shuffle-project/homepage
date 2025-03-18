@@ -30,7 +30,7 @@ export const MATURITY_MODEL: Project = {
 	joinEvaluation: {
 		title: 'Reifegradmodell testen',
 		introduction:
-			'Das Reifegradmodell kann momentan in einer ersten Pilotphase getestet werden. Wenn Sie es an Ihrer Hochschule einsetzen möchten, kontaktieren Sie uns gerne. Sie erhalten dann die Dokumente zur Anwendung des Reifegradmodells. Auch bei allgemeinen Fragen zu unserem Reifegradmodell können Sie sich jederzeit an uns wenden.',
+			'Das Reifegradmodell steht Ihnen kostenfrei zur Verfügung. Wenn Sie es an Ihrer Hochschule einsetzen möchten, können Sie hier direkt die Dokumente zur Anwendung des Reifegradmodells downloaden. Bei Fragen oder Feedback zu unserem Reifegradmodell können Sie sich jederzeit an uns wenden.',
 		contact: {
 			short: 'shuffle-rgm',
 			domain: 'hdm-stuttgart.de'
