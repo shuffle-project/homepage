@@ -197,7 +197,8 @@ export const MELVIN: Project = {
 			placeOfPublicationLang: 'en',
 			link: {
 				label: 'Zum Paper',
-				url: 'https://dl.acm.org/doi/10.1145/3663548.3688495'
+				url: 'https://dl.acm.org/doi/10.1145/3663548.3688495?cid=99660781441',
+				allowReferrer: true
 			},
 			category: 'Paper / Buchbeiträge',
 			apa: `<span class="apa-publication">
