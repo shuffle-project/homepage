@@ -205,7 +205,54 @@ export const MELVIN: Project = {
 				Kuhn, K., Reuter, B., Egger, N., & Zimmermann, G. (2024).
 				<span lang="en"> Record, Transcribe, Share: An Accessible Open-Source Video Platform for Deaf and Hard of Hearing Viewers.</span>
 				<em lang="en"> ASSETS 2024: Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility,</em> 1-6.
-				<a href="https://doi.org/10.1145/3663548.3688495">https://doi.org/10.1145/3663548.3688495</a>`
+				<a href="https://doi.org/10.1145/3663548.3688495">https://doi.org/10.1145/3663548.3688495</a>
+				</span>`
+		},
+		{
+			title:
+				'Evaluating ASR Confidence Scores for Automated Error Detection in User-Assisted Correction Interfaces',
+			titleLang: 'en',
+			releaseDate: '2025-04',
+			contributors: ['Korbinian Kuhn', 'Verena Kersken', 'Gottfried Zimmermann'],
+			placeOfPublication:
+				"CHI EA '25: Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
+			placeOfPublicationLang: 'en',
+			link: {
+				label: 'Zum Paper',
+				url: 'https://dl.acm.org/doi/10.1145/3706599.3720038'
+			},
+			category: 'Paper / Buchbeiträge',
+			apa: `
+			<span class="apa-publication">
+				Kuhn, K., Kersken, V., & Zimmermann, G. (2025).
+				<span lang="en"> Evaluating ASR Confidence Scores for Automated Error Detection in User-Assisted Correction Interfaces.</span>
+				<em lang="en"> CHI EA '25: Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems,</em> Article 229, 1–7.
+				<a href="https://doi.org/10.1145/3706599.3720038">https://doi.org/10.1145/3706599.3720038</a>
+			</span>
+			`
+		},
+		{
+			title:
+				'Communication Access Real-Time Translation Through Collaborative Correction of Automatic Speech Recognition',
+			titleLang: 'en',
+			releaseDate: '2025-04',
+			contributors: ['Korbinian Kuhn', 'Verena Kersken', 'Gottfried Zimmermann'],
+			placeOfPublication:
+				"CHI EA '25: Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
+			placeOfPublicationLang: 'en',
+			link: {
+				label: 'Zum Paper',
+				url: 'https://dl.acm.org/doi/10.1145/3706599.3719984'
+			},
+			category: 'Paper / Buchbeiträge',
+			apa: `
+			<span class="apa-publication">
+				Kuhn, K., Kersken, V., & Zimmermann, G. (2025).
+				<span lang="en"> Communication Access Real-Time Translation Through Collaborative Correction of Automatic Speech Recognition.</span>
+				<em lang="en"> CHI EA '25: Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems,</em> Article 141, 1–8.
+				<a href="https://doi.org/10.1145/3706599.3719984">https://doi.org/10.1145/3706599.3719984</a>
+			</span>
+			`
 		}
 	]
 };
