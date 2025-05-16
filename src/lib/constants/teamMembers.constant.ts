@@ -80,11 +80,7 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Judith Kuhlmann',
 		projectPartner: 'Universität Bielefeld',
-		img: 'judith-kuhlmann.jpeg'
-	},
-	{
-		name: 'Kira Frankenfeld',
-		projectPartner: 'Hochschule der Medien Stuttgart'
+		img: 'judith-kuhlmann.jpg'
 	},
 	{
 		name: 'Kim Althoff',
@@ -148,7 +144,8 @@ export const TEAM_MEMBERS = [
 	},
 	{
 		name: 'Sarah Bergmann',
-		projectPartner: 'Universität Bielefeld'
+		projectPartner: 'Universität Bielefeld',
+		img: 'sarah-bergmann.jpg'
 	},
 	{
 		name: 'Sebastian Koch',
@@ -162,6 +159,10 @@ export const TEAM_MEMBERS = [
 ] as const satisfies TeamMember[];
 
 export const OLD_MEMBERS = [
+	{
+		name: 'Kira Frankenfeld',
+		projectPartner: 'Hochschule der Medien Stuttgart'
+	},
 	{
 		name: 'Dr. Kathy-Ann Heitmeier',
 		projectPartner: 'Hochschule der Medien Stuttgart',
