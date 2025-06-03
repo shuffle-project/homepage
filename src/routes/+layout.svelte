@@ -26,6 +26,10 @@
 	let touchscreen = false;
 	onMount(() => {
 		touchscreen = deviceHasTouchScreen();
+
+		if (localStorage.getItem('allowYouTubeEmbed') === 'true') {
+			globalState.allowYouTubeEmbed = true;
+		}
 	});
 </script>
 

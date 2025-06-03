@@ -57,6 +57,11 @@ export const TEAM_MEMBERS = [
 		img: 'dustin-matzel.jpg'
 	},
 	{
+		name: 'Florian Winkler',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'florian-winkler.jpg'
+	},
+	{
 		name: 'Frank Laemers',
 		projectPartner: 'Pädagogische Hochschule Heidelberg'
 	},
@@ -83,6 +88,10 @@ export const TEAM_MEMBERS = [
 		img: 'judith-kuhlmann.jpg'
 	},
 	{
+		name: 'Kevin Pakula',
+		projectPartner: 'Hochschule der Medien Stuttgart'
+	},
+	{
 		name: 'Kim Althoff',
 		projectPartner: 'Universität Bielefeld',
 		img: 'kim-althoff.jpg'
@@ -106,6 +115,11 @@ export const TEAM_MEMBERS = [
 		}
 	},
 	{
+		name: 'Linus Jerg',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'linus-jerg.jpg'
+	},
+	{
 		name: 'Prof. Dr. Markus Lang',
 		projectPartner: 'Pädagogische Hochschule Heidelberg'
 	},
@@ -113,15 +127,6 @@ export const TEAM_MEMBERS = [
 		name: 'Michael Johannfunke',
 		projectPartner: 'Universität Bielefeld',
 		img: 'michael-johannfunke.jpg'
-	},
-	{
-		name: 'Nadine Auer',
-		projectPartner: 'Hochschule der Medien Stuttgart',
-		img: 'nadine-auer.jpg',
-		contact: {
-			short: 'auer',
-			domain: 'hdm-stuttgart.de'
-		}
 	},
 	{
 		name: 'Niklas Egger',
@@ -143,6 +148,15 @@ export const TEAM_MEMBERS = [
 		img: 'petra-grimm.jpg'
 	},
 	{
+		name: 'Pirmin Gersbacher',
+		projectPartner: 'Hochschule der Medien Stuttgart'
+	},
+	{
+		name: 'Ronja Brauchle',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'ronja-brauchle.jpg'
+	},
+	{
 		name: 'Sarah Bergmann',
 		projectPartner: 'Universität Bielefeld',
 		img: 'sarah-bergmann.jpg'
@@ -159,6 +173,11 @@ export const TEAM_MEMBERS = [
 ] as const satisfies TeamMember[];
 
 export const OLD_MEMBERS = [
+	{
+		name: 'Nadine Auer',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'nadine-auer.jpg'
+	},
 	{
 		name: 'Kira Frankenfeld',
 		projectPartner: 'Hochschule der Medien Stuttgart'

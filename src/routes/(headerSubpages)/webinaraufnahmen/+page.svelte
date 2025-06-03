@@ -1,4 +1,5 @@
 <script>
+	import BarrierefreieLernvideos from '../../../lib/components/records/BarrierefreieLernvideos.svelte';
 	import BarrierefreiLehrenWebinar from '../../../lib/components/records/BarrierefreiLehrenWebinar.svelte';
 	import BlindDateWebinar from '../../../lib/components/records/BlindDateWebinar.svelte';
 	import DigitaleLernraumeWebinar from '../../../lib/components/records/DigitaleLernraumeWebinar.svelte';
@@ -21,6 +22,7 @@
 </TitleSection>
 
 <div class="page-content">
+	<BarrierefreieLernvideos />
 	<DigitaleLernraumeWebinar />
 	<BlindDateWebinar />
 	<ReifegradmodellWebinar />

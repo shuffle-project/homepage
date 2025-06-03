@@ -9,6 +9,7 @@ export const MELVIN: Project = {
 		url: 'https://melvin.shuffle-projekt.de',
 		label: 'Zu Melvin'
 	},
+	webinar: 'melvin',
 	summary:
 		'Barrierefreie Videos sind wichtig, jedoch oft mit einem enormen Aufwand, notwendigem Know-How und dem Einsatz unterschiedlicher Tools verbunden. Melvin bietet hierfür eine schnellere und bequemere Lösung an. Innerhalb einer Webanwendung können Sie ihre Videos aufnehmen, automatisch untertiteln lassen und durch einen barrierefreien Player das fertige Video mitsamt Transkript teilen. Die Untertitel können Sie zudem alleine oder im Team verbessern, im Nachhinein oder während eines Livestreams.',
 	partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Heidelberg'],
@@ -251,6 +252,27 @@ export const MELVIN: Project = {
 				<span lang="en"> Communication Access Real-Time Translation Through Collaborative Correction of Automatic Speech Recognition.</span>
 				<em lang="en"> CHI EA '25: Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems,</em> Article 141, 1–8.
 				<a href="https://doi.org/10.1145/3706599.3719984">https://doi.org/10.1145/3706599.3719984</a>
+			</span>
+			`
+		},
+		{
+			title: 'Barrierefreie Lernvideos durch KI und Open Source ',
+			titleLang: 'de',
+			releaseDate: '2025-05',
+			contributors: ['Niklas Egger', 'Benedikt Reuter', 'Korbinian Kuhn'],
+			placeOfPublication: 'University:Future Festival',
+			placeOfPublicationLang: 'en',
+			link: {
+				label: 'Zur Aufnahme (YouTube)',
+				url: 'https://www.youtube.com/watch?v=SZBbU1dkIQ8'
+			},
+			category: 'Sonstige Veröffentlichungen',
+			apa: `
+			<span class="apa-publication">
+				Egger, N., Reuter, B., & Kuhn, K. (2025).
+				<em lang="de"> Barrierefreie Lernvideos durch KI und Open Source</em>
+				<span lang="en">[Input]. University:Future Festival, digital Stage</span>.
+				<a href="https://www.youtube.com/watch?v=SZBbU1dkIQ8">https://www.youtube.com/watch?v=SZBbU1dkIQ8</a>
 			</span>
 			`
 		}

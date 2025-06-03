@@ -36,7 +36,9 @@
 					<input
 						aria-describedby="privacy-{randomId}"
 						type="checkbox"
-						bind:checked={globalState.allowYouTubeEmbed}
+						checked={globalState.allowYouTubeEmbed}
+						onchange={(e) =>
+							(globalState.allowYouTubeEmbed = (e.target as HTMLInputElement).checked)}
 					/>
 				</label>
 

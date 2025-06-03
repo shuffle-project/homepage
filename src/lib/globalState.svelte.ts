@@ -3,9 +3,20 @@ import { getContext, setContext } from 'svelte';
 export class GlobalState {
 	notificationMessage = $state('');
 	useAPAFormat = $state(false);
-	allowYouTubeEmbed = $state(false);
+	_allowYouTubeEmbed = $state(false);
 
 	constructor() {}
+
+	set allowYouTubeEmbed(value: boolean) {
+		this._allowYouTubeEmbed = value;
+		if (this._allowYouTubeEmbed && !localStorage.getItem('allowYouTubeEmbed')) {
+			localStorage.setItem('allowYouTubeEmbed', 'true');
+		}
+	}
+
+	get allowYouTubeEmbed() {
+		return this._allowYouTubeEmbed;
+	}
 
 	resetNotificationMessage() {
 		this.notificationMessage = '';

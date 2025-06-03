@@ -9,6 +9,7 @@
 	import MelvinGitHub from '$lib/components/projectDetailPage/MelvinGitHub.svelte';
 	import ProjectHeader from '$lib/components/projectDetailPage/ProjectHeader.svelte';
 	import Publications from '$lib/components/projectDetailPage/Publications.svelte';
+	import BarrierefreieLernvideos from '$lib/components/records/BarrierefreieLernvideos.svelte';
 	import BarrierefreiLehrenWebinar from '$lib/components/records/BarrierefreiLehrenWebinar.svelte';
 	import BlindDateWebinar from '$lib/components/records/BlindDateWebinar.svelte';
 	import DigitaleLernraumeWebinar from '$lib/components/records/DigitaleLernraumeWebinar.svelte';
@@ -100,6 +101,8 @@
 				<ReifegradmodellWebinar />
 			{:else if project.webinar === WEBINAR_COMPONENTS.BADGE}
 				<BarrierefreiLehrenWebinar />
+			{:else if project.webinar === WEBINAR_COMPONENTS.MELVIN}
+				<BarrierefreieLernvideos />
 			{/if}
 		</div>
 	{/if}

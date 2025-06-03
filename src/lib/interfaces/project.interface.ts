@@ -65,7 +65,8 @@ export const WEBINAR_COMPONENTS = {
 	RGM: 'reifegradmodell',
 	LERNRAUME: 'digitale-lernraume',
 	BLINDDATE: 'blinddate',
-	BADGE: 'barrierefrei-lehren'
+	BADGE: 'barrierefrei-lehren',
+	MELVIN: 'melvin'
 } as const;
 
 export type WebinarComponent = ObjectValues<typeof WEBINAR_COMPONENTS>;

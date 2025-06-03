@@ -89,7 +89,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 				download: true
 			},
 			apa: `	<span class="apa-publication">
-				Kuhlmann, J., Kamin, A.-M., Matzel, D. & Johannfunke, M. (2023).
+				Kuhlmann, J., Kamin, A.-M., Matzel, D., & Johannfunke, M. (2023).
 				<em>
 					Sensibilisierung und Qualifizierung von Lehrenden für die digitale Barrierefreiheit
 				</em>

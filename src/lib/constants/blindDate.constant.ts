@@ -156,7 +156,7 @@ export const BLINDDATE: Project = {
 			},
 			category: 'Sonstige Veröffentlichungen',
 			apa: `<span class="apa-publication">
-				Lang, M., Böhm, A., Piskorek, P., Egger, N. (2023). 
+				Lang, M., Böhm, A., Piskorek, P., & Egger, N. (2023). 
 				<em>
 					Ein Schlüssel zu mehr Barrierefreiheit - Sensibilisierung von Lehrenden gegenüber
 					Menschen mit Blindheit und Sehbeeinträchtigungen: Ergebnisse und Handlungsansätze
