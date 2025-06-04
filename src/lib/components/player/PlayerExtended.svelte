@@ -96,6 +96,11 @@
 			margin-bottom: 1.875rem;
 		}
 
+		.transcript {
+			border: 1px solid var(--color-blue-line);
+			padding: 0.375rem 1.875rem;
+		}
+
 		.tablist {
 			display: flex;
 			flex-wrap: wrap;

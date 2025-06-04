@@ -121,7 +121,8 @@ export const TEAM_MEMBERS = [
 	},
 	{
 		name: 'Prof. Dr. Markus Lang',
-		projectPartner: 'Pädagogische Hochschule Heidelberg'
+		projectPartner: 'Pädagogische Hochschule Heidelberg',
+		img: 'markus-lang.jpg'
 	},
 	{
 		name: 'Michael Johannfunke',

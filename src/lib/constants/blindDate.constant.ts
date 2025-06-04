@@ -136,38 +136,40 @@ export const BLINDDATE: Project = {
 			title:
 				'Ein Schlüssel zu mehr Barrierefreiheit - Sensibilisierung von Lehrenden gegenüber Menschen mit Blindheit und Sehbeeinträchtigungen: Ergebnisse und Handlungsansätze aus einem Forschungsprojekt',
 			titleLang: 'de',
-			releaseDate: '2023-08',
+			releaseDate: '2024-12',
 			contributors: [
 				'Markus Lang',
 				'Ann-Katrin Böhm',
-				'Patricia Piskorek',
 				'Niklas Egger',
+				'Patricia Piskorek',
+				'Gottfried Zimmermann',
+				'Johannes Hennies',
+				'Anja Gutjahr',
+				'Frank Laemers',
+				'Barbara Bogner',
 				'Verena Kersken',
-				'Kathy-Ann Heitmeier',
-				'Gottfried Zimmermann'
+				'Kathy-Ann Heitmeier'
 			],
 			placeOfPublication:
 				'Kongress des Verband für Blinden- und Sehbehindertenpädagogik e. V. (VBS)',
 			placeOfPublicationLang: 'de',
 			link: {
-				label: 'Folien herunterladen (PowerPoint)',
-				url: 'downloads/Marburg_2023_Shuffle_Vortrag_AB_25.07.23.pptx',
-				download: true
+				label: 'Zum Sammelband',
+				url: 'https://www.vbs.eu/de/publikationen/kongressbericht-xxxvii/'
 			},
-			category: 'Sonstige Veröffentlichungen',
+			category: 'Paper / Buchbeiträge',
 			apa: `<span class="apa-publication">
-				Lang, M., Böhm, A., Piskorek, P., & Egger, N. (2023). 
-				<em>
+				Lang, M., Böhm, A. K., Egger, N., Piskorek, P., Zimmermann, G., Hennies, J., Gutjahr, A., Laemers, F., Bogner, B., Kersken, V. & Heitmeier, K. A. (2024). 
+				<span>
 					Ein Schlüssel zu mehr Barrierefreiheit - Sensibilisierung von Lehrenden gegenüber
 					Menschen mit Blindheit und Sehbeeinträchtigungen: Ergebnisse und Handlungsansätze
-					aus einem Forschungsprojekt
-				</em>
-				<span lang="en">[Presentation]</span>. Kongress des Verbandes für Blinden- und Sehbehindertenpädagogik e. V. (VBS),
-				Marburg, <span lang="en">Germany</span>.
+					aus einem Forschungsprojekt,
+				</span>
+				<em> Verband für Blinden- und Sehbehindertenpädagogik e.V. (Hrsg.): Leben. Bildung. Partizipation (individuell - spezifisch - flexibel). Kongressbericht. XXXVII. Kongress für Blinden- und Sehbehindertenpädagogik. Band II </em><span>(S.102-110). Würzburg: Edition Bentheim.</span>
 				<a
 					download
-					href="https://shuffle-projekt.de/downloads/Marburg_2023_Shuffle_Vortrag_AB_25.07.23.pptx"
-					>https://shuffle-projekt.de/downloads/Marburg_2023_Shuffle_Vortrag_AB_25.07.23.pptx</a
+					href="https://www.vbs.eu/de/publikationen/kongressbericht-xxxvii/"
+					>https://www.vbs.eu/de/publikationen/kongressbericht-xxxvii/</a
 				>
 			</span>`
 		},
