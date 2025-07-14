@@ -4,6 +4,7 @@ import { BLINDDATE } from './blindDate.constant';
 import { CERTIFICATE_COURSE } from './certificateCourse.constant';
 import { DIGITAL_ACCESSIBILITY_UNIVERSITY } from './digitalAccessibilityUniversity.constant';
 import { EASY_WEB_CHECK } from './easyWebCheck.constant';
+import { E_EXAM } from './eExam.constant';
 import { ETHICAL_GUIDELINES } from './ethicalGuidelines.constant';
 import { IAAP_TOOLKITS } from './iaapToolkits.constant';
 import { ILIAS_COURSE } from './iliasCourse.constant';
@@ -23,6 +24,7 @@ export const TEACHING_PROJECTS = [
 	ACCESSIBLE_MATERIAL_PACK,
 	ACCESSIBLE_MOODLE_COURSE,
 	ILIAS_COURSE,
+	E_EXAM,
 	MATURITY_MODEL,
 	BLINDDATE,
 	MELVIN,
