@@ -19,7 +19,7 @@ Informationen.`,
 	joinEvaluation: {
 		title: 'Feedback geben',
 		introduction:
-			'Unser Kurs ist ab sofort frei zug nglich. Nutzen Sie die angegebene Kontaktadresse für Feedback, Diskussionen und Ideenaustausch. Ihre Rückmeldungen helfen uns dabei, unsere Materialien stetig zu verbessern.',
+			'Unser Kurs ist ab sofort frei zugänglich. Nutzen Sie die angegebene Kontaktadresse für Feedback, Diskussionen und Ideenaustausch. Ihre Rückmeldungen helfen uns dabei, unsere Materialien stetig zu verbessern.',
 		contactName: 'ZAB Uni Bielefeld',
 		contact: {
 			short: 'shuffle',
