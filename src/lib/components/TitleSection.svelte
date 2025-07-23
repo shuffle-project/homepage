@@ -9,7 +9,7 @@
 	<div class="title-section">
 		<h1 class="title">{@render title?.()}</h1>
 		<p class="intro-text">{@render introText?.()}</p>
-		<p class="intro-text">{@render dgsIcon?.()}</p>
+		<span class="intro-text">{@render dgsIcon?.()}</span>
 	</div>
 </div>
 
