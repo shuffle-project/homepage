@@ -120,6 +120,39 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 			</span>
 			`
 		},
-		GESCHICHTEN_DER_ZUGAENGLICHKEIT
+		GESCHICHTEN_DER_ZUGAENGLICHKEIT,
+		{
+			title: 'Sensitize and qualify teachers for digital accessibility',
+			titleLang: 'en',
+			releaseDate: '2023-08',
+			category: 'Paper / Buchbeiträge',
+			contributors: [
+				'Dustin Matzel',
+				'Judith Kuhlmann',
+				'Christin Stormer',
+				'Michael Johannfunke',
+				'Anna-Maria Kamin'
+			],
+			placeOfPublication:
+				'Association for the Advancement of Assistive Technology in Europe (AAATE)',
+			placeOfPublicationLang: 'en',
+			link: {
+				label: 'Zum Paper (PDF)',
+				url: 'https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf#page=256'
+			},
+			apa: `<span class="apa-publication">
+				Matzel, D., Kuhlmann, J., Stormer, C., Johannfunke, M., & Kamin, A.-M. (2023).
+				<span lang="en">Sensitize and qualify teachers for digital accessibility. In G. Kouroupetroglou & D. Archambault (Eds.),</span>
+				<em lang="en"
+					>Book of Abstracts. 17th International Conference of the Association for the
+					Advancement of Assistive Technology in Europe, AAATE 2023</em
+				>
+				(pp. 244-245).
+				<a
+					href="https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf"
+					>https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf</a
+				>
+			</span>`
+		}
 	]
 };
