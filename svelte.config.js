@@ -13,7 +13,7 @@ const config = {
 		adapter: adapter({
 			pages: 'public',
 			assets: 'public',
-			fallback: null,
+			fallback: '404.html',
 			precompress: false,
 			strict: true
 		}),

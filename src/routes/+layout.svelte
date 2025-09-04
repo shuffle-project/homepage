@@ -75,6 +75,12 @@
 <style lang="scss" global>
 	@import './../scss/_main.scss';
 
+	main {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+
 	.notification {
 		position: fixed;
 		inset: auto 0 0 0;
