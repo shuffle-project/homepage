@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import Icon from './Icon.svelte';
 
 	interface Props {
@@ -8,11 +8,11 @@
 		paddingLeft?: boolean;
 	}
 
-	let { label = 'Zurück zur Startseite', linkTo = '/', paddingLeft = true }: Props = $props();
+	let { label = 'Zurück zur Startseite', linkTo, paddingLeft = true }: Props = $props();
 </script>
 
 <div>
-	<a href={base + linkTo} class:paddingLeft>
+	<a href={resolve(`/${linkTo}`)} class:paddingLeft>
 		<Icon svg="arrow-back" size="16" color="blue" />
 		<span>{label}</span></a
 	>

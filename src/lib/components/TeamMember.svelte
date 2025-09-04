@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import { getGlobalState } from '$lib/globalState.svelte';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
 	import Icon from './Icon.svelte';
@@ -30,14 +30,14 @@
 			<img
 				loading="lazy"
 				class="member-img"
-				src="{base}/members/{member.img}"
+				src={resolve(`/members/${member.img}`)}
 				alt=""
 				aria-hidden="true"
 			/>
 		</div>
 	{:else}
 		<div class="img-placeholder img-wrapper">
-			<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+			<img src={resolve('/logos/shuffle-logo.svg')} alt="" aria-hidden="true" />
 		</div>
 	{/if}
 

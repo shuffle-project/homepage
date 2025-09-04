@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
@@ -43,7 +43,7 @@
 </p>
 
 <img
-	src="{base}/articles/fruehlingstreffen-in-bielefeld/shuffle-bielefeld23.jpg"
+	src={resolve('/articles/fruehlingstreffen-in-bielefeld/shuffle-bielefeld23.jpg')}
 	alt=""
 	aria-hidden="true"
 	class="max-width-100"

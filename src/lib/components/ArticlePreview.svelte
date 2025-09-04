@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 
 	interface Props {
 		title: string;
@@ -8,19 +8,14 @@
 		children?: import('svelte').Snippet;
 	}
 
-	let {
-		title,
-		time,
-		link,
-		children
-	}: Props = $props();
+	let { title, time, link, children }: Props = $props();
 </script>
 
 <article class="article-preview-wrapper">
 	<time datetime={time}>{time}</time>
 	<h2>{title}</h2>
 	<p>{@render children?.()}</p>
-	<a href="{base}/aktuelles/{link}">
+	<a href={resolve(`/aktuelles/${link}`)}>
 		<span aria-hidden="true">Mehr erfahren</span>
 		<span class="sr-only">Mehr erfahren über {title}</span>
 	</a>

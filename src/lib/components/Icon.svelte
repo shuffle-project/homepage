@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 
 	interface Props {
 		svg: string;
@@ -15,7 +15,7 @@
 	if (!svg.startsWith('/')) svg = '/icons/' + svg;
 </script>
 
-<img src={base + svg} {alt} aria-hidden={alt === ''} class="{color} {svgSize}" />
+<img src={resolve(`/${svg}`)} {alt} aria-hidden={alt === ''} class="{color} {svgSize}" />
 
 <style lang="scss">
 	img {

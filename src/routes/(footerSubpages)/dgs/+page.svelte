@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import Icon from '$lib/components/Icon.svelte';
 	import TitleSection from '../../../lib/components/TitleSection.svelte';
 </script>
@@ -29,16 +29,18 @@
 
 <div class="video-wrapper">
 	<!-- svelte-ignore a11y_media_has_caption -->
-	<video controls muted poster="{base}/videos/dgs_shuffle_teaser.jpg">
-		<source src="{base}/videos/dgs_shuffle.mp4" type="video/mp4" />
+	<video controls muted poster={resolve('/videos/dgs_shuffle_teaser.jpg')}>
+		<source src={resolve('/videos/dgs_shuffle.mp4')} type="video/mp4" />
 		Ihr Browser unterstützt die Wiedergabe von Videos nicht.
 	</video>
 </div>
 
 <div class="page-content">
 	<p>
-		Sie können das <a class="chakra-link css-spn4bz" href="{base}/videos/dgs_shuffle.mp4" download
-			>Video herunterladen</a
+		Sie können das <a
+			class="chakra-link css-spn4bz"
+			href={resolve('/videos/dgs_shuffle.mp4')}
+			download>Video herunterladen</a
 		>. Es hat eine Länge von <abbr title="6 Minuten 32 Sekunden">06:32</abbr> und eine Dateigröße
 		von <abbr title="42 Mebibyte">42 MiB</abbr>.
 	</p>

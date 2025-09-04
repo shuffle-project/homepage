@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import type { Project } from '$lib/interfaces/project.interface';
 	import Icon from './Icon.svelte';
 
@@ -13,7 +13,7 @@
 
 <div class="result-card" class:horizontal-center={horizontalCenter}>
 	<div class="decorative-icon">
-		<a href="{base}/{project.id}" aria-label="Mehr erfahren über {project.title}">
+		<a href={resolve(`/${project.id}`)} aria-label="Mehr erfahren über {project.title}">
 			<Icon svg={project.id} color="white" size="parent" />
 		</a>
 	</div>
@@ -27,7 +27,7 @@
 			<p>{@html project.shortSummary}</p>
 		</div>
 		<div class="links">
-			<a href="{base}/{project.id}" class="link-more-info">
+			<a href={resolve(`/${project.id}`)} class="link-more-info">
 				<span aria-hidden="true">Mehr erfahren</span>
 				<span class="sr-only">Mehr erfahren über {project.title}</span>
 			</a>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import type { Image } from '$lib/interfaces/project.interface';
 
 	interface Props {
@@ -15,7 +15,7 @@
 	{#each gallery as image, i}
 		<figure class="image-wrapper">
 			<div class="image" role="group">
-				<img id="img-{projectId}-{i}" src="{base}/gallery/{projectId}/{image.src}" alt="" />
+				<img id="img-{projectId}-{i}" src={resolve(`/gallery/${projectId}/${image.src}`)} alt="" />
 			</div>
 			<div class="line"></div>
 			<figcaption class="description">

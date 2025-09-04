@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
@@ -46,7 +46,7 @@
 
 <img
 	class="max-width-100"
-	src="{base}/articles/neue-horizonte/turn24_team.jpg"
+	src={resolve('/articles/neue-horizonte/turn24_team.jpg')}
 	alt=""
 	aria-hidden="true"
 />

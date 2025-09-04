@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
@@ -35,7 +35,7 @@
 </p>
 
 <img
-	src="{base}/articles/barrierenzaehmen-leicht-gemacht/shuffle-uff-24.jpg"
+	src={resolve('/articles/barrierenzaehmen-leicht-gemacht/shuffle-uff-24.jpg')}
 	class="max-width-100"
 	alt="Im Vordergrund hebt eine Hand ein kleines Bilderbuch in die Kamera, auf dem 'Barrierenzähmen leicht gemacht!' steht, sowie Zeichnungen von Drachen und einer Frau mit einem SHUFFLE-Rucksack abgebildet sind. Hinter dem Bilderbuch und etwas außerhalb des Kamerafokus, ist ein UFF-Plakat der Partnerbühne Leipzig zu sehen."
 />

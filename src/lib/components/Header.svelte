@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
 	import MenuButton from './sidebarMenu/MenuButton.svelte';
 
@@ -29,36 +29,30 @@
 
 <div class="header-wrapper" class:scrolling>
 	<header>
-		<!-- <p
-			class="wip-info"
-			style="background-color: #99bef5; text-align: center; padding: 0 1rem; margin: 0"
-		>
-			Diese Seite befindet sich noch in der Entwicklung. Bitte nur für interne Zwecke verwenden.
-		</p> -->
 		<div class="header">
-			<a href="{base}/" class="logo">
-				<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+			<a href={resolve('/')} class="logo">
+				<img src={resolve('/logos/shuffle-logo.svg')} alt="" aria-hidden="true" />
 				<span class="shuffle-logo-text">SHUFFLE</span>
 			</a>
 			<nav class="desktop-nav">
 				<ul>
 					<li>
-						<a href="{base}/#projektergebnisse">Projektergebnisse</a>
+						<a href={resolve('/#projektergebnisse')}>Projektergebnisse</a>
 					</li>
 					<li>
-						<a href="{base}/webinaraufnahmen">Webinaraufnahmen</a>
+						<a href={resolve('/webinaraufnahmen')}>Webinaraufnahmen</a>
 					</li>
 					<li>
-						<a href="{base}/team">Team</a>
+						<a href={resolve('/team')}>Team</a>
 					</li>
 					<li>
-						<a href="{base}/aktuelles">Aktuelles</a>
+						<a href={resolve('/aktuelles')}>Aktuelles</a>
 					</li>
 					<li>
-						<a href="{base}/kontakt">Kontakt</a>
+						<a href={resolve('/kontakt')}>Kontakt</a>
 					</li>
 					<li>
-						<a href="{base}/publikationen">Publikationen</a>
+						<a href={resolve('/publikationen')}>Publikationen</a>
 					</li>
 				</ul>
 			</nav>

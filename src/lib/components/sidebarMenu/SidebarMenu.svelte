@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
 	import Icon from '../Icon.svelte';
 
@@ -65,7 +65,7 @@
 	function goToSite(site: string, e: Event) {
 		e.preventDefault();
 		toggleDisplay(e);
-		goto(base + site);
+		goto(resolve(`/${site}`));
 	}
 </script>
 
@@ -79,32 +79,35 @@
 		>
 			<Icon svg="close" size="parent" />
 		</button>
-		<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+		<img src={resolve('/logos/shuffle-logo.svg')} alt="" aria-hidden="true" />
 	</div>
 	<div class="content-wrapper">
 		<ul>
 			<li>
-				<a onclick={(e) => goToSite('/#projektergebnisse', e)} href="{base}/#projektergebnisse">
+				<a
+					onclick={(e) => goToSite('/#projektergebnisse', e)}
+					href={resolve('/#projektergebnisse')}
+				>
 					Projektergebnisse
 				</a>
 			</li>
 			<li>
-				<a onclick={(e) => goToSite('/webinaraufnahmen', e)} href="{base}/webinaraufnahmen"
+				<a onclick={(e) => goToSite('/webinaraufnahmen', e)} href={resolve('/webinaraufnahmen')}>
 					>Webinaraufnahmen</a
 				>
 			</li>
 			<li>
-				<a onclick={(e) => goToSite('/team', e)} href="{base}/team">Team</a>
+				<a onclick={(e) => goToSite('/team', e)} href={resolve('/team')}>Team</a>
 			</li>
 			<li>
-				<a onclick={(e) => goToSite('/aktuelles', e)} href="{base}/aktuelles">Aktuelles</a>
+				<a onclick={(e) => goToSite('/aktuelles', e)} href={resolve('/aktuelles')}>Aktuelles</a>
 			</li>
 			<li>
-				<a onclick={(e) => goToSite('/kontakt', e)} href="{base}/kontakt">Kontakt</a>
+				<a onclick={(e) => goToSite('/kontakt', e)} href={resolve('/kontakt')}>Kontakt</a>
 			</li>
 			<li>
-				<a onclick={(e) => goToSite('/publikationen', e)} href="{base}/publikationen"
-					>Publikationen</a
+				<a onclick={(e) => goToSite('/publikationen', e)} href={resolve('/publikationen')}>
+					Publikationen</a
 				>
 			</li>
 		</ul>

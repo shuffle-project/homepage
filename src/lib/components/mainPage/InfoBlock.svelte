@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import Icon from '../Icon.svelte';
 
 	interface Props {
@@ -13,7 +13,7 @@
 <div class="wrapper">
 	<div class="info-block">
 		<h2>{headline}</h2>
-		<a href={base + link}>
+		<a href={resolve(`/${link}`)}>
 			<span aria-hidden="true">Mehr Informationen</span>
 			<span class="sr-only">Mehr Informationen über {headline}</span>
 			<Icon svg="arrow-right" color="white" />

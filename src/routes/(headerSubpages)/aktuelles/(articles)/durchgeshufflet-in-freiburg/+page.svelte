@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
@@ -40,6 +40,6 @@
 
 <img
 	class="max-width-100"
-	src="{base}/articles/durchgeshufflet-in-freiburg/team.jpg"
+	src={resolve('/articles/durchgeshufflet-in-freiburg/team.jpg')}
 	alt="Ein Gruppenfoto des SHUFFLE-Teams auf einer Anhöhe in Freiburg. Im Hintergrund sieht man einen Sonnenuntergang sowie ein Teil der Stadt."
 />

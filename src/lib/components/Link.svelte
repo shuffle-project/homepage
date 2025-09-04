@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import Icon from './Icon.svelte';
 
 	interface Props {
@@ -42,7 +42,7 @@
 		<Icon svg="open-in-new-tab" size="20" color={invertedStyle ? 'white' : 'blue'} />
 	</a>
 {:else}
-	<a href={!noBase ? base + '/' + link : link} download class:invertedStyle class:secondaryStyle>
+	<a href={!noBase ? resolve(`/${link}`) : link} download class:invertedStyle class:secondaryStyle>
 		<span aria-hidden="true">{@render children?.()}</span>
 		<span class="sr-only">{@render children?.()}<span lang={detailsLang}>{details}</span></span>
 		<Icon svg="download" size="20" color={invertedStyle ? 'white' : 'blue'} />

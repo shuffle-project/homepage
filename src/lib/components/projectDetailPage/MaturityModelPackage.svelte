@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import Icon from '../Icon.svelte';
 </script>
 
@@ -27,7 +27,7 @@
 			</p>
 		</div>
 		<div class="download-wrapper">
-			<a download href="{base}/downloads/Gesamtpaket-SHUFFLE-Reifegradmodell.zip">
+			<a download href={resolve('/downloads/Gesamtpaket-SHUFFLE-Reifegradmodell.zip')}>
 				Gesamtpaket (.zip)
 				<Icon svg="download" color="blue" />
 			</a>
@@ -37,28 +37,31 @@
 			<hr aria-hidden="true" />
 			<ul>
 				<li>
-					<a download href="{base}/downloads/Einleitung-SHUFFLE-Reifegradmodell.docx">
+					<a download href={resolve('/downloads/Einleitung-SHUFFLE-Reifegradmodell.docx')}>
 						Einleitung (.docx)
 						<Icon svg="download" color="blue" />
 					</a>
 					<hr aria-hidden="true" />
 				</li>
 				<li>
-					<a download href="{base}/downloads/Anleitung-SHUFFLE-Reifegradmodell.docx">
+					<a download href={resolve('/downloads/Anleitung-SHUFFLE-Reifegradmodell.docx')}>
 						Anleitung (.docx)
 						<Icon svg="download" color="blue" />
 					</a>
 					<hr aria-hidden="true" />
 				</li>
 				<li>
-					<a download href="{base}/downloads/Anwendungstool-SHUFFLE-Reifegradmodell.xlsx">
+					<a download href={resolve('/downloads/Anwendungstool-SHUFFLE-Reifegradmodell.xlsx')}>
 						Anwendungstool (.xlsx)
 						<Icon svg="download" color="blue" />
 					</a>
 					<hr aria-hidden="true" />
 				</li>
 				<li>
-					<a download href="{base}/downloads/Handlungsempfehlungen-SHUFFLE-Reifegradmodell.docx">
+					<a
+						download
+						href={resolve('/downloads/Handlungsempfehlungen-SHUFFLE-Reifegradmodell.docx')}
+					>
 						Handlungsempfehlungen (.docx)
 						<Icon svg="download" color="blue" />
 					</a>

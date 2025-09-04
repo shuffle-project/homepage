@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import Icon from '../Icon.svelte';
 	import ProjectDuration from './ProjectDuration.svelte';
 </script>
 
 <div class="hero-section">
 	<div class="title-wrapper">
-		<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+		<img src={resolve('/logos/shuffle-logo.svg')} alt="" aria-hidden="true" />
 		<h1>SHUFFLE</h1>
 		<p>Hochschulinitiative digitale Barrierefreiheit für Alle</p>
 	</div>

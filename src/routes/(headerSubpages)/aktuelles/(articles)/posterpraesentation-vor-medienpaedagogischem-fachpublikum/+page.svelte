@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import ArticleHeader from '../../../../../lib/components/ArticleHeader.svelte';
 </script>
 
@@ -37,7 +37,9 @@
 	Schauen Sie sich unser Poster mit dem Titel
 
 	<a
-		href="{base}/articles/posterpraesentation-vor-medienpaedagogischem-fachpublikum/Digitale-Hochschullehre-fuer-Alle-gestalten.-Posterpraesentation-SHUFFLE.pdf"
+		href={resolve(
+			'/articles/posterpraesentation-vor-medienpaedagogischem-fachpublikum/Digitale-Hochschullehre-fuer-Alle-gestalten.-Posterpraesentation-SHUFFLE.pdf'
+		)}
 	>
 		Digitale Hochschullehre für Alle gestalten. Eine Lehrendenbefragung an vier Hochschulen (PDF)
 	</a>

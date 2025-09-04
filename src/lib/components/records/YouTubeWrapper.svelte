@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import { getGlobalState } from '$lib/globalState.svelte';
 
 	const globalState = getGlobalState();
@@ -44,7 +44,7 @@
 
 				<p id="privacy-{randomId}" class="privacy-notice">
 					Personenbezogene Daten können an Drittplattformen übermittelt werden, siehe unsere
-					<a href="{base}/datenschutz">Datenschutzerklärung</a>.
+					<a href={resolve('/datenschutz')}>Datenschutzerklärung</a>.
 				</p>
 			</div>
 		</div>
