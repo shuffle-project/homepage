@@ -93,8 +93,8 @@
 			</li>
 			<li>
 				<a onclick={(e) => goToSite('/webinaraufnahmen', e)} href={resolve('/webinaraufnahmen')}>
-					>Webinaraufnahmen</a
-				>
+					Webinaraufnahmen
+				</a>
 			</li>
 			<li>
 				<a onclick={(e) => goToSite('/team', e)} href={resolve('/team')}>Team</a>

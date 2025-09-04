@@ -72,6 +72,18 @@
 	<h2>Alle News (Neueste zuerst)</h2>
 	<ul>
 		<li>
+			<a href={resolve('/aktuelles/die-neue-melvin-version-ist-da')}>
+				Die neue Melvin-Version ist da!
+			</a>
+		</li>
+
+		<li>
+			<a href={resolve('/aktuelles/neue-horizonte')}
+				>Neue Horizonte: SHUFFLE auf der TURN Conference in Berlin</a
+			>
+		</li>
+
+		<li>
 			<a href={resolve('/aktuelles/herbsttreffen-in-bielefeld')}>Herbsttreffen in Bielefeld</a>
 		</li>
 		<li>
