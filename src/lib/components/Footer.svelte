@@ -1,32 +1,32 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 </script>
 
 <footer>
 	<hr aria-hidden="true" />
-	<img src="{base}/logos/shuffle-logo.svg" alt="" aria-hidden="true" />
+	<img src={resolve('/logos/shuffle-logo.svg')} alt="" aria-hidden="true" />
 	<ul>
 		<li>
-			<a href="{base}/impressum">Impressum</a>
+			<a href={resolve('/impressum')}>Impressum</a>
 		</li>
 		<li>
-			<a href="{base}/datenschutz">Datenschutz</a>
+			<a href={resolve('/datenschutz')}>Datenschutz</a>
 		</li>
 
 		<li>
-			<a href="{base}/barrierefreiheit">Erklärung zur Barrierefreiheit</a>
+			<a href={resolve('/barrierefreiheit')}>Erklärung zur Barrierefreiheit</a>
 		</li>
 		<li>
-			<a href="{base}/dgs">Gebärdensprache (DGS)</a>
+			<a href={resolve('/dgs')}>Gebärdensprache (DGS)</a>
 		</li>
 		<li>
-			<a href="{base}/leichte-sprache">Leichte Sprache</a>
+			<a href={resolve('/leichte-sprache')}>Leichte Sprache</a>
 		</li>
 		<li>
-			<a href="{base}/datenschutz-in-einfacher-sprache">Datenschutz in einfacher Sprache</a>
+			<a href={resolve('/datenschutz-in-einfacher-sprache')}>Datenschutz in einfacher Sprache</a>
 		</li>
 		<li>
-			<a href="{base}/sitemap">Sitemap</a>
+			<a href={resolve('/sitemap')}>Sitemap</a>
 		</li>
 	</ul>
 	<p class="shuffle-logo-text">© SHUFFLE</p>
