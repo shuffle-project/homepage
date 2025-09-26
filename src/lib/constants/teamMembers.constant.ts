@@ -157,23 +157,24 @@ export const TEAM_MEMBERS = [
 		projectPartner: 'Hochschule der Medien Stuttgart',
 		img: 'ronja-brauchle.jpg'
 	},
+
+	{
+		name: 'Sebastian Koch',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'sebastian-koch.jpg'
+	}
+] as const satisfies TeamMember[];
+
+export const OLD_MEMBERS = [
 	{
 		name: 'Sarah Bergmann',
 		projectPartner: 'Universität Bielefeld',
 		img: 'sarah-bergmann.jpg'
 	},
 	{
-		name: 'Sebastian Koch',
-		projectPartner: 'Hochschule der Medien Stuttgart',
-		img: 'sebastian-koch.jpg'
-	},
-	{
 		name: 'Susanne Kuhnert',
 		projectPartner: 'Hochschule der Medien Stuttgart'
-	}
-] as const satisfies TeamMember[];
-
-export const OLD_MEMBERS = [
+	},
 	{
 		name: 'Nadine Auer',
 		projectPartner: 'Hochschule der Medien Stuttgart',
