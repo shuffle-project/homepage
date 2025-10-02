@@ -66,7 +66,7 @@ export const TEAM_MEMBERS = [
 		projectPartner: 'Pädagogische Hochschule Heidelberg'
 	},
 	{
-		name: 'Prof. Dr. Georg Brunner',
+		name: 'Prof. Dr. Franziska Birke',
 		projectPartner: 'Pädagogische Hochschule Freiburg'
 	},
 	{
@@ -166,6 +166,10 @@ export const TEAM_MEMBERS = [
 ] as const satisfies TeamMember[];
 
 export const OLD_MEMBERS = [
+	{
+		name: 'Prof. Dr. Georg Brunner',
+		projectPartner: 'Pädagogische Hochschule Freiburg'
+	},
 	{
 		name: 'Sarah Bergmann',
 		projectPartner: 'Universität Bielefeld',
