@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import Icon from '../Icon.svelte';
-	import ProjectDuration from './ProjectDuration.svelte';
 </script>
 
 <div class="hero-section">
@@ -30,9 +29,7 @@
 				<tbody>
 					<tr>
 						<th>Laufzeit</th>
-						<td>
-							<ProjectDuration />
-						</td>
+						<td>August 2021 bis Dezember 2025 </td>
 					</tr>
 					<tr>
 						<th>Gefördert von</th>
@@ -74,9 +71,7 @@
 						<th> Laufzeit </th>
 					</tr>
 					<tr>
-						<td>
-							<ProjectDuration />
-						</td>
+						<td>August 2021 bis Dezember 2025 </td>
 					</tr>
 				</tbody>
 			</table>

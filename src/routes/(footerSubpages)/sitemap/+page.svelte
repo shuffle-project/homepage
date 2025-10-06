@@ -26,7 +26,7 @@
 	<h2>Alle Seiten (alphabetisch)</h2>
 	<ul>
 		<li>
-			<a href={resolve('/aktuelles')}>Aktuelles</a>
+			<a href={resolve('/aktuelles')}>Blog</a>
 		</li>
 		<li>
 			<a href={resolve('/datenschutz')}>Datenschutz</a>
@@ -34,6 +34,7 @@
 		<li>
 			<a href={resolve('/datenschutz-in-einfacher-sprache')}>Datenschutz in einfacher Sprache</a>
 		</li>
+
 		<li>
 			<a href={resolve('/barrierefreiheit')}>Erklärung zur Barrierefreiheit</a>
 		</li>
@@ -69,7 +70,7 @@
 		{/each}
 	</ul>
 
-	<h2>Alle News (Neueste zuerst)</h2>
+	<h2>Alle Blog-Einträge (Aktuellste zuerst)</h2>
 	<ul>
 		<li>
 			<a href={resolve('/aktuelles/die-neue-melvin-version-ist-da')}>

@@ -4,7 +4,6 @@
 	import PlayerExtended from '$lib/components/player/PlayerExtended.svelte';
 	import Gallery from '$lib/components/projectDetailPage/Gallery.svelte';
 	import Info from '$lib/components/projectDetailPage/Info.svelte';
-	import JoinEvaluation from '$lib/components/projectDetailPage/JoinEvaluation.svelte';
 	import MaturityModelPackage from '$lib/components/projectDetailPage/MaturityModelPackage.svelte';
 	import MelvinGitHub from '$lib/components/projectDetailPage/MelvinGitHub.svelte';
 	import ProjectHeader from '$lib/components/projectDetailPage/ProjectHeader.svelte';
@@ -77,10 +76,6 @@
 
 	{#if project.video}
 		<PlayerExtended extendedPlayerConfig={project.video} />
-	{/if}
-
-	{#if project.joinEvaluation}
-		<JoinEvaluation join={project.joinEvaluation} />
 	{/if}
 
 	{#if project.gallery}

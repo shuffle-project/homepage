@@ -15,8 +15,8 @@
 		Kontakt
 	{/snippet}
 	{#snippet introText()}
-		Bei Fragen, Anregungen oder Wünschen, können Sie uns gerne per E-Mail schreiben. Sie werden
-		zeitnah vom SHUFFLE-Team kontaktiert.
+		Das Projekt ist abgeschlossen. Bei wichtigen Fragen und Anliegen können Sie uns jedoch weiterhin
+		über die folgende E-Mail-Adresse erreichen.
 	{/snippet}
 </TitleSection>
 
