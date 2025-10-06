@@ -14,16 +14,6 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 		'Das Materialpaket bündelt zentrale Informationen zur Umsetzung barrierefreier Hochschullehre. Knappe Checklisten geben Hinweise zur Umsetzung möglichst barrierefreier Dokumente und Lehrsituationen. Ergänzend dazu findet man ausführliche Anleitungen und Hilfestellungen zur Umsetzung der in den Checklisten aufgeführten Anforderungen. In einer Wissensdatenbank werden zusätzlich Informationen zu weiteren Aspekten im Kontext barrierefreier digitaler Lehre bereitgestellt.',
 	webinar: 'digitale-lernraume',
 	partners: ['Universität Bielefeld'],
-	joinEvaluation: {
-		title: 'Feedback geben',
-		introduction:
-			'Unser umfangreiches Materialpaket ist ab sofort mit einem Gastzugang frei zugänglich. Nutzen Sie das Forum im Kurs oder die angegebene Kontaktadresse für Feedback, Diskussionen und Ideenaustausch. Ihre Rückmeldungen helfen uns dabei, unsere Materialien stetig zu verbessern.',
-		contactName: 'Judith Kuhlmann',
-		contact: {
-			short: 'jkuhlmann3',
-			domain: 'uni-bielefeld.de'
-		}
-	},
 	video: {
 		title: 'Vorstellungsvideo',
 		videos: [

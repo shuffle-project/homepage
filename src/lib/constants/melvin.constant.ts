@@ -13,16 +13,6 @@ export const MELVIN: Project = {
 	summary:
 		'Barrierefreie Videos sind wichtig, jedoch oft mit einem enormen Aufwand, notwendigem Know-How und dem Einsatz unterschiedlicher Tools verbunden. Melvin bietet hierfür eine schnellere und bequemere Lösung an. Innerhalb einer Webanwendung können Sie ihre Videos aufnehmen, automatisch untertiteln lassen und durch einen barrierefreien Player das fertige Video mitsamt Transkript teilen. Die Untertitel können Sie zudem alleine oder im Team verbessern.',
 	partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Heidelberg'],
-	joinEvaluation: {
-		title: 'Melvin ausprobieren',
-		introduction:
-			'Melvin befindet sich aktuell noch in der Entwicklung. Falls Sie trotzdem schon mal die aktuelle Version ausprobieren möchten, können Sie sich gerne bei der folgenden Kontaktperson melden.',
-		contactName: 'dem Melvin-Team',
-		contact: {
-			short: 'melvin',
-			domain: 'hdm-stuttgart.de'
-		}
-	},
 	publications: [
 		{
 			title:

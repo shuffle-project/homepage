@@ -13,16 +13,6 @@ type ObjectValues<T> = T[keyof T];
 export type ProjectPartners = ObjectValues<typeof PROJECT_PARTNERS>;
 export type FilterOptions = (typeof FILTER_OPTIONS)[number]['value'];
 
-export interface JoinEvaluation {
-	title: string;
-	introduction: string;
-	contactName: string;
-	contact: {
-		short: string;
-		domain: string;
-	};
-}
-
 export interface Image {
 	src: string;
 	description: string;
@@ -98,7 +88,6 @@ export interface Project {
 	partners: ProjectPartners[];
 	subProjects?: SubProject[];
 	info?: string;
-	joinEvaluation?: JoinEvaluation;
 	gallery?: Image[];
 	publications?: Publication[];
 	video?: ExtendedPlayerConfig;

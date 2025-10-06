@@ -18,15 +18,6 @@ export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
 	},
 	partners: ['Universität Bielefeld', 'Hochschule der Medien Stuttgart'],
 	webinar: 'reifegradmodell',
-	joinEvaluation: {
-		title: 'Melden Sie sich bei uns!',
-		introduction:
-			'Egal, ob Sie bereits Erfahrung haben oder sich dem Thema annähern möchten. Auf Anfrage erhalten Sie Zugang zu unserem Kurs und können uns Ihr wertvolles Feedback im Anschluss mitteilen. Wir freuen uns auf Ihre Beteiligung!',
-		contact: {
-			short: 'jkuhlmann3',
-			domain: 'uni-bielefeld.de'
-		},
-		contactName: 'Judith Kuhlmann'
-	},
+
 	publications: [GESCHICHTEN_DER_ZUGAENGLICHKEIT]
 };
