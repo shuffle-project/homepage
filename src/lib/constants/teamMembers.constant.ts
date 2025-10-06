@@ -67,7 +67,8 @@ export const TEAM_MEMBERS = [
 	},
 	{
 		name: 'Prof. Dr. Franziska Birke',
-		projectPartner: 'Pädagogische Hochschule Freiburg'
+		projectPartner: 'Pädagogische Hochschule Freiburg',
+		img: 'franziska-birke.jpg'
 	},
 	{
 		name: 'Hakan Ali Cetin',
