@@ -224,7 +224,7 @@
 
 		.mobile {
 			position: relative;
-			max-width: calc(100% + 2.5rem); // results in jitter when page resice // TODO fix
+			max-width: calc(100% + 2.5rem);
 			min-width: 100%;
 		}
 	}

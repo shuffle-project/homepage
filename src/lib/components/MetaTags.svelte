@@ -15,7 +15,7 @@
 	<meta property="og:locale" content="de_DE" />
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
-	<!-- TODO adjust image source -->
+
 	<meta property="og:image" content={previewImage} />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="675" />
