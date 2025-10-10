@@ -59,6 +59,10 @@ export interface SubProject {
 		url: string;
 		label: string;
 	};
+	additionalLink?: {
+		url: string;
+		label: string;
+	};
 }
 
 export const WEBINAR_COMPONENTS = {
