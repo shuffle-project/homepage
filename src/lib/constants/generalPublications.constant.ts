@@ -43,6 +43,26 @@ export const GENERAL_PUBLICATIONS: Publication[] = [
 
 // Publications that are part of several different projects
 
+export const BARRIEREFREIHEIT_IN_DER_LEHRE: Publication = {
+	title: 'Barrierefreiheit in der Lehre – das ist doch viel zu kompliziert, oder?!',
+	titleLang: 'de',
+	releaseDate: '2025-10',
+	contributors: ['Judith Kuhlmann', 'Kim Althoff', 'Hakan Ali Cetin'],
+	placeOfPublication: 'Hochschulforum Digitalisierung',
+	placeOfPublicationLang: 'de',
+	category: 'Sonstige Veröffentlichungen',
+	link: {
+		label: 'Zum Blogbeitrag',
+		url: 'https://hochschulforumdigitalisierung.de/barrierefreiheit-in-der-lehre/'
+	},
+	apa: `
+	<span class="apa-publication">
+		Kuhlmann, J., Althoff, K. & Cetin, H. A. (2025, October 13). Barrierefreiheit in der Lehre – das ist doch viel zu kompliziert, oder?!. <em>Hochschulforum Digitalisierung</em>.
+		<a href="https://hochschulforumdigitalisierung.de/barrierefreiheit-in-der-lehre/">https://hochschulforumdigitalisierung.de/barrierefreiheit-in-der-lehre/</a>
+	</span>
+	`
+};
+
 export const GESCHICHTEN_DER_ZUGAENGLICHKEIT: Publication = {
 	title: 'Geschichten der Zugänglichkeit – Digital barrierefreie Hochschule',
 	titleLang: 'de',
