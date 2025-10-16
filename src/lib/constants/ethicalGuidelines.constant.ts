@@ -42,5 +42,15 @@ export const ETHICAL_GUIDELINES: Project = {
 				url: 'https://hdm-stuttgart.de/digitale-ethik/lehre/digitale_barrierefreiheit'
 			}
 		}
+		// ,{
+		// 	title:
+		// 		'Qualifizierungsprogramm „Ethisch gestalten – Vielfalt verstehen, Gerechtigkeit verhandeln, Teilhabe ermöglichen“',
+		// 	summary:
+		// 		'Das Qualifizierungsprogramm „Ethisch gestalten – Vielfalt verstehen, Gerechtigkeit verhandeln, Teilhabe ermöglichen“ richtet sich an Lehrende, wissenschaftliche Mitarbeitende, Verwaltungspersonal und Entscheidungsträger:innen im Bildungsbereich, insbesondere an Hochschulen. Ziel ist es, ethische Reflexionskompetenz im Kontext von Barrierefreiheit und digitaler Teilhabe zu stärken. Statt technischer Detailkenntnis steht die Entwicklung ethischer Urteilskraft, moralischer Sensibilität und institutioneller Verantwortung im Mittelpunkt. Die Teilnehmenden begegnen ethischen Dilemmata, vertiefen ihre Perspektivenvielfalt und entwickeln ein grundlegendes Verständnis für die moralischen Herausforderungen von Lehre, Gestaltung und Verwaltung in inklusiven Bildungskontexten.',
+		// 	link: {
+		// 		label: 'Zum Qualifizierungsprogramm',
+		// 		url: 'TODO'
+		// 	}
+		// }
 	]
 };
