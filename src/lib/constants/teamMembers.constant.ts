@@ -133,11 +133,7 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Niklas Egger',
 		projectPartner: 'Hochschule der Medien Stuttgart',
-		img: 'niklas-egger.jpg',
-		contact: {
-			short: 'egger',
-			domain: 'hdm-stuttgart.de'
-		}
+		img: 'niklas-egger.jpg'
 	},
 	{
 		name: 'Patricia Piskorek',
