@@ -201,6 +201,48 @@ export const MATURITY_MODEL: Project = {
 			</span>
 			
 			`
+		},
+		{
+			title:
+				'Digitale Barrierefreiheit als Qualitätsmerkmal: Hochschulentwicklung im Zeichen der Diversität. Mit einem Reifegradmodell digitale Barrierefreiheit an Hochschulen verbessern.',
+			titleLang: 'de',
+			releaseDate: '2025-02',
+			contributors: [
+				'Nadine Auer',
+				'Ann-Katrin Böhm',
+				'Hakan Ali Cetin',
+				'Anja Gutjahr',
+				'Gottfried Zimmermann'
+			],
+			placeOfPublication: 'Das Hochschulwesen - Heft 2',
+			placeOfPublicationLang: 'de',
+			category: 'Paper / Buchbeiträge',
+			apa: `	<span class="apa-publication">
+				Auer, N., Böhm, A., Cetin, H., Gutjahr, A., & Zimmermann, G. (2025). 
+				Digitale Barrierefreiheit als Qualitätsmerkmal: Hochschulentwicklung im Zeichen der Diversität. Mit einem Reifegradmodell digitale Barrierefreiheit an Hochschulen verbessern.
+				<em>Das Hochschulwesen, </em>2, 37-43
+			</span>`
+		},
+		{
+			title:
+				'Schritt für Schritt zur digitalen Barrierefreiheit – das SHUFFLE-Reifegradmodell.',
+			titleLang: 'de',
+			releaseDate: '2025-11',
+			contributors: [
+				'Nadine Auer',
+				'Ann-Katrin Böhm',
+				'Hakan Ali Cetin',
+				'Anja Gutjahr',
+				'Gottfried Zimmermann'
+			],
+			placeOfPublication: 'DFN-Mitteilungen',
+			placeOfPublicationLang: 'de',
+			category: 'Paper / Buchbeiträge',
+			apa: `	<span class="apa-publication">
+				Auer, N., Böhm, A., Cetin, H., Gutjahr, A., & Zimmermann, G. (2025, im Erscheinen).
+				Schritt für Schritt zur digitalen Barrierefreiheit – das SHUFFLE-Reifegradmodell.
+				<em>DFN-Mitteilungen</em>
+			</span>`
 		}
 	]
 };
