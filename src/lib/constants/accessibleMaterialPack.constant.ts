@@ -1,7 +1,8 @@
 import type { Project } from '$lib/interfaces/project.interface';
 import {
 	BARRIEREFREIHEIT_IN_DER_LEHRE,
-	GESCHICHTEN_DER_ZUGAENGLICHKEIT
+	GESCHICHTEN_DER_ZUGAENGLICHKEIT,
+	POSTER_SELBSTLERNKURSE
 } from './generalPublications.constant';
 
 export const ACCESSIBLE_MATERIAL_PACK: Project = {
@@ -157,6 +158,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 					>https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf</a
 				>
 			</span>`
-		}
+		},
+		POSTER_SELBSTLERNKURSE
 	]
 };

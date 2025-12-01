@@ -103,3 +103,24 @@ export const LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS: Publication = {
 		</span>
 	`
 };
+
+export const POSTER_SELBSTLERNKURSE: Publication = {
+	title: 'Selbstlernkurse - Digitale Barrierefreiheit in der Lehre kompetent umsetzen',
+	titleLang: 'de',
+	releaseDate: '2025',
+	contributors: ['Judith Kuhlmann', 'Kim Althoff', 'Dustin Matzel', 'Prof. Dr. Anna-Maria Kamin', 'Michael Johannfunke'],
+	placeOfPublication: 'Bi.teach Uni Bielefeld',
+	placeOfPublicationLang: 'de',
+	category: 'Posterpräsentationen',
+	link: {
+		label: 'Poster herunterladen (PDF)',
+		url: 'downloads/BiTeach_Poster_Selbstlernkurse.pdf',
+		download: true
+	},
+	apa: `
+		<span class="apa-publication">
+			Kuhlmann, J., Althoff, K., Matzel, D., Kamin, A.-M. & Johannfunke, M. (2025). <em>Selbstlernkurse - Digitale Barrierefreiheit in der Lehre kompetent umsetzen.</em> Bi.teach Uni Bielefeld.
+			<a href="https://shuffle-projekt.de/downloads/BiTeach_Poster_Selbstlernkurse.pdf">https://shuffle-projekt.de/downloads/BiTeach_Poster_Selbstlernkurse.pdf</a>
+		</span>
+	`
+};
