@@ -127,8 +127,9 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 			},
 			category: 'Sonstige Veröffentlichungen',
 			apa: `<span class="apa-publication">
-				Althoff, K. & Matzel, D. (2025). Barrierefreie Moodle-Kurse kompetent gestalten.
-				<em>8. Moodle-Community Treffen</em>
+				Althoff, K. & Matzel, D. (2025). 
+				<em>Barrierefreie Moodle-Kurse kompetent gestalten.</em>
+				8. Moodle-Community Treffen
 			</span>`
 		},
 	]

@@ -57,7 +57,9 @@ export const BARRIEREFREIHEIT_IN_DER_LEHRE: Publication = {
 	},
 	apa: `
 	<span class="apa-publication">
-		Kuhlmann, J., Althoff, K. & Cetin, H. A. (2025, October 13). Barrierefreiheit in der Lehre – das ist doch viel zu kompliziert, oder?!. <em>Hochschulforum Digitalisierung</em>.
+		Kuhlmann, J., Althoff, K. & Cetin, H. A. (2025, October 13). 
+		<em>Barrierefreiheit in der Lehre – das ist doch viel zu kompliziert, oder?!.</em> 
+		Hochschulforum Digitalisierung.
 		<a href="https://hochschulforumdigitalisierung.de/barrierefreiheit-in-der-lehre/">https://hochschulforumdigitalisierung.de/barrierefreiheit-in-der-lehre/</a>
 	</span>
 	`

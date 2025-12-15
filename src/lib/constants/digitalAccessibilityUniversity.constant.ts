@@ -28,5 +28,41 @@ export const DIGITAL_ACCESSIBILITY_UNIVERSITY: Project = {
 		},
 		contactName: 'Judith Kuhlmann'
 	},
-	publications: [GESCHICHTEN_DER_ZUGAENGLICHKEIT]
+	publications: [
+		GESCHICHTEN_DER_ZUGAENGLICHKEIT,
+		{
+			title: 'Barrierefreiheit und Inklusion lehren? Zur curricularen Verankerung in der Hochschullehre. Status quo an deutschen Hochschulen.',
+			titleLang: 'de',
+			releaseDate: '2025-12',
+			contributors: [
+				'Judith Kuhlmann',
+				'Sarah Bergmann',
+				'Kim Althoff',
+				'Prof. Dr. Anna-Maria Kamin',
+				'Nadine Auer',
+				'Michael Johannfunke',
+				'Prof. Dr. Gottfried Zimmermann'
+			],
+			placeOfPublication:
+				'Bielefeld: Fakultät für Erziehungswissenschaft und Zentrale Anlaufstelle Barrierefrei.',
+			placeOfPublicationLang: 'de',
+			link: {
+				label: 'Zum Bericht',
+				url: 'https://pub.uni-bielefeld.de/record/3012499'
+			},
+			category: 'Sonstige Veröffentlichungen',
+			apa: `<span class="apa-publication">
+				Kuhlmann, J., Bergmann, S., Althoff, K., Kamin, A.-M., Auer, N., Johannfunke, M., & Zimmermann, G. (2025).
+				<em>
+					Barrierefreiheit und Inklusion lehren? Zur curricularen Verankerung in der Hochschullehre. Status quo an deutschen Hochschulen.
+				</em>
+				Bielefeld: Fakultät für Erziehungswissenschaft und Zentrale Anlaufstelle Barrierefrei.
+				<a
+					href="https://doi.org/10.4119/unibi/3012499"
+					>https://doi.org/10.4119/unibi/3012499</a
+				>
+			</span>`
+		}
+
+	]
 };
