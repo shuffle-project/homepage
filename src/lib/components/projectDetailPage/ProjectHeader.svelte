@@ -69,6 +69,12 @@
 					<h2>{@html subProject.title}</h2>
 					<p>{@html subProject.summary}</p>
 					<div class="link-to-subproject">
+						{#if subProject.additionalLink}
+							<Link secondaryStyle link={subProject.additionalLink.url}
+								>{subProject.additionalLink.label}</Link
+							>
+						{/if}
+
 						<Link invertedStyle link={subProject.link.url}>{subProject.link.label}</Link>
 					</div>
 				</div>
@@ -149,6 +155,7 @@
 				.link-to-subproject {
 					display: flex;
 					justify-content: end;
+					gap: 0.5rem;
 				}
 			}
 		}

@@ -1,7 +1,9 @@
 import type { Project } from '$lib/interfaces/project.interface';
 import {
+	BARRIEREFREIHEIT_IN_DER_LEHRE,
 	GESCHICHTEN_DER_ZUGAENGLICHKEIT,
-	LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS
+	LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS,
+	POSTER_SELBSTLERNKURSE
 } from './generalPublications.constant';
 
 export const ACCESSIBLE_MOODLE_COURSE: Project = {
@@ -98,6 +100,27 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 			</span>`
 		},
 		GESCHICHTEN_DER_ZUGAENGLICHKEIT,
-		LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS
+		LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS,
+		BARRIEREFREIHEIT_IN_DER_LEHRE,
+		POSTER_SELBSTLERNKURSE,
+		{
+			title: 'Barrierefreie Moodle-Kurse kompetent gestalten',
+			titleLang: 'de',
+			contributors: ['Kim Althoff', 'Dustin Matzel'],
+			placeOfPublication: '8. Moodle-Community Treffen',
+			placeOfPublicationLang: 'de',
+			releaseDate: '2025-11',
+			link: {
+				label: 'Folien herunterladen (PDF)',
+				url: 'downloads/Moodle-Community-Treffen_November2025.pdf',
+				download: true
+			},
+			category: 'Sonstige Veröffentlichungen',
+			apa: `<span class="apa-publication">
+				Althoff, K. & Matzel, D. (2025). 
+				<em>Barrierefreie Moodle-Kurse kompetent gestalten.</em>
+				8. Moodle-Community Treffen
+			</span>`
+		},
 	]
 };

@@ -1,4 +1,7 @@
 import type { Project } from '$lib/interfaces/project.interface';
+import {
+	POSTER_SELBSTLERNKURSE
+} from './generalPublications.constant';
 
 export const E_EXAM: Project = {
 	id: 'elektronische-pruefungen',
@@ -12,8 +15,11 @@ wichtigsten Informationen zu Überlegungen während des gesamten Prozesses von E
 verfügt über eine Checkliste, einen Leitfaden sowie weiterführende
 Informationen.`,
 	link: {
-		label: 'Zum Moddle-Kurs',
+		label: 'Zum Moodle-Kurs',
 		url: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=112'
 	},
-	partners: ['Universität Bielefeld', 'Pädagogische Hochschule Freiburg']
+	partners: ['Universität Bielefeld', 'Pädagogische Hochschule Freiburg'],
+	publications: [
+		POSTER_SELBSTLERNKURSE
+	]
 };

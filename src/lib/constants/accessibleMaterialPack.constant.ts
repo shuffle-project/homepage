@@ -1,5 +1,9 @@
 import type { Project } from '$lib/interfaces/project.interface';
-import { GESCHICHTEN_DER_ZUGAENGLICHKEIT } from './generalPublications.constant';
+import {
+	BARRIEREFREIHEIT_IN_DER_LEHRE,
+	GESCHICHTEN_DER_ZUGAENGLICHKEIT,
+	POSTER_SELBSTLERNKURSE
+} from './generalPublications.constant';
 
 export const ACCESSIBLE_MATERIAL_PACK: Project = {
 	id: 'materialpaket-barrierefreie-lehre',
@@ -111,6 +115,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 			`
 		},
 		GESCHICHTEN_DER_ZUGAENGLICHKEIT,
+		BARRIEREFREIHEIT_IN_DER_LEHRE,
 		{
 			title: 'Sensitize and qualify teachers for digital accessibility',
 			titleLang: 'en',
@@ -143,6 +148,7 @@ export const ACCESSIBLE_MATERIAL_PACK: Project = {
 					>https://aaate2023.eu/wp-content/uploads/sites/26/2023/08/BookOfAbstracts-Prelim.pdf</a
 				>
 			</span>`
-		}
+		},
+		POSTER_SELBSTLERNKURSE
 	]
 };

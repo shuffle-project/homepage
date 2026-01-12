@@ -43,6 +43,28 @@ export const GENERAL_PUBLICATIONS: Publication[] = [
 
 // Publications that are part of several different projects
 
+export const BARRIEREFREIHEIT_IN_DER_LEHRE: Publication = {
+	title: 'Barrierefreiheit in der Lehre – das ist doch viel zu kompliziert, oder?!',
+	titleLang: 'de',
+	releaseDate: '2025-10',
+	contributors: ['Judith Kuhlmann', 'Kim Althoff', 'Hakan Ali Cetin'],
+	placeOfPublication: 'Hochschulforum Digitalisierung',
+	placeOfPublicationLang: 'de',
+	category: 'Sonstige Veröffentlichungen',
+	link: {
+		label: 'Zum Blogbeitrag',
+		url: 'https://hochschulforumdigitalisierung.de/barrierefreiheit-in-der-lehre/'
+	},
+	apa: `
+	<span class="apa-publication">
+		Kuhlmann, J., Althoff, K. & Cetin, H. A. (2025, October 13). 
+		<em>Barrierefreiheit in der Lehre – das ist doch viel zu kompliziert, oder?!.</em> 
+		Hochschulforum Digitalisierung.
+		<a href="https://hochschulforumdigitalisierung.de/barrierefreiheit-in-der-lehre/">https://hochschulforumdigitalisierung.de/barrierefreiheit-in-der-lehre/</a>
+	</span>
+	`
+};
+
 export const GESCHICHTEN_DER_ZUGAENGLICHKEIT: Publication = {
 	title: 'Geschichten der Zugänglichkeit – Digital barrierefreie Hochschule',
 	titleLang: 'de',
@@ -80,6 +102,27 @@ export const LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS: Publication = {
 		<span class="apa-publication">
 			Kuhlmann, J., Althoff, K. & Cetin, H. A. (2024). <em>Lernmanagementsysteme Moodle und Ilias barrierefrei gestalten</em> <span lang="en">[Short Presentation]. Turn Conference, Berlin, Germany</span>.
 			<a href="https://shuffle-projekt.de/downloads/Lernmanagementsysteme_TURN24.pdf">https://shuffle-projekt.de/downloads/Lernmanagementsysteme_TURN24.pdf</a>
+		</span>
+	`
+};
+
+export const POSTER_SELBSTLERNKURSE: Publication = {
+	title: 'Selbstlernkurse - Digitale Barrierefreiheit in der Lehre kompetent umsetzen',
+	titleLang: 'de',
+	releaseDate: '2025',
+	contributors: ['Judith Kuhlmann', 'Kim Althoff', 'Dustin Matzel', 'Prof. Dr. Anna-Maria Kamin', 'Michael Johannfunke'],
+	placeOfPublication: 'Bi.teach Uni Bielefeld',
+	placeOfPublicationLang: 'de',
+	category: 'Posterpräsentationen',
+	link: {
+		label: 'Poster herunterladen (PDF)',
+		url: 'downloads/BiTeach_Poster_Selbstlernkurse.pdf',
+		download: true
+	},
+	apa: `
+		<span class="apa-publication">
+			Kuhlmann, J., Althoff, K., Matzel, D., Kamin, A.-M. & Johannfunke, M. (2025). <em>Selbstlernkurse - Digitale Barrierefreiheit in der Lehre kompetent umsetzen.</em> Bi.teach Uni Bielefeld.
+			<a href="https://shuffle-projekt.de/downloads/BiTeach_Poster_Selbstlernkurse.pdf">https://shuffle-projekt.de/downloads/BiTeach_Poster_Selbstlernkurse.pdf</a>
 		</span>
 	`
 };

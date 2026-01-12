@@ -25,6 +25,10 @@
 				>
 				zusammengefasst und auch noch durch Hinweise und Good-Practice-Beispiele erweitert.
 			</p>
+			<p>
+				Das SHUFFLE-Reifegradmodell kann bald auch in einem <strong>Webservice</strong> und per digitalem
+				Fragebogen angewendet werden. Hier finden Sie zukünftig die Verlinkung zu dem SHUFFLE-Reifegradmodell-Webservice.
+			</p>
 		</div>
 		<div class="download-wrapper">
 			<a download href={resolve('/downloads/Gesamtpaket-SHUFFLE-Reifegradmodell.zip')}>
@@ -32,41 +36,32 @@
 				<Icon svg="download" color="blue" />
 			</a>
 			<hr aria-hidden="true" />
-
-			<h3>Einzelne Dateien:</h3>
+		</div>
+	</div>
+	<h2>Dokumentation der Entwicklung</h2>
+	<div class="content">
+		<div class="text-wrapper">
+			<p>Diese ZIP-Datei beinhaltet zwei Dokumente:</p>
+			<p>
+				Die <strong>Dokumentation</strong> der verschiedenen Phasen der Entwicklung des SHUFFLE-Reifegradmodells
+				zu digitaler Barrierefreiheit an deutschen Hochschulen. Wir haben dafür den Entwicklungsprozess
+				reflektiert, abstrahiert und zusammengefasst. Diese Dokumentation kann als Inspiration und „Anleitung“
+				genutzt werden, um weitere Reifegradmodelle zu erstellen.
+			</p>
+			<p>
+				Die <strong>Indikatoren-Sammlung</strong>, die als Grundlage zur Entwicklung des
+				SHUFFLE-Reifegradmodells erstellt und verwendet wurde. Auch diese Sammlung kann genutzt
+				werden, um ein Reifegradmodell zu erstellen. Aber bitte beachten Sie, dass die Sammlung für
+				den Hochschulkontext erstellt wurde und ergänzen Sie diese für ein Reifegradmodell für
+				andere Bildungsbereiche.
+			</p>
+		</div>
+		<div class="download-wrapper">
+			<a download href={resolve('/downloads/Dokumentation-SHUFFLE-Reifegradmodell.zip')}>
+				Dokumentation (.zip)
+				<Icon svg="download" color="blue" />
+			</a>
 			<hr aria-hidden="true" />
-			<ul>
-				<li>
-					<a download href={resolve('/downloads/Einleitung-SHUFFLE-Reifegradmodell.docx')}>
-						Einleitung (.docx)
-						<Icon svg="download" color="blue" />
-					</a>
-					<hr aria-hidden="true" />
-				</li>
-				<li>
-					<a download href={resolve('/downloads/Anleitung-SHUFFLE-Reifegradmodell.docx')}>
-						Anleitung (.docx)
-						<Icon svg="download" color="blue" />
-					</a>
-					<hr aria-hidden="true" />
-				</li>
-				<li>
-					<a download href={resolve('/downloads/Anwendungstool-SHUFFLE-Reifegradmodell.xlsx')}>
-						Anwendungstool (.xlsx)
-						<Icon svg="download" color="blue" />
-					</a>
-					<hr aria-hidden="true" />
-				</li>
-				<li>
-					<a
-						download
-						href={resolve('/downloads/Handlungsempfehlungen-SHUFFLE-Reifegradmodell.docx')}
-					>
-						Handlungsempfehlungen (.docx)
-						<Icon svg="download" color="blue" />
-					</a>
-				</li>
-			</ul>
 		</div>
 	</div>
 </div>
@@ -86,7 +81,7 @@
 			gap: 3.125rem;
 
 			.text-wrapper {
-				flex: 1;
+				flex: 3;
 			}
 
 			.download-wrapper {

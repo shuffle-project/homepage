@@ -133,16 +133,20 @@ export const TEAM_MEMBERS = [
 		name: 'Ronja Brauchle',
 		projectPartner: 'Hochschule der Medien Stuttgart',
 		img: 'ronja-brauchle.jpg'
-	},
-
-	{
-		name: 'Sebastian Koch',
-		projectPartner: 'Hochschule der Medien Stuttgart',
-		img: 'sebastian-koch.jpg'
 	}
 ] as const satisfies TeamMember[];
 
 export const OLD_MEMBERS = [
+	{
+		name: 'Niklas Egger',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'niklas-egger.jpg'
+	},
+	{
+		name: 'Sebastian Koch',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'sebastian-koch.jpg'
+	},
 	{
 		name: 'Prof. Dr. Georg Brunner',
 		projectPartner: 'Pädagogische Hochschule Freiburg'

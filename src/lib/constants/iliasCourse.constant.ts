@@ -1,5 +1,8 @@
 import type { Project } from '$lib/interfaces/project.interface';
-import { LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS } from './generalPublications.constant';
+import {
+	BARRIEREFREIHEIT_IN_DER_LEHRE,
+	LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS
+} from './generalPublications.constant';
 
 export const ILIAS_COURSE: Project = {
 	id: 'ilias-barrierefrei',
@@ -15,5 +18,5 @@ export const ILIAS_COURSE: Project = {
 		label: 'Zum Lernraum für (digitale) Barrierefreiheit in der Lehre (ILIAS)',
 		url: 'https://ilias-extern.ph-freiburg.de/goto.php?target=cat_18205&client_id=phfr-ext'
 	},
-	publications: [LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS]
+	publications: [LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS, BARRIEREFREIHEIT_IN_DER_LEHRE]
 };
