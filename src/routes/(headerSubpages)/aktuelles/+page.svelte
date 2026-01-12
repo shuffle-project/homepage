@@ -4,16 +4,16 @@
 </script>
 
 <svelte:head>
-	<title>Aktuelles - SHUFFLE</title>
+	<title>Blog - SHUFFLE</title>
 </svelte:head>
 
 <TitleSection>
 	{#snippet title()}
-		Aktuelles
+		Blog
 	{/snippet}
 
 	{#snippet introText()}
-		Hier finden Sie Beiträge, Neuigkeiten und Veröffentlichungen von SHUFFLE
+		Hier finden Sie vergangene Beiträge, Neuigkeiten und Veröffentlichungen von SHUFFLE
 	{/snippet}
 </TitleSection>
 

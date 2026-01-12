@@ -19,16 +19,6 @@ export const ACCESSIBLE_MOODLE_COURSE: Project = {
 		'Bei der Planung von Lehrveranstaltungen ist es zwingend notwendig, die Bedarfe von allen Studierenden von Anfang an zu berücksichtigen. Dieser Moodle-Kurs umfasst wichtige Tipps und konkrete Anweisungen, um Moodle-Kurse möglichst barrierefrei zu gestalten. Er soll als Unterstützungstool für Lehrende dienen und mit Hintergrundinformationen sowie einfach verständlichen Tipps zur Barrierefreiheit in Moodle die Gestaltung von barrierefreier digitaler Lehre in Moodle vereinfachen.',
 	webinar: 'digitale-lernraume',
 	partners: ['Universität Bielefeld'],
-	joinEvaluation: {
-		title: 'Feedback geben',
-		introduction:
-			'Unser Kurs ist ab sofort frei zugänglich. Nutzen Sie das Forum im Kurs oder die angegebene Kontaktadresse für Feedback, Diskussionen und Ideenaustausch. Ihre Rückmeldungen helfen uns dabei, unsere Materialien stetig zu verbessern.',
-		contact: {
-			short: 'shuffle',
-			domain: 'uni-bielefeld.de'
-		},
-		contactName: 'ZAB Uni Bielefeld'
-	},
 	video: {
 		title: 'Vorstellungsvideo',
 		videos: [

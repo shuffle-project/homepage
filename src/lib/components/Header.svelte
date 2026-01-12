@@ -46,7 +46,7 @@
 						<a href={resolve('/team')}>Team</a>
 					</li>
 					<li>
-						<a href={resolve('/aktuelles')}>Aktuelles</a>
+						<a href={resolve('/aktuelles')}>Blog</a>
 					</li>
 					<li>
 						<a href={resolve('/kontakt')}>Kontakt</a>

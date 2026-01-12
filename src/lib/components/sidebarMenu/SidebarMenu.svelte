@@ -100,7 +100,7 @@
 				<a onclick={(e) => goToSite('/team', e)} href={resolve('/team')}>Team</a>
 			</li>
 			<li>
-				<a onclick={(e) => goToSite('/aktuelles', e)} href={resolve('/aktuelles')}>Aktuelles</a>
+				<a onclick={(e) => goToSite('/aktuelles', e)} href={resolve('/aktuelles')}>Blog</a>
 			</li>
 			<li>
 				<a onclick={(e) => goToSite('/kontakt', e)} href={resolve('/kontakt')}>Kontakt</a>

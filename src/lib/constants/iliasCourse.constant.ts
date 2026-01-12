@@ -18,15 +18,5 @@ export const ILIAS_COURSE: Project = {
 		label: 'Zum Lernraum für (digitale) Barrierefreiheit in der Lehre (ILIAS)',
 		url: 'https://ilias-extern.ph-freiburg.de/goto.php?target=cat_18205&client_id=phfr-ext'
 	},
-	joinEvaluation: {
-		title: 'Feedback und Rückfragen',
-		introduction:
-			'Damit wir unser Angebot für Sie optimieren können, sind wir auf Ihr Feedback angewiesen. Haben Sie Fragen zu den Inhalten, Einwände, oder Anregungen, schreiben Sie uns eine E-Mail. Wir freuen uns über jede Nachricht.',
-		contact: {
-			short: 'shuffle',
-			domain: 'ph-freiburg.de'
-		},
-		contactName: 'dem SHUFFLE Freiburg Team'
-	},
 	publications: [LERNMANAGEMENTSYSTEME_MOODLE_UND_ILIAS, BARRIEREFREIHEIT_IN_DER_LEHRE]
 };

@@ -2,7 +2,6 @@
 	import { resolve } from '$app/paths';
 	import { getGlobalState } from '$lib/globalState.svelte';
 	import type { TeamMember } from '$lib/interfaces/teamMember.interface';
-	import Icon from './Icon.svelte';
 
 	const globalState = getGlobalState();
 	interface Props {
@@ -13,11 +12,6 @@
 
 	let short = $state('');
 	let domain = $state('');
-
-	if (member.contact) {
-		short = member.contact.short;
-		domain = member.contact.domain;
-	}
 </script>
 
 <li>
@@ -44,18 +38,7 @@
 	<p class="member-name">{member.name}</p>
 	<p class="member-project-partner">{member.projectPartner}</p>
 
-	{#if member.contact}
-		<button
-			class="email-button"
-			aria-label="E-Mail Adresse von {member.name} in die Zwischenablage kopieren"
-			onclick={() => globalState.copyEmailToClipboard(short, domain)}
-		>
-			<Icon svg="copy" size="16" color="blue" />
-			<span aria-hidden="true">E-Mail Adresse</span>
-		</button>
-	{:else}
-		<div class="email-button-placeholder"></div>
-	{/if}
+	<div class="email-button-placeholder"></div>
 </li>
 
 <style lang="scss">

@@ -40,15 +40,5 @@ export const IAAP_TOOLKITS: Project = {
 			}
 		}
 	],
-	info: 'Das Toolkit umfasst (i) den Lehrplan und (ii) die Unterlagen zur Prüfungsanmeldung, die am Ende der verlinkten Seite heruntergeladen werden können.',
-	joinEvaluation: {
-		title: 'Feedback geben',
-		introduction:
-			'Wir würden uns sehr über Ihr Feedback zu unseren Toolkits freuen! Ihre Meinung ist uns wichtig, damit wir unsere Kurse kontinuierlich verbessern können. Vielen Dank im Voraus!',
-		contactName: 'Gottfried Zimmermann',
-		contact: {
-			short: 'zimmermanng',
-			domain: 'hdm-stuttgart.de'
-		}
-	}
+	info: 'Das Toolkit umfasst (i) den Lehrplan und (ii) die Unterlagen zur Prüfungsanmeldung, die am Ende der verlinkten Seite heruntergeladen werden können.'
 };

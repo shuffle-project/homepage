@@ -2,9 +2,8 @@
 	import TeamMember from '../../../lib/components/TeamMember.svelte';
 	import TitleSection from '../../../lib/components/TitleSection.svelte';
 	import {
-		OLD_MEMBERS,
 		TEAM_LEADERSHIP,
-		TEAM_MEMBERS
+		TEAM_WITHOUT_LEADERSHIP
 	} from '../../../lib/constants/teamMembers.constant';
 </script>
 
@@ -18,8 +17,8 @@
 	{/snippet}
 
 	{#snippet introText()}
-		Wir sind ein interdisziplinäres Team aus Professor*innen, Doktor*innen und wissenschaftlichen
-		Mitarbeiter*innen aus verschiedensten Fachbereichen wie Pädagogik, Informatik und Ethik.
+		Das Projekt vereinte ein interdisziplinäres Team aus Professor*innen, Doktor*innen sowie
+		wissenschaftlichen Mitarbeiter*innen aus den Bereichen Pädagogik, Informatik und Ethik.
 	{/snippet}
 </TitleSection>
 
@@ -31,13 +30,7 @@
 	</ul>
 	<hr class="list-seperator" />
 	<ul class="team-list">
-		{#each TEAM_MEMBERS as member}
-			<TeamMember {member} />
-		{/each}
-	</ul>
-	<h2 class="old-members-heading">Ehemalige Teammitglieder</h2>
-	<ul class="team-list">
-		{#each OLD_MEMBERS as member}
+		{#each TEAM_WITHOUT_LEADERSHIP as member}
 			<TeamMember {member} />
 		{/each}
 	</ul>

@@ -53,9 +53,9 @@
 <div class="results-section">
 	<h2 id="projektergebnisse">Projektergebnisse</h2>
 	<p class="intro-text">
-		Während das SHUFFLE-Projekt weiterläuft, stehen bereits jetzt erste Ergebnisse und Projekte zur
-		Verfügung, die Sie erkunden und ausprobieren können. In den kommenden Wochen und Monaten werden
-		zudem weitere hinzukommen.
+		Das SHUFFLE-Projekt ist inzwischen abgeschlossen. Die im Rahmen des Projekts entstandenen
+		Ergebnisse und Anwendungen stehen Ihnen weiterhin zur Verfügung und können erkundet und
+		ausprobiert werden.
 	</p>
 
 	<details>

@@ -19,16 +19,6 @@ Informationen.`,
 		url: 'https://openmoodle.uni-bielefeld.de/course/view.php?id=112'
 	},
 	partners: ['Universität Bielefeld', 'Pädagogische Hochschule Freiburg'],
-	joinEvaluation: {
-		title: 'Feedback geben',
-		introduction:
-			'Unser Kurs ist ab sofort frei zugänglich. Nutzen Sie die angegebene Kontaktadresse für Feedback, Diskussionen und Ideenaustausch. Ihre Rückmeldungen helfen uns dabei, unsere Materialien stetig zu verbessern.',
-		contactName: 'ZAB Uni Bielefeld',
-		contact: {
-			short: 'shuffle',
-			domain: 'uni-bielefeld.de'
-		}
-	},
 	publications: [
 		POSTER_SELBSTLERNKURSE
 	]

@@ -27,16 +27,6 @@ export const MATURITY_MODEL: Project = {
 				'Beispielhafte Darstellung des Ergebnisses im Reifegradmodell: Mithilfe eines Netzdiagramms wird pro Indikator (19 Stück) die erreichte Stufen zwischen 0 und 4 dargestellt, um einen Überblick zu erhalten, wie die eigene Hochschule in den verschiedenen Bereichen aufgestellt ist.'
 		}
 	],
-	joinEvaluation: {
-		title: 'Reifegradmodell testen',
-		introduction:
-			'Das Reifegradmodell steht Ihnen kostenfrei zur Verfügung. Wenn Sie es an Ihrer Hochschule einsetzen möchten, können Sie hier direkt die Dokumente zur Anwendung des Reifegradmodells downloaden. Bei Fragen oder Feedback zu unserem Reifegradmodell können Sie sich jederzeit an uns wenden.',
-		contact: {
-			short: 'shuffle-rgm',
-			domain: 'hdm-stuttgart.de'
-		},
-		contactName: 'dem RGM-Team'
-	},
 	publications: [
 		{
 			title:

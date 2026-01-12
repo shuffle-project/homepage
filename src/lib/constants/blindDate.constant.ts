@@ -13,16 +13,6 @@ export const BLINDDATE: Project = {
 		url: 'https://barrierefreies-blinddate.de/'
 	},
 	partners: ['Hochschule der Medien Stuttgart', 'Pädagogische Hochschule Heidelberg'],
-	joinEvaluation: {
-		title: 'Feedback geben',
-		introduction:
-			'Die Webseite befindet sich aktuell noch in der Entwicklung. Wir freuen uns über Feedback und Rückmeldungen zu den Inhalten oder möglichen technischen Barrieren. Durch die Umfragen auf der BlindDate-Startseite oder über die folgende Email-Adresse.',
-		contactName: 'dem BlindDate-Team',
-		contact: {
-			short: 'kontakt',
-			domain: 'barrierefreies-blinddate.de'
-		}
-	},
 	publications: [
 		{
 			title: 'Using Design Thinking Methods in Developing a Digital Accessibility Resource Website',

@@ -18,11 +18,7 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Ann-Katrin Böhm',
 		projectPartner: 'Pädagogische Hochschule Heidelberg',
-		img: 'ann-katrin-boehm.jpg',
-		contact: {
-			short: 'boehm3',
-			domain: 'ph-heidelberg.de'
-		}
+		img: 'ann-katrin-boehm.jpg'
 	},
 	{
 		name: 'Anna Weidenbach',
@@ -31,11 +27,7 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Prof. Dr. Anna-Maria Kamin',
 		projectPartner: 'Universität Bielefeld',
-		img: 'anna-maria-kamin.jpg',
-		contact: {
-			short: 'anna-maria.kamin',
-			domain: 'uni-bielefeld.de'
-		}
+		img: 'anna-maria-kamin.jpg'
 	},
 	{
 		name: 'Dr. Barbara Bogner',
@@ -73,11 +65,7 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Hakan Ali Cetin',
 		projectPartner: 'Pädagogische Hochschule Freiburg',
-		img: 'hakan-ali-cetin.jpg',
-		contact: {
-			short: ' hakan.cetin',
-			domain: 'ph-freiburg.de'
-		}
+		img: 'hakan-ali-cetin.jpg'
 	},
 	{
 		name: 'Prof. Dr. Johannes Hennies',
@@ -100,20 +88,12 @@ export const TEAM_MEMBERS = [
 	{
 		name: 'Korbinian Kuhn',
 		projectPartner: 'Hochschule der Medien Stuttgart',
-		img: 'korbinian-kuhn.jpg',
-		contact: {
-			short: 'kuhnko',
-			domain: 'hdm-stuttgart.de'
-		}
+		img: 'korbinian-kuhn.jpg'
 	},
 	{
 		name: 'Laura Eppler',
 		projectPartner: 'Hochschule der Medien Stuttgart',
-		img: 'laura-eppler.jpg',
-		contact: {
-			short: 'eppler',
-			domain: 'hdm-stuttgart.de'
-		}
+		img: 'laura-eppler.jpg'
 	},
 	{
 		name: 'Linus Jerg',
@@ -129,6 +109,11 @@ export const TEAM_MEMBERS = [
 		name: 'Michael Johannfunke',
 		projectPartner: 'Universität Bielefeld',
 		img: 'michael-johannfunke.jpg'
+	},
+	{
+		name: 'Niklas Egger',
+		projectPartner: 'Hochschule der Medien Stuttgart',
+		img: 'niklas-egger.jpg'
 	},
 	{
 		name: 'Patricia Piskorek',
@@ -230,3 +215,10 @@ export const OLD_MEMBERS = [
 
 export const WHOLE_TEAM = [...TEAM_LEADERSHIP, ...TEAM_MEMBERS, ...OLD_MEMBERS];
 export type TeamMemberName = (typeof WHOLE_TEAM)[number]['name'];
+
+export const TEAM_WITHOUT_LEADERSHIP = [...TEAM_MEMBERS, ...OLD_MEMBERS].sort((a, b) => {
+	const aName = a.name.replace('Prof. Dr. ', '').replace('Dr. ', '');
+	const bName = b.name.replace('Prof. Dr. ', '').replace('Dr. ', '');
+
+	return aName.localeCompare(bName);
+});
