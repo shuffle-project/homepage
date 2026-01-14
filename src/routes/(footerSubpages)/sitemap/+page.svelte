@@ -73,6 +73,12 @@
 	<h2>Alle Blog-Einträge (Aktuellste zuerst)</h2>
 	<ul>
 		<li>
+			<a href={resolve('/aktuelles/abschied-von-einem-besonderen-projekt')}>
+				SHUFFLE - Abschied von einem besonderen Projekt
+			</a>
+		</li>
+
+		<li>
 			<a href={resolve('/aktuelles/die-neue-melvin-version-ist-da')}>
 				Die neue Melvin-Version ist da!
 			</a>

@@ -19,6 +19,17 @@
 
 <div class="articles">
 	<ArticlePreview
+		title="SHUFFLE - Abschied von einem besonderen Projekt"
+		time="14.01.2026"
+		link="abschied-von-einem-besonderen-projekt"
+	>
+		Nach mehr als vier Jahren intensiver Zusammenarbeit fand das Projekt SHUFFLE am 31. Dezember
+		seinen formalen Abschluss. Für die Beteiligten bedeutet das mehr als das Ende eines
+		Förderzeitraums, denn es ist zugleich der Abschluss einer besonderen gemeinsamen Zeit. Von
+		August 2021 bis Dezember 2025 haben […]</ArticlePreview
+	>
+
+	<ArticlePreview
 		title="Die neue Melvin-Version ist da!"
 		time="26.11.2024"
 		link="die-neue-melvin-version-ist-da"
